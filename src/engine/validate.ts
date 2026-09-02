@@ -1,6 +1,6 @@
 import { OPTION_RECIPE, OPTIONS_PER_QUESTION } from "@/engine/archetypes";
 import { ARCHETYPES, STORY_ENDING_IDS, TOPICS } from "@/engine/types";
-import type { Archetype, ContentBundle } from "@/engine/types";
+import type { ArchetypeScale, Archetype, ContentBundle, Life } from "@/engine/types";
 
 const QUESTION_TEXT_MAX = 32;
 const OPTION_TEXT_MAX = 30;
@@ -8,6 +8,12 @@ const OPTION_TEXT_MAX = 30;
  * only reported as a warning so tests can filter it out while content is
  * still being built up. */
 const MIN_BOSS_POOL = 12;
+
+const LIFE_NAME_MAX = 8;
+const LIFE_TAGLINE_MAX = 24;
+const LIFE_LINE_MAX = 40;
+const LIFE_MULT_MIN = 0.5;
+const LIFE_MULT_MAX = 1.6;
 
 const codePointLength = (s: string): number => Array.from(s).length;
 
@@ -125,6 +131,79 @@ function validateStoryEndings(content: ContentBundle, issues: string[]): void {
   }
 }
 
+function validateLifeMultiplierRange(life: Life, scale: ArchetypeScale, where: string, issues: string[]): void {
+  for (const archetype of ARCHETYPES) {
+    const entry = scale[archetype];
+    if (!entry) continue;
+    for (const key of ["dealt", "taken"] as const) {
+      const value = entry[key];
+      if (value === undefined) continue;
+      if (value < LIFE_MULT_MIN || value > LIFE_MULT_MAX) {
+        issues.push(
+          `life ${life.id}: ${where}.${archetype}.${key} = ${value} is outside [${LIFE_MULT_MIN}, ${LIFE_MULT_MAX}]`
+        );
+      }
+    }
+  }
+}
+
+function validateLifeShape(content: ContentBundle, life: Life, issues: string[]): void {
+  if (codePointLength(life.name) > LIFE_NAME_MAX) {
+    issues.push(`life ${life.id}: name exceeds ${LIFE_NAME_MAX} code points`);
+  }
+  if (codePointLength(life.tagline) > LIFE_TAGLINE_MAX) {
+    issues.push(`life ${life.id}: tagline exceeds ${LIFE_TAGLINE_MAX} code points`);
+  }
+  for (const line of life.background) {
+    if (codePointLength(line) > LIFE_LINE_MAX) {
+      issues.push(`life ${life.id}: background line exceeds ${LIFE_LINE_MAX} code points`);
+    }
+  }
+
+  const bossIds = new Set(content.bosses.map((b) => b.id));
+  const relationIds = new Set(Object.keys(life.relations));
+  for (const bossId of bossIds) {
+    if (!relationIds.has(bossId)) {
+      issues.push(`life ${life.id}: missing relations entry for boss "${bossId}"`);
+    }
+  }
+  for (const bossId of relationIds) {
+    if (!bossIds.has(bossId)) {
+      issues.push(`life ${life.id}: relations has unknown boss "${bossId}"`);
+    }
+  }
+  for (const [bossId, line] of Object.entries(life.relations)) {
+    if (codePointLength(line) > LIFE_LINE_MAX) {
+      issues.push(`life ${life.id}: relations.${bossId} exceeds ${LIFE_LINE_MAX} code points`);
+    }
+  }
+
+  for (const [topic, scale] of Object.entries(life.modifiers.topic ?? {})) {
+    validateLifeMultiplierRange(life, scale as ArchetypeScale, `topic.${topic}`, issues);
+  }
+  for (const [bossId, scale] of Object.entries(life.modifiers.boss ?? {})) {
+    validateLifeMultiplierRange(life, scale as ArchetypeScale, `boss.${bossId}`, issues);
+  }
+}
+
+function validateLives(content: ContentBundle, issues: string[]): void {
+  const lives = content.lives ?? [];
+  const seenIds = new Set<string>();
+  const seenCodes = new Set<string>();
+  const seenSlugs = new Set<string>();
+
+  for (const life of lives) {
+    if (seenIds.has(life.id)) issues.push(`duplicate life id: ${life.id}`);
+    seenIds.add(life.id);
+    if (seenCodes.has(life.code)) issues.push(`duplicate life code: ${life.code}`);
+    seenCodes.add(life.code);
+    if (seenSlugs.has(life.slug)) issues.push(`duplicate life slug: ${life.slug}`);
+    seenSlugs.add(life.slug);
+
+    validateLifeShape(content, life, issues);
+  }
+}
+
 /** Validate a ContentBundle. Empty array = fully OK. Lines prefixed "WARN:"
  * are non-fatal (e.g. a boss's question pool is still being built up). */
 export function validateContent(content: ContentBundle): string[] {
@@ -138,6 +217,7 @@ export function validateContent(content: ContentBundle): string[] {
   validateBossPools(content, issues);
   validateRankTiers(content, issues);
   validateStoryEndings(content, issues);
+  validateLives(content, issues);
 
   return issues;
 }

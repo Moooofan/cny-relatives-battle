@@ -334,24 +334,26 @@ export function drawQuestion(content: ContentBundle, state: GameState): GameStat
 function computeDealtAndCombo(
   archetype: Archetype,
   baseDealt: number,
-  mods: BossModifiers,
+  bossDealtMult: number,
+  lifeDealtMult: number,
   combo: number,
   maxCombo: number
 ): { dealt: number; crit: boolean; combo: number; maxCombo: number } {
-  const multiplied = Math.round(baseDealt * (mods.dealtMultiplier?.[archetype] ?? 1));
+  // Boss/scene and life multipliers compound before a single final rounding.
+  const scaled = baseDealt * bossDealtMult * lifeDealtMult;
   const comboRule = ARCHETYPE_TABLE[archetype].combo;
 
   if (comboRule !== "inc") {
     const nextCombo = comboRule === "reset" ? 0 : combo;
-    return { dealt: multiplied, crit: false, combo: nextCombo, maxCombo: Math.max(maxCombo, nextCombo) };
+    return { dealt: Math.round(scaled), crit: false, combo: nextCombo, maxCombo: Math.max(maxCombo, nextCombo) };
   }
 
   const wouldBe = combo + 1;
   const peak = Math.max(maxCombo, wouldBe);
   if (wouldBe === CRIT_COMBO) {
-    return { dealt: Math.round(multiplied * CRIT_MULTIPLIER), crit: true, combo: 0, maxCombo: peak };
+    return { dealt: Math.round(scaled * CRIT_MULTIPLIER), crit: true, combo: 0, maxCombo: peak };
   }
-  return { dealt: multiplied, crit: false, combo: wouldBe, maxCombo: peak };
+  return { dealt: Math.round(scaled), crit: false, combo: wouldBe, maxCombo: peak };
 }
 
 function resolveTurn(
@@ -364,15 +366,26 @@ function resolveTurn(
   const boss = findBoss(content, state.bossQueue[state.bossIndex]);
   const base = ARCHETYPE_TABLE[option.archetype];
   const mods = state.activeModifiers;
+  const life = resolveLife(content, state.lifeId);
+  const { dealtMult: lifeDealtMult, takenMult: lifeTakenMult } = lifeScale(
+    life, question.topic, boss.id, option.archetype
+  );
 
   const { dealt, crit, combo, maxCombo } = computeDealtAndCombo(
-    option.archetype, base.dealt, mods, state.combo, state.maxCombo
+    option.archetype,
+    base.dealt,
+    mods.dealtMultiplier?.[option.archetype] ?? 1,
+    lifeDealtMult,
+    state.combo,
+    state.maxCombo
   );
-  const taken = Math.round(base.taken * TIER_POWER[boss.tier] * (mods.takenMultiplier?.[option.archetype] ?? 1));
+  const taken = Math.round(
+    base.taken * TIER_POWER[boss.tier] * (mods.takenMultiplier?.[option.archetype] ?? 1) * lifeTakenMult
+  );
   const healed = base.healsBoss ? mods.healOnLandmine ?? DEFAULT_LANDMINE_HEAL : 0;
 
   const bossHp = clamp(state.bossHp - dealt + healed, 0, state.bossMaxHp);
-  const playerHp = clamp(state.playerHp - taken, 0, PLAYER_MAX_HP);
+  const playerHp = clamp(state.playerHp - taken, 0, state.playerMaxHp);
   const meekQuestionIds =
     option.archetype === "meek" && !state.meekQuestionIds.includes(question.id)
       ? [...state.meekQuestionIds, question.id]
@@ -389,6 +402,8 @@ function resolveTurn(
     topic: question.topic,
     bossId: boss.id,
     summonedBossId: state.pendingSummonBossId,
+    lifeDealtMult,
+    lifeTakenMult,
   };
 
   return {
@@ -403,7 +418,10 @@ function resolveTurn(
     meekQuestionIds,
     followUp: option.archetype === "meek" && !!mods.followUpOnMeek,
     log: [...state.log, logEntry],
-    lastResolve: { optionId: option.id, archetype: option.archetype, dealt, taken, healed, crit, timeout },
+    lastResolve: {
+      optionId: option.id, archetype: option.archetype, dealt, taken, healed, crit, timeout,
+      lifeDealtMult, lifeTakenMult,
+    },
     phase: "retort",
     pendingSummonBossId: undefined,
   };
@@ -445,6 +463,8 @@ function useSkip(content: ContentBundle, state: GameState): GameState {
     topic: question.topic,
     bossId: boss.id,
     summonedBossId: state.pendingSummonBossId,
+    lifeDealtMult: 1,
+    lifeTakenMult: 1,
   };
 
   const next: GameState = {
@@ -461,7 +481,7 @@ function useHeal(state: GameState): GameState {
   if (state.playerHp >= SPECIALS.heal.threshold) return state;
   return {
     ...state,
-    playerHp: clamp(state.playerHp + SPECIALS.heal.amount, 0, PLAYER_MAX_HP),
+    playerHp: clamp(state.playerHp + SPECIALS.heal.amount, 0, state.playerMaxHp),
     specials: { ...state.specials, heal: state.specials.heal - 1 },
   };
 }
@@ -483,15 +503,15 @@ function advanceFromRetort(content: ContentBundle, state: GameState): GameState 
 }
 
 function advanceGauntlet(content: ContentBundle, state: GameState): GameState {
-  const healed = clamp(state.playerHp + GAUNTLET.healPerWin, 0, PLAYER_MAX_HP);
+  const healed = clamp(state.playerHp + GAUNTLET.healPerWin, 0, state.playerMaxHp);
   const hasMoreBosses = state.bossIndex + 1 < state.bossQueue.length;
   const isRestStop = state.bossesDefeated % GAUNTLET.restEvery === 0;
 
   if (isRestStop && hasMoreBosses) {
     return {
       ...state,
-      playerHp: clamp(healed + GAUNTLET.restHeal, 0, PLAYER_MAX_HP),
-      specials: { ...state.specials, heal: 1 },
+      playerHp: clamp(healed + GAUNTLET.restHeal, 0, state.playerMaxHp),
+      specials: fullSpecialsAllotment(resolveLife(content, state.lifeId)),
       phase: "interlude",
       interludeText: ["休息站：偷溜去便利商店"],
     };
@@ -574,11 +594,20 @@ function computeStoryEnding(state: GameState, rank: RankTier, lost: boolean): St
   return "survived";
 }
 
+/** Deterministic share/lookup code: `${lifeCode}-${4 uppercase base36 chars}`. */
+export function makeResultCode(lifeCode: string, seed: string, score: number, turns: number): string {
+  const hash = hashSeed(`${seed}|${score}|${turns}`);
+  const code4 = hash.toString(36).toUpperCase().padStart(4, "0").slice(-4);
+  return `${lifeCode}-${code4}`;
+}
+
 function enterResult(content: ContentBundle, state: GameState, lost: boolean): GameState {
   const finalState: GameState = { ...state, phase: "result" };
   const score = computeScore(finalState);
   const rank = selectRank(content, state.mode, score);
-  const result: GameResult = { score, rank };
+  const life = resolveLife(content, state.lifeId);
+  const resultCode = makeResultCode(life?.code ?? "L00", state.seed, score, state.turns);
+  const result: GameResult = { score, rank, resultCode };
   if (state.mode === "story") {
     result.storyEndingId = computeStoryEnding(finalState, rank, lost);
   }
@@ -593,8 +622,8 @@ export function resumeStory(content: ContentBundle, seed: string, checkpointScen
   const base = createGame(content, "story", seed);
   const refreshed: GameState = {
     ...base,
-    playerHp: PLAYER_MAX_HP,
-    specials: { skip: SPECIALS.skip.perRun, heal: SPECIALS.heal.perRun },
+    playerHp: base.playerMaxHp,
+    specials: fullSpecialsAllotment(resolveLife(content, base.lifeId)),
   };
   return enterScene(content, refreshed, checkpointSceneIndex);
 }

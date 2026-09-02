@@ -2,7 +2,7 @@ import { describe, expect, test } from "vitest";
 import { advance, createGame, resumeStory } from "@/engine/reducer";
 import type { GameState } from "@/engine/types";
 import {
-  FIXTURE_CONTENT,
+  FIXTURE_CONTENT_NO_LIVES,
   FIXTURE_LAST_SCENE_INDEX,
   fakeLogEntry,
   fightWithArchetypes,
@@ -12,26 +12,26 @@ import {
 
 describe("story flow", () => {
   test("a full playthrough walks narrative/rest/fight scenes in order and reaches 'result'", () => {
-    let s = createGame(FIXTURE_CONTENT, "story", "story-flow-1");
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "story", "story-flow-1");
     expect(s.phase).toBe("interlude"); // scene 0 is narrative
     expect(s.sceneIndex).toBe(0);
 
-    s = progressPastNonTurnPhases(FIXTURE_CONTENT, s);
+    s = progressPastNonTurnPhases(FIXTURE_CONTENT_NO_LIVES, s);
     expect(s.phase).toBe("turn");
     expect(s.bossQueue[s.bossIndex]).toBe("xiao-biaodi");
 
-    s = fightWithArchetypes(FIXTURE_CONTENT, s, ["perfect"]);
-    s = progressPastNonTurnPhases(FIXTURE_CONTENT, s); // rest -> full heal -> next intro
+    s = fightWithArchetypes(FIXTURE_CONTENT_NO_LIVES, s, ["perfect"]);
+    s = progressPastNonTurnPhases(FIXTURE_CONTENT_NO_LIVES, s); // rest -> full heal -> next intro
     expect(s.bossQueue[s.bossIndex]).toBe("sanjiuma");
     expect(s.playerHp).toBe(100);
 
-    s = fightWithArchetypes(FIXTURE_CONTENT, s, ["perfect"]);
-    s = progressPastNonTurnPhases(FIXTURE_CONTENT, s); // narrative + rest -> next intro
+    s = fightWithArchetypes(FIXTURE_CONTENT_NO_LIVES, s, ["perfect"]);
+    s = progressPastNonTurnPhases(FIXTURE_CONTENT_NO_LIVES, s); // narrative + rest -> next intro
     expect(s.bossQueue[s.bossIndex]).toBe("ama");
     expect(s.playerHp).toBe(100);
 
-    s = fightWithArchetypes(FIXTURE_CONTENT, s, ["perfect"]);
-    s = progressPastNonTurnPhases(FIXTURE_CONTENT, s);
+    s = fightWithArchetypes(FIXTURE_CONTENT_NO_LIVES, s, ["perfect"]);
+    s = progressPastNonTurnPhases(FIXTURE_CONTENT_NO_LIVES, s);
 
     expect(s.phase).toBe("result");
     expect(s.bossesDefeated).toBe(3);
@@ -40,7 +40,7 @@ describe("story flow", () => {
   });
 
   test("resumeStory jumps straight to a checkpoint scene with full HP", () => {
-    const s = resumeStory(FIXTURE_CONTENT, "resume-test", FIXTURE_LAST_SCENE_INDEX);
+    const s = resumeStory(FIXTURE_CONTENT_NO_LIVES, "resume-test", FIXTURE_LAST_SCENE_INDEX);
     expect(s.phase).toBe("intro");
     expect(s.sceneIndex).toBe(FIXTURE_LAST_SCENE_INDEX);
     expect(s.playerHp).toBe(100);
@@ -54,13 +54,13 @@ describe("story flow", () => {
 // full, HP-balanced simulated playthrough for every branch.
 describe("story endings (docs/CONTENT.md §4, checked in that order)", () => {
   function resolveToResult(state: GameState): GameState {
-    const afterBossDefeated = advance(FIXTURE_CONTENT, state);
-    return advance(FIXTURE_CONTENT, afterBossDefeated);
+    const afterBossDefeated = advance(FIXTURE_CONTENT_NO_LIVES, state);
+    return advance(FIXTURE_CONTENT_NO_LIVES, afterBossDefeated);
   }
 
   test("lost: any playerDefeated", () => {
     const state: GameState = { ...finalRetortState({}), phase: "playerDefeated", playerHp: 0 };
-    const result = advance(FIXTURE_CONTENT, state);
+    const result = advance(FIXTURE_CONTENT_NO_LIVES, state);
     expect(result.phase).toBe("result");
     expect(result.result?.storyEndingId).toBe("lost");
   });

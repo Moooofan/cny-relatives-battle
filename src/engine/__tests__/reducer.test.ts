@@ -2,15 +2,15 @@ import { describe, expect, test } from "vitest";
 import { DEFAULT_LANDMINE_HEAL, GAUNTLET, SPECIALS } from "@/engine/archetypes";
 import { advance, applyOption, applyTimeout, createGame, useSpecial } from "@/engine/reducer";
 import type { Archetype, GameState, TurnLog } from "@/engine/types";
-import { FIXTURE_CONTENT, fightWithArchetypes, findOptionId, progressPastNonTurnPhases } from "./fixtures";
+import { FIXTURE_CONTENT_NO_LIVES, fightWithArchetypes, findOptionId, progressPastNonTurnPhases } from "./fixtures";
 
 describe("createGame + startBoss (via advance from 'intro')", () => {
   test("random mode with an explicit bossId sets up the right boss", () => {
-    const s = createGame(FIXTURE_CONTENT, "random", "seed-1", { bossId: "sanjiuma" });
+    const s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "seed-1", { bossId: "sanjiuma" });
     expect(s.phase).toBe("intro");
     expect(s.bossQueue).toEqual(["sanjiuma"]);
 
-    const started = advance(FIXTURE_CONTENT, s);
+    const started = advance(FIXTURE_CONTENT_NO_LIVES, s);
     expect(started.phase).toBe("turn");
     expect(started.bossMaxHp).toBe(130); // hard tier
     expect(started.bossHp).toBe(130);
@@ -20,21 +20,21 @@ describe("createGame + startBoss (via advance from 'intro')", () => {
   });
 
   test("gauntlet mode queues all bosses sorted by order", () => {
-    const s = createGame(FIXTURE_CONTENT, "gauntlet", "seed-2");
+    const s = createGame(FIXTURE_CONTENT_NO_LIVES, "gauntlet", "seed-2");
     expect(s.bossQueue).toEqual(["xiao-biaodi", "sanjiuma", "ama"]);
   });
 });
 
 describe("worked example (docs/PLAN.md §1): sanjiuma hard x1.5", () => {
   test("perfect, deflect, perfect, perfect(crit), perfect kills a 130 HP boss in 5 turns, player at 92 HP", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "worked-example", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "worked-example", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const sequence: Archetype[] = ["perfect", "deflect", "perfect", "perfect", "perfect"];
     for (let i = 0; i < sequence.length; i++) {
-      const optionId = findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, sequence[i]);
-      s = applyOption(FIXTURE_CONTENT, s, optionId);
-      if (i < sequence.length - 1) s = advance(FIXTURE_CONTENT, s);
+      const optionId = findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, sequence[i]);
+      s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, optionId);
+      if (i < sequence.length - 1) s = advance(FIXTURE_CONTENT_NO_LIVES, s);
     }
 
     expect(s.turns).toBe(5);
@@ -47,15 +47,15 @@ describe("worked example (docs/PLAN.md §1): sanjiuma hard x1.5", () => {
 
 describe("landmine", () => {
   test("heals the boss and resets combo", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "landmine-combo", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "landmine-combo", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "perfect"));
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "perfect"));
     expect(s.combo).toBe(1);
-    s = advance(FIXTURE_CONTENT, s);
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBeforeLandmine = s.bossHp;
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "landmine"));
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "landmine"));
 
     expect(s.combo).toBe(0);
     expect(s.bossHp).toBe(Math.min(130, hpBeforeLandmine + DEFAULT_LANDMINE_HEAL));
@@ -63,11 +63,11 @@ describe("landmine", () => {
   });
 
   test("xiao-biaodi doubles landmine damage taken", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "biaodi-landmine", { bossId: "xiao-biaodi" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "biaodi-landmine", { bossId: "xiao-biaodi" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBefore = s.playerHp;
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "landmine"));
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "landmine"));
     // base taken 35 * easy power 1.0 * takenMultiplier.landmine 2 = 70
     expect(hpBefore - s.playerHp).toBe(70);
   });
@@ -75,56 +75,56 @@ describe("landmine", () => {
 
 describe("ama modifiers", () => {
   test("halves perfect damage dealt", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "ama-perfect", { bossId: "ama" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "ama-perfect", { bossId: "ama" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBefore = s.bossHp;
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "perfect"));
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "perfect"));
     // round(25 * 0.5) = 13
     expect(hpBefore - s.bossHp).toBe(13);
   });
 
   test("heals 20 (not the default 10) on landmine", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "ama-landmine", { bossId: "ama" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "ama-landmine", { bossId: "ama" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBefore = s.bossHp;
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "landmine"));
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "landmine"));
     expect(s.bossHp).toBe(Math.min(130, hpBefore + 20));
   });
 });
 
 describe("followUpOnMeek", () => {
   test("sanjiuma sets followUp on a meek answer", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "followup-yes", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "meek"));
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "followup-yes", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "meek"));
     expect(s.followUp).toBe(true);
   });
 
   test("a boss without the modifier does not set followUp", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "followup-no", { bossId: "xiao-biaodi" });
-    s = advance(FIXTURE_CONTENT, s);
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "meek"));
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "followup-no", { bossId: "xiao-biaodi" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "meek"));
     expect(s.followUp).toBe(false);
   });
 });
 
 describe("summonAtHalf", () => {
   test("ama draws one question from a previously defeated boss once HP crosses half", () => {
-    let s = createGame(FIXTURE_CONTENT, "gauntlet", "summon-test");
-    s = advance(FIXTURE_CONTENT, s); // intro -> turn (xiao-biaodi)
-    s = fightWithArchetypes(FIXTURE_CONTENT, s, ["perfect"]);
-    s = progressPastNonTurnPhases(FIXTURE_CONTENT, s); // -> turn (sanjiuma)
-    s = fightWithArchetypes(FIXTURE_CONTENT, s, ["perfect"]);
-    s = progressPastNonTurnPhases(FIXTURE_CONTENT, s); // -> turn (ama)
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "gauntlet", "summon-test");
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s); // intro -> turn (xiao-biaodi)
+    s = fightWithArchetypes(FIXTURE_CONTENT_NO_LIVES, s, ["perfect"]);
+    s = progressPastNonTurnPhases(FIXTURE_CONTENT_NO_LIVES, s); // -> turn (sanjiuma)
+    s = fightWithArchetypes(FIXTURE_CONTENT_NO_LIVES, s, ["perfect"]);
+    s = progressPastNonTurnPhases(FIXTURE_CONTENT_NO_LIVES, s); // -> turn (ama)
 
     expect(s.bossQueue[s.bossIndex]).toBe("ama");
 
     let guard = 0;
     while (s.bossHp > s.bossMaxHp / 2 && s.phase === "turn" && guard++ < 50) {
-      s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "deflect"));
-      s = advance(FIXTURE_CONTENT, s);
+      s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "deflect"));
+      s = advance(FIXTURE_CONTENT_NO_LIVES, s);
     }
 
     expect(s.phase).toBe("turn");
@@ -133,7 +133,7 @@ describe("summonAtHalf", () => {
     const summonedFrom = s.pendingSummonBossId;
     expect(["xiao-biaodi", "sanjiuma"]).toContain(summonedFrom);
 
-    s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "perfect"));
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "perfect"));
     expect(s.log[s.log.length - 1].summonedBossId).toBe(summonedFrom);
     expect(s.pendingSummonBossId).toBeUndefined(); // consumed
   });
@@ -149,6 +149,8 @@ describe("summonAtHalf", () => {
       bossHp: 0,
       bossMaxHp: 0,
       playerHp: 100,
+      playerMaxHp: 100,
+      lifeId: null,
       combo: 0,
       maxCombo: 0,
       deck: [],
@@ -164,7 +166,7 @@ describe("summonAtHalf", () => {
       followUp: false,
       activeModifiers: {},
     };
-    const started = advance(FIXTURE_CONTENT, state);
+    const started = advance(FIXTURE_CONTENT_NO_LIVES, state);
     expect(started.currentQuestionId).toBe("generic-food_push-001");
   });
 });
@@ -181,6 +183,8 @@ describe("gauntlet heal / rest flow", () => {
       bossHp: 0,
       bossMaxHp: 60,
       playerHp: 50,
+      playerMaxHp: 100,
+      lifeId: null,
       combo: 0,
       maxCombo: 0,
       deck: [],
@@ -201,7 +205,7 @@ describe("gauntlet heal / rest flow", () => {
 
   test("a normal win (not a multiple of restEvery) heals and moves to the next boss's intro", () => {
     const state = gauntletState({ bossIndex: 0, bossesDefeated: 1, playerHp: 50 });
-    const next = advance(FIXTURE_CONTENT, state);
+    const next = advance(FIXTURE_CONTENT_NO_LIVES, state);
     expect(next.phase).toBe("intro");
     expect(next.bossIndex).toBe(1);
     expect(next.playerHp).toBe(Math.min(100, 50 + GAUNTLET.healPerWin));
@@ -215,7 +219,7 @@ describe("gauntlet heal / rest flow", () => {
       playerHp: 40,
       specials: { skip: 0, heal: 0 },
     });
-    const next = advance(FIXTURE_CONTENT, state);
+    const next = advance(FIXTURE_CONTENT_NO_LIVES, state);
     expect(next.phase).toBe("interlude");
     expect(next.playerHp).toBe(Math.min(100, 40 + GAUNTLET.healPerWin + GAUNTLET.restHeal));
     expect(next.specials.heal).toBe(1);
@@ -228,14 +232,14 @@ describe("gauntlet heal / rest flow", () => {
       bossesDefeated: GAUNTLET.restEvery,
       playerHp: 50,
     });
-    const next = advance(FIXTURE_CONTENT, state);
+    const next = advance(FIXTURE_CONTENT_NO_LIVES, state);
     expect(next.phase).toBe("result");
     expect(next.result).toBeDefined();
   });
 
   test("leaving a rest stop moves on to the next boss's intro", () => {
     const state = gauntletState({ phase: "interlude", bossIndex: 0, bossesDefeated: 3 });
-    const next = advance(FIXTURE_CONTENT, state);
+    const next = advance(FIXTURE_CONTENT_NO_LIVES, state);
     expect(next.phase).toBe("intro");
     expect(next.bossIndex).toBe(1);
   });
@@ -243,13 +247,13 @@ describe("gauntlet heal / rest flow", () => {
 
 describe("specials", () => {
   test("skip only works in 'turn' with a charge left, costs no HP, and draws the next question", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "skip-ok", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "skip-ok", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
     const bossHpBefore = s.bossHp;
     const playerHpBefore = s.playerHp;
     const skipsBefore = s.specials.skip;
 
-    const next = useSpecial(FIXTURE_CONTENT, s, "skip");
+    const next = useSpecial(FIXTURE_CONTENT_NO_LIVES, s, "skip");
     expect(next.specials.skip).toBe(skipsBefore - 1);
     expect(next.bossHp).toBe(bossHpBefore);
     expect(next.playerHp).toBe(playerHpBefore);
@@ -258,40 +262,40 @@ describe("specials", () => {
   });
 
   test("skip is a no-op outside 'turn' or with no charges left", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "skip-invalid", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "skip-invalid", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
     const noCharges: GameState = { ...s, specials: { ...s.specials, skip: 0 } };
-    expect(useSpecial(FIXTURE_CONTENT, noCharges, "skip")).toBe(noCharges);
+    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, noCharges, "skip")).toBe(noCharges);
 
     const wrongPhase: GameState = { ...s, phase: "retort" };
-    expect(useSpecial(FIXTURE_CONTENT, wrongPhase, "skip")).toBe(wrongPhase);
+    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, wrongPhase, "skip")).toBe(wrongPhase);
   });
 
   test("heal only works below the HP threshold with a charge left", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "heal-rules", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "heal-rules", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const full: GameState = { ...s, playerHp: 100 };
-    expect(useSpecial(FIXTURE_CONTENT, full, "heal")).toBe(full);
+    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, full, "heal")).toBe(full);
 
     const low: GameState = { ...s, playerHp: 40 };
-    const healed = useSpecial(FIXTURE_CONTENT, low, "heal");
+    const healed = useSpecial(FIXTURE_CONTENT_NO_LIVES, low, "heal");
     expect(healed.playerHp).toBe(40 + SPECIALS.heal.amount);
     expect(healed.specials.heal).toBe(low.specials.heal - 1);
 
     const noCharge: GameState = { ...low, specials: { ...low.specials, heal: 0 } };
-    expect(useSpecial(FIXTURE_CONTENT, noCharge, "heal")).toBe(noCharge);
+    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, noCharge, "heal")).toBe(noCharge);
   });
 });
 
 describe("timeout", () => {
   test("applyTimeout behaves exactly like choosing a meek option", () => {
-    let s = createGame(FIXTURE_CONTENT, "random", "timeout-eq-meek", { bossId: "sanjiuma" });
-    s = advance(FIXTURE_CONTENT, s);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "timeout-eq-meek", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
-    const meekOptionId = findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "meek");
-    const viaMeek = applyOption(FIXTURE_CONTENT, s, meekOptionId);
-    const viaTimeout = applyTimeout(FIXTURE_CONTENT, s);
+    const meekOptionId = findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "meek");
+    const viaMeek = applyOption(FIXTURE_CONTENT_NO_LIVES, s, meekOptionId);
+    const viaTimeout = applyTimeout(FIXTURE_CONTENT_NO_LIVES, s);
 
     expect(viaTimeout.bossHp).toBe(viaMeek.bossHp);
     expect(viaTimeout.playerHp).toBe(viaMeek.playerHp);
@@ -306,10 +310,10 @@ describe("timeout", () => {
 
 describe("determinism", () => {
   function playOut(seed: string): TurnLog[] {
-    let s = createGame(FIXTURE_CONTENT, "gauntlet", seed);
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "gauntlet", seed);
     let guard = 0;
     while (s.phase !== "result" && guard++ < 2000) {
-      s = s.phase === "turn" ? applyOption(FIXTURE_CONTENT, s, s.optionOrder[0]) : advance(FIXTURE_CONTENT, s);
+      s = s.phase === "turn" ? applyOption(FIXTURE_CONTENT_NO_LIVES, s, s.optionOrder[0]) : advance(FIXTURE_CONTENT_NO_LIVES, s);
     }
     return s.log;
   }

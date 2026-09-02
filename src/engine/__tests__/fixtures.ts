@@ -11,6 +11,7 @@ import type {
   Boss,
   ContentBundle,
   GameState,
+  Life,
   Option,
   Question,
   RankTier,
@@ -169,6 +170,53 @@ export const FIXTURE_STORY_ENDINGS: StoryEnding[] = [
   { id: "survived", title: "平安過年", lines: ["沒有人受傷。"] },
 ];
 
+// ---------------------------------------------------------------------------
+// Lives — 2 total: one with topic+boss scales/startHp/extraSpecials, one bare.
+// ---------------------------------------------------------------------------
+
+export const FIXTURE_LIFE_WITH_MODIFIERS: Life = {
+  id: "life-fixture-a",
+  code: "LFA",
+  slug: "fixture-life-a",
+  name: "測試人生甲",
+  tagline: "專門用來測試倍率的人生",
+  background: ["這是測試用的背景第一段。", "這是測試用的背景第二段。"],
+  relations: {
+    "xiao-biaodi": "小表弟覺得你很好欺負。",
+    sanjiuma: "三舅媽對你的薪水瞭若指掌。",
+    ama: "阿嬤踩到你的雷會特別傷心。",
+  },
+  strengths: ["對三舅媽薪水題神回覆傷害 +30%"],
+  weaknesses: ["阿嬤踩雷時受傷 +50%"],
+  modifiers: {
+    topic: { salary_job: { perfect: { dealt: 1.3 } } },
+    boss: { ama: { landmine: { taken: 1.5 } } },
+    startHp: 90,
+    extraSpecials: { heal: 1 },
+  },
+  icon: "Laptop",
+};
+
+export const FIXTURE_LIFE_PLAIN: Life = {
+  id: "life-fixture-b",
+  code: "LFB",
+  slug: "fixture-life-b",
+  name: "測試人生乙",
+  tagline: "沒有任何特殊倍率的對照組",
+  background: ["這是對照組的背景第一段。", "這是對照組的背景第二段。"],
+  relations: {
+    "xiao-biaodi": "小表弟對你沒什麼特別印象。",
+    sanjiuma: "三舅媽跟你不熟，隨口問問。",
+    ama: "阿嬤對你跟對誰都一樣好。",
+  },
+  strengths: ["沒有加成，也沒有懲罰"],
+  weaknesses: ["沒有加成，也沒有懲罰"],
+  modifiers: {},
+  icon: "User",
+};
+
+export const FIXTURE_LIVES: Life[] = [FIXTURE_LIFE_WITH_MODIFIERS, FIXTURE_LIFE_PLAIN];
+
 export const FIXTURE_CONTENT: ContentBundle = {
   bosses: FIXTURE_BOSSES,
   questions: FIXTURE_QUESTIONS,
@@ -176,6 +224,13 @@ export const FIXTURE_CONTENT: ContentBundle = {
   acts: FIXTURE_ACTS,
   rankTiers: FIXTURE_RANK_TIERS,
   storyEndings: FIXTURE_STORY_ENDINGS,
+  lives: FIXTURE_LIVES,
+};
+
+/** A ContentBundle with no lives at all, for "life features are a no-op". */
+export const FIXTURE_CONTENT_NO_LIVES: ContentBundle = {
+  ...FIXTURE_CONTENT,
+  lives: [],
 };
 
 // ---------------------------------------------------------------------------
@@ -235,6 +290,8 @@ export function fakeLogEntry(bossId: string, archetype: Archetype): TurnLog {
     combo: 0,
     topic: "comparison",
     bossId,
+    lifeDealtMult: 1,
+    lifeTakenMult: 1,
   };
 }
 
@@ -258,6 +315,8 @@ export function finalRetortState(overrides: Partial<GameState>): GameState {
     bossHp: 0,
     bossMaxHp: 130,
     playerHp: 50,
+    playerMaxHp: 100,
+    lifeId: null,
     combo: 0,
     maxCombo: 0,
     deck: [],

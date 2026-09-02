@@ -68,3 +68,42 @@ describe("validateContent", () => {
     expect(issues.some((i) => i.includes("harmony"))).toBe(true);
   });
 });
+
+describe("validateContent: lives", () => {
+  test("catches a life multiplier outside [0.5, 1.6]", () => {
+    const bad: ContentBundle = {
+      ...FIXTURE_CONTENT,
+      lives: FIXTURE_CONTENT.lives!.map((l) =>
+        l.id === "life-fixture-a"
+          ? { ...l, modifiers: { ...l.modifiers, boss: { ama: { landmine: { taken: 2.5 } } } } }
+          : l
+      ),
+    };
+    const issues = validateContent(bad);
+    expect(issues.some((i) => i.includes("life-fixture-a") && i.includes("outside"))).toBe(true);
+  });
+
+  test("catches a life missing a relations entry for a boss", () => {
+    const bad: ContentBundle = {
+      ...FIXTURE_CONTENT,
+      lives: FIXTURE_CONTENT.lives!.map((l) => {
+        if (l.id !== "life-fixture-b") return l;
+        const { ama, ...rest } = l.relations;
+        return { ...l, relations: rest };
+      }),
+    };
+    const issues = validateContent(bad);
+    expect(issues.some((i) => i.includes("life-fixture-b") && i.includes("missing relations"))).toBe(true);
+  });
+
+  test("catches a duplicate life id/code/slug", () => {
+    const bad: ContentBundle = {
+      ...FIXTURE_CONTENT,
+      lives: [...FIXTURE_CONTENT.lives!, { ...FIXTURE_CONTENT.lives![0] }],
+    };
+    const issues = validateContent(bad);
+    expect(issues.some((i) => i.includes("duplicate life id"))).toBe(true);
+    expect(issues.some((i) => i.includes("duplicate life code"))).toBe(true);
+    expect(issues.some((i) => i.includes("duplicate life slug"))).toBe(true);
+  });
+});
