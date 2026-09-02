@@ -1,0 +1,918 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// 1. 問你要不要跳槽去對面公司
+// 2. 問你面試都準備什麼
+// 3. 問你的履歷寫得怎樣
+// 4. 聊到他當年當學徒
+// 5. 問你有沒有勞保退休金規劃
+// 6. 問你辦公室是不是常常勾心鬥角
+// 7. 問你工作是不是很閒
+// 8. 聊到樓下鄰居兒子工作多穩定
+// 9. 問你要不要回家幫忙顧店
+// 10. 問你出差累不累
+// 11. 問你薪水扣完稅剩多少
+// 12. 聊到他當年怎麼談加薪
+// 13. 問你有沒有想過提前退休
+// 14. 問你這行業前景好不好
+// 15. 問你自由業算不算工作
+// 16. 問你紅包錢是不是薪水的救星
+
+export default [
+  {
+    id: "dabo-salary_job-021",
+    text: "對面公司開的薪水更高，你不跳嗎。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-021-a",
+        text: "你退休前也沒換過工作，別勸我跳。",
+        archetype: "landmine",
+        retort: "你這什麼態度！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-021-b",
+        text: "對面薪水高，那我改行去對面賣雞排。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-021-c",
+        text: "薪水是比較高，但怕新環境不適應……",
+        archetype: "meek",
+        retort: "不適應就要克服，別怕改變。",
+      },
+      {
+        id: "dabo-salary_job-021-d",
+        text: "不跳，因為那邊沒有大伯的紅包。",
+        archetype: "perfect",
+        retort: "……有點道理，算你會拍馬屁。",
+      },
+      {
+        id: "dabo-salary_job-021-e",
+        text: "跳槽而已，我打算連國籍一起跳。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-021-f",
+        text: "你對薪水行情這麼清楚，厲害。",
+        archetype: "deflect",
+        retort: "那當然，我天天在關心。",
+      },
+      {
+        id: "dabo-salary_job-021-g",
+        text: "大伯你覺得跳槽風險大不大？",
+        archetype: "deflect",
+        retort: "大啊，換工作要謹慎一點。",
+      },
+      {
+        id: "dabo-salary_job-021-h",
+        text: "有在考慮，但還沒確定要不要跳……",
+        archetype: "meek",
+        retort: "還沒確定，那你在猶豫什麼。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-022",
+    text: "面試都準備什麼，別被問倒了。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-022-a",
+        text: "大伯你以前面試被問過什麼刁鑽問題？",
+        archetype: "deflect",
+        retort: "問過啊，我當年應答如流。",
+      },
+      {
+        id: "dabo-salary_job-022-b",
+        text: "你這麼關心，我很感動，謝謝大伯。",
+        archetype: "deflect",
+        retort: "那當然，我希望你能順利。",
+      },
+      {
+        id: "dabo-salary_job-022-c",
+        text: "其實我沒準備太多，臨場發揮……",
+        archetype: "meek",
+        retort: "臨場發揮，這樣太隨便了吧。",
+      },
+      {
+        id: "dabo-salary_job-022-d",
+        text: "準備了自信，還有大伯教的臉皮厚度。",
+        archetype: "perfect",
+        retort: "……有點道理，算你有學到。",
+      },
+      {
+        id: "dabo-salary_job-022-e",
+        text: "面試我打算靠帥氣過關，夠了吧。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-022-f",
+        text: "準備了一些，但還是有點緊張……",
+        archetype: "meek",
+        retort: "緊張就會表現不好，要練習啊。",
+      },
+      {
+        id: "dabo-salary_job-022-g",
+        text: "我準備的自我介紹比相聲還長。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-022-h",
+        text: "你連履歷都不知道怎麼寫還敢教我。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-023",
+    text: "履歷寫成這樣，公司怎麼會找你。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-023-a",
+        text: "履歷我用毛筆寫，比較有誠意。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-023-b",
+        text: "其實我也不太會包裝自己……",
+        archetype: "meek",
+        retort: "不會包裝，難怪一直找不到好工作。",
+      },
+      {
+        id: "dabo-salary_job-023-c",
+        text: "我履歷寫得像小說，很有戲劇張力。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-023-d",
+        text: "公司找我，是因為我夠誠實有趣。",
+        archetype: "perfect",
+        retort: "……有點道理，算你有把握。",
+      },
+      {
+        id: "dabo-salary_job-023-e",
+        text: "你以前找工作也是靠關係走後門吧。",
+        archetype: "landmine",
+        retort: "你這什麼意思！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-023-f",
+        text: "你對履歷這麼有研究，改天幫我看看。",
+        archetype: "deflect",
+        retort: "好啊，改天拿來我幫你潤飾。",
+      },
+      {
+        id: "dabo-salary_job-023-g",
+        text: "大伯你以前找工作靠什麼？",
+        archetype: "deflect",
+        retort: "靠人脈跟毅力，你們現在少了這個。",
+      },
+      {
+        id: "dabo-salary_job-023-h",
+        text: "寫得是普通了點，但都是真實經歷……",
+        archetype: "meek",
+        retort: "真實經歷平淡，那怎麼吸引人。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-024",
+    text: "我當學徒的時候，什麼都得自己扛。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-024-a",
+        text: "其實我覺得自己抗壓性沒你強……",
+        archetype: "meek",
+        retort: "抗壓性差，難怪一遇到事就慌。",
+      },
+      {
+        id: "dabo-salary_job-024-b",
+        text: "扛得住才是真本事，我服你。",
+        archetype: "perfect",
+        retort: "……有點道理，算你識貨。",
+      },
+      {
+        id: "dabo-salary_job-024-c",
+        text: "當學徒好啊，我想拜大伯為師學耍廢。",
+        archetype: "backfire",
+        retort: "……（大伯瞪你，沒理你）",
+      },
+      {
+        id: "dabo-salary_job-024-d",
+        text: "我現在工作也是什麼都要自己來……",
+        archetype: "meek",
+        retort: "自己來是應該的，別喊苦。",
+      },
+      {
+        id: "dabo-salary_job-024-e",
+        text: "你這種吃苦精神，現在真的少見。",
+        archetype: "deflect",
+        retort: "那當然，這是我的驕傲。",
+      },
+      {
+        id: "dabo-salary_job-024-f",
+        text: "大伯你學徒的故事，我很想聽細節。",
+        archetype: "deflect",
+        retort: "好，那我從第一天講起。",
+      },
+      {
+        id: "dabo-salary_job-024-g",
+        text: "我現在也是學徒，學怎麼躺平的學徒。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續講古）",
+      },
+      {
+        id: "dabo-salary_job-024-h",
+        text: "你當學徒那年代，還不是靠關係進去的。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-025",
+    text: "你有規劃退休金嗎？別到時候沒錢。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-025-a",
+        text: "你自己的退休金也沒規劃得多好。",
+        archetype: "landmine",
+        retort: "你這什麼態度！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-025-b",
+        text: "說實話還沒認真想過這個問題……",
+        archetype: "meek",
+        retort: "沒想過，這樣以後怎麼辦。",
+      },
+      {
+        id: "dabo-salary_job-025-c",
+        text: "退休規劃，我打算靠中樂透過活。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-025-d",
+        text: "我的退休金計畫是嫁豪門，很穩。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-025-e",
+        text: "大伯你退休金規劃得怎麼樣，教教我？",
+        archetype: "deflect",
+        retort: "這個要慢慢存，急不得。",
+      },
+      {
+        id: "dabo-salary_job-025-f",
+        text: "有規劃，第一步就是討大伯歡心。",
+        archetype: "perfect",
+        retort: "……有點道理，算你有長遠打算。",
+      },
+      {
+        id: "dabo-salary_job-025-g",
+        text: "你對退休規劃這麼關心，我很感動。",
+        archetype: "deflect",
+        retort: "那當然，我也希望你老了有保障。",
+      },
+      {
+        id: "dabo-salary_job-025-h",
+        text: "有一點想法，但還沒真的執行……",
+        archetype: "meek",
+        retort: "沒執行等於零，快點動起來。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-026",
+    text: "辦公室是不是很多心機，累不累。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-026-a",
+        text: "確實壓力不小，有時候很累……",
+        archetype: "meek",
+        retort: "累就要學會保護自己啊。",
+      },
+      {
+        id: "dabo-salary_job-026-b",
+        text: "大伯你以前工作有遇過心機重的人嗎？",
+        archetype: "deflect",
+        retort: "有啊，那種人到哪都有。",
+      },
+      {
+        id: "dabo-salary_job-026-c",
+        text: "你對職場生態這麼了解，經驗豐富。",
+        archetype: "deflect",
+        retort: "那當然，我看得多了。",
+      },
+      {
+        id: "dabo-salary_job-026-d",
+        text: "是有一點，但我盡量不介入……",
+        archetype: "meek",
+        retort: "不介入，遲早也會被拖下水。",
+      },
+      {
+        id: "dabo-salary_job-026-e",
+        text: "累啊，所以每天靠回家跟大伯鬥智恢復。",
+        archetype: "perfect",
+        retort: "……有點道理，你這梗有兩下子。",
+      },
+      {
+        id: "dabo-salary_job-026-f",
+        text: "辦公室心機，我都當連續劇追。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-026-g",
+        text: "心機重沒關係，我心機更重，扯平。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-026-h",
+        text: "你以前開店那些員工也在背後嫌你吧。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-027",
+    text: "你這工作是不是很閒，看起來很輕鬆。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-027-a",
+        text: "我的工作內容是保密的，很神秘。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-027-b",
+        text: "輕鬆才有力氣陪大伯聊政治。",
+        archetype: "perfect",
+        retort: "……有點道理，算你有心。",
+      },
+      {
+        id: "dabo-salary_job-027-c",
+        text: "你退休前上班也沒多認真過。",
+        archetype: "landmine",
+        retort: "你這什麼意思！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-027-d",
+        text: "最近確實比較輕鬆，忙季還沒到……",
+        archetype: "meek",
+        retort: "還沒到就先放鬆，太天真了。",
+      },
+      {
+        id: "dabo-salary_job-027-e",
+        text: "大伯你覺得怎樣的工作才算不閒？",
+        archetype: "deflect",
+        retort: "這個要看忙的程度，跟責任大小。",
+      },
+      {
+        id: "dabo-salary_job-027-f",
+        text: "我這工作閒到可以順便種菜。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-027-g",
+        text: "你觀察得真仔細，一定很懂職場。",
+        archetype: "deflect",
+        retort: "那當然，我看過的工作類型多了。",
+      },
+      {
+        id: "dabo-salary_job-027-h",
+        text: "看起來閒，但其實壓力不小……",
+        archetype: "meek",
+        retort: "壓力大還看起來這麼閒，很矛盾。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-028",
+    text: "樓下阿明工作多穩定，你要學學。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-028-a",
+        text: "大伯你覺得阿明穩定在哪裡，說來聽聽。",
+        archetype: "deflect",
+        retort: "人家幾十年沒換過工作，這叫定性。",
+      },
+      {
+        id: "dabo-salary_job-028-b",
+        text: "學學可以，但我更想學大伯的淡定。",
+        archetype: "perfect",
+        retort: "……有點道理，算你會拍馬屁。",
+      },
+      {
+        id: "dabo-salary_job-028-c",
+        text: "我也想穩定，但機會不像阿明那麼好……",
+        archetype: "meek",
+        retort: "機會不好就要自己創造啊。",
+      },
+      {
+        id: "dabo-salary_job-028-d",
+        text: "每個人狀況不同，我還在努力找方向……",
+        archetype: "meek",
+        retort: "找方向找這麼久，人家都升遷了。",
+      },
+      {
+        id: "dabo-salary_job-028-e",
+        text: "你對鄰居的了解，比戶政事務所還清楚。",
+        archetype: "deflect",
+        retort: "那當然，關心鄰里是我的興趣。",
+      },
+      {
+        id: "dabo-salary_job-028-f",
+        text: "我打算跟阿明拜把，蹭他的穩定。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-028-g",
+        text: "穩定沒意思，我比較愛刺激的失業人生。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-028-h",
+        text: "阿明那份工作也是靠他爸關係進去的。",
+        archetype: "landmine",
+        retort: "你這什麼態度！大伯母，你聽聽！",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-029",
+    text: "生意這麼忙，回來幫忙顧店啦。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-029-a",
+        text: "大伯你這間店經營多久了，故事一定很多。",
+        archetype: "deflect",
+        retort: "多久了，這個講起來三天三夜講不完。",
+      },
+      {
+        id: "dabo-salary_job-029-b",
+        text: "我回來顧店，主要顧著吃店裡的貨。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-029-c",
+        text: "顧店好啊，我負責顧著椅子坐。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-029-d",
+        text: "好啊，但顧店薪水要比外面高喔。",
+        archetype: "perfect",
+        retort: "……有點道理，算你會談條件。",
+      },
+      {
+        id: "dabo-salary_job-029-e",
+        text: "我對做生意不太在行，怕幫倒忙……",
+        archetype: "meek",
+        retort: "不在行就慢慢學，別找藉口。",
+      },
+      {
+        id: "dabo-salary_job-029-f",
+        text: "你這間店生意不好也不是我的問題。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+      {
+        id: "dabo-salary_job-029-g",
+        text: "你對生意這麼上心，我很佩服。",
+        archetype: "deflect",
+        retort: "那當然，這是我一輩子的心血。",
+      },
+      {
+        id: "dabo-salary_job-029-h",
+        text: "想幫忙，但現在的工作也放不下……",
+        archetype: "meek",
+        retort: "放不下，那我這老人怎麼辦。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-030",
+    text: "常常出差累不累，公司都不體諒喔。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-030-a",
+        text: "你以前跑業務也沒少偷懶過吧。",
+        archetype: "landmine",
+        retort: "你這什麼意思！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-030-b",
+        text: "是有點累，但工作需要沒辦法……",
+        archetype: "meek",
+        retort: "沒辦法就要學會拒絕，別一直忍。",
+      },
+      {
+        id: "dabo-salary_job-030-c",
+        text: "確實蠻辛苦的，時差也調不好……",
+        archetype: "meek",
+        retort: "調不好時差，那身體怎麼受得了。",
+      },
+      {
+        id: "dabo-salary_job-030-d",
+        text: "你這麼關心我的辛苦，我很感動。",
+        archetype: "deflect",
+        retort: "那當然，我不希望你把身體搞壞。",
+      },
+      {
+        id: "dabo-salary_job-030-e",
+        text: "大伯你以前有出差過嗎，去過哪裡？",
+        archetype: "deflect",
+        retort: "有啊，我可去過不少地方。",
+      },
+      {
+        id: "dabo-salary_job-030-f",
+        text: "出差累沒關係，飯店枕頭比家裡的好睡。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-030-g",
+        text: "出差我都當免費旅遊，賺到。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-030-h",
+        text: "累啊，但至少能躲過一頓年夜飯提問。",
+        archetype: "perfect",
+        retort: "……有點道理，算你很會找理由。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-031",
+    text: "薪水扣完稅剩多少，別被政府吃太多。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-031-a",
+        text: "你對稅務這麼了解，改天教我報稅。",
+        archetype: "deflect",
+        retort: "好啊，找一天教你怎麼報。",
+      },
+      {
+        id: "dabo-salary_job-031-b",
+        text: "剩不多，但夠孝敬大伯一頓飯。",
+        archetype: "perfect",
+        retort: "……有點道理，算你有心意。",
+      },
+      {
+        id: "dabo-salary_job-031-c",
+        text: "剩的錢，我全部投資在飲料上。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-031-d",
+        text: "你退休前繳的稅也沒比較多好嗎。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+      {
+        id: "dabo-salary_job-031-e",
+        text: "扣完稅剩的錢，剛好夠付這個月房租零頭。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-031-f",
+        text: "大伯你當年繳的稅有比較多嗎？",
+        archetype: "deflect",
+        retort: "有啊，那時候規定也不一樣。",
+      },
+      {
+        id: "dabo-salary_job-031-g",
+        text: "扣完真的剩沒多少，蠻無奈的……",
+        archetype: "meek",
+        retort: "無奈也要規劃啊，別放著不管。",
+      },
+      {
+        id: "dabo-salary_job-031-h",
+        text: "其實我沒仔細算過扣多少……",
+        archetype: "meek",
+        retort: "沒算過，那你錢都花得糊里糊塗。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-032",
+    text: "我當年談加薪都直接找老闆講。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-032-a",
+        text: "有想過，但怕被老闆嫌不知足……",
+        archetype: "meek",
+        retort: "怕這怕那，難怪一直原地踏步。",
+      },
+      {
+        id: "dabo-salary_job-032-b",
+        text: "你以前也沒幫員工加過幾次薪吧。",
+        archetype: "landmine",
+        retort: "你這什麼態度！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-032-c",
+        text: "你這種魄力，我真的自嘆不如。",
+        archetype: "deflect",
+        retort: "那當然，這是經驗累積出來的。",
+      },
+      {
+        id: "dabo-salary_job-032-d",
+        text: "大伯你談加薪的技巧，教教我。",
+        archetype: "deflect",
+        retort: "好，聽好了，重點是要有膽識。",
+      },
+      {
+        id: "dabo-salary_job-032-e",
+        text: "我不太敢主動跟老闆提這個……",
+        archetype: "meek",
+        retort: "不敢提，那你薪水永遠不會漲。",
+      },
+      {
+        id: "dabo-salary_job-032-f",
+        text: "我談加薪的方式是每天遲到抗議。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續講古）",
+      },
+      {
+        id: "dabo-salary_job-032-g",
+        text: "談加薪太緊張，我都用寫信的方式。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-032-h",
+        text: "厲害，那我來練習跟大伯談紅包。",
+        archetype: "perfect",
+        retort: "……有點道理，這孩子會舉一反三。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-033",
+    text: "有沒有想過提前退休，享享清福。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-033-a",
+        text: "想過，退休第一件事就是跟大伯泡茶。",
+        archetype: "perfect",
+        retort: "……有點道理，那你要常來。",
+      },
+      {
+        id: "dabo-salary_job-033-b",
+        text: "提前退休，我打算靠信用卡撐著。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-033-c",
+        text: "你對退休生活規劃得真好，羨慕。",
+        archetype: "deflect",
+        retort: "那當然，這是我努力來的。",
+      },
+      {
+        id: "dabo-salary_job-033-d",
+        text: "退休後我想開直播教人躺平。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-033-e",
+        text: "大伯你退休生活過得怎麼樣，分享一下。",
+        archetype: "deflect",
+        retort: "很好啊，天天有電視陪伴。",
+      },
+      {
+        id: "dabo-salary_job-033-f",
+        text: "你退休後不也是每天閒閒沒事幹。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+      {
+        id: "dabo-salary_job-033-g",
+        text: "想過，但存款根本不夠提前退休……",
+        archetype: "meek",
+        retort: "不夠就要更努力存，別光想。",
+      },
+      {
+        id: "dabo-salary_job-033-h",
+        text: "其實我還沒開始規劃退休這件事……",
+        archetype: "meek",
+        retort: "還沒規劃，年紀不小了要注意。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-034",
+    text: "你這行業前景好不好，別做到沒工作。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-034-a",
+        text: "前景不是很明朗，我也有點擔心……",
+        archetype: "meek",
+        retort: "擔心就要提早準備退路啊。",
+      },
+      {
+        id: "dabo-salary_job-034-b",
+        text: "你對產業趨勢這麼了解，佩服。",
+        archetype: "deflect",
+        retort: "那當然，我電視新聞都有在看。",
+      },
+      {
+        id: "dabo-salary_job-034-c",
+        text: "前景不好沒關係，我改行當算命的。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-034-d",
+        text: "你以前那行業也早就被淘汰了。",
+        archetype: "landmine",
+        retort: "你這什麼意思！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-034-e",
+        text: "這行業競爭滿激烈的，壓力不小……",
+        archetype: "meek",
+        retort: "競爭激烈就要更努力，別喊累。",
+      },
+      {
+        id: "dabo-salary_job-034-f",
+        text: "大伯你覺得哪個行業最有前景？",
+        archetype: "deflect",
+        retort: "這個要看時機，跟對趨勢就對了。",
+      },
+      {
+        id: "dabo-salary_job-034-g",
+        text: "這行業前景，我用擲筊決定。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-034-h",
+        text: "前景好不好不知道，反正我適應力強。",
+        archetype: "perfect",
+        retort: "……有點道理，算你想得開。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-035",
+    text: "你這種自由業，到底算不算工作。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-035-a",
+        text: "算工作，還是唯一能跟大伯頂嘴的工作。",
+        archetype: "perfect",
+        retort: "……有點道理，算你敢講。",
+      },
+      {
+        id: "dabo-salary_job-035-b",
+        text: "大伯你覺得自由業要具備什麼條件？",
+        archetype: "deflect",
+        retort: "這個要有自律，你們年輕人缺這個。",
+      },
+      {
+        id: "dabo-salary_job-035-c",
+        text: "你對這種新型態工作這麼好奇，很開明。",
+        archetype: "deflect",
+        retort: "那當然，我也是跟得上時代的人。",
+      },
+      {
+        id: "dabo-salary_job-035-d",
+        text: "你退休前那份工作也沒多正經。",
+        archetype: "landmine",
+        retort: "你說什麼！大伯母，你聽聽這孩子！",
+      },
+      {
+        id: "dabo-salary_job-035-e",
+        text: "我這行算工作，也算是修行。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-035-f",
+        text: "自由業就是自由決定要不要工作。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-035-g",
+        text: "算工作啦，只是收入比較不穩定……",
+        archetype: "meek",
+        retort: "不穩定，那你怎麼敢這樣過日子。",
+      },
+      {
+        id: "dabo-salary_job-035-h",
+        text: "其實我也常常懷疑自己算不算有工作……",
+        archetype: "meek",
+        retort: "連自己都懷疑，那更該找份正職。",
+      },
+    ],
+  },
+  {
+    id: "dabo-salary_job-036",
+    text: "紅包錢是不是你薪水的救星啊。",
+    topic: "salary_job",
+    bossId: "dabo",
+    options: [
+      {
+        id: "dabo-salary_job-036-a",
+        text: "紅包幫了不少忙，說出來有點丟臉……",
+        archetype: "meek",
+        retort: "丟臉就要更努力賺，別靠紅包過活。",
+      },
+      {
+        id: "dabo-salary_job-036-b",
+        text: "紅包救星，我打算拿去投資虛擬貨幣。",
+        archetype: "backfire",
+        retort: "……（大伯搖頭，沒接話）",
+      },
+      {
+        id: "dabo-salary_job-036-c",
+        text: "你這麼懂我的財務狀況，太貼心了。",
+        archetype: "deflect",
+        retort: "那當然，我一直有在關心你。",
+      },
+      {
+        id: "dabo-salary_job-036-d",
+        text: "大伯你以前領到紅包會怎麼用？",
+        archetype: "deflect",
+        retort: "存起來啊，你們現在都亂花。",
+      },
+      {
+        id: "dabo-salary_job-036-e",
+        text: "是有一點依賴啦，薪水真的不太夠……",
+        archetype: "meek",
+        retort: "不夠還一直靠紅包，這樣不是辦法。",
+      },
+      {
+        id: "dabo-salary_job-036-f",
+        text: "紅包是我的年終獎金二號。",
+        archetype: "backfire",
+        retort: "……（大伯沒聽懂，繼續問）",
+      },
+      {
+        id: "dabo-salary_job-036-g",
+        text: "你包的紅包也沒比別人多到哪去。",
+        archetype: "landmine",
+        retort: "你這什麼態度！大伯母，你聽聽！",
+      },
+      {
+        id: "dabo-salary_job-036-h",
+        text: "是啊，所以大伯今年包厚一點救我。",
+        archetype: "perfect",
+        retort: "……有點道理，你這孩子很會討。",
+      },
+    ],
+  },
+] satisfies Question[];

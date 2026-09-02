@@ -4,20 +4,34 @@ import type { Question } from "@/content/types";
 import q0 from "./ama/food_push";
 import q1 from "./ama/marriage";
 import q2 from "./ama/religion";
-import q3 from "./guzhang/elder_health-1";
-import q4 from "./guzhang/elder_health-2";
-import q5 from "./guzhang/food_push-1";
-import q6 from "./guzhang/food_push-2";
-import q7 from "./guzhang/politics-1";
-import q8 from "./guzhang/politics-2";
-import q9 from "./neighbor-chen/salary_job-1";
-import q10 from "./sangu/marriage-1";
-import q11 from "./sanjiuma/comparison";
-import q12 from "./sanjiuma/housing";
-import q13 from "./sanjiuma/salary_job";
-import q14 from "./xiao-biaodi/appearance";
-import q15 from "./xiao-biaodi/comparison";
-import q16 from "./xiao-biaodi/red_envelope";
+import q3 from "./biaojie/kids-1";
+import q4 from "./biaojie/kids-2";
+import q5 from "./dabo/education-1";
+import q6 from "./dabo/education-2";
+import q7 from "./dabo/politics-1";
+import q8 from "./dabo/politics-2";
+import q9 from "./dabo/salary_job-1";
+import q10 from "./dabo/salary_job-2";
+import q11 from "./guzhang/elder_health-1";
+import q12 from "./guzhang/elder_health-2";
+import q13 from "./guzhang/food_push-1";
+import q14 from "./guzhang/food_push-2";
+import q15 from "./guzhang/politics-1";
+import q16 from "./guzhang/politics-2";
+import q17 from "./neighbor-chen/comparison-1";
+import q18 from "./neighbor-chen/marriage-1";
+import q19 from "./neighbor-chen/marriage-2";
+import q20 from "./neighbor-chen/salary_job-1";
+import q21 from "./neighbor-chen/salary_job-2";
+import q22 from "./sangu/housing-1";
+import q23 from "./sangu/marriage-1";
+import q24 from "./sangu/salary_job-1";
+import q25 from "./sanjiuma/comparison";
+import q26 from "./sanjiuma/housing";
+import q27 from "./sanjiuma/salary_job";
+import q28 from "./xiao-biaodi/appearance";
+import q29 from "./xiao-biaodi/comparison";
+import q30 from "./xiao-biaodi/red_envelope";
 
 export const QUESTIONS: Question[] = [
   ...q0,
@@ -37,20 +51,48 @@ export const QUESTIONS: Question[] = [
   ...q14,
   ...q15,
   ...q16,
+  ...q17,
+  ...q18,
+  ...q19,
+  ...q20,
+  ...q21,
+  ...q22,
+  ...q23,
+  ...q24,
+  ...q25,
+  ...q26,
+  ...q27,
+  ...q28,
+  ...q29,
+  ...q30,
 ];
 
 export const QUESTION_FILES = [
   "ama/food_push",
   "ama/marriage",
   "ama/religion",
+  "biaojie/kids-1",
+  "biaojie/kids-2",
+  "dabo/education-1",
+  "dabo/education-2",
+  "dabo/politics-1",
+  "dabo/politics-2",
+  "dabo/salary_job-1",
+  "dabo/salary_job-2",
   "guzhang/elder_health-1",
   "guzhang/elder_health-2",
   "guzhang/food_push-1",
   "guzhang/food_push-2",
   "guzhang/politics-1",
   "guzhang/politics-2",
+  "neighbor-chen/comparison-1",
+  "neighbor-chen/marriage-1",
+  "neighbor-chen/marriage-2",
   "neighbor-chen/salary_job-1",
+  "neighbor-chen/salary_job-2",
+  "sangu/housing-1",
   "sangu/marriage-1",
+  "sangu/salary_job-1",
   "sanjiuma/comparison",
   "sanjiuma/housing",
   "sanjiuma/salary_job",
