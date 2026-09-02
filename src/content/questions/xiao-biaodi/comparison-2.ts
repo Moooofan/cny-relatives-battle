@@ -1,0 +1,918 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// - 守歲比賽誰先撐不住
+// - 紅包袋收藏本比誰的多
+// - 比賽寫寒假作業比誰快
+// - 騎腳踏車直排輪比誰會
+// - 才藝表演唱歌跳舞比賽
+// - 手遊課金金額比誰敗家
+// - 賀卡簽名比誰寫得好看
+// - 吃辣年菜比誰是真男人
+// - 咬年糕比誰在換牙
+// - 新年新希望作文比誰寫得好
+// - 認春聯上的字比誰認得多
+// - 巷口賽跑比誰跑得快
+// - 撲滿存錢比誰比較會存
+// - 手遊排位段數比誰高
+// - 比誰先學會游泳
+// - 新房間比誰的大又乾淨
+
+export default [
+  {
+    id: "xiao-biaodi-comparison-022",
+    text: "阿嬤說撐到十二點才是真的長大，你會嗎？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-022-a",
+        text: "我撐的不是十二點，是撐你們聊八卦到膩。",
+        archetype: "perfect",
+        retort: "哈哈哈這句太狠了吧！",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-b",
+        text: "我們來比賽誰先講出今年的關鍵字。",
+        archetype: "deflect",
+        retort: "好啊！我先講！過年！",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-c",
+        text: "你要不要先去睡，我幫你守歲？",
+        archetype: "deflect",
+        retort: "才不要，我要撐到最後！",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-d",
+        text: "我可能撐不到十二點……有點想睡……",
+        archetype: "meek",
+        retort: "撐不到喔，那算長大失敗。",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-e",
+        text: "我盡量啦，眼皮已經很重了……",
+        archetype: "meek",
+        retort: "眼皮重就是快輸了嘛。",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-f",
+        text: "我是閉眼養神，不是想睡。",
+        archetype: "backfire",
+        retort: "……（小表弟已經打哈欠了）",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-g",
+        text: "真正的長大是懂得適時休息。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續撐著）",
+      },
+      {
+        id: "xiao-biaodi-comparison-022-h",
+        text: "守歲很無聊，我才不想陪你們。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他不想陪我們——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-023",
+    text: "姑姑說我收藏的紅包袋有十年份，你有嗎？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-023-a",
+        text: "十年份太少了，我收藏的是十年的紅包回憶。",
+        archetype: "perfect",
+        retort: "哇！這樣講也太浪漫了吧！",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-b",
+        text: "厲害！那你最喜歡哪一年的圖案？",
+        archetype: "deflect",
+        retort: "我最喜歡兔子那年！",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-c",
+        text: "要不要拿出來給大家看，一定很精彩。",
+        archetype: "deflect",
+        retort: "好啊！我去拿收藏本！",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-d",
+        text: "我沒有特別收藏耶，都直接花掉了……",
+        archetype: "meek",
+        retort: "花掉喔，都沒有留紀念？",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-e",
+        text: "小時候的可能被媽媽收走了……",
+        archetype: "meek",
+        retort: "被收走？那你都沒有留一張？",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-f",
+        text: "我的收藏是無形的，叫做回憶資產。",
+        archetype: "backfire",
+        retort: "……（小表弟繼續翻他的收藏本）",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-g",
+        text: "極簡主義者不需要收藏實體物品。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，收起本子）",
+      },
+      {
+        id: "xiao-biaodi-comparison-023-h",
+        text: "收藏那個很幼稚耶，長大就丟了。",
+        archetype: "landmine",
+        retort: "嗚……姑姑——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-024",
+    text: "媽媽說表哥寒假作業早就寫完了，你呢？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-024-a",
+        text: "寫完不稀奇，我的祕訣是先陪家人玩再說。",
+        archetype: "perfect",
+        retort: "哇！這個順序好棒喔！",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-b",
+        text: "要不要比賽算數學，我出題你算？",
+        archetype: "deflect",
+        retort: "好啊！我最會算數學了！",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-c",
+        text: "表哥寫完是不是都用複製的？",
+        archetype: "deflect",
+        retort: "我才沒有，我都自己寫！",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-d",
+        text: "我作業還有一半沒寫……有點焦慮……",
+        archetype: "meek",
+        retort: "還有一半？那要趕快寫了。",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-e",
+        text: "工作忙一直沒空弄完啦……",
+        archetype: "meek",
+        retort: "沒空喔，那開學怎麼辦？",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-f",
+        text: "拖到最後一天才是真正的效率美學。",
+        archetype: "backfire",
+        retort: "……（小表弟已經在寫自己的作業）",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-g",
+        text: "我在等靈感降臨才動筆。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續埋頭寫）",
+      },
+      {
+        id: "xiao-biaodi-comparison-024-h",
+        text: "寫作業很煩，可以不要一直催我嗎。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-025",
+    text: "老師說會騎腳踏車才算長大，你會嗎？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-025-a",
+        text: "我早就會了，現在挑戰的是人生的平衡感。",
+        archetype: "perfect",
+        retort: "哇！平衡感這句好厲害！",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-b",
+        text: "要不要教我怎麼騎得比較穩？",
+        archetype: "deflect",
+        retort: "好啊！我教你祕訣！",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-c",
+        text: "你直排輪滑得比腳踏車厲害吧？",
+        archetype: "deflect",
+        retort: "對啊！我直排輪超強的！",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-d",
+        text: "我很久沒騎了，可能會摔……",
+        archetype: "meek",
+        retort: "會摔喔，那你長大失敗了。",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-e",
+        text: "小時候會，現在生疏了啦……",
+        archetype: "meek",
+        retort: "生疏了？那你都不練習喔？",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-f",
+        text: "我騎的是隱形的人生腳踏車。",
+        archetype: "backfire",
+        retort: "……（小表弟已經騎上真的腳踏車）",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-g",
+        text: "四個輪子才是真正的高級玩法。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續練直排輪）",
+      },
+      {
+        id: "xiao-biaodi-comparison-025-h",
+        text: "騎腳踏車而已很簡單，不要太得意。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我得意——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-026",
+    text: "姑姑說表演節目要上場了，你會什麼才藝？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-026-a",
+        text: "我的才藝是把尷尬的場面唱成大合唱。",
+        archetype: "perfect",
+        retort: "哈哈哈那你快上去唱！",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-b",
+        text: "你先表演一個，我幫你打分數。",
+        archetype: "deflect",
+        retort: "好！看我的舞步！",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-c",
+        text: "阿嬤最愛聽什麼歌，我們一起想想。",
+        archetype: "deflect",
+        retort: "阿嬤最愛聽望春風！",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-d",
+        text: "我什麼才藝都不太會耶……",
+        archetype: "meek",
+        retort: "都不會喔，那怎麼上場？",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-e",
+        text: "會唱一點點，但會走音……",
+        archetype: "meek",
+        retort: "走音？那大家會笑你耶。",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-f",
+        text: "我的才藝是行為藝術，需要慢慢欣賞。",
+        archetype: "backfire",
+        retort: "……（姑姑已經在催下一個表演）",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-g",
+        text: "沉默也是一種表演形式，很前衛。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，直接跳到台上唱歌）",
+      },
+      {
+        id: "xiao-biaodi-comparison-026-h",
+        text: "才藝表演很幼稚，我才不要參加。",
+        archetype: "landmine",
+        retort: "嗚……姑姑——他不想表演——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-027",
+    text: "媽媽說你手遊課金好幾千，跟表哥比誰敗家？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-027-a",
+        text: "課金是投資快樂，我的快樂C/P值超高。",
+        archetype: "perfect",
+        retort: "哈哈哈CP值這個講法太狂了！",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-b",
+        text: "你手遊玩什麼，我教你怎麼免費拿寶物。",
+        archetype: "deflect",
+        retort: "真的嗎！快教我！",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-c",
+        text: "表哥是不是也偷偷課過金？",
+        archetype: "deflect",
+        retort: "我不知道耶，要問他。",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-d",
+        text: "對啊……我這個月是課多了一點……",
+        archetype: "meek",
+        retort: "課多了喔，那存款呢？",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-e",
+        text: "沒有很多啦，就抽個角色而已……",
+        archetype: "meek",
+        retort: "抽角色也要花錢啊。",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-f",
+        text: "我課的金是給遊戲公司做公益。",
+        archetype: "backfire",
+        retort: "……（小表弟繼續玩他自己不課金的遊戲）",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-g",
+        text: "虛擬寶物才是未來的硬通貨。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續打怪）",
+      },
+      {
+        id: "xiao-biaodi-comparison-027-h",
+        text: "你很煩耶，一直問我花多少錢幹嘛。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-028",
+    text: "老師說字寫得醜的人以後找不到工作。",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-028-a",
+        text: "我的字醜但簽名超帥，這叫個人風格。",
+        archetype: "perfect",
+        retort: "哇！個人風格！好酷喔！",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-b",
+        text: "你的名字要不要教我怎麼寫比較好看？",
+        archetype: "deflect",
+        retort: "好啊！看我示範！",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-c",
+        text: "那你猜猜這張賀卡是誰寫給你的？",
+        archetype: "deflect",
+        retort: "是阿嬤嗎？我猜猜看！",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-d",
+        text: "我的字真的滿醜的……在練習了……",
+        archetype: "meek",
+        retort: "醜喔，那要多練字了。",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-e",
+        text: "簽名還好，但寫字比較潦草……",
+        archetype: "meek",
+        retort: "潦草？那別人看得懂嗎？",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-f",
+        text: "我的字是抽象藝術風格，懂的人才懂。",
+        archetype: "backfire",
+        retort: "……（老師拿起賀卡皺眉頭）",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-g",
+        text: "字醜的人通常字裡都藏著才華。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續寫賀卡）",
+      },
+      {
+        id: "xiao-biaodi-comparison-028-h",
+        text: "你管我的字幹嘛，很煩耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-029",
+    text: "阿嬤說會吃辣才是真男人，你敢吃嗎？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-029-a",
+        text: "敢，我吃辣是為了讓你們看我噴火表演。",
+        archetype: "perfect",
+        retort: "哇！噴火表演！好酷喔！",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-b",
+        text: "你先吃一口給我看看會不會噴火。",
+        archetype: "deflect",
+        retort: "看我的！超辣也不怕！",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-c",
+        text: "阿嬤這道菜是不是加了新的辣椒醬？",
+        archetype: "deflect",
+        retort: "對啊！今年換了一種！",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-d",
+        text: "我不太敢吃辣，會辣到流眼淚……",
+        archetype: "meek",
+        retort: "流眼淚喔，那不算真男人。",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-e",
+        text: "吃一點點可以，多了不行……",
+        archetype: "meek",
+        retort: "一點點就喊辣，太弱了吧。",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-f",
+        text: "辣是給普通人吃的，我吃的是境界。",
+        archetype: "backfire",
+        retort: "……（小表弟已經被辣到猛灌水）",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-g",
+        text: "真正的高手是用眼神吃辣，不用嘴巴。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續吃辣椒）",
+      },
+      {
+        id: "xiao-biaodi-comparison-029-h",
+        text: "吃辣而已你很愛炫耀耶，幼稚。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-030",
+    text: "老師說換牙的人咬年糕會被黏走，你不怕？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-030-a",
+        text: "黏走也值得，我要用新牙迎接新的一年。",
+        archetype: "perfect",
+        retort: "哈哈哈這句也太正能量了！",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-b",
+        text: "你現在換了幾顆牙，給我看看？",
+        archetype: "deflect",
+        retort: "我換了三顆，你看！",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-c",
+        text: "年糕要沾花生粉比較不會黏，你要試試？",
+        archetype: "deflect",
+        retort: "好啊！我要沾花生粉！",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-d",
+        text: "我最近剛好在換牙，有點怕痛……",
+        archetype: "meek",
+        retort: "怕痛喔，那不要吃年糕了。",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-e",
+        text: "咬的時候會搖搖的，怪怪的……",
+        archetype: "meek",
+        retort: "搖搖的？那你敢吃真的很厲害。",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-f",
+        text: "我的牙齒是為了以後長更整齊做準備。",
+        archetype: "backfire",
+        retort: "……（小表弟繼續小心咬年糕）",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-g",
+        text: "換牙是升級，不是退步，懂嗎。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續研究自己的牙齒）",
+      },
+      {
+        id: "xiao-biaodi-comparison-030-h",
+        text: "年糕而已你緊張什麼，膽小鬼。",
+        archetype: "landmine",
+        retort: "哼！我才不是膽小鬼——媽媽——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-031",
+    text: "老師說作文寫得好的人以後才會成功。",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-031-a",
+        text: "我的新年新希望是教你怎麼把作文寫成故事。",
+        archetype: "perfect",
+        retort: "哇！那你教教我嘛！",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-b",
+        text: "你的新年新希望是什麼，先講給我聽？",
+        archetype: "deflect",
+        retort: "我要打贏全班同學的Switch！",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-c",
+        text: "你作文最高紀錄拿幾分，教教我訣竅？",
+        archetype: "deflect",
+        retort: "我拿過一百分喔！我教你！",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-d",
+        text: "我作文寫得普普通通啦……",
+        archetype: "meek",
+        retort: "普普通通喔，那要多練習。",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-e",
+        text: "每次都寫不出開頭，卡住……",
+        archetype: "meek",
+        retort: "卡住喔，那老師會生氣嗎？",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-f",
+        text: "我的成功不需要靠作文，靠氣勢。",
+        archetype: "backfire",
+        retort: "……（小表弟繼續認真寫他的作文）",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-g",
+        text: "空白也是一種留白的藝術表現。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續寫他的作文）",
+      },
+      {
+        id: "xiao-biaodi-comparison-031-h",
+        text: "作文而已很簡單，你不要太緊張。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我緊張——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-032",
+    text: "阿嬤說認得字多的人以後才會出頭天。",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-032-a",
+        text: "這幾個字我全認得，還能教你意思喔。",
+        archetype: "perfect",
+        retort: "哇！那你教我，我要學！",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-b",
+        text: "你猜這個字怎麼唸，我們比賽猜。",
+        archetype: "deflect",
+        retort: "好啊！我先猜，這個唸春！",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-c",
+        text: "阿嬤最喜歡貼哪一副春聯？",
+        archetype: "deflect",
+        retort: "阿嬤最愛年年有餘那副！",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-d",
+        text: "有幾個字我看不太懂……",
+        archetype: "meek",
+        retort: "看不懂喔，那你怎麼出頭天？",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-e",
+        text: "認得一些，但比較難的就不會了……",
+        archetype: "meek",
+        retort: "難的不會，那要多讀書了。",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-f",
+        text: "我認的是氣勢，不是字，懂嗎。",
+        archetype: "backfire",
+        retort: "……（阿嬤已經開始考他認字）",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-g",
+        text: "文字是低階溝通，我用眼神交流。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續指著字問）",
+      },
+      {
+        id: "xiao-biaodi-comparison-032-h",
+        text: "認字很簡單，你考我很無聊耶。",
+        archetype: "landmine",
+        retort: "嗚……阿嬤——他說我無聊——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-033",
+    text: "老師說跑步輸的人以後做事也會輸。",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-033-a",
+        text: "我跑輸是讓你贏，人生路上我陪你跑第二名。",
+        archetype: "perfect",
+        retort: "哇！這句也太溫暖了吧！",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-b",
+        text: "要不要比賽誰先跑到巷口的柑仔店？",
+        archetype: "deflect",
+        retort: "好啊！輸的人請客！",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-c",
+        text: "你平常都怎麼練習跑步的？",
+        archetype: "deflect",
+        retort: "我都在追垃圾車練的！",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-d",
+        text: "我跑步真的比較慢，喘得很快……",
+        archetype: "meek",
+        retort: "喘得快喔，那體力不太好耶。",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-e",
+        text: "可能穿的鞋子不太適合跑步啦……",
+        archetype: "meek",
+        retort: "找藉口，鞋子的問題嗎？",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-f",
+        text: "我是策略型跑者，後段才會發力。",
+        archetype: "backfire",
+        retort: "……（小表弟已經先衝到終點了）",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-g",
+        text: "慢才是為了節省體力打持久戰。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續往前跑）",
+      },
+      {
+        id: "xiao-biaodi-comparison-033-h",
+        text: "跑步而已你很愛計較輸贏，幼稚。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-034",
+    text: "姑丈說會存錢的人以後才會有出息，你會存嗎？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-034-a",
+        text: "我存的不是零錢，是等你紅包包更大包的耐心。",
+        archetype: "perfect",
+        retort: "哈哈哈這句話太狠了！",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-b",
+        text: "你撲滿裡存了多少，秀給我看看？",
+        archetype: "deflect",
+        retort: "我存了三百多喔！",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-c",
+        text: "你都把零用錢存起來還是花掉？",
+        archetype: "deflect",
+        retort: "我都存起來耶，我很省的！",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-d",
+        text: "我沒什麼存款，都花光光了……",
+        archetype: "meek",
+        retort: "花光光喔，那怎麼辦？",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-e",
+        text: "有存一點點，但常常忍不住花掉……",
+        archetype: "meek",
+        retort: "忍不住花掉？那存了也沒用。",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-f",
+        text: "我把錢都投資在快樂上了，回報率很高。",
+        archetype: "backfire",
+        retort: "……（姑丈搖搖頭繼續喝茶）",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-g",
+        text: "月光族才是真正懂得活在當下的人。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續數他的零錢）",
+      },
+      {
+        id: "xiao-biaodi-comparison-034-h",
+        text: "存錢而已你很愛炫耀，幼稚死了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-035",
+    text: "表哥說他手遊排位是鑽石，你才銅牌？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-035-a",
+        text: "銅牌好啊，我在陪新手玩，這叫佛心來著。",
+        archetype: "perfect",
+        retort: "哈哈哈佛心來著！好好笑！",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-b",
+        text: "鑽石段位是不是很難打，教我幾招？",
+        archetype: "deflect",
+        retort: "好啊！我教你連招！",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-c",
+        text: "你打排位都幾點睡，會不會太晚？",
+        archetype: "deflect",
+        retort: "我都很早睡啦，才怪！",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-d",
+        text: "對啊……我排位真的打得不太好……",
+        archetype: "meek",
+        retort: "打不好喔，那要多練習。",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-e",
+        text: "我比較常玩休閒模式，沒認真打排位……",
+        archetype: "meek",
+        retort: "沒認真？那你都在混嗎？",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-f",
+        text: "我玩的是心態的最高段位。",
+        archetype: "backfire",
+        retort: "……（小表弟已經在秀他的段位截圖）",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-g",
+        text: "銅牌其實是深藏不露的高手偽裝。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續打排位）",
+      },
+      {
+        id: "xiao-biaodi-comparison-035-h",
+        text: "排位而已你很愛炫耀，很幼稚耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-036",
+    text: "老師說暑假不學會游泳很丟臉，你會嗎？",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-036-a",
+        text: "我早就會了，現在練的是在人海中游刃有餘。",
+        archetype: "perfect",
+        retort: "哇！游刃有餘這句好厲害！",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-b",
+        text: "要不要教我狗爬式，我一直學不會。",
+        archetype: "deflect",
+        retort: "好啊！我教你！很簡單！",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-c",
+        text: "你是在游泳池學的還是海邊？",
+        archetype: "deflect",
+        retort: "游泳池啦！海邊太可怕了！",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-d",
+        text: "我到現在還不太會游泳……",
+        archetype: "meek",
+        retort: "不會游泳喔，那怎麼辦？",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-e",
+        text: "會漂啦，但不太會前進……",
+        archetype: "meek",
+        retort: "只會漂？那不就是泡水？",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-f",
+        text: "我學的是心靈的漂浮，比游泳境界高。",
+        archetype: "backfire",
+        retort: "……（小表弟已經在地板上比划游泳）",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-g",
+        text: "旱鴨子才是陸地生物的最高進化。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續比划）",
+      },
+      {
+        id: "xiao-biaodi-comparison-036-h",
+        text: "不會游泳很丟臉耶，你怎麼還不學。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他笑我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-comparison-037",
+    text: "媽媽說表哥買新房，房間比你的大好幾倍。",
+    topic: "comparison",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-comparison-037-a",
+        text: "房間小沒關係，我收納技術比他厲害好幾倍。",
+        archetype: "perfect",
+        retort: "哇！收納技術！這個猛！",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-b",
+        text: "你房間現在有多亂，要不要我幫你整理？",
+        archetype: "deflect",
+        retort: "好啊！幫我整理一下！",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-c",
+        text: "表哥的新房有沒有你的遊戲房間酷？",
+        archetype: "deflect",
+        retort: "應該沒有，你的比較酷！",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-d",
+        text: "對啊……我房間真的比較小一點……",
+        archetype: "meek",
+        retort: "比較小喔，那要怎麼住？",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-e",
+        text: "還好啦，夠住就好，東西比較擠……",
+        archetype: "meek",
+        retort: "擠喔，那晚上怎麼睡？",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-f",
+        text: "小空間才是極簡生活美學的體現。",
+        archetype: "backfire",
+        retort: "……（小表弟繼續玩他自己的玩具）",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-g",
+        text: "房間大小跟快樂沒有正相關，懂嗎。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，跑去玩別的）",
+      },
+      {
+        id: "xiao-biaodi-comparison-037-h",
+        text: "房間小干你什麼事，很煩耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+] satisfies Question[];

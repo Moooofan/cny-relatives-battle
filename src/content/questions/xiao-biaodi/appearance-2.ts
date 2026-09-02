@@ -1,0 +1,861 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// - 新買衣服很醜
+// - 染新髮色很浮誇
+// - 帽子很醜
+// - 沒化妝沒打扮很憔悴
+// - 修眉失敗眉毛很怪
+// - 髮型分線很怪
+// - 衣服口袋破洞
+// - 鞋子很舊
+// - 指甲剪太短
+// - 鬢角沒修
+// - 戴口罩看不出胖瘦
+// - 頭髮打結像鳥窩
+// - 過年穿花襯衫尷尬
+// - 手鍊項鍊很俗氣
+// - 戴變色片瞳孔顏色很怪
+
+export default [
+  {
+    id: "xiao-biaodi-appearance-022",
+    text: "老師說你這件新衣服的顏色好醜，誰選的？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-022-a",
+        text: "醜是我自己選的，帥不需要靠衣服證明。",
+        archetype: "perfect",
+        retort: "哇！這句話太狂了吧！",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-b",
+        text: "你猜猜看這件衣服多少錢，猜對算你贏。",
+        archetype: "deflect",
+        retort: "我猜三百塊！猜對了嗎？",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-c",
+        text: "顏色重要，還是你要不要先吃塊糖？",
+        archetype: "deflect",
+        retort: "先吃糖！糖比較重要！",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-d",
+        text: "對啊……我自己選的，可能眼光不太好……",
+        archetype: "meek",
+        retort: "眼光不好喔，那下次讓媽媽選。",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-e",
+        text: "可能顏色是有點特別啦，我自己是還好……",
+        archetype: "meek",
+        retort: "特別？那就是醜的意思吧。",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-f",
+        text: "這是走大膽撞色路線，你們還看不懂。",
+        archetype: "backfire",
+        retort: "……（老師忍笑轉頭去忙別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-g",
+        text: "醜到極致就是一種新的美學典範。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-022-h",
+        text: "這麼醜的衣服你也敢穿出來，笑死。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我醜——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-023",
+    text: "姑姑說你染的髮色好誇張，是不是想紅？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-023-a",
+        text: "想紅早紅了，這個髮色只是想讓過年更喜氣。",
+        archetype: "perfect",
+        retort: "哈哈哈這句話也太會凹了！",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-b",
+        text: "你猜猜看我染的是什麼顏色，形容一下？",
+        archetype: "deflect",
+        retort: "我猜是亮橘色的！",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-c",
+        text: "髮色重要，還是你要不要先吃塊年糕？",
+        archetype: "deflect",
+        retort: "好，我先吃年糕！",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-d",
+        text: "對啊……一時興起就去染了，有點後悔……",
+        archetype: "meek",
+        retort: "後悔了喔，那趕快染回來。",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-e",
+        text: "可能真的染得太誇張了，不太適合我……",
+        archetype: "meek",
+        retort: "不適合？姑姑——他自己承認了——",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-f",
+        text: "這叫做前衛藝術髮色，走在流行尖端。",
+        archetype: "backfire",
+        retort: "……（姑姑轉頭跟阿嬤聊別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-g",
+        text: "誇張髮色才是內心自由靈魂的展現。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-023-h",
+        text: "這髮色也太醜了吧，你是不是壞掉了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我壞掉——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-024",
+    text: "阿嬤說你戴的帽子好醜，是路邊送的嗎？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-024-a",
+        text: "這頂帽子擋住的是我謙虛的帥氣，很重要。",
+        archetype: "perfect",
+        retort: "哈哈哈謙虛的帥氣！好會講！",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-b",
+        text: "阿嬤你猜這頂帽子是什麼顏色的？",
+        archetype: "deflect",
+        retort: "我猜是咖啡色的！",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-c",
+        text: "帽子重要，還是你要不要先坐下休息？",
+        archetype: "deflect",
+        retort: "好啦，我先坐一下。",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-d",
+        text: "對啊……這頂是特價買的，可能真的普通……",
+        archetype: "meek",
+        retort: "特價買的喔，難怪醜醜的。",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-e",
+        text: "可能真的沒有很好看，但很保暖……",
+        archetype: "meek",
+        retort: "不好看？阿嬤——他自己承認了——",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-f",
+        text: "這頂帽子是機能派設計，重點不在外型。",
+        archetype: "backfire",
+        retort: "……（阿嬤搖搖頭繼續看電視）",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-g",
+        text: "醜帽子才是真正低調的富豪穿搭。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-024-h",
+        text: "這帽子也太醜了吧，你是不是眼光壞掉。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我眼光壞掉——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-025",
+    text: "媽媽說你今天完全沒打扮，看起來好憔悴。",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-025-a",
+        text: "憔悴是假的，我這叫做最原始的真實美。",
+        archetype: "perfect",
+        retort: "哈哈哈真實美！這句好會講！",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-b",
+        text: "你猜猜看我今天幾點起床的？",
+        archetype: "deflect",
+        retort: "我猜六點！好早喔！",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-c",
+        text: "打扮重要，還是你要不要先吃早餐？",
+        archetype: "deflect",
+        retort: "對耶！我先去吃早餐！",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-d",
+        text: "對啊……今天真的太趕，沒時間打扮……",
+        archetype: "meek",
+        retort: "沒時間喔，那也太趕了吧。",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-e",
+        text: "最近比較累，懶得花心思打扮了……",
+        archetype: "meek",
+        retort: "懶得打扮？媽媽——他說他懶——",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-f",
+        text: "素顏才是我今年主打的高級感策略。",
+        archetype: "backfire",
+        retort: "……（媽媽轉頭去忙別的事）",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-g",
+        text: "不打扮才是真正自信的最高境界。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-025-h",
+        text: "憔悴成這樣很嚇人耶，你昨晚幹嘛去了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我嚇人——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-026",
+    text: "姑姑說你眉毛修得好奇怪，是自己修的嗎？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-026-a",
+        text: "是我自己修的，兩邊不對稱才顯得有個性。",
+        archetype: "perfect",
+        retort: "哈哈哈有個性！這句超敢講！",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-b",
+        text: "你猜猜看我用什麼修的，剪刀還是刀片？",
+        archetype: "deflect",
+        retort: "我猜是用剪刀修的！",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-c",
+        text: "眉毛重要，還是你要不要先吃顆橘子？",
+        archetype: "deflect",
+        retort: "好，我先吃橘子！",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-d",
+        text: "對啊……第一次自己修，修壞了一邊……",
+        archetype: "meek",
+        retort: "修壞了喔，那看起來真的怪怪的。",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-e",
+        text: "可能真的修得不太對稱啦……",
+        archetype: "meek",
+        retort: "不對稱？姑姑——他自己承認了——",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-f",
+        text: "不對稱眉毛是我原創的個人標誌，很潮。",
+        archetype: "backfire",
+        retort: "……（姑姑忍笑轉頭跟阿嬤說悄悄話）",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-g",
+        text: "眉毛怪才能讓人一眼記住我，這是策略。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-026-h",
+        text: "眉毛修這樣也太醜了吧，笑死人了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他笑我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-027",
+    text: "老師說你頭髮的分線好奇怪，是不是睡歪了？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-027-a",
+        text: "這條分線是特意留的，方便我思考人生的路。",
+        archetype: "perfect",
+        retort: "哈哈哈人生的路！好會凹！",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-b",
+        text: "你猜猜看我平常都分哪一邊？",
+        archetype: "deflect",
+        retort: "我猜是分左邊！",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-c",
+        text: "分線重要，還是你要不要先梳一下自己的頭？",
+        archetype: "deflect",
+        retort: "好，我去照鏡子梳頭！",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-d",
+        text: "對啊……早上真的睡歪了，沒整理好……",
+        archetype: "meek",
+        retort: "睡歪了喔，那也太隨便了吧。",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-e",
+        text: "可能沒梳好，看起來有點亂……",
+        archetype: "meek",
+        retort: "沒梳好？那快去照鏡子看看。",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-f",
+        text: "歪分線是我獨創的黃金比例髮型學。",
+        archetype: "backfire",
+        retort: "……（老師忍笑轉頭去忙別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-g",
+        text: "分線歪才是最新一季的不對稱潮流。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-027-h",
+        text: "分線這麼怪很好笑耶，你是不是壞掉了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他笑我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-028",
+    text: "阿嬤說你外套口袋破了一個洞，怎麼不補？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-028-a",
+        text: "這個洞是留給紅包偷偷溜進去的通道。",
+        archetype: "perfect",
+        retort: "哈哈哈這個理由太可愛了吧！",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-b",
+        text: "阿嬤你要不要幫我補，你的針線最厲害了。",
+        archetype: "deflect",
+        retort: "好啊！阿嬤幫你補一下！",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-c",
+        text: "破洞重要，還是你要不要先吃口熱菜？",
+        archetype: "deflect",
+        retort: "好，先吃熱菜暖暖身！",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-d",
+        text: "對啊……穿太久了，破了都沒發現……",
+        archetype: "meek",
+        retort: "沒發現喔，那要多注意一點。",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-e",
+        text: "本來想補，一直找不到時間啦……",
+        archetype: "meek",
+        retort: "找不到時間？那也拖太久了。",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-f",
+        text: "破洞外套是今年最潮的解構主義穿搭。",
+        archetype: "backfire",
+        retort: "……（阿嬤已經拿出針線盒）",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-g",
+        text: "破洞是透氣孔，冬天很實用，你不懂。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續戳那個洞）",
+      },
+      {
+        id: "xiao-biaodi-appearance-028-h",
+        text: "破成這樣很寒酸耶，你是不是沒錢買新的。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我寒酸——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-029",
+    text: "媽媽說你這雙鞋穿好幾年了，鞋底都快掉了。",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-029-a",
+        text: "鞋底快掉是因為它陪我走過的路夠多了。",
+        archetype: "perfect",
+        retort: "哇！這句話好有感觸喔！",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-b",
+        text: "你猜猜看這雙鞋我穿幾年了？",
+        archetype: "deflect",
+        retort: "我猜五年！好久喔！",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-c",
+        text: "鞋子重要，還是你要不要先幫忙擺碗筷？",
+        archetype: "deflect",
+        retort: "好，我去擺碗筷！",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-d",
+        text: "對啊……穿習慣了捨不得換，有點舊了……",
+        archetype: "meek",
+        retort: "捨不得換喔，那也太念舊了。",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-e",
+        text: "鞋底真的快掉了，一直沒空去買新的……",
+        archetype: "meek",
+        retort: "沒空買？那快掉了怎麼走路？",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-f",
+        text: "鞋底快掉才是限量絕版的破損工藝美學。",
+        archetype: "backfire",
+        retort: "……（媽媽轉頭去忙別的事）",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-g",
+        text: "舊鞋才穿得出真正的態度，你不懂。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看鞋底）",
+      },
+      {
+        id: "xiao-biaodi-appearance-029-h",
+        text: "這鞋子這麼破，你是不是很窮買不起新的。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我窮——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-030",
+    text: "姑丈說你指甲剪這麼短，是不是很緊張？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-030-a",
+        text: "剪短是為了紅包袋拆得更順手，效率至上。",
+        archetype: "perfect",
+        retort: "哈哈哈效率至上！這句太會凹了！",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-b",
+        text: "姑丈你猜我多久剪一次指甲？",
+        archetype: "deflect",
+        retort: "我猜一個禮拜一次！",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-c",
+        text: "指甲重要，還是你的酒喝夠了重要？",
+        archetype: "deflect",
+        retort: "哎唷，這杯我還要喝呢。",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-d",
+        text: "對啊……最近習慣咬指甲，有點緊張……",
+        archetype: "meek",
+        retort: "咬指甲喔，那要改掉這個習慣。",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-e",
+        text: "可能真的剪太短了，有點不舒服……",
+        archetype: "meek",
+        retort: "不舒服？那幹嘛剪這麼短。",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-f",
+        text: "短指甲是專業級鋼琴家的標準配備。",
+        archetype: "backfire",
+        retort: "……（姑丈搖搖頭繼續喝酒）",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-g",
+        text: "剪這麼短代表我人生極度自律，懂嗎。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-030-h",
+        text: "剪這麼短很奇怪耶，你是不是很緊張怕什麼。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我奇怪——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-031",
+    text: "老師說你鬢角長得亂七八糟，怎麼不修一下？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-031-a",
+        text: "鬢角亂才顯得我今年過得很自在，懂嗎。",
+        archetype: "perfect",
+        retort: "哈哈哈自在！這句話說得妙！",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-b",
+        text: "你猜猜看我上次剪頭髮是什麼時候？",
+        archetype: "deflect",
+        retort: "我猜是上個月！",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-c",
+        text: "鬢角重要，還是你要不要先吃塊蛋糕？",
+        archetype: "deflect",
+        retort: "好，我先吃蛋糕！",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-d",
+        text: "對啊……最近懶得去剪，就一直長了……",
+        archetype: "meek",
+        retort: "懶得剪喔，那也太隨便了。",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-e",
+        text: "本來想修，找不到理髮店開門啦……",
+        archetype: "meek",
+        retort: "找不到？那也拖太久了吧。",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-f",
+        text: "鬢角亂是野性魅力的展現，你不懂。",
+        archetype: "backfire",
+        retort: "……（老師忍笑轉頭去忙別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-g",
+        text: "不修鬢角才是真正的隨性自由派。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-031-h",
+        text: "鬢角這麼亂很噁心耶，你是不是都不整理。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我噁心——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-032",
+    text: "阿嬤說你戴著口罩看不出臉圓不圓，拿下來看看？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-032-a",
+        text: "拿下來也是圓的，阿嬤，圓的才有福氣。",
+        archetype: "perfect",
+        retort: "哈哈哈他自己都這樣說了！",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-b",
+        text: "阿嬤你猜我口罩下面是什麼表情？",
+        archetype: "deflect",
+        retort: "我猜是在笑！",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-c",
+        text: "臉圓不圓重要，還是你要不要先吃塊餅乾？",
+        archetype: "deflect",
+        retort: "好，我先吃餅乾！",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-d",
+        text: "拿下來可能真的比較圓一點啦……",
+        archetype: "meek",
+        retort: "比較圓喔，那要少吃一點了。",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-e",
+        text: "戴口罩比較沒安全感，還是戴著好了……",
+        archetype: "meek",
+        retort: "沒安全感？那也太誇張了吧。",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-f",
+        text: "口罩下面藏的是我不外露的神秘感。",
+        archetype: "backfire",
+        retort: "……（阿嬤伸手想拉下他的口罩）",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-g",
+        text: "戴口罩是我保護隱私的高級防禦策略。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-032-h",
+        text: "拿下來就知道你多胖了，何必藏。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我胖——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-033",
+    text: "媽媽說你後腦勺的頭髮打結像鳥窩一樣。",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-033-a",
+        text: "鳥窩好啊，代表我這裡隨時歡迎小鳥棲息。",
+        archetype: "perfect",
+        retort: "哈哈哈歡迎小鳥棲息！好可愛！",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-b",
+        text: "你要不要幫我梳開，你比較細心。",
+        archetype: "deflect",
+        retort: "好啊！我來幫你梳梳看！",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-c",
+        text: "打結重要，還是你要不要先梳自己的頭？",
+        archetype: "deflect",
+        retort: "對耶！我先照鏡子！",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-d",
+        text: "對啊……早上沒時間梳，就打結了……",
+        archetype: "meek",
+        retort: "沒時間梳喔，那也太趕了吧。",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-e",
+        text: "可能睡覺翻來翻去，纏在一起了……",
+        archetype: "meek",
+        retort: "纏在一起？那快去梳開啊。",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-f",
+        text: "打結的頭髮是我今年主打的野性風格。",
+        archetype: "backfire",
+        retort: "……（媽媽已經拿出梳子）",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-g",
+        text: "鳥窩造型才是今年最前衛的髮型宣言。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-appearance-033-h",
+        text: "頭髮打結很噁心耶，你是不是都不洗頭。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我噁心——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-034",
+    text: "姑姑說阿嬤買的花襯衫給你穿，好不好看？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-034-a",
+        text: "好看，穿上它我就是全場最喜氣的那個人。",
+        archetype: "perfect",
+        retort: "阿嬤～他說喜氣～（阿嬤笑開懷）",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-b",
+        text: "姑姑你要不要也穿一件，我們搭配一下？",
+        archetype: "deflect",
+        retort: "哎唷，我才不要穿花襯衫呢！",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-c",
+        text: "好不好看重要，還是阿嬤開不開心重要？",
+        archetype: "deflect",
+        retort: "阿嬤開心比較重要啦！",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-d",
+        text: "老實說有點花，但我還是穿了……",
+        archetype: "meek",
+        retort: "有點花？姑姑——他嫌花——",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-e",
+        text: "花色是誇張了點，但也不好意思拒絕……",
+        archetype: "meek",
+        retort: "不好意思拒絕？那你很勉強嘛。",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-f",
+        text: "花襯衫是我今年最大膽的時尚宣言。",
+        archetype: "backfire",
+        retort: "……（姑姑忍笑轉頭跟阿嬤聊別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-g",
+        text: "越花越潮，這是我獨創的過年美學。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看那件襯衫）",
+      },
+      {
+        id: "xiao-biaodi-appearance-034-h",
+        text: "這件花襯衫醜死了，阿嬤眼光真的很怪。",
+        archetype: "landmine",
+        retort: "嗚……阿嬤——他說你眼光怪——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-035",
+    text: "老師說你戴的項鍊好俗氣，是夜市買的嗎？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-035-a",
+        text: "俗氣才親民，這叫接地氣的時尚哲學。",
+        archetype: "perfect",
+        retort: "哈哈哈接地氣！這句好會講！",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-b",
+        text: "你猜猜看這條項鍊多少錢買的？",
+        archetype: "deflect",
+        retort: "我猜一百塊！猜對了嗎？",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-c",
+        text: "項鍊重要，還是你要不要先吃塊糖？",
+        archetype: "deflect",
+        retort: "先吃糖！糖比較重要！",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-d",
+        text: "對啊……是夜市買的，可能真的有點俗……",
+        archetype: "meek",
+        retort: "有點俗喔，那你自己也知道嘛。",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-e",
+        text: "喜歡就買了，沒想那麼多啦……",
+        archetype: "meek",
+        retort: "沒想那麼多？那眼光要練一下了。",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-f",
+        text: "俗氣是假的，這叫復古草根風，很潮。",
+        archetype: "backfire",
+        retort: "……（老師忍笑轉頭去忙別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-g",
+        text: "夜市貨才是真正懂生活的人在戴的。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看那條項鍊）",
+      },
+      {
+        id: "xiao-biaodi-appearance-035-h",
+        text: "這條項鍊也太俗了吧，你眼光真的很差。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我眼光差——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-appearance-036",
+    text: "姑姑說你今天眼睛顏色怪怪的，是戴變色片嗎？",
+    topic: "appearance",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-appearance-036-a",
+        text: "對，這是限定版，讓你們過年多看點新花樣。",
+        archetype: "perfect",
+        retort: "哈哈哈新花樣！這孩子真會講！",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-b",
+        text: "你猜猜看是什麼顏色，形容看看？",
+        archetype: "deflect",
+        retort: "我猜是灰色的！",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-c",
+        text: "顏色重要，還是你要不要先吃塊蘋果？",
+        archetype: "deflect",
+        retort: "好，我先吃蘋果！",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-d",
+        text: "對啊……一時興起買來戴戴看，有點怪……",
+        archetype: "meek",
+        retort: "有點怪喔，那要不要拿下來。",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-e",
+        text: "可能真的不太適合我，戴起來怪怪的……",
+        archetype: "meek",
+        retort: "不適合？姑姑——他自己承認了——",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-f",
+        text: "特殊瞳色是我今年的個人品牌識別色。",
+        archetype: "backfire",
+        retort: "……（姑姑轉頭跟阿嬤聊別的）",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-g",
+        text: "變色片是靈魂之窗的高級濾鏡，你不懂。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盯著看他的眼睛）",
+      },
+      {
+        id: "xiao-biaodi-appearance-036-h",
+        text: "這眼睛顏色好嚇人喔，你是不是壞掉了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我嚇人——",
+      },
+    ],
+  },
+] satisfies Question[];

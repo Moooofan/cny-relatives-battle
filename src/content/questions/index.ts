@@ -54,9 +54,15 @@ import q49 from "./sanjiuma/housing";
 import q50 from "./sanjiuma/salary_job-1";
 import q51 from "./sanjiuma/salary_job-2";
 import q52 from "./sanjiuma/salary_job";
-import q53 from "./xiao-biaodi/appearance";
-import q54 from "./xiao-biaodi/comparison";
-import q55 from "./xiao-biaodi/red_envelope";
+import q53 from "./xiao-biaodi/appearance-1";
+import q54 from "./xiao-biaodi/appearance-2";
+import q55 from "./xiao-biaodi/appearance";
+import q56 from "./xiao-biaodi/comparison-1";
+import q57 from "./xiao-biaodi/comparison-2";
+import q58 from "./xiao-biaodi/comparison";
+import q59 from "./xiao-biaodi/red_envelope-1";
+import q60 from "./xiao-biaodi/red_envelope-2";
+import q61 from "./xiao-biaodi/red_envelope";
 
 export const QUESTIONS: Question[] = [
   ...q0,
@@ -115,6 +121,12 @@ export const QUESTIONS: Question[] = [
   ...q53,
   ...q54,
   ...q55,
+  ...q56,
+  ...q57,
+  ...q58,
+  ...q59,
+  ...q60,
+  ...q61,
 ];
 
 export const QUESTION_FILES = [
@@ -171,7 +183,13 @@ export const QUESTION_FILES = [
   "sanjiuma/salary_job-1",
   "sanjiuma/salary_job-2",
   "sanjiuma/salary_job",
+  "xiao-biaodi/appearance-1",
+  "xiao-biaodi/appearance-2",
   "xiao-biaodi/appearance",
+  "xiao-biaodi/comparison-1",
+  "xiao-biaodi/comparison-2",
   "xiao-biaodi/comparison",
+  "xiao-biaodi/red_envelope-1",
+  "xiao-biaodi/red_envelope-2",
   "xiao-biaodi/red_envelope"
 ] as const;

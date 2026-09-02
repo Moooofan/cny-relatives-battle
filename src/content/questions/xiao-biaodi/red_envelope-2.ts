@@ -1,0 +1,918 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// - 紅包會不會拿去當孝親費退回長輩
+// - 紅包有沒有先偷看金額才包
+// - 有沒有紅包漏包忘記包給他
+// - 紅包是不是要包雙數才吉利
+// - 紅包袋上金額欄位有沒有填
+// - 可不可以用舊紅包袋重複用
+// - 紅包裡是不是被掉包成假鈔開玩笑
+// - 問要不要包紅包給交往對象
+// - 其他房親戚給的紅包比你多還是少
+// - 紅包摸起來軟軟的是不是小額鈔
+// - 紅包要當場拆還是回家拆
+// - 長大了紅包會不會變少
+// - 可不可以代領阿公阿嬤的紅包
+// - 紅包裡有沒有藏刮刮樂
+// - 過年要不要包紅包給家裡的狗貓
+// - 紅包太少可不可以直接嫌少
+
+export default [
+  {
+    id: "xiao-biaodi-red_envelope-022",
+    text: "阿嬤說你賺錢了，紅包是不是要退回來當孝親費？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-022-a",
+        text: "紅包我收下，孝親費我另外包，雙份誠意。",
+        archetype: "perfect",
+        retort: "哎唷～這孩子真的貼心！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-b",
+        text: "阿嬤你比較想要紅包還是想要我常回來？",
+        archetype: "deflect",
+        retort: "當然是你常回來啊！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-c",
+        text: "孝親費重要，還是阿嬤你要不要先坐下休息？",
+        archetype: "deflect",
+        retort: "好啦好啦，我先坐一下。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-d",
+        text: "紅包我還是想留著自己花……",
+        archetype: "meek",
+        retort: "留著喔，那孝親費呢？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-e",
+        text: "應該不用退吧，我沒賺很多啦……",
+        archetype: "meek",
+        retort: "沒賺很多？阿嬤——他這樣說——",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-f",
+        text: "孝親費是舊時代觀念，我走現代孝道。",
+        archetype: "backfire",
+        retort: "……（阿嬤聽不懂，繼續織毛衣）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-g",
+        text: "陪伴才是最高等級的孝親費，錢是次要的。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，跑去問阿嬤什麼是孝道）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-022-h",
+        text: "退什麼退，紅包是我的，不要一直問。",
+        archetype: "landmine",
+        retort: "嗚……阿嬤——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-023",
+    text: "老師說包紅包前要先偷算好金額，你有算嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-023-a",
+        text: "我算的不是金額，是算你今年乖不乖，及格才給。",
+        archetype: "perfect",
+        retort: "哈哈哈那我一定及格！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-b",
+        text: "你先說你今年最乖的一件事，我再算。",
+        archetype: "deflect",
+        retort: "我今年都自己收玩具耶！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-c",
+        text: "算金額重要，還是先算算你考幾分重要？",
+        archetype: "deflect",
+        retort: "呃……這個先跳過。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-d",
+        text: "我沒有先算耶，包多少是媽媽決定的……",
+        archetype: "meek",
+        retort: "媽媽決定的？那你都不知道。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-e",
+        text: "有稍微估一下，但不算精準啦……",
+        archetype: "meek",
+        retort: "不精準？那到底多少嘛。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-f",
+        text: "算金額是俗氣的，我用直覺包紅包。",
+        archetype: "backfire",
+        retort: "……（小表弟已經在旁邊猜數字）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-g",
+        text: "精準計算不如隨緣，這是紅包的哲學。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續猜）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-023-h",
+        text: "算這麼細幹嘛，小孩子很煩耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-024",
+    text: "姑姑說你去年好像忘記包紅包給我，是不是？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-024-a",
+        text: "不會忘記你的，忘記的都是不重要的人。",
+        archetype: "perfect",
+        retort: "哇！這句好會安慰人喔！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-b",
+        text: "你記性這麼好，那你數學考幾分還記得嗎？",
+        archetype: "deflect",
+        retort: "呃……我不記得了！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-c",
+        text: "去年的事重要，還是今年的紅包重要？",
+        archetype: "deflect",
+        retort: "今年的比較重要啦！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-d",
+        text: "對不起，去年真的可能忘記了……",
+        archetype: "meek",
+        retort: "忘記了！姑姑——他真的忘記——",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-e",
+        text: "可能包的順序漏掉你了，不是故意的……",
+        archetype: "meek",
+        retort: "漏掉？那我今年要盯緊一點。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-f",
+        text: "去年的紅包已經升值成回憶了，更珍貴。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，繼續盯著看）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-g",
+        text: "忘記包才是最深的紀念，懂嗎。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，一臉困惑）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-024-h",
+        text: "去年的事翻出來講幹嘛，很煩耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-025",
+    text: "阿嬤說紅包要包雙數金額才吉利，你懂嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-025-a",
+        text: "我懂，所以我包的祝福是雙倍的，金額只是附加。",
+        archetype: "perfect",
+        retort: "哎唷～這孩子嘴巴真甜！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-b",
+        text: "阿嬤最喜歡的雙數是幾號，我猜猜看？",
+        archetype: "deflect",
+        retort: "阿嬤最喜歡六跟八！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-c",
+        text: "雙數重要，還是你今天有沒有吃兩碗飯重要？",
+        archetype: "deflect",
+        retort: "吃兩碗了！超飽的！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-d",
+        text: "我不太懂這個規矩耶，隨便包的……",
+        archetype: "meek",
+        retort: "隨便包喔，那沒有誠意耶。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-e",
+        text: "應該有注意啦，但不確定有沒有算對……",
+        archetype: "meek",
+        retort: "不確定？那要重新算一次。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-f",
+        text: "數字規矩是舊觀念，我信的是能量磁場。",
+        archetype: "backfire",
+        retort: "……（阿嬤在旁邊搖搖頭）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-g",
+        text: "單數才是我獨創的幸運公式，你不懂。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續數自己的紅包）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-025-h",
+        text: "雙數單數很無聊耶，你很愛計較。",
+        archetype: "landmine",
+        retort: "嗚……阿嬤——他說我無聊——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-026",
+    text: "老師說紅包袋上要寫金額才不會搞混，你寫了嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-026-a",
+        text: "沒寫，因為我的紅包不用數字，用心意衡量。",
+        archetype: "perfect",
+        retort: "哇！心意衡量！這句好美喔！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-b",
+        text: "你紅包袋上的欄位，都寫些什麼字？",
+        archetype: "deflect",
+        retort: "我寫了恭喜發財四個字！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-c",
+        text: "寫金額重要，還是紅包袋圖案好看重要？",
+        archetype: "deflect",
+        retort: "圖案比較重要啦！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-d",
+        text: "沒有寫耶，怕寫錯數字很尷尬……",
+        archetype: "meek",
+        retort: "怕寫錯喔，那乾脆別寫了。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-e",
+        text: "本來想寫，後來忘記了啦……",
+        archetype: "meek",
+        retort: "忘記了？那你很粗心耶。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-f",
+        text: "空白欄位才是留給命運決定的驚喜。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，繼續翻紅包袋）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-g",
+        text: "填數字太俗氣，我走神秘主義路線。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，一臉茫然）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-026-h",
+        text: "填不填關你什麼事，很煩耶問這麼多。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-027",
+    text: "姑丈說你是不是拿舊紅包袋重複裝，太省了吧？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-027-a",
+        text: "重複用才環保，我在幫地球省紙，你要謝謝我。",
+        archetype: "perfect",
+        retort: "哈哈哈環保理由太狂了吧！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-b",
+        text: "姑丈你猜猜這個紅包袋是哪一年的？",
+        archetype: "deflect",
+        retort: "這個……看起來有點舊耶。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-c",
+        text: "省紙重要，還是你的紅酒喝夠了重要？",
+        archetype: "deflect",
+        retort: "哎唷，這杯我還要喝呢。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-d",
+        text: "對啊……新的紅包袋剛好用完了……",
+        archetype: "meek",
+        retort: "用完了？那也太克難了吧。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-e",
+        text: "是有點舊啦，但裡面的東西是新的……",
+        archetype: "meek",
+        retort: "裡面新的？那外面幹嘛不換？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-f",
+        text: "舊紅包袋是限量絕版，比新的還珍貴。",
+        archetype: "backfire",
+        retort: "……（姑丈搖搖頭繼續喝酒）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-g",
+        text: "復古風才是今年最流行的紅包美學。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續看紅包袋）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-027-h",
+        text: "舊的怎麼了，你很愛嫌東嫌西耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-028",
+    text: "媽媽說紅包裡搞不好被掉包成假鈔了，你檢查了嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-028-a",
+        text: "假的也沒關係，我收的從來都是真心，不是鈔票。",
+        archetype: "perfect",
+        retort: "哇！這句超感人的！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-b",
+        text: "你要不要幫我檢查，你比較會看鈔票。",
+        archetype: "deflect",
+        retort: "好啊！我最會看鈔票了！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-c",
+        text: "真假重要，還是你要不要先喝口湯暖暖身？",
+        archetype: "deflect",
+        retort: "好啊，先喝湯比較重要！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-d",
+        text: "我沒有檢查耶，希望不是真的假的……",
+        archetype: "meek",
+        retort: "希望而已喔，那有點危險耶。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-e",
+        text: "看起來應該是真的啦，但不太確定……",
+        archetype: "meek",
+        retort: "不確定？那你敢花嗎？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-f",
+        text: "真假鈔票我都收，我走包容主義路線。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，繼續數紅包）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-g",
+        text: "假鈔其實比較有紀念價值，懂收藏嗎。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續研究鈔票）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-028-h",
+        text: "假的就假的，你很愛大驚小怪耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-029",
+    text: "姑姑說你有對象的話也要包紅包給他喔。",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-029-a",
+        text: "有對象我一定包，包到讓姑姑你也羨慕。",
+        archetype: "perfect",
+        retort: "哈哈哈這孩子講話真敢！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-b",
+        text: "那你覺得包多少才叫有誠意，教教我？",
+        archetype: "deflect",
+        retort: "我覺得要包很多才有誠意！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-c",
+        text: "包紅包重要，還是你的糖果吃夠了重要？",
+        archetype: "deflect",
+        retort: "糖果吃夠了！超甜的！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-d",
+        text: "還沒有對象啦，等有了再說……",
+        archetype: "meek",
+        retort: "還沒有喔！姑姑——他真的沒有——",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-e",
+        text: "應該會包一點意思意思吧……",
+        archetype: "meek",
+        retort: "意思意思？那對方會不會生氣？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-f",
+        text: "感情包裝不能用金額衡量，這是我的哲學。",
+        archetype: "backfire",
+        retort: "……（姑姑轉頭跟阿嬤聊別的）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-g",
+        text: "單身的人不用包紅包，這叫節流策略。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續問對象是什麼意思）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-029-h",
+        text: "有沒有對象關你什麼事，很煩耶。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-030",
+    text: "阿嬤說二伯給我的紅包比你的厚，你會不會輸了？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-030-a",
+        text: "厚薄不重要，我的紅包附贈跟我打球的服務。",
+        archetype: "perfect",
+        retort: "哈哈哈這個服務太值錢了！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-b",
+        text: "二伯給你的紅包上面寫了什麼字？",
+        archetype: "deflect",
+        retort: "他寫的是身體健康！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-c",
+        text: "輸贏重要，還是你要不要先幫我倒杯水？",
+        archetype: "deflect",
+        retort: "好！我去倒水給你！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-d",
+        text: "可能真的比較薄啦，最近比較忙……",
+        archetype: "meek",
+        retort: "比較薄喔，那你要加油了。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-e",
+        text: "應該差不多吧，我沒有特別比較……",
+        archetype: "meek",
+        retort: "沒比較？那怎麼知道輸贏？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-f",
+        text: "紅包比賽是低級趣味，我不參加。",
+        archetype: "backfire",
+        retort: "……（小表弟已經在比較兩包的厚度）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-g",
+        text: "厚度是幻覺，真正的贏家看氣勢。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續比較）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-030-h",
+        text: "輸就輸，你很愛比較耶，很幼稚。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-031",
+    text: "老師說摸起來軟軟的，裡面一定都是小鈔對不對？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-031-a",
+        text: "軟軟的是因為裝滿了誠意，跟金額大小沒關係。",
+        archetype: "perfect",
+        retort: "哇！誠意這句好會凹喔！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-b",
+        text: "你摸摸看自己的，是軟的還硬的？",
+        archetype: "deflect",
+        retort: "我的是……軟軟的耶！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-c",
+        text: "軟硬重要，還是你要不要先幫忙擦桌子？",
+        archetype: "deflect",
+        retort: "好，我去擦桌子！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-d",
+        text: "可能真的是小鈔疊起來的啦……",
+        archetype: "meek",
+        retort: "小鈔喔，那也太多張了吧。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-e",
+        text: "摸起來軟軟的，我也不確定是什麼……",
+        archetype: "meek",
+        retort: "不確定？那你敢打開看嗎？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-f",
+        text: "軟的紅包是高級絲絨包裝，不是鈔票的錯。",
+        archetype: "backfire",
+        retort: "……（小表弟繼續捏他的紅包）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-g",
+        text: "軟硬觸感學是我自創的鑑定學問。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續捏來捏去）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-031-h",
+        text: "一直捏很沒禮貌耶，你懂不懂規矩。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-032",
+    text: "姑丈說紅包要當場拆才夠爽快，你敢嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-032-a",
+        text: "爽快是要留給你的，我等你先拆給我看示範。",
+        archetype: "perfect",
+        retort: "哈哈哈你也太會轉移話題了！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-b",
+        text: "姑丈你要不要先示範一次怎麼拆？",
+        archetype: "deflect",
+        retort: "看我的，唰一下就拆好！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-c",
+        text: "當場拆重要，還是這道菜要不要趁熱吃重要？",
+        archetype: "deflect",
+        retort: "趁熱吃比較重要啦！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-d",
+        text: "我想帶回家再拆，比較有隱私……",
+        archetype: "meek",
+        retort: "隱私？拆個紅包哪來隱私。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-e",
+        text: "當場拆有點害羞，回家再拆好了……",
+        archetype: "meek",
+        retort: "害羞什麼，拆個紅包而已。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-f",
+        text: "延遲拆封是一種期待值管理，很專業的。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，直接當場拆了）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-g",
+        text: "不拆才是對紅包最大的尊重，懂儀式感嗎。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，自己拆得很開心）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-032-h",
+        text: "當場拆很俗氣耶，你很愛看熱鬧。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我愛看熱鬧——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-033",
+    text: "媽媽說你長大了，以後紅包會越包越少喔。",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-033-a",
+        text: "越少越好，代表我越來越有出息，不需要靠紅包。",
+        archetype: "perfect",
+        retort: "哇！這句話成熟到讓人心疼！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-b",
+        text: "那你長大以後，紅包會不會換你包給我？",
+        archetype: "deflect",
+        retort: "會啊！我以後包給你！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-c",
+        text: "紅包多少重要，還是你有沒有吃飽重要？",
+        archetype: "deflect",
+        retort: "吃飽了！超級飽的！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-d",
+        text: "對啊……感覺以後會慢慢變少了……",
+        archetype: "meek",
+        retort: "變少喔，那你會不會捨不得？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-e",
+        text: "有點失落啦，但也是沒辦法的事……",
+        archetype: "meek",
+        retort: "失落喔，那要不要再抱一下？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-f",
+        text: "紅包變少證明我進入財富自由的下一階段。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，繼續數紅包）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-g",
+        text: "長大就是要主動把紅包讓給更小的孩子。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，一臉茫然）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-033-h",
+        text: "變少關你什麼事，小孩子問這麼多幹嘛。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-034",
+    text: "老師說我可以幫阿嬤代領紅包給你，好不好？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-034-a",
+        text: "代領可以，但代領費是你先幫阿嬤搥搥背。",
+        archetype: "perfect",
+        retort: "好！我現在就去幫阿嬤搥背！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-b",
+        text: "你想不想順便學怎麼包紅包給阿嬤？",
+        archetype: "deflect",
+        retort: "想！我要學怎麼包！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-c",
+        text: "代領重要，還是先問阿嬤今天累不累重要？",
+        archetype: "deflect",
+        retort: "對耶！我去問阿嬤！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-d",
+        text: "好啊，那你要記得全部拿給我喔……",
+        archetype: "meek",
+        retort: "全部拿給你？那我怎麼知道你有沒有算對。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-e",
+        text: "可以是可以啦，但我會忍不住偷看……",
+        archetype: "meek",
+        retort: "偷看？那還算代領嗎？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-f",
+        text: "代領是一種信任的最高表現，你懂嗎。",
+        archetype: "backfire",
+        retort: "……（小表弟已經跑去找阿嬤了）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-g",
+        text: "我當代理人要收取一點手續費，合理的。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續盧著要當代理人）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-034-h",
+        text: "代領什麼代領，你休想拿我的紅包。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-035",
+    text: "姑丈說有些紅包會藏刮刮樂，你的有藏嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-035-a",
+        text: "我藏的獎項是全年好運，中獎機率百分之百。",
+        archetype: "perfect",
+        retort: "哇！百分之百中獎！超幸運！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-b",
+        text: "姑丈你今年刮中什麼，分享一下？",
+        archetype: "deflect",
+        retort: "我刮中兩百塊，運氣不錯！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-c",
+        text: "刮刮樂重要，還是你的紅包厚度重要？",
+        archetype: "deflect",
+        retort: "厚度比較重要啦！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-d",
+        text: "沒有耶，我沒放那個進去……",
+        archetype: "meek",
+        retort: "沒放喔，那沒有驚喜了。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-e",
+        text: "本來想放，後來忘記買了……",
+        archetype: "meek",
+        retort: "忘記買？那你太隨便了吧。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-f",
+        text: "我的紅包本身就是刮刮樂，開獎全靠緣分。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，繼續翻紅包）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-g",
+        text: "運氣是可以計算的，我有一套公式。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，一臉茫然）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-035-h",
+        text: "刮刮樂很幼稚耶，你不要一直問了。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他說我幼稚——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-036",
+    text: "阿嬤說今年連家裡的狗都要包紅包，你包了嗎？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-036-a",
+        text: "包了，牠今年顧家有功，紅包是牠應得的。",
+        archetype: "perfect",
+        retort: "哈哈哈牠應得的！阿嬤也笑了！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-b",
+        text: "你猜猜看狗狗最想要什麼樣的紅包？",
+        archetype: "deflect",
+        retort: "牠應該想要骨頭形狀的！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-c",
+        text: "包紅包重要，還是先帶牠去散步重要？",
+        archetype: "deflect",
+        retort: "對耶！我先帶牠去玩！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-d",
+        text: "我沒想到要包給牠耶，不好意思……",
+        archetype: "meek",
+        retort: "沒包喔！阿嬤——他沒包給狗狗——",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-e",
+        text: "本來想包，但不知道狗會不會拆……",
+        archetype: "meek",
+        retort: "不會拆？那你也太多慮了。",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-f",
+        text: "狗狗的紅包是精神股份，牠聞得到就好。",
+        archetype: "backfire",
+        retort: "……（狗狗在旁邊搖尾巴聽不懂）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-g",
+        text: "毛小孩的財富要用飼料計價，不是現金。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續逗狗）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-036-h",
+        text: "狗而已包什麼紅包，浪費錢。",
+        archetype: "landmine",
+        retort: "嗚……阿嬤——他說浪費錢——",
+      },
+    ],
+  },
+  {
+    id: "xiao-biaodi-red_envelope-037",
+    text: "老師說覺得紅包太少可以直接講出來，對不對？",
+    topic: "red_envelope",
+    bossId: "xiao-biaodi",
+    options: [
+      {
+        id: "xiao-biaodi-red_envelope-037-a",
+        text: "少不少不用講，我用滿意的笑容告訴你就夠了。",
+        archetype: "perfect",
+        retort: "哈哈哈這個笑容我看懂了！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-b",
+        text: "你覺得多少才算多，說來聽聽看？",
+        archetype: "deflect",
+        retort: "我覺得要比表姊包的多！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-c",
+        text: "嫌少重要，還是你要不要先幫忙擺碗筷？",
+        archetype: "deflect",
+        retort: "好，我去擺碗筷！",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-d",
+        text: "老實說是有點少啦，但也不好意思講……",
+        archetype: "meek",
+        retort: "有點少喔！媽媽——他嫌少——",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-e",
+        text: "我沒有很在意啦，有拿到就好……",
+        archetype: "meek",
+        retort: "有拿到就好？那你都不會生氣？",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-f",
+        text: "嫌少是俗氣的行為，我走感恩路線。",
+        archetype: "backfire",
+        retort: "……（小表弟聽不懂，繼續數紅包）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-g",
+        text: "金額多寡是幻覺，重點是紅包袋的顏值。",
+        archetype: "backfire",
+        retort: "（小表弟沒聽懂，繼續研究紅包袋）",
+      },
+      {
+        id: "xiao-biaodi-red_envelope-037-h",
+        text: "嫌紅包少很沒禮貌，你懂不懂做人。",
+        archetype: "landmine",
+        retort: "嗚……媽媽——他兇我——",
+      },
+    ],
+  },
+] satisfies Question[];
