@@ -4,12 +4,20 @@ import type { Question } from "@/content/types";
 import q0 from "./ama/food_push";
 import q1 from "./ama/marriage";
 import q2 from "./ama/religion";
-import q3 from "./sanjiuma/comparison";
-import q4 from "./sanjiuma/housing";
-import q5 from "./sanjiuma/salary_job";
-import q6 from "./xiao-biaodi/appearance";
-import q7 from "./xiao-biaodi/comparison";
-import q8 from "./xiao-biaodi/red_envelope";
+import q3 from "./guzhang/elder_health-1";
+import q4 from "./guzhang/elder_health-2";
+import q5 from "./guzhang/food_push-1";
+import q6 from "./guzhang/food_push-2";
+import q7 from "./guzhang/politics-1";
+import q8 from "./guzhang/politics-2";
+import q9 from "./neighbor-chen/salary_job-1";
+import q10 from "./sangu/marriage-1";
+import q11 from "./sanjiuma/comparison";
+import q12 from "./sanjiuma/housing";
+import q13 from "./sanjiuma/salary_job";
+import q14 from "./xiao-biaodi/appearance";
+import q15 from "./xiao-biaodi/comparison";
+import q16 from "./xiao-biaodi/red_envelope";
 
 export const QUESTIONS: Question[] = [
   ...q0,
@@ -21,12 +29,28 @@ export const QUESTIONS: Question[] = [
   ...q6,
   ...q7,
   ...q8,
+  ...q9,
+  ...q10,
+  ...q11,
+  ...q12,
+  ...q13,
+  ...q14,
+  ...q15,
+  ...q16,
 ];
 
 export const QUESTION_FILES = [
   "ama/food_push",
   "ama/marriage",
   "ama/religion",
+  "guzhang/elder_health-1",
+  "guzhang/elder_health-2",
+  "guzhang/food_push-1",
+  "guzhang/food_push-2",
+  "guzhang/politics-1",
+  "guzhang/politics-2",
+  "neighbor-chen/salary_job-1",
+  "sangu/marriage-1",
   "sanjiuma/comparison",
   "sanjiuma/housing",
   "sanjiuma/salary_job",
