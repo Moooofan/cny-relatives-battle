@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<ellipse id="nc-bg" cx="128" cy="128" rx="120" ry="120" fill="#3A1C1C" stroke="#F5C542" stroke-width="6"/>
+<path id="nc-body" d="M70,214 Q70,180 108,170 L148,170 Q186,180 186,214 L186,242 Q128,254 70,242 Z" fill="#FFF8EE" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="nc-bodySh" d="M128,170 L148,170 Q186,180 186,214 L186,242 Q157,250 128,251 Z" fill="#E8D9C0" opacity="0.6"/>
+<ellipse id="nc-curl66" cx="66" cy="150" rx="22" ry="22" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl72" cx="72" cy="110" rx="24" ry="24" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl90" cx="90" cy="80" rx="22" ry="22" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl120" cx="120" cy="66" rx="22" ry="22" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl150" cx="150" cy="68" rx="22" ry="22" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl178" cx="178" cy="84" rx="22" ry="22" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl190" cx="190" cy="116" rx="24" ry="24" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-curl184" cx="184" cy="152" rx="22" ry="22" fill="#4A342A" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-earL" cx="74" cy="120" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="nc-earR" cx="182" cy="120" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="nc-neck" x="111" y="160" width="34" height="34" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="nc-neckSh" x="128" y="160" width="17" height="34" fill="#E0A882" opacity="0.5"/>
+<ellipse id="nc-face" cx="128" cy="120" rx="51" ry="53" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<path id="nc-faceShade" d="M128,67 A51,53 0 0,1 128,173 Z" fill="#E0A882" opacity="0.5"/>
+<path id="nc-hairTopSh" d="M128,66 Q178,84 190,116 Q182,96 140,88 Z" fill="#33231C" opacity="0.5"/>
+<path id="nc-fringe" d="M84,96 Q128,72 172,96 Q150,84 128,84 Q106,84 84,96 Z" fill="#4A342A" stroke="#2A1010" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="nc-pearlL" cx="72" cy="138" rx="8" ry="8" fill="#FFF8EE" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="nc-pearlR" cx="184" cy="138" rx="8" ry="8" fill="#FFF8EE" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="nc-eyeWhiteL" cx="107" cy="114" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="nc-pupilL" cx="107" cy="115" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="nc-glintL" cx="105" cy="112" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<ellipse id="nc-eyeWhiteR" cx="149" cy="114" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="nc-pupilR" cx="149" cy="115" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="nc-glintR" cx="147" cy="112" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<path id="nc-browL" d="M98.0,90 Q107,90 116.0,102" fill="none" stroke="#2A1010" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="nc-browR" d="M140.0,102 Q149,90 158.0,90" fill="none" stroke="#2A1010" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="nc-mouth" d="M108,140 Q128,152 148,140" fill="#B5484E" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="nc-blushL" cx="90" cy="132" rx="8" ry="5" fill="#E63946" opacity="0.3"/>
+<ellipse id="nc-blushR" cx="166" cy="132" rx="8" ry="5" fill="#E63946" opacity="0.3"/>
+<rect id="nc-giftBox" x="172" y="176" width="40" height="34" fill="#E63946" stroke="#2A1010" stroke-width="4" rx="3"/>
+<rect id="nc-ribbonV" x="188" y="176" width="8" height="34" fill="#F5C542"/>
+<rect id="nc-ribbonH" x="172" y="188" width="40" height="8" fill="#F5C542"/>
+<path id="nc-bow" d="M186,176 Q178,164 190,164 Q192,172 192,176 Q192,172 194,164 Q206,164 198,176 Z" fill="#D4A017" stroke="#2A1010" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

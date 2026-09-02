@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<ellipse id="pl-bg" cx="128" cy="128" rx="120" ry="120" fill="#3A1C1C" stroke="#F5C542" stroke-width="6"/>
+<path id="pl-hoodBack" d="M66,224 Q60,180 96,166 L160,166 Q196,180 190,224 Q186,196 128,192 Q70,196 66,224 Z" fill="#3F4B52" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pl-body" d="M78,214 Q78,182 114,172 L142,172 Q178,182 178,214 L178,242 Q128,254 78,242 Z" fill="#5B6B73" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pl-bodySh" d="M128,172 L142,172 Q178,182 178,214 L178,242 Q153,250 128,251 Z" fill="#3F4B52" opacity="0.5"/>
+<path id="pl-stringL" d="M118,176 Q116,196 112,214" fill="none" stroke="#FFF3E0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pl-stringR" d="M138,176 Q140,196 144,214" fill="none" stroke="#FFF3E0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="pl-tipL" cx="112" cy="217" rx="3" ry="4" fill="#FFF3E0" stroke="#2A1010" stroke-width="1.5"/>
+<ellipse id="pl-tipR" cx="144" cy="217" rx="3" ry="4" fill="#FFF3E0" stroke="#2A1010" stroke-width="1.5"/>
+<ellipse id="pl-earL" cx="74" cy="120" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="pl-earR" cx="182" cy="120" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="pl-neck" x="111" y="160" width="34" height="34" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="pl-neckSh" x="128" y="160" width="17" height="34" fill="#E0A882" opacity="0.5"/>
+<ellipse id="pl-face" cx="128" cy="118" rx="51" ry="53" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<path id="pl-faceShade" d="M128,65 A51,53 0 0,1 128,171 Z" fill="#E0A882" opacity="0.5"/>
+<path id="pl-hairTop" d="M76,108 Q80,58 128,54 Q176,58 180,108 Q166,80 128,78 Q90,80 76,108 Z" fill="#33261C" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pl-hairTopSh" d="M128,78 Q166,80 180,108 Q172,90 140,84 Z" fill="#241A13" opacity="0.55"/>
+<path id="pl-sidepiece" d="M76,108 Q72,122 78,136" fill="none" stroke="#33261C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="pl-eyeWhiteL" cx="107" cy="114" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="pl-pupilL" cx="107" cy="115" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="pl-glintL" cx="105" cy="112" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<ellipse id="pl-eyeWhiteR" cx="149" cy="114" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="pl-pupilR" cx="149" cy="115" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="pl-glintR" cx="147" cy="112" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<path id="pl-underEyeL" d="M107,119 A10,5 0 0,1 107,129 Z" fill="#E0A882" opacity="0.45"/>
+<path id="pl-underEyeR" d="M149,119 A10,5 0 0,1 149,129 Z" fill="#E0A882" opacity="0.45"/>
+<path id="pl-browL" d="M100,96 L118,92" fill="none" stroke="#33261C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pl-browR" d="M138,92 L156,96" fill="none" stroke="#33261C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pl-mouth" d="M114,144 Q128,148 142,144" fill="none" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

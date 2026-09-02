@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<ellipse id="xb-bg" cx="128" cy="128" rx="120" ry="120" fill="#3A1C1C" stroke="#F5C542" stroke-width="6"/>
+<path id="xb-body" d="M78,210 Q78,178 111,168 L145,168 Q178,178 178,210 L178,240 Q128,252 78,240 Z" fill="#E63946" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="xb-bodySh" d="M128,168 L145,168 Q178,178 178,210 L178,240 Q153,248 128,249 Z" fill="#C1121F" opacity="0.55"/>
+<rect id="xb-collar" x="118" y="168" width="20" height="10" fill="#FFF8EE" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="xb-earL" cx="74" cy="118" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="xb-earR" cx="182" cy="118" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="xb-neck" x="111" y="160" width="34" height="34" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="xb-neckSh" x="128" y="160" width="17" height="34" fill="#E0A882" opacity="0.5"/>
+<ellipse id="xb-face" cx="128" cy="118" rx="50" ry="52" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<path id="xb-faceShade" d="M128,66 A50,52 0 0,1 128,170 Z" fill="#E0A882" opacity="0.5"/>
+<path id="xb-hairTop" d="M78,110 Q80,58 128,54 Q176,58 178,110 Q168,84 128,82 Q88,84 78,110 Z" fill="#3B2415" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="xb-hairShade" d="M128,82 Q168,84 178,110 Q172,92 138,86 Z" fill="#2A1810" opacity="0.6"/>
+<path id="xb-cowlick" d="M124,56 Q118,34 132,28 Q126,46 134,54 Z" fill="#3B2415" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="xb-mouth" d="M104,138 Q128,164 152,138 Q128,150 104,138 Z" fill="#7A2B2B" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="xb-teeth" x="116" y="140" width="24" height="8" fill="#FFF8EE" rx="2"/>
+<rect id="xb-gapTooth" x="126" y="140" width="6" height="8" fill="#7A2B2B"/>
+<ellipse id="xb-eyeWhiteL" cx="108" cy="110" rx="8" ry="9" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="xb-pupilL" cx="108" cy="111" rx="3.6" ry="4.4" fill="#2A1010"/>
+<ellipse id="xb-glintL" cx="106" cy="108" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<ellipse id="xb-eyeWhiteR" cx="148" cy="110" rx="8" ry="9" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="xb-pupilR" cx="148" cy="111" rx="3.6" ry="4.4" fill="#2A1010"/>
+<ellipse id="xb-glintR" cx="146" cy="108" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<path id="xb-browL" d="M100.0,87 Q108,84 116.0,93" fill="none" stroke="#2A1010" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="xb-browR" d="M140.0,93 Q148,84 156.0,87" fill="none" stroke="#2A1010" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="xb-blushL" cx="92" cy="128" rx="7" ry="5" fill="#E63946" opacity="0.35"/>
+<ellipse id="xb-blushR" cx="164" cy="128" rx="7" ry="5" fill="#E63946" opacity="0.35"/>
+<rect id="xb-switchBody" x="104" y="226" width="48" height="26" fill="#4A4A4A" stroke="#2A1010" stroke-width="4" rx="8"/>
+<rect id="xb-joyL" x="104" y="226" width="16" height="26" fill="#C1121F" stroke="#2A1010" stroke-width="3" rx="8"/>
+<rect id="xb-joyR" x="136" y="226" width="16" height="26" fill="#2A9D8F" stroke="#2A1010" stroke-width="3" rx="8"/>
+<ellipse id="xb-btn1" cx="118" cy="234" rx="3" ry="3" fill="#FFF8EE"/>
+<ellipse id="xb-btn2" cx="146" cy="234" rx="3" ry="3" fill="#FFF8EE"/>
+</svg>

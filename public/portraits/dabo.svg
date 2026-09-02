@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<ellipse id="db-bg" cx="128" cy="128" rx="120" ry="120" fill="#3A1C1C" stroke="#F5C542" stroke-width="6"/>
+<path id="db-body" d="M72,214 Q72,180 110,168 L146,168 Q184,180 184,214 L184,242 Q128,254 72,242 Z" fill="#C1121F" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="db-collar" x="110" y="168" width="36" height="14" fill="#FFF8EE" stroke="#2A1010" stroke-width="3"/>
+<path id="db-bodySh" d="M128,168 L146,168 Q184,180 184,214 L184,242 Q156,250 128,251 Z" fill="#8C0E17" opacity="0.5"/>
+<ellipse id="db-earL" cx="74" cy="122" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="db-earR" cx="182" cy="122" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="db-neck" x="111" y="160" width="34" height="34" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="db-neckSh" x="128" y="160" width="17" height="34" fill="#E0A882" opacity="0.5"/>
+<ellipse id="db-face" cx="128" cy="120" rx="52" ry="54" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<path id="db-faceShade" d="M128,66 A52,54 0 0,1 128,174 Z" fill="#E0A882" opacity="0.5"/>
+<ellipse id="db-bald" cx="128" cy="84" rx="40" ry="34" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<path id="db-baldShine" d="M112,66 Q126,58 138,64" fill="none" stroke="#FFF8EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+<path id="db-hairL" d="M74,120 Q66,88 84,72 Q76,96 86,120 Z" fill="#9E9E92" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="db-hairR" d="M182,120 Q190,88 172,72 Q180,96 170,120 Z" fill="#9E9E92" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="db-hairLsh" d="M74,120 Q70,100 80,84 Q76,102 84,120 Z" fill="#7A7A70" opacity="0.6"/>
+<path id="db-browL" d="M96,90 Q112,78 122,88" fill="none" stroke="#6E6E64" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="db-browR" d="M134,88 Q144,78 160,90" fill="none" stroke="#6E6E64" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="db-eyeWhiteL" cx="105" cy="112" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="db-pupilL" cx="105" cy="113" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="db-glintL" cx="103" cy="110" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<ellipse id="db-eyeWhiteR" cx="151" cy="112" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="db-pupilR" cx="151" cy="113" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="db-glintR" cx="149" cy="110" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<ellipse id="db-mouth" cx="128" cy="146" rx="14" ry="10" fill="#7A2B2B" stroke="#2A1010" stroke-width="4"/>
+<rect id="db-teeth" x="118" y="140" width="20" height="5" fill="#FFF8EE" rx="2"/>
+<path id="db-jowlL" d="M78,140 Q80,156 92,164" fill="none" stroke="#2A1010" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+<path id="db-jowlR" d="M178,140 Q176,156 164,164" fill="none" stroke="#2A1010" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+<rect id="db-remote" x="176" y="198" width="22" height="40" fill="#333333" stroke="#2A1010" stroke-width="3" rx="5"/>
+<rect id="db-remoteBtn1" x="180" y="204" width="14" height="5" fill="#E63946" rx="1"/>
+<rect id="db-remoteBtn2" x="180" y="212" width="14" height="5" fill="#F5C542" rx="1"/>
+<rect id="db-remoteBtn3" x="180" y="220" width="14" height="5" fill="#2A9D8F" rx="1"/>
+</svg>

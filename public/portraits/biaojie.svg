@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<ellipse id="bj-bg" cx="128" cy="128" rx="120" ry="120" fill="#3A1C1C" stroke="#F5C542" stroke-width="6"/>
+<path id="bj-hairBack" d="M64,120 Q60,190 82,224 L100,224 Q86,170 90,120 Z" fill="#2A1810" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-hairBackR" d="M192,120 Q196,190 174,224 L156,224 Q170,170 166,120 Z" fill="#2A1810" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-body" d="M76,212 Q76,180 112,170 L144,170 Q180,180 180,212 L180,242 Q128,253 76,242 Z" fill="#FFF3E0" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-bodySh" d="M128,170 L144,170 Q180,180 180,212 L180,242 Q153,250 128,251 Z" fill="#E5D3C8" opacity="0.55"/>
+<path id="bj-strap" d="M92,172 L150,244 L164,238 L106,168 Z" fill="#2A9D8F" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-strapSh" d="M128,206 L150,244 L164,238 L138,202 Z" fill="#1E6F68" opacity="0.5"/>
+<ellipse id="bj-babyHead" cx="168" cy="234" rx="14" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="3"/>
+<path id="bj-babyTuft" d="M164,222 Q168,214 174,222 Z" fill="#2A1810" stroke="#2A1010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="bj-earL" cx="74" cy="118" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<ellipse id="bj-earR" cx="182" cy="118" rx="9" ry="13" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="bj-neck" x="111" y="160" width="34" height="34" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<rect id="bj-neckSh" x="128" y="160" width="17" height="34" fill="#E0A882" opacity="0.5"/>
+<ellipse id="bj-face" cx="128" cy="116" rx="50" ry="52" fill="#F3C9A5" stroke="#2A1010" stroke-width="4"/>
+<path id="bj-faceShade" d="M128,64 A50,52 0 0,1 128,168 Z" fill="#E0A882" opacity="0.5"/>
+<path id="bj-hairTop" d="M78,108 Q80,58 128,54 Q176,58 178,108 Q166,80 128,78 Q90,80 78,108 Z" fill="#2A1810" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-hairTopSh" d="M128,78 Q166,80 178,108 Q170,90 140,84 Z" fill="#1A0F0A" opacity="0.55"/>
+<path id="bj-earrL" d="M72,130 L72,146" fill="none" stroke="#D4A017" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="bj-earrLd" cx="72" cy="150" rx="4.5" ry="4.5" fill="#F5C542" stroke="#2A1010" stroke-width="2"/>
+<path id="bj-earrR" d="M184,130 L184,146" fill="none" stroke="#D4A017" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="bj-earrRd" cx="184" cy="150" rx="4.5" ry="4.5" fill="#F5C542" stroke="#2A1010" stroke-width="2"/>
+<ellipse id="bj-eyeWhiteL" cx="107" cy="110" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="bj-pupilL" cx="107" cy="111" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="bj-glintL" cx="105" cy="108" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<ellipse id="bj-eyeWhiteR" cx="149" cy="110" rx="7" ry="8" fill="#FFF3E0" stroke="#2A1010" stroke-width="3"/>
+<ellipse id="bj-pupilR" cx="149" cy="111" rx="3.15" ry="3.8500000000000005" fill="#2A1010"/>
+<ellipse id="bj-glintR" cx="147" cy="108" rx="1.6" ry="1.6" fill="#FFF8EE"/>
+<path id="bj-browL" d="M98.5,88 Q107,86 115.5,96" fill="none" stroke="#2A1010" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-browR" d="M140.5,96 Q149,86 157.5,88" fill="none" stroke="#2A1010" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bj-mouth" d="M112,138 Q128,146 144,138" fill="#C97B84" stroke="#2A1010" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="bj-blushL" cx="90" cy="128" rx="7" ry="5" fill="#E63946" opacity="0.28"/>
+<ellipse id="bj-blushR" cx="166" cy="128" rx="7" ry="5" fill="#E63946" opacity="0.28"/>
+<rect id="bj-phone" x="66" y="200" width="20" height="34" fill="#2A2A2A" stroke="#2A1010" stroke-width="3" rx="4"/>
+<rect id="bj-phoneScreen" x="69" y="204" width="14" height="26" fill="#2A9D8F" rx="2"/>
+</svg>
