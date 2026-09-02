@@ -177,3 +177,44 @@ export interface StoryEnding {
   title: string;
   lines: string[];
 }
+
+/* ---------------- 人生（Life）---------------- */
+
+/** 依 archetype 的倍率：dealt 乘在對關主傷害，taken 乘在玩家受傷 */
+export type ArchetypeScale = Partial<
+  Record<Archetype, { dealt?: number; taken?: number }>
+>;
+
+export interface LifeModifiers {
+  /** 依題目 topic 的倍率（例：剛失業 → salary_job.meek.taken 1.5） */
+  topic?: Partial<Record<Topic, ArchetypeScale>>;
+  /** 依關主的倍率（例：阿嬤帶大的 → ama.landmine.taken 2, ama.perfect.dealt 1.3） */
+  boss?: Partial<Record<BossId, ArchetypeScale>>;
+  /** 起始 HP，預設 PLAYER_MAX_HP */
+  startHp?: number;
+  /** 額外特殊技次數 */
+  extraSpecials?: { skip?: number; heal?: number };
+}
+
+export interface Life {
+  /** "life-01" … "life-30" */
+  id: string;
+  /** 追蹤代碼，顯示給玩家與後台："L01" … "L30" */
+  code: string;
+  /** 英文 slug，供 URL/分享 */
+  slug: string;
+  /** 人生名稱，例：北漂工程師 */
+  name: string;
+  /** 一句話 tagline ≤24 字 */
+  tagline: string;
+  /** 家庭背景，2–3 段，每段 ≤40 字 */
+  background: string[];
+  /** 與每位長輩的故事，1 句 ≤40 字；影響回覆殺傷力的「理由」要能從這句讀出來 */
+  relations: Record<BossId, string>;
+  /** 玩家看得到的強項/弱點說明，各 1 句 */
+  strengths: string[];
+  weaknesses: string[];
+  modifiers: LifeModifiers;
+  /** Lucide icon 名稱（例："Laptop"），供人生選擇卡片 */
+  icon: string;
+}

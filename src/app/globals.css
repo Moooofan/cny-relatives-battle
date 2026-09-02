@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Design tokens — see design-system/過年大戰三姑六婆/MASTER.md (dark-first, single theme) */
+@theme {
+  --color-bg: #1a0b0b;
+  --color-surface: #2b1414;
+  --color-surface-2: #3a1c1c;
+  --color-border: rgba(255, 214, 170, 0.18);
+
+  --color-primary: #e63946;
+  --color-primary-strong: #c1121f;
+  --color-on-primary: #fff8ee;
+
+  --color-gold: #f5c542;
+  --color-gold-deep: #d4a017;
+
+  --color-text: #fff3e0;
+  --color-text-muted: #c9a98f;
+
+  --color-hp-player: #4ade80;
+  --color-hp-boss: #f87171;
+  --color-damage: #ff5252;
+  --color-heal: #6ee7b7;
+  --color-crit: #ffd54f;
+
+  --color-arch-perfect: #f5c542;
+  --color-arch-deflect: #7dd3fc;
+  --color-arch-meek: #c4b5fd;
+  --color-arch-backfire: #fdba74;
+  --color-arch-landmine: #f87171;
+
+  --font-sans: var(--font-noto-sans-tc), "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-serif: var(--font-noto-serif-tc), "Songti TC", "PMingLiU", serif;
+
+  --radius-box: 6px;
+  --radius-btn: 8px;
+  --radius-cta: 10px;
+
+  --animate-shake: shake 120ms ease-in-out;
+  --animate-float-up: float-up 600ms ease-out forwards;
+  --animate-flash: flash 250ms ease-out;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+@keyframes float-up {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-24px); }
+}
+@keyframes flash {
+  0% { opacity: 0.9; }
+  100% { opacity: 0; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
+  background: var(--color-bg);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Double-rule RPG dialogue frame */
+.rpg-box {
+  background: var(--color-surface);
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-box);
+  box-shadow: inset 0 0 0 3px var(--color-surface), inset 0 0 0 4px var(--color-border);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.safe-pb {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+.safe-pt {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
