@@ -44,13 +44,19 @@ export function TurnTimer({ endsAt, onExpire }: Props) {
 
   const pct = Math.max(0, Math.min(100, (remainingMs / TOTAL_MS) * 100));
   const urgent = remainingMs <= 5000;
+  const secondsLeft = Math.ceil(remainingMs / 1000);
 
   return (
-    <div className="h-[3px] w-full bg-surface-2 overflow-hidden" role="presentation">
-      <div
-        className={`h-full transition-[width] duration-100 linear ${urgent ? "bg-primary" : "bg-gold"}`}
-        style={{ width: `${pct}%` }}
-      />
+    <div className="flex items-center gap-2" role="presentation">
+      <div className={`h-[3px] flex-1 bg-surface-2 overflow-hidden ${urgent ? "animate-pulse-urgent" : ""}`}>
+        <div
+          className={`h-full transition-[width] duration-100 linear ${urgent ? "bg-primary" : "bg-gold"}`}
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+      <span className={`tabular text-xs w-4 text-right ${urgent ? "text-primary animate-pulse-urgent" : "text-text-muted"}`}>
+        {secondsLeft}
+      </span>
     </div>
   );
 }

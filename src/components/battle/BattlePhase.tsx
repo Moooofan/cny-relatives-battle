@@ -32,7 +32,16 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
   }
 
   if (state.phase === "bossDefeated" || state.phase === "playerDefeated") {
-    return <OutcomeView boss={boss} outcome={state.phase} onContinue={onContinue} />;
+    return (
+      <OutcomeView
+        boss={boss}
+        outcome={state.phase}
+        turns={state.turns}
+        dealt={state.damageDealt}
+        maxCombo={state.maxCombo}
+        onContinue={onContinue}
+      />
+    );
   }
 
   if (state.phase === "turn" && state.currentQuestionId) {
@@ -48,6 +57,7 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
     return (
       <TurnView
         boss={boss}
+        life={life}
         summonedBoss={summonedBoss}
         questionText={question.text}
         options={options}
@@ -59,6 +69,8 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
         followUp={state.followUp}
         specials={state.specials}
         timerEndsAt={timerEndsAt}
+        lastResolve={state.lastResolve}
+        turnKey={state.turns}
         onPick={onPick}
         onTimeout={onTimeout}
         onUseSpecial={onUseSpecial}
@@ -75,6 +87,7 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
     return (
       <RetortView
         boss={boss}
+        life={life}
         retortText={retortText}
         resolve={state.lastResolve}
         animKey={state.turns}
