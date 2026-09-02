@@ -742,7 +742,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-014-a",
-        text: "好，我回去查一下這個說法。",
+        text: "好，這個我這就去查清楚。",
         archetype: "perfect",
         retort: "查一下就知道，睡眠品質差很多。",
       },

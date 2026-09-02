@@ -463,7 +463,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-029-a",
-        text: "好，我回去查一下這個說法。",
+        text: "好，我先查一下芹菜汁的功效。",
         archetype: "perfect",
         retort: "查完你就懂，這汁很厲害。",
       },

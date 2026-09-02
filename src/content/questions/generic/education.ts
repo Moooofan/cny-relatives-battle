@@ -67,7 +67,7 @@ export default [
       { id: "generic-education-004-b", text: "先問隔壁的最近在學校過得怎樣？", archetype: "deflect", retort: "聽說過得不錯，很認真呢。" },
       { id: "generic-education-004-c", text: "考不考得上先別提，你們今天氣色真好。", archetype: "deflect", retort: "是嗎？我最近有保養啦。" },
       { id: "generic-education-004-d", text: "我當年成績普通，沒考上很好的學校……", archetype: "meek", retort: "普通也要繼續努力補回來。" },
-      { id: "generic-education-004-e", text: "說實話，聽到這種比較會有點難過……", archetype: "meek", retort: "難過歸難過，還是要面對現實。" },
+      { id: "generic-education-004-e", text: "老實說，這樣比真的會不好受……", archetype: "meek", retort: "難過歸難過，還是要面對現實。" },
       { id: "generic-education-004-f", text: "我當年是故意考差，深藏實力。", archetype: "backfire", retort: "（沒人相信這個說法）" },
       { id: "generic-education-004-g", text: "我把讀書的天分留到出社會再用。", archetype: "backfire", retort: "（大家笑不出來）" },
       { id: "generic-education-004-h", text: "考得好不好不用你們一直拿來比。", archetype: "landmine", retort: "比較一下也要生氣，真受不了。" },
@@ -139,7 +139,7 @@ export default [
     topic: "education",
     options: [
       { id: "generic-education-009-a", text: "名次不重要，重要的是我現在排在你們心裡第一。", archetype: "perfect", retort: "哎唷，這孩子嘴巴真甜。" },
-      { id: "generic-education-009-b", text: "先問你們，當年最會念書的是誰？", archetype: "deflect", retort: "那當然是我啊，年年第一名！" },
+      { id: "generic-education-009-b", text: "先說你們當年考第幾名比較快。", archetype: "deflect", retort: "那當然是我啊，年年第一名！" },
       { id: "generic-education-009-c", text: "名次先別提，你們今天精神真好。", archetype: "deflect", retort: "是嗎？睡得比較飽啦。" },
       { id: "generic-education-009-d", text: "成績普通，都在中間名次而已……", archetype: "meek", retort: "中間也要往前擠一擠啊。" },
       { id: "generic-education-009-e", text: "說實話，我成績不是很好……", archetype: "meek", retort: "不好也不用太在意，重要的是現在。" },

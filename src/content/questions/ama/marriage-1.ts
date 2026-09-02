@@ -309,7 +309,7 @@ export default [
       { id: "ama-marriage-020-e", text: "最近工作真的太忙，抽不出時間……", archetype: "meek", retort: "忙也要抽個一小時見一面。" },
       { id: "ama-marriage-020-f", text: "相親前我要先請造型師來一趟。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續安排時間）" },
       { id: "ama-marriage-020-g", text: "這場相親我要準備開場才藝。", archetype: "backfire", retort: "（阿嬤白眼，逕自訂好餐廳）" },
-      { id: "ama-marriage-020-h", text: "不要隨便幫我安排相親啦。", archetype: "landmine", retort: "……好，阿嬤不安排了。" },
+      { id: "ama-marriage-020-h", text: "阿嬤你很閒喔，一直幫我配對。", archetype: "landmine", retort: "……好，阿嬤不安排了。" },
     ],
   },
   {

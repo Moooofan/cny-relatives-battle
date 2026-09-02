@@ -779,7 +779,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-035-e",
-        text: "沒去尾牙，加班沒辦法參加……",
+        text: "我們公司尾牙沒抽獎，運氣不好……",
         archetype: "meek",
         retort: "加班？那薪水有比較多嗎？",
       },

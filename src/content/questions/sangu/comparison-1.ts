@@ -242,7 +242,7 @@ export default [
       { id: "sangu-comparison-015-b", text: "姑姑當年闖出的那片天，長什麼樣？", archetype: "deflect", retort: "又大又亮，快跟我多學學。" },
       { id: "sangu-comparison-015-c", text: "闖天下之前，姑姑先教我幾招吧。", archetype: "deflect", retort: "貧嘴，先靠自己努力再說。" },
       { id: "sangu-comparison-015-d", text: "現在的環境真的比當年競爭激烈很多……", archetype: "meek", retort: "激烈也要拚，別找藉口放棄。" },
-      { id: "sangu-comparison-015-e", text: "聽了心裡不太舒服，但也沒辦法反駁……", archetype: "meek", retort: "沒辦法反駁，就代表說對了。" },
+      { id: "sangu-comparison-015-e", text: "聽了是有點刺耳，但也說不出反駁……", archetype: "meek", retort: "沒辦法反駁，就代表說對了。" },
       { id: "sangu-comparison-015-f", text: "那年代選項少，隨便闖都算闖出來。", archetype: "backfire", retort: "（三姑臉一沉，笑意收一半）" },
       { id: "sangu-comparison-015-g", text: "我這代講究慢活，不急著闖天下。", archetype: "backfire", retort: "……慢活，慢到現在還沒個影。" },
       { id: "sangu-comparison-015-h", text: "那年代選擇少，隨便闖都比較容易吧。", archetype: "landmine", retort: "（笑意變冷）你在說我們不辛苦？" },

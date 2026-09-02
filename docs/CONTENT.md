@@ -28,7 +28,7 @@ ID 規則：question `${bossId|generic}-${topic}-${nnn}`（nnn 三位數從 001�
 | 4 | `dabo` | 大伯 | 電視轉政論台的男人，覺得年輕人書都白讀 | politics, education, salary_job | normal | （v2：大伯母補刀） |
 | 5 | `guzhang` | 剛退休的姑丈 | 早上五點傳長輩圖，堅信薑黃治百病 | elder_health, food_push, politics | hard | （v2：早安圖） |
 | 6 | `sanjiuma` | 三舅媽 | 全家族薪資資料庫管理員，表哥是她的 KPI | salary_job, housing, comparison | hard | followUpOnMeek |
-| 7 | `ama` | 阿嬤 | 眼裡只有你太瘦、太晚婚、太少回來；她不會罵你，她會難過 | food_push, marriage, religion | hard | dealtMultiplier.perfect=0.5, healOnLandmine=20（心疼值：要溫柔地贏） |
+| 7 | `ama` | 阿嬤 | 眼裡只有你太瘦、太晚婚、太少回來；她不會罵你，她會難過 | food_push, marriage, religion | normal（平衡後由 hard 調降） | dealtMultiplier.perfect=0.5, healOnLandmine=20（心疼值：要溫柔地贏） |
 | 8 | `sangu` | 三姑 | 三姑六婆總教頭，所有題型精通，笑著把你問到懷疑人生 | marriage, salary_job, housing, kids, comparison | final | summonAtHalf, reuseMeekQuestions |
 
 Emoji 暫代立繪：小表弟 🧒 陳太太 👩‍🦱 表姊 🤱 大伯 👨‍🦳 姑丈 🧓 三舅媽 👩‍💼 阿嬤 👵 三姑 💃

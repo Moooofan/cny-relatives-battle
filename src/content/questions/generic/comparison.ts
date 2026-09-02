@@ -67,7 +67,7 @@ export default [
       { id: "generic-comparison-004-b", text: "先說你們最近身體有沒有哪裡不舒服？", archetype: "deflect", retort: "還好啦，你這麼問真貼心。" },
       { id: "generic-comparison-004-c", text: "回不回來先別提，我今天多留一晚陪你們。", archetype: "deflect", retort: "好啊好啊，留久一點！" },
       { id: "generic-comparison-004-d", text: "工作真的比較忙，沒辦法常回來……", archetype: "meek", retort: "忙也要抽空回來看看啊。" },
-      { id: "generic-comparison-004-e", text: "說實話，聽到這種比較會有點難過……", archetype: "meek", retort: "難過歸難過，還是要多回來。" },
+      { id: "generic-comparison-004-e", text: "說真的，聽你這樣講有點小失落……", archetype: "meek", retort: "難過歸難過，還是要多回來。" },
       { id: "generic-comparison-004-f", text: "我打算用視訊孝順，效果一樣。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-comparison-004-g", text: "我請假的頻率跟他成反比啦。", archetype: "backfire", retort: "（大家聽不太懂）" },
       { id: "generic-comparison-004-h", text: "回不回來是我的事，不用你們一直比。", archetype: "landmine", retort: "關心一下都要被嗆，真無奈。" },

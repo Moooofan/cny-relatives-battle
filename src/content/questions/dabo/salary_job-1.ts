@@ -485,7 +485,7 @@ export default [
       },
       {
         id: "dabo-salary_job-009-b",
-        text: "考過一次沒上，就沒再試了……",
+        text: "考試真的不是我的強項……",
         archetype: "meek",
         retort: "沒上就放棄，太沒毅力了。",
       },
@@ -883,7 +883,7 @@ export default [
       },
       {
         id: "dabo-salary_job-016-c",
-        text: "你對創業這件事看得真透徹。",
+        text: "大伯眼光真準，這麼懂市場。",
         archetype: "deflect",
         retort: "那當然，我看過太多起起落落。",
       },

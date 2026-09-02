@@ -144,7 +144,7 @@ export default [
       },
       {
         id: "guzhang-food_push-023-d",
-        text: "我等一下要開車，喝一點就好……",
+        text: "我等一下還要騎車耶，喝一點點……",
         archetype: "meek",
         retort: "一點點沒關係啦，很順口的。",
       },

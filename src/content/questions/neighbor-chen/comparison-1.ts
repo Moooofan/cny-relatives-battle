@@ -164,7 +164,7 @@ export default [
       { id: "neighbor-chen-comparison-010-e", text: "年終的事先保密，橘子多少錢一斤？", archetype: "deflect", retort: "一斤五十塊，很甜喔。" },
       { id: "neighbor-chen-comparison-010-f", text: "李太太兒子那麼忙，身體撐得住嗎？", archetype: "landmine", retort: "你這孩子亂講什麼，我要跟你媽講！" },
       { id: "neighbor-chen-comparison-010-g", text: "我雖然年終不多，但很會挑橘子啦。", archetype: "backfire", retort: "（她沒聽懂，繼續賣橘子）" },
-      { id: "neighbor-chen-comparison-010-h", text: "確實差很多，還在努力提升自己……", archetype: "meek", retort: "提升自己？那要不要進修證照？" },
+      { id: "neighbor-chen-comparison-010-h", text: "真的差不少，我還在努力加油……", archetype: "meek", retort: "提升自己？那要不要進修證照？" },
     ],
   },
   {

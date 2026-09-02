@@ -243,7 +243,7 @@ export default [
       { id: "neighbor-chen-marriage-015-d", text: "適婚年齡是別人定的，我有自己步調。", archetype: "perfect", retort: "哎唷，你這孩子想法真獨立！" },
       { id: "neighbor-chen-marriage-015-e", text: "我打算逆齡結婚，越晚越潮啦哈哈。", archetype: "backfire", retort: "（她沒聽懂，繼續貼公告）" },
       { id: "neighbor-chen-marriage-015-f", text: "婚姻的事先保密，這活動要報名嗎？", archetype: "deflect", retort: "報名啊，順便交交朋友。" },
-      { id: "neighbor-chen-marriage-015-g", text: "陳太太您管這麼多，是不是很閒？", archetype: "landmine", retort: "你這孩子講話怎麼這麼衝！" },
+      { id: "neighbor-chen-marriage-015-g", text: "陳太太這麼閒，都在管別人結婚？", archetype: "landmine", retort: "你這孩子講話怎麼這麼衝！" },
       { id: "neighbor-chen-marriage-015-h", text: "確實有點晚了，心裡也會著急……", archetype: "meek", retort: "著急？那要不要多主動一點？" },
     ],
   },

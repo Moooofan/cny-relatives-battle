@@ -64,7 +64,7 @@ export default [
       { id: "ama-religion-025-b", text: "阿嬤求籤這麼虔誠，一定會靈驗。", archetype: "deflect", retort: "當然，阿嬤誠心誠意求的。" },
       { id: "ama-religion-025-c", text: "這籤詩上面寫的，是什麼意思？", archetype: "deflect", retort: "上面說緣分快到了，等等看。" },
       { id: "ama-religion-025-d", text: "我最近真的沒有戀愛的跡象……", archetype: "meek", retort: "籤詩說快了，再等等看。" },
-      { id: "ama-religion-025-e", text: "我對這種籤詩其實半信半疑……", archetype: "meek", retort: "信一點，緣分才會靠近。" },
+      { id: "ama-religion-025-e", text: "姻緣籤詩的內容我不是很懂……", archetype: "meek", retort: "信一點，緣分才會靠近。" },
       { id: "ama-religion-025-f", text: "這籤詩是不是可以線上兌換。", archetype: "backfire", retort: "（阿嬤沒聽懂，收好籤詩）" },
       { id: "ama-religion-025-g", text: "姻緣籤是不是有效期限。", archetype: "backfire", retort: "（阿嬤白眼，收好籤詩）" },
       { id: "ama-religion-025-h", text: "這種籤詩都亂寫的，別當真。", archetype: "landmine", retort: "你這樣說，阿嬤會難過。" },

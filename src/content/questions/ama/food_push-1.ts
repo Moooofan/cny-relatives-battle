@@ -157,7 +157,7 @@ export default [
     bossId: "ama",
     options: [
       { id: "ama-food_push-011-a", text: "阿嬤包的年糕，帶著能保平安。", archetype: "perfect", retort: "哎唷，這句話說得阿嬤開心。" },
-      { id: "ama-food_push-011-b", text: "阿嬤留一點自己吃，不要都給我。", archetype: "deflect", retort: "我吃不了那麼多，你拿去。" },
+      { id: "ama-food_push-011-b", text: "阿嬤自己也留一點年糕吃啦。", archetype: "deflect", retort: "我吃不了那麼多，你拿去。" },
       { id: "ama-food_push-011-c", text: "這年糕的味道，跟小時候一樣。", archetype: "deflect", retort: "配方都沒變過，安心吃。" },
       { id: "ama-food_push-011-d", text: "我行李已經很滿了，裝不下……", archetype: "meek", retort: "裝不下就用手提著走！" },
       { id: "ama-food_push-011-e", text: "我不太會吃年糕，怕噎到……", archetype: "meek", retort: "慢慢吃就不會噎，別怕！" },
@@ -177,7 +177,7 @@ export default [
       { id: "ama-food_push-012-c", text: "這糖果罐，是不是每年都換新的？", archetype: "deflect", retort: "當然，過年就是要新的。" },
       { id: "ama-food_push-012-d", text: "口袋已經塞不下了啦……", archetype: "meek", retort: "塞不下就用袋子裝著！" },
       { id: "ama-food_push-012-e", text: "我最近在少吃甜的……", archetype: "meek", retort: "過年不忌口，吃一顆而已！" },
-      { id: "ama-food_push-012-f", text: "這樣我糖尿病都要來拜年了。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續塞）" },
+      { id: "ama-food_push-012-f", text: "這樣我要變成糖果人了啦。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續塞）" },
       { id: "ama-food_push-012-g", text: "我要開一間糖果批發店。", archetype: "backfire", retort: "（阿嬤笑笑，繼續往口袋塞）" },
       { id: "ama-food_push-012-h", text: "夠了啦，不要一直塞東西。", archetype: "landmine", retort: "……好，阿嬤不塞了。" },
     ],

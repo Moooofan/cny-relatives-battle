@@ -23,7 +23,7 @@ export default [
       { id: "generic-salary_job-001-c", text: "薪水先不說，紅包行情你們倒是可以先講。", archetype: "deflect", retort: "你這孩子，反問得很快。" },
       { id: "generic-salary_job-001-d", text: "大概四萬多，扣一扣剩沒多少……", archetype: "meek", retort: "扣一扣剩多少？要學會存錢。" },
       { id: "generic-salary_job-001-e", text: "說實話，沒有很多，夠用而已……", archetype: "meek", retort: "夠用就好，但也要存一點。" },
-      { id: "generic-salary_job-001-f", text: "我領的是熱情，熱情無價。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
+      { id: "generic-salary_job-001-f", text: "薪水都變成經驗值了啦，哈哈。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-salary_job-001-g", text: "我的薪水是機密，跟國安層級一樣。", archetype: "backfire", retort: "（大家笑不出來）" },
       { id: "generic-salary_job-001-h", text: "領多少是我的隱私，不要一直問。", archetype: "landmine", retort: "問一下也要生氣，真是的。" },
     ],

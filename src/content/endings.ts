@@ -4,6 +4,13 @@ import type { RankTier, StoryEnding } from "@/content/types";
  * minScore uses -100000 in place of -Infinity for rank 1 (JSON-safe, and far
  * below any achievable score) per docs/CONTENT.md §5.
  */
+/**
+ * Tuned from `simulateMany()` (src/engine/sim.ts) against the real content
+ * bundle: 300 seeds × {random, casual, good, expert} policies × 4 modes.
+ * See docs/BALANCE.md for the full before/after tables and rationale.
+ * random and daily intentionally share thresholds (docs/CONTENT.md §5); story
+ * and gauntlet are tuned independently since their score scales differ.
+ */
 export const RANK_TIERS: RankTier[] = [
   {
     rank: 1,
@@ -15,37 +22,37 @@ export const RANK_TIERS: RankTier[] = [
     rank: 2,
     title: "紅包拿了就跑",
     blurb: "戰績不重要，錢有拿到就好，明年再戰。",
-    minScore: { random: 60, daily: 60, story: 300, gauntlet: 300 },
+    minScore: { random: 20, daily: 20, story: 25, gauntlet: 10 },
   },
   {
     rank: 3,
     title: "尷尬微笑專家",
     blurb: "你的嘴角撐了三天沒垮，這也是一種實力。",
-    minScore: { random: 120, daily: 120, story: 600, gauntlet: 600 },
+    minScore: { random: 60, daily: 60, story: 100, gauntlet: 60 },
   },
   {
     rank: 4,
     title: "勉強撐到初三",
     blurb: "有輸有贏，家族群組裡沒有人提到你，這就是勝利。",
-    minScore: { random: 180, daily: 180, story: 900, gauntlet: 900 },
+    minScore: { random: 120, daily: 120, story: 200, gauntlet: 320 },
   },
   {
     rank: 5,
     title: "四兩撥千斤達人",
     blurb: "每一題都被你笑著帶過，親戚們回家還在想到底被回了什麼。",
-    minScore: { random: 240, daily: 240, story: 1150, gauntlet: 1150 },
+    minScore: { random: 300, daily: 300, story: 260, gauntlet: 440 },
   },
   {
     rank: 6,
     title: "家族群組流量密碼",
     blurb: "你的回答被截圖傳遍三個群組，表姊偷偷存起來。",
-    minScore: { random: 300, daily: 300, story: 1350, gauntlet: 1350 },
+    minScore: { random: 350, daily: 350, story: 420, gauntlet: 725 },
   },
   {
     rank: 7,
     title: "三姑六婆終結者",
     blurb: "三姑親自幫你倒茶。明年，換你問。",
-    minScore: { random: 360, daily: 360, story: 1500, gauntlet: 1500 },
+    minScore: { random: 400, daily: 400, story: 460, gauntlet: 825 },
   },
 ];
 

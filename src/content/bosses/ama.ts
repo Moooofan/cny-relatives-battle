@@ -5,7 +5,7 @@ export default {
   name: "阿嬤",
   title: "心疼式緊迫盯人",
   description: "眼裡只有你太瘦、太晚婚、太少回來；她不會罵你，她會難過。",
-  tier: "hard",
+  tier: "normal",
   topics: ["food_push", "marriage", "religion"],
   order: 7,
   modifiers: {

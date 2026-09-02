@@ -17,7 +17,7 @@ export default [
       { id: "neighbor-chen-marriage-021-c", text: "我們決定把小孩換成寵物，好照顧。", archetype: "backfire", retort: "……（她拍著棉被，沒理我）" },
       { id: "neighbor-chen-marriage-021-d", text: "還在討論，還沒有最後決定……", archetype: "meek", retort: "沒決定？那要不要早點想清楚？" },
       { id: "neighbor-chen-marriage-021-e", text: "這件事先保密，棉被套花色好漂亮。", archetype: "deflect", retort: "這是新買的過年款式。" },
-      { id: "neighbor-chen-marriage-021-f", text: "陳太太您管我們生不生幹嘛？", archetype: "landmine", retort: "我關心你，講話這麼衝做什麼！" },
+      { id: "neighbor-chen-marriage-021-f", text: "我們生不生，關陳太太什麼事？", archetype: "landmine", retort: "我關心你，講話這麼衝做什麼！" },
       { id: "neighbor-chen-marriage-021-g", text: "頂客族生活比追劇還精彩啦哈哈。", archetype: "backfire", retort: "（她沒聽懂，繼續拍打棉被）" },
       { id: "neighbor-chen-marriage-021-h", text: "確實還沒決定，怕做錯選擇……", archetype: "meek", retort: "怕做錯？那要不要多討論？" },
     ],

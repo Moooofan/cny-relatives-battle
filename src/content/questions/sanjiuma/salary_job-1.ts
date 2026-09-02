@@ -403,7 +403,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-008-g",
-        text: "存款是數字遊戲，我選擇不玩。",
+        text: "存款這種東西，我早就佛系了。",
         archetype: "backfire",
         retort: "……（沒人接話，空氣安靜了）",
       },
@@ -553,7 +553,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-011-d",
-        text: "還在試用期，有點緊張……",
+        text: "剛到新單位，還在摸索狀況……",
         archetype: "meek",
         retort: "緊張什麼，你到底做多久了？",
       },

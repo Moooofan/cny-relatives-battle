@@ -766,7 +766,7 @@ export default [
       },
       {
         id: "sanjiuma-comparison-035-c",
-        text: "舅媽有沒有在運動，要不要一起去走走？",
+        text: "舅媽平常都怎麼運動，教教我？",
         archetype: "deflect",
         retort: "我這把年紀走走就好了。",
       },

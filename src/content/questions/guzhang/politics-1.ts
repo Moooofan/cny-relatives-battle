@@ -562,7 +562,7 @@ export default [
       },
       {
         id: "guzhang-politics-010-h",
-        text: "廟口聽來的東西哪有什麼準的。",
+        text: "那些朋友是不是很閒，整天講政治。",
         archetype: "landmine",
         retort: "……那些都是我的老朋友耶。",
       },

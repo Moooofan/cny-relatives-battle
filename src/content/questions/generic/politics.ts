@@ -70,7 +70,7 @@ export default [
       { id: "generic-politics-004-e", text: "說實話，有些事情我們真的不太懂……", archetype: "meek", retort: "不懂要多問，別自己悶著猜。" },
       { id: "generic-politics-004-f", text: "我們這代是被科技養大的，比較聰明啦。", archetype: "backfire", retort: "（場面突然安靜下來）" },
       { id: "generic-politics-004-g", text: "我覺得我們是進化版，你們是初代。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-politics-004-h", text: "時代不一樣，不要拿你們那套壓我們。", archetype: "landmine", retort: "我吃過的鹽比你吃過的飯還多！" },
+      { id: "generic-politics-004-h", text: "老是講不懂事，你們才活在過去。", archetype: "landmine", retort: "我吃過的鹽比你吃過的飯還多！" },
     ],
   },
   {
