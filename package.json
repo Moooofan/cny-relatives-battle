@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "content:index": "node scripts/build-content-index.mjs"
+    "content:index": "node scripts/build-content-index.mjs",
+    "og": "node scripts/build-og.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.39.0",
@@ -25,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.11"

@@ -6,10 +6,20 @@ import { CONTENT } from "@/content";
 import { findLife } from "@/content/lives";
 import { LifeIcon } from "@/components/common/LifeIcon";
 import { ModeCard } from "@/components/title/ModeCard";
+import { Lantern } from "@/components/title/Lantern";
+import { BossStrip } from "@/components/title/BossStrip";
 import { useGameStore } from "@/store/gameStore";
 import { useLifeStore } from "@/store/lifeStore";
 import { useDailyStore, isDailyDoneToday } from "@/store/dailyStore";
 import { useSettingsStore } from "@/store/settingsStore";
+import type { Mode } from "@/engine/types";
+
+const MODE_LABELS: Record<Mode, string> = {
+  random: "隨機挑戰",
+  daily: "每日挑戰",
+  story: "故事模式",
+  gauntlet: "闖關模式",
+};
 
 export default function TitlePage() {
   const gameState = useGameStore((s) => s.state);
@@ -26,11 +36,24 @@ export default function TitlePage() {
   const checkpointScene = storyCheckpoint != null ? CONTENT.scenes[storyCheckpoint] : undefined;
   const storyLabel = checkpointScene ? `續玩第 ${checkpointScene.act} 幕` : "開始故事";
 
+  const continueLabel = inProgress
+    ? gameState.mode === "story" && gameState.act
+      ? `${MODE_LABELS[gameState.mode]} · 第 ${gameState.act} 幕`
+      : MODE_LABELS[gameState.mode]
+    : undefined;
+
   return (
-    <main className="flex flex-1 flex-col mx-auto w-full max-w-md px-4 py-6 safe-pt safe-pb gap-4">
-      <header className="text-center py-4">
-        <h1 className="font-display text-3xl text-gold">過年大戰三姑六婆</h1>
-        <p className="text-sm text-text-muted mt-2">回家過年，用神回覆嗆爆三姑六婆。你敢回家嗎？</p>
+    <main className="bg-lattice flex flex-1 flex-col mx-auto w-full max-w-md px-4 py-4 safe-pt safe-pb gap-3">
+      <header className="text-center py-2">
+        <div className="flex items-start justify-center gap-3">
+          <Lantern className="mt-1" />
+          <div>
+            <h1 className="font-display text-3xl text-gold">過年大戰三姑六婆</h1>
+            <p className="text-sm text-text-muted mt-2">回家過年，用神回覆嗆爆三姑六婆。你敢回家嗎？</p>
+          </div>
+          <Lantern className="mt-1" flip />
+        </div>
+        <BossStrip bosses={CONTENT.bosses} />
       </header>
 
       <Link href="/life" className="rpg-box flex items-center gap-3 p-3 active:scale-[0.98] transition">
@@ -54,7 +77,7 @@ export default function TitlePage() {
           href={`/${gameState.mode}`}
           className="rounded-btn border border-gold bg-gold/10 px-4 py-3 text-center text-sm text-gold"
         >
-          繼續上一場（{gameState.mode}）
+          繼續上一場（{continueLabel}）
         </Link>
       )}
 

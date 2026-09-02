@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Sans_TC, Noto_Serif_TC } from "next/font/google";
 import "./globals.css";
 import { HydrationGate } from "@/components/common/HydrationGate";
+import { HomeJsonLd } from "./home-jsonld";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cny-relatives-battle.vercel.app";
 
 const notoSans = Noto_Sans_TC({
   variable: "--font-noto-sans-tc",
@@ -20,6 +23,7 @@ const notoSerif = Noto_Serif_TC({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "過年大戰三姑六婆",
     template: "%s｜過年大戰三姑六婆",
@@ -34,6 +38,13 @@ export const metadata: Metadata = {
     siteName: "過年大戰三姑六婆",
     title: "過年大戰三姑六婆",
     description: "回家過年，嗆爆三姑六婆。你敢回家嗎？",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "過年大戰三姑六婆" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "過年大戰三姑六婆",
+    description: "回家過年，嗆爆三姑六婆。你敢回家嗎？",
+    images: ["/og.png"],
   },
 };
 
@@ -51,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${notoSans.variable} ${notoSerif.variable} h-full antialiased`}
     >
       <body className="min-h-dvh flex flex-col">
+        <HomeJsonLd />
         <HydrationGate>{children}</HydrationGate>
       </body>
     </html>
