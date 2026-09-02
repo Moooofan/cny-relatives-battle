@@ -24,7 +24,18 @@ export function HydrationGate({ children }: { children: React.ReactNode }) {
       useStatsStore.persist.rehydrate(),
       useDailyStore.persist.rehydrate(),
       useResultsStore.persist.rehydrate(),
-    ]).finally(() => setReady(true));
+    ])
+      .then(() => {
+        // `timerEndsAt` is intentionally not persisted (it would be stale by
+        // reload time anyway), so a reload mid-battle rehydrates `state` in
+        // phase "turn" with no timer. Re-arm a fresh TURN_SECONDS countdown
+        // here instead of leaving the timer bar missing until the next turn.
+        const gameState = useGameStore.getState();
+        if (gameState.state?.phase === "turn") {
+          gameState.startTimer();
+        }
+      })
+      .finally(() => setReady(true));
   }, []);
 
   if (!ready) {

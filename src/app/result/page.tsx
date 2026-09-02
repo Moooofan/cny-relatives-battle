@@ -8,6 +8,7 @@ import { useGameStore } from "@/store/gameStore";
 import { useLifeStore } from "@/store/lifeStore";
 import { useResultsStore } from "@/store/resultsStore";
 import { useDailyStore } from "@/store/dailyStore";
+import { deriveWon } from "@/components/admin/resultsMath";
 import { PrimaryButton } from "@/components/common/PrimaryButton";
 import { LinkButton } from "@/components/common/LinkButton";
 import { TopicBars } from "@/components/result/TopicBars";
@@ -34,6 +35,10 @@ export default function ResultPage() {
       score: result.score,
       rankTitle: result.rank.title,
       endingId: result.storyEndingId,
+      won: deriveWon(
+        { mode: state.mode, bossesDefeated: state.bossesDefeated, endingId: result.storyEndingId },
+        state.bossQueue.length
+      ),
       bossesDefeated: state.bossesDefeated,
       turns: state.turns,
       maxCombo: state.maxCombo,

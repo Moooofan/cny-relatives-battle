@@ -23,6 +23,41 @@ describe("createGame + startBoss (via advance from 'intro')", () => {
     const s = createGame(FIXTURE_CONTENT_NO_LIVES, "gauntlet", "seed-2");
     expect(s.bossQueue).toEqual(["xiao-biaodi", "sanjiuma", "ama"]);
   });
+
+  test("startBoss resets combo for the new fight but keeps maxCombo from the run", () => {
+    const state: GameState = {
+      mode: "gauntlet",
+      seed: "combo-carryover",
+      rng: 0,
+      phase: "intro",
+      bossQueue: ["xiao-biaodi", "sanjiuma", "ama"],
+      bossIndex: 1,
+      bossHp: 0,
+      bossMaxHp: 0,
+      playerHp: 80,
+      playerMaxHp: 100,
+      lifeId: null,
+      combo: 3,
+      maxCombo: 5,
+      deck: [],
+      optionOrder: [],
+      specials: { skip: 1, heal: 1 },
+      log: [],
+      bossesDefeated: 1,
+      damageDealt: 0,
+      turns: 6,
+      landmineCount: 0,
+      meekQuestionIds: [],
+      summonUsed: false,
+      followUp: false,
+      activeModifiers: {},
+    };
+
+    const started = advance(FIXTURE_CONTENT_NO_LIVES, state);
+    expect(started.phase).toBe("turn");
+    expect(started.combo).toBe(0);
+    expect(started.maxCombo).toBe(5);
+  });
 });
 
 describe("worked example (docs/PLAN.md §1): sanjiuma hard x1.5", () => {

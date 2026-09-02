@@ -18,7 +18,7 @@ export default function DailyPage() {
         <CalendarCheck className="text-gold" size={48} />
         <h1 className="font-display text-xl text-gold">今天的每日挑戰已完成</h1>
         <p className="text-sm text-text-muted">
-          稱號：{daily.rankTitle ?? "—"} · 分數 {daily.best} · 連勝 {daily.streak} 天
+          稱號：{daily.rankTitle ?? "—"} · 分數 {daily.best} · 連續 {daily.streak} 天
         </p>
         <p className="text-xs text-text-muted">明天 00:00（台北時間）再來一次。</p>
         {canReviewToday ? (

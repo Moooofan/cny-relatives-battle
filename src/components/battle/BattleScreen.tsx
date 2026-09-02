@@ -24,10 +24,14 @@ export function BattleScreen({ mode, bossId }: Props) {
   const lifeId = useLifeStore((s) => s.lifeId);
 
   useEnsureGame(mode, bossId);
-  useBattleLifecycle(state);
+  useBattleLifecycle(state, mode);
 
   if (!state) {
-    return <div className="flex flex-1 items-center justify-center text-text-muted">載入中…</div>;
+    return (
+      <div className="flex flex-1 flex-col mx-auto w-full max-w-md items-center justify-center text-text-muted">
+        載入中…
+      </div>
+    );
   }
 
   function withUnlock<T extends unknown[]>(fn: (...a: T) => void) {
@@ -38,15 +42,17 @@ export function BattleScreen({ mode, bossId }: Props) {
   }
 
   return (
-    <BattlePhase
-      state={state}
-      life={lifeId ? findLife(lifeId) : undefined}
-      timerEndsAt={timerEndsAt}
-      onFight={withUnlock(advance)}
-      onContinue={withUnlock(advance)}
-      onPick={withUnlock(pickOption)}
-      onTimeout={timeout}
-      onUseSpecial={withUnlock(applySpecial)}
-    />
+    <div className="flex flex-1 flex-col mx-auto w-full max-w-md">
+      <BattlePhase
+        state={state}
+        life={lifeId ? findLife(lifeId) : undefined}
+        timerEndsAt={timerEndsAt}
+        onFight={withUnlock(advance)}
+        onContinue={withUnlock(advance)}
+        onPick={withUnlock(pickOption)}
+        onTimeout={timeout}
+        onUseSpecial={withUnlock(applySpecial)}
+      />
+    </div>
   );
 }

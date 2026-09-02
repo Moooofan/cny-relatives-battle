@@ -1,5 +1,6 @@
 import type { ResultEntry } from "@/store/resultsStore";
 import { CONTENT } from "@/content";
+import { resolveWon } from "@/components/admin/resultsMath";
 
 const MODE_LABELS = { random: "隨機", daily: "每日", story: "故事", gauntlet: "闖關" } as const;
 
@@ -7,6 +8,16 @@ function lifeLabel(entry: ResultEntry): string {
   if (!entry.lifeCode) return "（無人生）";
   const name = CONTENT.lives.find((l) => l.code === entry.lifeCode)?.name;
   return name ? `${entry.lifeCode} ${name}` : entry.lifeCode;
+}
+
+/** Story shows its narrative ending title; every other mode shows a plain
+ * win/loss verdict derived from `won` (migrated for older rows without it). */
+function outcomeLabel(entry: ResultEntry): string {
+  if (entry.mode === "story") {
+    if (!entry.endingId) return "–";
+    return CONTENT.storyEndings.find((e) => e.id === entry.endingId)?.title ?? entry.endingId;
+  }
+  return resolveWon(entry) ? "勝" : "敗";
 }
 
 function formatDate(iso: string): string {
@@ -45,7 +56,7 @@ export function ResultsTable({ results }: { results: ResultEntry[] }) {
               <td className="py-1 pr-2 text-text-muted">{MODE_LABELS[r.mode]}</td>
               <td className="py-1 pr-2 text-right text-text">{r.score}</td>
               <td className="py-1 pr-2 text-text-muted">{r.rankTitle}</td>
-              <td className="py-1 pr-2 text-text-muted">{r.endingId ?? "–"}</td>
+              <td className="py-1 pr-2 text-text-muted">{outcomeLabel(r)}</td>
               <td className="py-1 pr-2 text-right text-text-muted">{r.bossesDefeated}</td>
               <td className="py-1 pr-2 text-right text-text-muted">{r.turns}</td>
               <td className="py-1 pr-2 text-right text-text-muted">{r.maxCombo}</td>

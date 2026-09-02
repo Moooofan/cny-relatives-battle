@@ -16,7 +16,11 @@ export function useEnsureGame(mode: Mode, bossId?: string): void {
   useEffect(() => {
     if (startedRef.current) return;
     startedRef.current = true;
-    if (state && state.mode === mode && state.phase !== "result") return;
+    // Same mode: always leave the stored game alone, whether it's still in
+    // progress (resume it) or already finished (let useBattleLifecycle
+    // redirect to /result — starting a fresh game here would wipe the
+    // finished result out from under that redirect).
+    if (state && state.mode === mode) return;
     if (mode === "story" && (!state || state.mode !== "story") && storyCheckpoint != null) {
       resumeStoryCheckpoint(storyCheckpoint);
       return;

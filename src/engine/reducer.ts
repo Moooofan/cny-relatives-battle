@@ -278,6 +278,9 @@ export function startBoss(content: ContentBundle, state: GameState): GameState {
     deck,
     rng: rng1,
     summonUsed: false,
+    // A fresh fight starts a fresh combo — `maxCombo` still tracks the best
+    // combo across the whole run and is deliberately left untouched.
+    combo: 0,
   };
   return drawQuestion(content, started);
 }

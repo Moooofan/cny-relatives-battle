@@ -9,6 +9,7 @@ import type { Boss, LastResolve, Life } from "@/engine/types";
 interface Props {
   boss: Boss;
   life?: Life;
+  actCaption?: string;
   retortText: string;
   resolve: LastResolve;
   animKey: number;
@@ -23,6 +24,7 @@ interface Props {
 export function RetortView({
   boss,
   life,
+  actCaption,
   retortText,
   resolve,
   animKey,
@@ -52,6 +54,7 @@ export function RetortView({
           className="pointer-events-none absolute inset-0 z-10 animate-flash bg-heal/20"
         />
       )}
+      {actCaption && <p className="text-center text-xs text-gold">{actCaption}</p>}
       <HpBar label={boss.name} hp={bossHp} maxHp={bossMaxHp} variant="boss" />
       <div className="relative flex flex-1 flex-col items-center justify-center gap-3">
         <BossPortrait boss={boss} size={96} shake={resolve.dealt > 0} shakeKey={animKey} critFlash={resolve.crit} />

@@ -5,6 +5,7 @@ import type { Boss, Life, Tier } from "@/engine/types";
 interface Props {
   boss: Boss;
   life?: Life;
+  actCaption?: string;
   onFight: () => void;
 }
 
@@ -15,11 +16,12 @@ const TIER_LABEL: Record<Tier, string> = {
   final: "最終魔王",
 };
 
-export function BossIntro({ boss, life, onFight }: Props) {
+export function BossIntro({ boss, life, actCaption, onFight }: Props) {
   const relation = life?.relations[boss.id];
 
   return (
     <div className="flex flex-1 flex-col items-center justify-center gap-5 px-6 py-10 text-center">
+      {actCaption && <p className="text-xs text-gold">{actCaption}</p>}
       <BossPortrait boss={boss} size={128} idle />
       <div>
         <h2 className="font-display text-2xl text-gold">{boss.name}</h2>

@@ -10,6 +10,11 @@ export interface ResultEntry {
   score: number;
   rankTitle: string;
   endingId?: StoryEndingId;
+  /** Whether the run ended in a win. Always set on new entries (see
+   * resultsMath.ts `deriveWon` for the derivation rules and for how older
+   * rows without this field are handled when read). Optional only so rows
+   * persisted before this field existed still parse. */
+  won?: boolean;
   bossesDefeated: number;
   turns: number;
   maxCombo: number;

@@ -14,6 +14,30 @@ export function rankNumberFromTitle(title: string): number {
   return RANK_BY_TITLE.get(title) ?? 0;
 }
 
+/** `won` derivation for a stored result:
+ * - random/daily: at least one boss defeated
+ * - gauntlet: every boss in the run's queue defeated
+ * - story: the run's ending isn't "lost"
+ *
+ * `totalBosses` defaults to the full boss roster, which is what a gauntlet
+ * run's queue always contains — used both when writing a fresh entry (which
+ * always has `won` set explicitly) and, via `resolveWon`, as a read-time
+ * fallback for older rows persisted before the `won` field existed. */
+export function deriveWon(
+  entry: Pick<ResultEntry, "mode" | "bossesDefeated" | "endingId">,
+  totalBosses = CONTENT.bosses.length
+): boolean {
+  if (entry.mode === "story") return entry.endingId !== "lost";
+  if (entry.mode === "gauntlet") return entry.bossesDefeated >= totalBosses;
+  return entry.bossesDefeated >= 1;
+}
+
+/** `entry.won` if present, else migrated on the fly via `deriveWon`. Always
+ * use this (never read `entry.won` directly) so old and new rows agree. */
+export function resolveWon(entry: ResultEntry): boolean {
+  return entry.won ?? deriveWon(entry);
+}
+
 export interface LifeResultStat {
   lifeCode: string;
   runs: number;
@@ -57,11 +81,10 @@ export interface ModeStat {
 
 const MODES: Mode[] = ["random", "daily", "story", "gauntlet"];
 
-/** "Win" = reached rank >= 2 (anything above the bottom tier). */
 export function computeModeStats(results: ResultEntry[]): ModeStat[] {
   return MODES.map((mode) => {
     const list = results.filter((r) => r.mode === mode);
-    const wins = list.filter((r) => rankNumberFromTitle(r.rankTitle) >= 2).length;
+    const wins = list.filter((r) => resolveWon(r)).length;
     return { mode, runs: list.length, winRate: list.length ? wins / list.length : 0 };
   });
 }

@@ -12,6 +12,7 @@ import type { Boss, LastResolve, Life, Option } from "@/engine/types";
 interface Props {
   boss: Boss;
   life?: Life;
+  actCaption?: string;
   summonedBoss?: Boss;
   questionText: string;
   options: Option[];
@@ -35,6 +36,7 @@ interface Props {
 export function TurnView({
   boss,
   life,
+  actCaption,
   summonedBoss,
   questionText,
   options,
@@ -56,6 +58,7 @@ export function TurnView({
 
   return (
     <div className="flex flex-1 flex-col gap-3 px-4 py-3">
+      {actCaption && <p className="text-center text-xs text-gold">{actCaption}</p>}
       <div className="flex items-center gap-3">
         <BossPortrait boss={boss} size={60} shake={justHit} shakeKey={turnKey} idle={!justHit} />
         <div className="flex-1 min-w-0">

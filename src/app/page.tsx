@@ -88,7 +88,7 @@ export default function TitlePage() {
           icon={CalendarCheck}
           title="每日挑戰"
           description="全球同題，一天一次"
-          badge={dailyDone ? `已完成 · 連勝${daily.streak}` : daily.streak > 0 ? `連勝${daily.streak}` : undefined}
+          badge={dailyDone ? `已完成 · 連續${daily.streak}天` : daily.streak > 0 ? `連續${daily.streak}天` : undefined}
         />
         <ModeCard href="/story" icon={BookOpen} title="故事模式" description="除夕到初二，三幕八戰" badge={checkpointScene ? storyLabel : undefined} />
         <ModeCard href="/gauntlet" icon={Swords} title="闖關模式" description="8 位親戚依序上陣，一路打到三姑" />

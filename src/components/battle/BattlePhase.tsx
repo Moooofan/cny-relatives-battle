@@ -19,16 +19,29 @@ interface Props {
 
 const LOADING = <div className="flex flex-1 items-center justify-center text-text-muted">載入中…</div>;
 
+const ACT_CN = ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+
+/** 「第一幕 · 除夕夜圍爐」 caption for story mode only; undefined elsewhere. */
+function storyActCaption(state: GameState): string | undefined {
+  if (state.mode !== "story" || state.act == null) return undefined;
+  const act = CONTENT.acts.find((a) => a.act === state.act);
+  if (!act) return undefined;
+  const num = ACT_CN[act.act] ?? String(act.act);
+  return `第${num}幕 · ${act.title}`;
+}
+
 export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onPick, onTimeout, onUseSpecial }: Props) {
+  const actCaption = storyActCaption(state);
+
   if (state.phase === "interlude") {
-    return <SceneCard lines={state.interludeText ?? []} onContinue={onContinue} />;
+    return <SceneCard lines={state.interludeText ?? []} header={actCaption} onContinue={onContinue} />;
   }
 
   const boss = CONTENT.bosses.find((b) => b.id === state.bossQueue[state.bossIndex]);
   if (!boss) return LOADING;
 
   if (state.phase === "intro") {
-    return <BossIntro boss={boss} life={life} onFight={onFight} />;
+    return <BossIntro boss={boss} life={life} actCaption={actCaption} onFight={onFight} />;
   }
 
   if (state.phase === "bossDefeated" || state.phase === "playerDefeated") {
@@ -58,6 +71,7 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
       <TurnView
         boss={boss}
         life={life}
+        actCaption={actCaption}
         summonedBoss={summonedBoss}
         questionText={question.text}
         options={options}
@@ -88,6 +102,7 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
       <RetortView
         boss={boss}
         life={life}
+        actCaption={actCaption}
         retortText={retortText}
         resolve={state.lastResolve}
         animKey={state.turns}
