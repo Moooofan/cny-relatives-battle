@@ -12,26 +12,30 @@ import q7 from "./dabo/politics-1";
 import q8 from "./dabo/politics-2";
 import q9 from "./dabo/salary_job-1";
 import q10 from "./dabo/salary_job-2";
-import q11 from "./guzhang/elder_health-1";
-import q12 from "./guzhang/elder_health-2";
-import q13 from "./guzhang/food_push-1";
-import q14 from "./guzhang/food_push-2";
-import q15 from "./guzhang/politics-1";
-import q16 from "./guzhang/politics-2";
-import q17 from "./neighbor-chen/comparison-1";
-import q18 from "./neighbor-chen/marriage-1";
-import q19 from "./neighbor-chen/marriage-2";
-import q20 from "./neighbor-chen/salary_job-1";
-import q21 from "./neighbor-chen/salary_job-2";
-import q22 from "./sangu/housing-1";
-import q23 from "./sangu/marriage-1";
-import q24 from "./sangu/salary_job-1";
-import q25 from "./sanjiuma/comparison";
-import q26 from "./sanjiuma/housing";
-import q27 from "./sanjiuma/salary_job";
-import q28 from "./xiao-biaodi/appearance";
-import q29 from "./xiao-biaodi/comparison";
-import q30 from "./xiao-biaodi/red_envelope";
+import q11 from "./generic/marriage";
+import q12 from "./guzhang/elder_health-1";
+import q13 from "./guzhang/elder_health-2";
+import q14 from "./guzhang/food_push-1";
+import q15 from "./guzhang/food_push-2";
+import q16 from "./guzhang/politics-1";
+import q17 from "./guzhang/politics-2";
+import q18 from "./neighbor-chen/comparison-1";
+import q19 from "./neighbor-chen/comparison-2";
+import q20 from "./neighbor-chen/marriage-1";
+import q21 from "./neighbor-chen/marriage-2";
+import q22 from "./neighbor-chen/salary_job-1";
+import q23 from "./neighbor-chen/salary_job-2";
+import q24 from "./sangu/housing-1";
+import q25 from "./sangu/kids-1";
+import q26 from "./sangu/marriage-1";
+import q27 from "./sangu/salary_job-1";
+import q28 from "./sanjiuma/comparison";
+import q29 from "./sanjiuma/housing";
+import q30 from "./sanjiuma/salary_job-1";
+import q31 from "./sanjiuma/salary_job";
+import q32 from "./xiao-biaodi/appearance";
+import q33 from "./xiao-biaodi/comparison";
+import q34 from "./xiao-biaodi/red_envelope";
 
 export const QUESTIONS: Question[] = [
   ...q0,
@@ -65,6 +69,10 @@ export const QUESTIONS: Question[] = [
   ...q28,
   ...q29,
   ...q30,
+  ...q31,
+  ...q32,
+  ...q33,
+  ...q34,
 ];
 
 export const QUESTION_FILES = [
@@ -79,6 +87,7 @@ export const QUESTION_FILES = [
   "dabo/politics-2",
   "dabo/salary_job-1",
   "dabo/salary_job-2",
+  "generic/marriage",
   "guzhang/elder_health-1",
   "guzhang/elder_health-2",
   "guzhang/food_push-1",
@@ -86,15 +95,18 @@ export const QUESTION_FILES = [
   "guzhang/politics-1",
   "guzhang/politics-2",
   "neighbor-chen/comparison-1",
+  "neighbor-chen/comparison-2",
   "neighbor-chen/marriage-1",
   "neighbor-chen/marriage-2",
   "neighbor-chen/salary_job-1",
   "neighbor-chen/salary_job-2",
   "sangu/housing-1",
+  "sangu/kids-1",
   "sangu/marriage-1",
   "sangu/salary_job-1",
   "sanjiuma/comparison",
   "sanjiuma/housing",
+  "sanjiuma/salary_job-1",
   "sanjiuma/salary_job",
   "xiao-biaodi/appearance",
   "xiao-biaodi/comparison",
