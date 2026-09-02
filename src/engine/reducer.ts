@@ -443,10 +443,10 @@ export function applyTimeout(content: ContentBundle, state: GameState): GameStat
 }
 
 // ---------------------------------------------------------------------------
-// useSpecial
+// applySpecial
 // ---------------------------------------------------------------------------
 
-function useSkip(content: ContentBundle, state: GameState): GameState {
+function applySkip(content: ContentBundle, state: GameState): GameState {
   if (state.phase !== "turn" || state.specials.skip <= 0) return state;
   const question = content.questions.find((q) => q.id === state.currentQuestionId);
   const boss = content.bosses.find((b) => b.id === state.bossQueue[state.bossIndex]);
@@ -476,7 +476,7 @@ function useSkip(content: ContentBundle, state: GameState): GameState {
   return drawQuestion(content, next);
 }
 
-function useHeal(state: GameState): GameState {
+function applyHeal(state: GameState): GameState {
   if (state.phase !== "turn" || state.specials.heal <= 0) return state;
   if (state.playerHp >= SPECIALS.heal.threshold) return state;
   return {
@@ -486,8 +486,8 @@ function useHeal(state: GameState): GameState {
   };
 }
 
-export function useSpecial(content: ContentBundle, state: GameState, kind: "skip" | "heal"): GameState {
-  return kind === "skip" ? useSkip(content, state) : useHeal(state);
+export function applySpecial(content: ContentBundle, state: GameState, kind: "skip" | "heal"): GameState {
+  return kind === "skip" ? applySkip(content, state) : applyHeal(state);
 }
 
 // ---------------------------------------------------------------------------

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Noto_Sans_TC, Noto_Serif_TC } from "next/font/google";
 import "./globals.css";
+import { HydrationGate } from "@/components/common/HydrationGate";
 
 const notoSans = Noto_Sans_TC({
   variable: "--font-noto-sans-tc",
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
   description:
     "回家過年，嗆爆三姑六婆。回合制文字戰鬥遊戲：面對 8 位親戚關主，用神回覆把「什麼時候結婚」打回去。",
   applicationName: "過年大戰三姑六婆",
+  manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
     locale: "zh_TW",
@@ -48,7 +50,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="zh-Hant-TW"
       className={`${notoSans.variable} ${notoSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-dvh flex flex-col">{children}</body>
+      <body className="min-h-dvh flex flex-col">
+        <HydrationGate>{children}</HydrationGate>
+      </body>
     </html>
   );
 }

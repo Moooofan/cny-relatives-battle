@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { DEFAULT_LANDMINE_HEAL, GAUNTLET, SPECIALS } from "@/engine/archetypes";
-import { advance, applyOption, applyTimeout, createGame, useSpecial } from "@/engine/reducer";
+import { advance, applyOption, applyTimeout, createGame, applySpecial } from "@/engine/reducer";
 import type { Archetype, GameState, TurnLog } from "@/engine/types";
 import { FIXTURE_CONTENT_NO_LIVES, fightWithArchetypes, findOptionId, progressPastNonTurnPhases } from "./fixtures";
 
@@ -253,7 +253,7 @@ describe("specials", () => {
     const playerHpBefore = s.playerHp;
     const skipsBefore = s.specials.skip;
 
-    const next = useSpecial(FIXTURE_CONTENT_NO_LIVES, s, "skip");
+    const next = applySpecial(FIXTURE_CONTENT_NO_LIVES, s, "skip");
     expect(next.specials.skip).toBe(skipsBefore - 1);
     expect(next.bossHp).toBe(bossHpBefore);
     expect(next.playerHp).toBe(playerHpBefore);
@@ -265,10 +265,10 @@ describe("specials", () => {
     let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "skip-invalid", { bossId: "sanjiuma" });
     s = advance(FIXTURE_CONTENT_NO_LIVES, s);
     const noCharges: GameState = { ...s, specials: { ...s.specials, skip: 0 } };
-    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, noCharges, "skip")).toBe(noCharges);
+    expect(applySpecial(FIXTURE_CONTENT_NO_LIVES, noCharges, "skip")).toBe(noCharges);
 
     const wrongPhase: GameState = { ...s, phase: "retort" };
-    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, wrongPhase, "skip")).toBe(wrongPhase);
+    expect(applySpecial(FIXTURE_CONTENT_NO_LIVES, wrongPhase, "skip")).toBe(wrongPhase);
   });
 
   test("heal only works below the HP threshold with a charge left", () => {
@@ -276,15 +276,15 @@ describe("specials", () => {
     s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const full: GameState = { ...s, playerHp: 100 };
-    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, full, "heal")).toBe(full);
+    expect(applySpecial(FIXTURE_CONTENT_NO_LIVES, full, "heal")).toBe(full);
 
     const low: GameState = { ...s, playerHp: 40 };
-    const healed = useSpecial(FIXTURE_CONTENT_NO_LIVES, low, "heal");
+    const healed = applySpecial(FIXTURE_CONTENT_NO_LIVES, low, "heal");
     expect(healed.playerHp).toBe(40 + SPECIALS.heal.amount);
     expect(healed.specials.heal).toBe(low.specials.heal - 1);
 
     const noCharge: GameState = { ...low, specials: { ...low.specials, heal: 0 } };
-    expect(useSpecial(FIXTURE_CONTENT_NO_LIVES, noCharge, "heal")).toBe(noCharge);
+    expect(applySpecial(FIXTURE_CONTENT_NO_LIVES, noCharge, "heal")).toBe(noCharge);
   });
 });
 

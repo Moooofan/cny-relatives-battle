@@ -1,69 +1,86 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import { Dices, CalendarCheck, BookOpen, Swords, LibraryBig, Volume2, VolumeX } from "lucide-react";
+import { CONTENT } from "@/content";
+import { findLife } from "@/content/lives";
+import { LifeIcon } from "@/components/common/LifeIcon";
+import { ModeCard } from "@/components/title/ModeCard";
+import { useGameStore } from "@/store/gameStore";
+import { useLifeStore } from "@/store/lifeStore";
+import { useDailyStore, isDailyDoneToday } from "@/store/dailyStore";
+import { useSettingsStore } from "@/store/settingsStore";
+
+export default function TitlePage() {
+  const gameState = useGameStore((s) => s.state);
+  const storyCheckpoint = useGameStore((s) => s.storyCheckpoint);
+  const lifeId = useLifeStore((s) => s.lifeId);
+  const life = lifeId ? findLife(lifeId) : undefined;
+  const daily = useDailyStore();
+  const sfx = useSettingsStore((s) => s.sfx);
+  const toggleSfx = useSettingsStore((s) => s.toggleSfx);
+
+  const dailyDone = isDailyDoneToday(daily);
+  const inProgress = gameState && gameState.phase !== "result";
+
+  const checkpointScene = storyCheckpoint != null ? CONTENT.scenes[storyCheckpoint] : undefined;
+  const storyLabel = checkpointScene ? `續玩第 ${checkpointScene.act} 幕` : "開始故事";
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className="flex flex-1 flex-col mx-auto w-full max-w-md px-4 py-6 safe-pt safe-pb gap-4">
+      <header className="text-center py-4">
+        <h1 className="font-display text-3xl text-gold">過年大戰三姑六婆</h1>
+        <p className="text-sm text-text-muted mt-2">回家過年，用神回覆嗆爆三姑六婆。你敢回家嗎？</p>
+      </header>
+
+      <Link href="/life" className="rpg-box flex items-center gap-3 p-3 active:scale-[0.98] transition">
+        {life ? (
+          <>
+            <LifeIcon name={life.icon} size={26} className="text-gold shrink-0" />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm text-text">
+                目前人生：<span className="text-gold">{life.name}</span>
+              </p>
+              <p className="text-xs text-text-muted">{life.tagline}</p>
+            </div>
+          </>
+        ) : (
+          <p className="text-sm text-text-muted flex-1">尚未選擇人生，點此挑選（或開戰時隨機）</p>
+        )}
+      </Link>
+
+      {inProgress && (
+        <Link
+          href={`/${gameState.mode}`}
+          className="rounded-btn border border-gold bg-gold/10 px-4 py-3 text-center text-sm text-gold"
+        >
+          繼續上一場（{gameState.mode}）
+        </Link>
+      )}
+
+      <div className="flex flex-col gap-3">
+        <ModeCard href="/random" icon={Dices} title="隨機挑戰" description="隨機或指定一位關主，單場速戰" />
+        <ModeCard
+          href="/daily"
+          icon={CalendarCheck}
+          title="每日挑戰"
+          description="全球同題，一天一次"
+          badge={dailyDone ? `已完成 · 連勝${daily.streak}` : daily.streak > 0 ? `連勝${daily.streak}` : undefined}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        <ModeCard href="/story" icon={BookOpen} title="故事模式" description="除夕到初二，三幕八戰" badge={checkpointScene ? storyLabel : undefined} />
+        <ModeCard href="/gauntlet" icon={Swords} title="闖關模式" description="8 位親戚依序上陣，一路打到三姑" />
+      </div>
+
+      <div className="flex items-center justify-between pt-2">
+        <Link href="/bosses" className="flex items-center gap-2 text-sm text-text-muted">
+          <LibraryBig size={18} />
+          親戚圖鑑
+        </Link>
+        <button type="button" onClick={toggleSfx} className="flex items-center gap-2 text-sm text-text-muted" aria-pressed={sfx}>
+          {sfx ? <Volume2 size={18} /> : <VolumeX size={18} />}
+          音效{sfx ? "開" : "關"}
+        </button>
+      </div>
+    </main>
   );
 }

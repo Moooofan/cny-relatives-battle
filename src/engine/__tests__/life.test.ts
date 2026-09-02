@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { PLAYER_MAX_HP, SPECIALS } from "@/engine/archetypes";
-import { advance, applyOption, createGame, makeResultCode, useSpecial } from "@/engine/reducer";
+import { advance, applyOption, createGame, makeResultCode, applySpecial } from "@/engine/reducer";
 import type { GameState } from "@/engine/types";
 import {
   FIXTURE_CONTENT,
@@ -67,7 +67,7 @@ describe("life: startHp and specials", () => {
     let s = createGame(FIXTURE_CONTENT, "random", "heal-cap", { bossId: "sanjiuma" });
     s = advance(FIXTURE_CONTENT, s);
     const low: GameState = { ...s, playerHp: 50, playerMaxHp: 60, specials: { ...s.specials, heal: 1 } };
-    const healed = useSpecial(FIXTURE_CONTENT, low, "heal");
+    const healed = applySpecial(FIXTURE_CONTENT, low, "heal");
     expect(healed.playerHp).toBe(60); // 50 + SPECIALS.heal.amount(25) would be 75, capped at 60
   });
 });

@@ -1,0 +1,19 @@
+{
+  "name": "過年大戰三姑六婆",
+  "short_name": "三姑六婆",
+  "description": "回家過年，用神回覆嗆爆三姑六婆。回合制文字戰鬥遊戲。",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a0b0b",
+  "theme_color": "#1a0b0b",
+  "lang": "zh-Hant-TW",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
