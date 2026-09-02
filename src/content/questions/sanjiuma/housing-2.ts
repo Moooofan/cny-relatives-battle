@@ -1,0 +1,918 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// 022 講表哥車貸房貸一起繳很輕鬆
+// 023 舅媽說要借私房錢投資房地產
+// 024 問租屋通勤要多久很辛苦
+// 025 問要不要跟舅舅借錢買房
+// 026 問嫁妝聘金能不能湊頭期款
+// 027 問老家土地要不要都更改建
+// 028 問預售屋交屋驗屋了沒
+// 029 問房子座向風水有沒有看
+// 030 舅媽拿房仲廣告單來比價
+// 031 問租屋處有沒有簽約保障
+// 032 問要不要先租後買
+// 033 講表哥買第二間房收租
+// 034 問有沒有列入社會住宅候補
+// 035 問搬家次數多是不是租不起久
+// 036 問退休後房子怎麼打算
+// 037 問有沒有跟爸媽商量買房預算
+
+export default [
+  {
+    id: "sanjiuma-housing-022",
+    text: "表哥車貸房貸一起繳都不喘，你呢？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-022-a",
+        text: "我沒車貸沒房貸，喘氣特別順暢。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-022-b",
+        text: "表哥財力真好，改天教教我理財。",
+        archetype: "deflect",
+        retort: "這個要天分，你慢慢學。",
+      },
+      {
+        id: "sanjiuma-housing-022-c",
+        text: "舅媽幫忙規劃的嗎？要不要也幫我？",
+        archetype: "deflect",
+        retort: "我哪有幫忙，他自己厲害。",
+      },
+      {
+        id: "sanjiuma-housing-022-d",
+        text: "我連房租都快喘不過氣了……",
+        archetype: "meek",
+        retort: "喘不過氣？那房租多少你說。",
+      },
+      {
+        id: "sanjiuma-housing-022-e",
+        text: "光房租就吃掉薪水一大半……",
+        archetype: "meek",
+        retort: "一大半？那你怎麼存錢？",
+      },
+      {
+        id: "sanjiuma-housing-022-f",
+        text: "我沒有貸款壓力，因為我沒有資產。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-housing-022-g",
+        text: "輕鬆與否不重要，重要的是活著。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-housing-022-h",
+        text: "他繳得輕鬆是因為舅舅幫忙分攤吧。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-023",
+    text: "舅媽的私房錢要不要借你投資房地產？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-023-a",
+        text: "謝謝舅媽，但我想靠自己的實力買。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-housing-023-b",
+        text: "舅媽這麼有錢，要不要先請客吃飯？",
+        archetype: "deflect",
+        retort: "吃飯？下次再約你啦。",
+      },
+      {
+        id: "sanjiuma-housing-023-c",
+        text: "舅媽的私房錢有多少，能透露一下嗎？",
+        archetype: "deflect",
+        retort: "這是秘密，不能隨便講。",
+      },
+      {
+        id: "sanjiuma-housing-023-d",
+        text: "如果真的借，利息怎麼算……",
+        archetype: "meek",
+        retort: "利息？那你到底想不想借？",
+      },
+      {
+        id: "sanjiuma-housing-023-e",
+        text: "有點心動，但怕欠人情很難還……",
+        archetype: "meek",
+        retort: "難還？那你到底要不要借？",
+      },
+      {
+        id: "sanjiuma-housing-023-f",
+        text: "借錢投資太麻煩，我信任天意。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-023-g",
+        text: "投資不重要，重要的是舅媽的心意。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-023-h",
+        text: "私房錢該不會是舅舅不知道的帳戶吧。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-024",
+    text: "租屋通勤要多久？聽說很辛苦。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-024-a",
+        text: "一小時，剛好拿來構思人生規劃。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-024-b",
+        text: "舅媽這麼關心，要不要送我一台車？",
+        archetype: "deflect",
+        retort: "送車？你自己努力賺啦。",
+      },
+      {
+        id: "sanjiuma-housing-024-c",
+        text: "表哥通勤要多久，跟我比比看嘛。",
+        archetype: "deflect",
+        retort: "他開車十分鐘就到了。",
+      },
+      {
+        id: "sanjiuma-housing-024-d",
+        text: "要一個多小時，早出晚歸很累……",
+        archetype: "meek",
+        retort: "一小時？那你要不要搬近一點？",
+      },
+      {
+        id: "sanjiuma-housing-024-e",
+        text: "轉三班車，累得跟狗一樣……",
+        archetype: "meek",
+        retort: "三班車？那你有沒有想搬家？",
+      },
+      {
+        id: "sanjiuma-housing-024-f",
+        text: "通勤時間是我聽Podcast充電的時光。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-024-g",
+        text: "辛苦不重要，重要的是沿途風景。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-024-h",
+        text: "反正不是每個人都能住舅舅買的房子。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-025",
+    text: "要不要跟舅舅借點錢買房？他很有辦法。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-025-a",
+        text: "謝謝舅媽，但我想留一份債務給自己扛。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-housing-025-b",
+        text: "舅舅這麼有辦法，要不要收我當徒弟？",
+        archetype: "deflect",
+        retort: "當徒弟？你自己努力就好。",
+      },
+      {
+        id: "sanjiuma-housing-025-c",
+        text: "舅舅有辦法投資，要不要教教我？",
+        archetype: "deflect",
+        retort: "這個要看緣分，你慢慢學。",
+      },
+      {
+        id: "sanjiuma-housing-025-d",
+        text: "有想過開口，但真的不好意思……",
+        archetype: "meek",
+        retort: "不好意思？那你打算怎麼辦？",
+      },
+      {
+        id: "sanjiuma-housing-025-e",
+        text: "怕欠人情，以後過年更難做人……",
+        archetype: "meek",
+        retort: "難做人？那你到底要不要借？",
+      },
+      {
+        id: "sanjiuma-housing-025-f",
+        text: "借錢是感情的照妖鏡，我拒絕。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-025-g",
+        text: "買房不重要，重要的是家人情義。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-025-h",
+        text: "反正舅舅的錢還不是靠關係賺的。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-026",
+    text: "嫁妝聘金能不能湊一湊當頭期款？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-026-a",
+        text: "還沒結婚，先努力存錢比較實際。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-026-b",
+        text: "舅媽這麼會規劃，要不要幫我存嫁妝？",
+        archetype: "deflect",
+        retort: "存嫁妝？你自己要先努力。",
+      },
+      {
+        id: "sanjiuma-housing-026-c",
+        text: "表哥結婚聘金多少，我拿來參考一下。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，問你自己的。",
+      },
+      {
+        id: "sanjiuma-housing-026-d",
+        text: "還沒對象，聘金這種事想都不敢想……",
+        archetype: "meek",
+        retort: "沒對象？那你要單身多久？",
+      },
+      {
+        id: "sanjiuma-housing-026-e",
+        text: "有對象，但雙方家裡都沒什麼錢……",
+        archetype: "meek",
+        retort: "沒什麼錢？那你要怎麼辦？",
+      },
+      {
+        id: "sanjiuma-housing-026-f",
+        text: "頭期款靠緣分湊，比較浪漫。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-housing-026-g",
+        text: "嫁妝聘金不重要，重要的是真心。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-housing-026-h",
+        text: "反正這種事最後還是舅舅說了算。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-027",
+    text: "老家土地要不要都更改建？聽說能賺。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-027-a",
+        text: "改建好啊，順便把回憶重新裝潢一次。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-housing-027-b",
+        text: "舅媽這麼懂都更，要不要當發言人？",
+        archetype: "deflect",
+        retort: "發言人？我沒那個本事啦。",
+      },
+      {
+        id: "sanjiuma-housing-027-c",
+        text: "表哥有沒有分到都更的房子？",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問。",
+      },
+      {
+        id: "sanjiuma-housing-027-d",
+        text: "不清楚耶，家裡的事都爸媽決定……",
+        archetype: "meek",
+        retort: "爸媽決定？那你有沒有意見？",
+      },
+      {
+        id: "sanjiuma-housing-027-e",
+        text: "聽說很複雜，牽涉到的人很多……",
+        archetype: "meek",
+        retort: "複雜？那到底進展到哪了？",
+      },
+      {
+        id: "sanjiuma-housing-027-f",
+        text: "都更不重要，重要的是老家的味道。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-027-g",
+        text: "改建太麻煩，我選擇住在回憶裡。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-027-h",
+        text: "反正到最後還不是舅舅決定分配。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-028",
+    text: "預售屋交屋驗屋了沒？表哥驗得很仔細。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-028-a",
+        text: "驗了，缺失清單比表哥的還完整。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-028-b",
+        text: "表哥驗屋那麼仔細，要不要教我一下？",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問。",
+      },
+      {
+        id: "sanjiuma-housing-028-c",
+        text: "舅媽這麼懂驗屋，要不要陪我去？",
+        archetype: "deflect",
+        retort: "陪你去？改天約時間啦。",
+      },
+      {
+        id: "sanjiuma-housing-028-d",
+        text: "還沒交屋，光想就緊張……",
+        archetype: "meek",
+        retort: "緊張什麼？貸款準備好了？",
+      },
+      {
+        id: "sanjiuma-housing-028-e",
+        text: "驗了但看不太懂，怕漏看什麼……",
+        archetype: "meek",
+        retort: "漏看？那你要找懂的人幫忙。",
+      },
+      {
+        id: "sanjiuma-housing-028-f",
+        text: "驗屋不重要，重要的是房子有沒有靈魂。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-028-g",
+        text: "我用第六感驗屋，比儀器準。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-028-h",
+        text: "表哥驗屋仔細是因為舅舅出的錢多吧。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-029",
+    text: "房子座向風水有沒有看？表哥都請老師看。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-029-a",
+        text: "座向不重要，只要住的人心正就是好風水。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-housing-029-b",
+        text: "表哥請的風水老師厲害嗎？介紹一下？",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問。",
+      },
+      {
+        id: "sanjiuma-housing-029-c",
+        text: "舅媽這麼懂風水，要不要幫我看一下？",
+        archetype: "deflect",
+        retort: "看風水？那要看緣分啦。",
+      },
+      {
+        id: "sanjiuma-housing-029-d",
+        text: "沒看，租房子哪有得挑座向……",
+        archetype: "meek",
+        retort: "沒挑？那住起來會不會怪怪的？",
+      },
+      {
+        id: "sanjiuma-housing-029-e",
+        text: "有看一點，但看不太懂……",
+        archetype: "meek",
+        retort: "看不懂？那你要問清楚一點。",
+      },
+      {
+        id: "sanjiuma-housing-029-f",
+        text: "風水不重要，重要的是冰箱夠不夠大。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-029-g",
+        text: "我信的風水是心情好就是好房子。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-029-h",
+        text: "表哥請風水老師是不是舅舅出的錢。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-030",
+    text: "舅媽拿房仲廣告單問你，這間你買得起？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-030-a",
+        text: "買不起，但我看得懂，這也是一種能力。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-030-b",
+        text: "舅媽消息這麼靈通，要不要當我房仲？",
+        archetype: "deflect",
+        retort: "當房仲？我沒那個本事啦。",
+      },
+      {
+        id: "sanjiuma-housing-030-c",
+        text: "這間不錯，舅媽要不要買下來投資？",
+        archetype: "deflect",
+        retort: "投資？你自己買啦，我才不。",
+      },
+      {
+        id: "sanjiuma-housing-030-d",
+        text: "買不起，價格差太多了……",
+        archetype: "meek",
+        retort: "差多少？你要說清楚一點。",
+      },
+      {
+        id: "sanjiuma-housing-030-e",
+        text: "看了也只能想想，沒有實際行動……",
+        archetype: "meek",
+        retort: "沒行動？那你到底要不要買？",
+      },
+      {
+        id: "sanjiuma-housing-030-f",
+        text: "廣告單是舅媽用來嚇我的武器吧。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-030-g",
+        text: "買不起沒關係，我心中已經買了。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-housing-030-h",
+        text: "反正你自己那間也不是靠自己買的。",
+        archetype: "landmine",
+        retort: "我們那時候多辛苦你知道嗎！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-031",
+    text: "租屋有沒有簽約？有保障嗎？別被騙。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-031-a",
+        text: "有簽，條款比表哥的婚前協議還清楚。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-housing-031-b",
+        text: "舅媽這麼懂法律，要不要幫我看合約？",
+        archetype: "deflect",
+        retort: "看合約？拿來我幫你看看。",
+      },
+      {
+        id: "sanjiuma-housing-031-c",
+        text: "表哥買房合約複雜嗎？跟我說說看。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問。",
+      },
+      {
+        id: "sanjiuma-housing-031-d",
+        text: "有簽，但條款看不太懂就簽了……",
+        archetype: "meek",
+        retort: "看不懂就簽？那太危險了。",
+      },
+      {
+        id: "sanjiuma-housing-031-e",
+        text: "沒仔細看，房東說沒問題就簽了……",
+        archetype: "meek",
+        retort: "沒問題？你要自己保護自己。",
+      },
+      {
+        id: "sanjiuma-housing-031-f",
+        text: "合約不重要，重要的是房東順不順眼。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-housing-031-g",
+        text: "我靠直覺簽約，比律師還準。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-housing-031-h",
+        text: "反正舅媽的房子也不是靠自己賺的吧。",
+        archetype: "landmine",
+        retort: "我們那時候多辛苦你知道嗎！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-032",
+    text: "要不要先租後買？表哥直接就買了。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-032-a",
+        text: "先租後買比較穩，我喜歡循序漸進。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-032-b",
+        text: "表哥直接買，是不是舅媽先幫忙看好的？",
+        archetype: "deflect",
+        retort: "少亂講，那是他自己決定的。",
+      },
+      {
+        id: "sanjiuma-housing-032-c",
+        text: "舅媽這麼有經驗，要不要教我怎麼買？",
+        archetype: "deflect",
+        retort: "這個要慢慢學，你要有耐心。",
+      },
+      {
+        id: "sanjiuma-housing-032-d",
+        text: "先租吧，還沒有能力直接買……",
+        archetype: "meek",
+        retort: "沒能力？那你要租到什麼時候？",
+      },
+      {
+        id: "sanjiuma-housing-032-e",
+        text: "租房子也存不了什麼錢……",
+        archetype: "meek",
+        retort: "存不了？那你都花去哪了？",
+      },
+      {
+        id: "sanjiuma-housing-032-f",
+        text: "租或買不重要，重要的是有沒有Wifi。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-032-g",
+        text: "我選擇租一輩子，比較自由。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-032-h",
+        text: "表哥直接買是不是舅舅先出頭期款。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-033",
+    text: "表哥買第二間房收租了，你有一間嗎？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-033-a",
+        text: "沒有，但我有一間叫做租來的家，很溫暖。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-housing-033-b",
+        text: "表哥太厲害了，改天教我怎麼投資房產。",
+        archetype: "deflect",
+        retort: "這個要天分，你慢慢學。",
+      },
+      {
+        id: "sanjiuma-housing-033-c",
+        text: "舅媽這麼會理財，要不要教教我媽？",
+        archetype: "deflect",
+        retort: "這個要天分啦，你媽學不來。",
+      },
+      {
+        id: "sanjiuma-housing-033-d",
+        text: "一間都沒有，光租的都吃力了……",
+        archetype: "meek",
+        retort: "吃力？那你打算怎麼辦？",
+      },
+      {
+        id: "sanjiuma-housing-033-e",
+        text: "想都不敢想第二間，第一間都難……",
+        archetype: "meek",
+        retort: "難？那你到底存了多少？",
+      },
+      {
+        id: "sanjiuma-housing-033-f",
+        text: "我把租的房子當第二間，心理上啦。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-housing-033-g",
+        text: "房產不重要，重要的是投資自己。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-housing-033-h",
+        text: "第二間房該不會也是舅舅出的頭期款。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-034",
+    text: "有沒有申請社會住宅？候補到了嗎？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-034-a",
+        text: "有申請，候補號碼比表哥的股票代號好記。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-034-b",
+        text: "舅媽這麼關心，要不要幫我打聽消息？",
+        archetype: "deflect",
+        retort: "打聽？我哪有那個門路。",
+      },
+      {
+        id: "sanjiuma-housing-034-c",
+        text: "表哥要不要也申請看看，比較公平。",
+        archetype: "deflect",
+        retort: "他早就買房了，用不到啦。",
+      },
+      {
+        id: "sanjiuma-housing-034-d",
+        text: "有申請，但排隊排很久還沒到……",
+        archetype: "meek",
+        retort: "多久？你要說清楚一點。",
+      },
+      {
+        id: "sanjiuma-housing-034-e",
+        text: "資格卡在收入門檻，卡關中……",
+        archetype: "meek",
+        retort: "卡關？那你打算怎麼辦？",
+      },
+      {
+        id: "sanjiuma-housing-034-f",
+        text: "候補社宅是我人生的長期抗戰。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-034-g",
+        text: "社宅不重要，重要的是排隊時的耐心。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-034-h",
+        text: "反正這種資源到最後也是靠關係搶的。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-035",
+    text: "你搬家好幾次，是不是租不起久住？",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-035-a",
+        text: "搬家次數多，代表我適應力比表哥還強。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-housing-035-b",
+        text: "舅媽這麼關心，要不要幫我找穩定房東？",
+        archetype: "deflect",
+        retort: "找房東？你自己要多打聽。",
+      },
+      {
+        id: "sanjiuma-housing-035-c",
+        text: "表哥都沒搬過家，真好命耶。",
+        archetype: "deflect",
+        retort: "他當然好命，房子是自己的。",
+      },
+      {
+        id: "sanjiuma-housing-035-d",
+        text: "房租一直漲，只好一直搬……",
+        archetype: "meek",
+        retort: "一直漲？那漲到多少了？",
+      },
+      {
+        id: "sanjiuma-housing-035-e",
+        text: "房東常常收回去自住，很無奈……",
+        archetype: "meek",
+        retort: "無奈？那你打算怎麼辦？",
+      },
+      {
+        id: "sanjiuma-housing-035-f",
+        text: "搬家是我人生的巡迴演出。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-035-g",
+        text: "住哪裡不重要，重要的是行李夠輕。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-035-h",
+        text: "反正你自己那間也沒讓你搬過家。",
+        archetype: "landmine",
+        retort: "我們那時候多辛苦你知道嗎！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-036",
+    text: "退休後房子怎麼打算？表哥都想好了。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-036-a",
+        text: "還早啦，但我打算租到最有人情味的地方。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-housing-036-b",
+        text: "表哥退休計畫這麼周全，教教我嘛。",
+        archetype: "deflect",
+        retort: "這個要慢慢學，你還早啦。",
+      },
+      {
+        id: "sanjiuma-housing-036-c",
+        text: "舅媽退休後打算住哪，跟我分享一下？",
+        archetype: "deflect",
+        retort: "問我幹嘛，你先顧好自己。",
+      },
+      {
+        id: "sanjiuma-housing-036-d",
+        text: "還沒想那麼遠，光現在都顧不好了……",
+        archetype: "meek",
+        retort: "顧不好？那你要怎麼規劃？",
+      },
+      {
+        id: "sanjiuma-housing-036-e",
+        text: "希望到時候能買得起，但很難說……",
+        archetype: "meek",
+        retort: "很難說？那你現在有存錢嗎？",
+      },
+      {
+        id: "sanjiuma-housing-036-f",
+        text: "退休房子不重要，重要的是心態年輕。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-housing-036-g",
+        text: "我打算退休住在雲端，比較涼快。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-housing-036-h",
+        text: "反正你那間退休金早就被表哥用光了吧。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-housing-037",
+    text: "有沒有跟爸媽商量買房預算？表哥都談好了。",
+    topic: "housing",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-housing-037-a",
+        text: "商量過了，預算跟愛心一樣，慢慢加。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-housing-037-b",
+        text: "表哥預算談得好，教教我怎麼開口。",
+        archetype: "deflect",
+        retort: "這個要看緣分，你慢慢來。",
+      },
+      {
+        id: "sanjiuma-housing-037-c",
+        text: "舅媽這麼會規劃，要不要幫我跟我媽談？",
+        archetype: "deflect",
+        retort: "幫你談？你自己要學著開口。",
+      },
+      {
+        id: "sanjiuma-housing-037-d",
+        text: "有提過，但爸媽也沒多少能幫……",
+        archetype: "meek",
+        retort: "沒多少？那到底有多少你說。",
+      },
+      {
+        id: "sanjiuma-housing-037-e",
+        text: "還沒開口，不知道怎麼提比較好……",
+        archetype: "meek",
+        retort: "不知道怎麼提？那你要練習。",
+      },
+      {
+        id: "sanjiuma-housing-037-f",
+        text: "預算不重要，重要的是家人一起加油。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-housing-037-g",
+        text: "我的買房預算是無窮大的夢想。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-housing-037-h",
+        text: "反正表哥的預算舅舅早就補好了。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+] satisfies Question[];

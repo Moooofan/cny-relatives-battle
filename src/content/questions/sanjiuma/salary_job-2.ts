@@ -1,0 +1,918 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// 022 問要不要跳槽薪水會不會更高
+// 023 舅媽朋友的小孩起薪比較
+// 024 表哥的年薪成長曲線拿出來比
+// 025 問三節獎金有沒有
+// 026 問颱風假會不會扣薪水
+// 027 問有沒有在做投資理財
+// 028 問信用卡額度多少
+// 029 問薪轉戶頭餘額
+// 030 問有沒有做外送兼職
+// 031 問畢業起薪跟現在比
+// 032 問換工作次數太多是不是薪水亂
+// 033 問產業別是不是薪水天生比較低
+// 034 問是不是靠死薪水過活
+// 035 問尾牙有沒有抽到獎金
+// 036 問有沒有報稅退稅多少
+// 037 舅媽朋友的小孩薪水更高來比較
+
+export default [
+  {
+    id: "sanjiuma-salary_job-022",
+    text: "要不要跳槽？聽說外面薪水更高。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-022-a",
+        text: "在考慮，但捨不得舅媽的碎念，很療癒。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-022-b",
+        text: "舅媽有沒有內線，哪家公司薪水高？",
+        archetype: "deflect",
+        retort: "內線？我上哪知道去。",
+      },
+      {
+        id: "sanjiuma-salary_job-022-c",
+        text: "表哥要不要也跳槽，聽說外商比較賺。",
+        archetype: "deflect",
+        retort: "他好好的跳什麼槽。",
+      },
+      {
+        id: "sanjiuma-salary_job-022-d",
+        text: "有在考慮，但怕新工作不穩定……",
+        archetype: "meek",
+        retort: "不穩定？那你到底想清楚沒？",
+      },
+      {
+        id: "sanjiuma-salary_job-022-e",
+        text: "投了幾封履歷，還沒下文……",
+        archetype: "meek",
+        retort: "沒下文？那你要不要再改改？",
+      },
+      {
+        id: "sanjiuma-salary_job-022-f",
+        text: "我在等宇宙給我一個訊號。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-salary_job-022-g",
+        text: "跳槽太麻煩，我選擇躺平。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-salary_job-022-h",
+        text: "反正不是每個人都能靠舅舅安排工作。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-023",
+    text: "我朋友的小孩起薪四萬五，你呢？",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-023-a",
+        text: "起薪不高沒關係，我的漲幅會嚇死人。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-salary_job-023-b",
+        text: "舅媽朋友的小孩好厲害，介紹認識一下？",
+        archetype: "deflect",
+        retort: "認識幹嘛，你先顧好自己。",
+      },
+      {
+        id: "sanjiuma-salary_job-023-c",
+        text: "四萬五好強，是做什麼行業的啊？",
+        archetype: "deflect",
+        retort: "問這個幹嘛，你自己去比較。",
+      },
+      {
+        id: "sanjiuma-salary_job-023-d",
+        text: "我起薪三萬二，比較低一點……",
+        archetype: "meek",
+        retort: "三萬二？那現在漲多少了？",
+      },
+      {
+        id: "sanjiuma-salary_job-023-e",
+        text: "沒那麼高啦，普通行情而已……",
+        archetype: "meek",
+        retort: "普通行情是多少，說清楚。",
+      },
+      {
+        id: "sanjiuma-salary_job-023-f",
+        text: "起薪不重要，重要的是我很有型。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-023-g",
+        text: "薪水是數字，我追求的是境界。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-023-h",
+        text: "那個小孩是不是也靠關係進公司的？",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-024",
+    text: "表哥年薪五年翻三倍，你的曲線呢？",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-024-a",
+        text: "我的曲線比較浪漫，慢慢升，穩穩走。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-024-b",
+        text: "表哥的曲線這麼漂亮，改天教教我。",
+        archetype: "deflect",
+        retort: "這個要天分，你慢慢學。",
+      },
+      {
+        id: "sanjiuma-salary_job-024-c",
+        text: "舅媽把曲線畫出來，我拿去當激勵海報。",
+        archetype: "deflect",
+        retort: "激勵海報？你別鬧了。",
+      },
+      {
+        id: "sanjiuma-salary_job-024-d",
+        text: "我的曲線比較平，沒什麼起伏……",
+        archetype: "meek",
+        retort: "平？那你到底有沒有在努力？",
+      },
+      {
+        id: "sanjiuma-salary_job-024-e",
+        text: "翻不了三倍，能持平就不錯了……",
+        archetype: "meek",
+        retort: "持平？那你不會想更好嗎？",
+      },
+      {
+        id: "sanjiuma-salary_job-024-f",
+        text: "我的曲線是抽象藝術，看不懂正常。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-024-g",
+        text: "數字不重要，重要的是心靈成長曲線。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-salary_job-024-h",
+        text: "翻三倍還不是因為在舅舅公司卡位。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-025",
+    text: "三節獎金有沒有？表哥公司都給滿。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-025-a",
+        text: "有啊，剛好夠包一個讓舅媽驕傲的紅包。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴越來越厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-025-b",
+        text: "舅媽這麼關心，是要幫我包紅包嗎？",
+        archetype: "deflect",
+        retort: "紅包紅包，你就只想到這個。",
+      },
+      {
+        id: "sanjiuma-salary_job-025-c",
+        text: "表哥三節領多少，我拿來當目標。",
+        archetype: "deflect",
+        retort: "目標是好事，你要加油。",
+      },
+      {
+        id: "sanjiuma-salary_job-025-d",
+        text: "有一點，但比公定的少很多……",
+        archetype: "meek",
+        retort: "少多少？你要說明白一點。",
+      },
+      {
+        id: "sanjiuma-salary_job-025-e",
+        text: "沒有耶，公司說今年沒賺錢……",
+        archetype: "meek",
+        retort: "沒賺錢？那你薪水穩不穩？",
+      },
+      {
+        id: "sanjiuma-salary_job-025-f",
+        text: "我的三節獎金是心意，無法量化。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-025-g",
+        text: "獎金不重要，重要的是團圓的感覺。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-salary_job-025-h",
+        text: "反正不像表哥的獎金是舅舅簽的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-026",
+    text: "放颱風假會扣薪水嗎？表哥公司照發。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-026-a",
+        text: "不扣，我老闆說颱風天更該休息賺健康。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-salary_job-026-b",
+        text: "表哥公司照發，改天教我老闆學一下。",
+        archetype: "deflect",
+        retort: "這個要看老闆佛不佛心啦。",
+      },
+      {
+        id: "sanjiuma-salary_job-026-c",
+        text: "舅媽關心薪水，還是關心我安不安全？",
+        archetype: "deflect",
+        retort: "當然是安全，薪水其次啦。",
+      },
+      {
+        id: "sanjiuma-salary_job-026-d",
+        text: "會扣一半，公司說看情況……",
+        archetype: "meek",
+        retort: "扣一半？那你划不划算？",
+      },
+      {
+        id: "sanjiuma-salary_job-026-e",
+        text: "不確定耶，看老闆心情……",
+        archetype: "meek",
+        retort: "心情？那你要不要去問清楚？",
+      },
+      {
+        id: "sanjiuma-salary_job-026-f",
+        text: "颱風假是大自然給我的年假。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-026-g",
+        text: "扣不扣不重要，重要的是有沒有斷電。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-salary_job-026-h",
+        text: "反正責任制根本不會給颱風假。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-027",
+    text: "有沒有在理財？表哥都買基金定期定額。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-027-a",
+        text: "有，我定期定額投資自己，報酬率最高。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-salary_job-027-b",
+        text: "表哥買哪支基金，要不要跟他報明牌？",
+        archetype: "deflect",
+        retort: "報明牌？你先學會存錢再說。",
+      },
+      {
+        id: "sanjiuma-salary_job-027-c",
+        text: "舅媽這麼會理財，要不要開課教我？",
+        archetype: "deflect",
+        retort: "開課？我哪有那個閒工夫。",
+      },
+      {
+        id: "sanjiuma-salary_job-027-d",
+        text: "有定期定額一點點，但金額很小……",
+        archetype: "meek",
+        retort: "很小是多少？說個數字給我。",
+      },
+      {
+        id: "sanjiuma-salary_job-027-e",
+        text: "還沒開始，一直說要學卻沒行動……",
+        archetype: "meek",
+        retort: "沒行動？那你錢都花去哪？",
+      },
+      {
+        id: "sanjiuma-salary_job-027-f",
+        text: "我投資的是人脈，比基金穩。",
+        archetype: "backfire",
+        retort: "……（舅媽轉頭跟阿姨聊別的了）",
+      },
+      {
+        id: "sanjiuma-salary_job-027-g",
+        text: "理財太複雜，我專心投資快樂。",
+        archetype: "backfire",
+        retort: "……（表哥假裝在看電視）",
+      },
+      {
+        id: "sanjiuma-salary_job-027-h",
+        text: "表哥買的基金是不是舅舅塞的內線。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-028",
+    text: "信用卡額度多少？表哥額度都破百萬。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-028-a",
+        text: "額度不高，但我的信用比表哥的更值錢。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-028-b",
+        text: "舅媽問這個，是要幫我提高額度嗎？",
+        archetype: "deflect",
+        retort: "提高額度？你自己去銀行問。",
+      },
+      {
+        id: "sanjiuma-salary_job-028-c",
+        text: "表哥額度破百萬，是不是舅舅擔保的？",
+        archetype: "deflect",
+        retort: "少亂講，那是他自己申請的。",
+      },
+      {
+        id: "sanjiuma-salary_job-028-d",
+        text: "沒多高啦，就基本額度而已……",
+        archetype: "meek",
+        retort: "基本是多少？說清楚一點。",
+      },
+      {
+        id: "sanjiuma-salary_job-028-e",
+        text: "額度是有，但都刷到快滿了……",
+        archetype: "meek",
+        retort: "刷滿了？那你要怎麼還？",
+      },
+      {
+        id: "sanjiuma-salary_job-028-f",
+        text: "我的額度是信任，無上限的那種。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-028-g",
+        text: "額度不重要，重要的是刷卡的手感。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-salary_job-028-h",
+        text: "破百萬額度是不是舅舅打電話關說的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-029",
+    text: "薪轉戶頭餘額多少？別跟我裝窮。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-029-a",
+        text: "餘額剛好夠付舅媽的下午茶，請客。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-salary_job-029-b",
+        text: "舅媽這麼想知道，是要幫我補貼嗎？",
+        archetype: "deflect",
+        retort: "補貼？你自己去努力賺啦。",
+      },
+      {
+        id: "sanjiuma-salary_job-029-c",
+        text: "舅媽要不要順便看一下我的存摺封面？",
+        archetype: "deflect",
+        retort: "少貧了，正經回答問題。",
+      },
+      {
+        id: "sanjiuma-salary_job-029-d",
+        text: "剩沒多少，月初就快花光了……",
+        archetype: "meek",
+        retort: "花光了？花去哪了，說清楚。",
+      },
+      {
+        id: "sanjiuma-salary_job-029-e",
+        text: "餘額三位數，撐到月底而已……",
+        archetype: "meek",
+        retort: "三位數？那你要怎麼過生活？",
+      },
+      {
+        id: "sanjiuma-salary_job-029-f",
+        text: "餘額是隱私，跟身份證字號一樣。",
+        archetype: "backfire",
+        retort: "……（舅媽瞇眼，不太相信）",
+      },
+      {
+        id: "sanjiuma-salary_job-029-g",
+        text: "戶頭餘額是心靈富足的倒影。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-salary_job-029-h",
+        text: "舅媽你自己戶頭是不是也沒剩多少？",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-030",
+    text: "有沒有兼職送外送？補貼一下家用。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-030-a",
+        text: "有啊，順便運動減肥，一舉兩得划算。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-salary_job-030-b",
+        text: "舅媽這麼關心，要不要幫我叫幾單？",
+        archetype: "deflect",
+        retort: "叫幾單？我哪知道怎麼叫。",
+      },
+      {
+        id: "sanjiuma-salary_job-030-c",
+        text: "表哥要不要也來體驗一下外送生活？",
+        archetype: "deflect",
+        retort: "他哪有空做那個，你別鬧。",
+      },
+      {
+        id: "sanjiuma-salary_job-030-d",
+        text: "有接一點，補貼交通費而已……",
+        archetype: "meek",
+        retort: "補貼多少？你要說清楚一點。",
+      },
+      {
+        id: "sanjiuma-salary_job-030-e",
+        text: "偶爾接，賺的錢很少……",
+        archetype: "meek",
+        retort: "很少是多少？說個數字來。",
+      },
+      {
+        id: "sanjiuma-salary_job-030-f",
+        text: "外送是我體驗人生百態的方式。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-030-g",
+        text: "兼職不重要，重要的是路上的風景。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-030-h",
+        text: "至少不是靠舅舅塞給我的閒差。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-031",
+    text: "畢業起薪跟現在比，漲了多少？",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-031-a",
+        text: "漲了不少，跟表哥的髮量成反比。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-031-b",
+        text: "舅媽記性真好，連畢業起薪都記得。",
+        archetype: "deflect",
+        retort: "當然，你的事我都關心。",
+      },
+      {
+        id: "sanjiuma-salary_job-031-c",
+        text: "表哥畢業起薪多少，我拿來比較一下。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，問你自己的。",
+      },
+      {
+        id: "sanjiuma-salary_job-031-d",
+        text: "漲了幾千塊，速度不算快……",
+        archetype: "meek",
+        retort: "幾千塊？那幾年才漲成這樣？",
+      },
+      {
+        id: "sanjiuma-salary_job-031-e",
+        text: "老實說差不多，幾乎沒漲……",
+        archetype: "meek",
+        retort: "沒漲？那你有沒有去談過？",
+      },
+      {
+        id: "sanjiuma-salary_job-031-f",
+        text: "起薪跟現在都是機密，不能說。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-031-g",
+        text: "薪水漲幅是我內心的秘密花園。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-salary_job-031-h",
+        text: "反正不是靠舅舅一句話調上去的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-032",
+    text: "換那麼多工作，薪水是不是很亂？",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-032-a",
+        text: "换工作是為了漲薪水，策略性跳槽啦。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-salary_job-032-b",
+        text: "舅媽這麼關心我的職涯，要不要當我顧問？",
+        archetype: "deflect",
+        retort: "顧問？我可沒那個本事。",
+      },
+      {
+        id: "sanjiuma-salary_job-032-c",
+        text: "表哥都沒換過工作，是不是很穩定？",
+        archetype: "deflect",
+        retort: "他當然穩，公司是自家人開的。",
+      },
+      {
+        id: "sanjiuma-salary_job-032-d",
+        text: "換了三次，每次都想找更好的……",
+        archetype: "meek",
+        retort: "更好？那到底有沒有更好？",
+      },
+      {
+        id: "sanjiuma-salary_job-032-e",
+        text: "換來換去，薪水好像沒差多少……",
+        archetype: "meek",
+        retort: "沒差？那你換什麼換？",
+      },
+      {
+        id: "sanjiuma-salary_job-032-f",
+        text: "換工作是我人生的探索之旅。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-032-g",
+        text: "次數不重要，重要的是每次都有故事。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-salary_job-032-h",
+        text: "至少每次都是我自己找的，不是關說。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-033",
+    text: "你這行業是不是天生薪水就比較低？",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-033-a",
+        text: "是啊，但我的快樂指數天生比較高。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-033-b",
+        text: "舅媽這麼懂產業行情，要不要幫我轉職？",
+        archetype: "deflect",
+        retort: "轉職？你自己要有本事。",
+      },
+      {
+        id: "sanjiuma-salary_job-033-c",
+        text: "表哥那行業薪水比較高，要不要引薦我？",
+        archetype: "deflect",
+        retort: "引薦？你先把自己顧好。",
+      },
+      {
+        id: "sanjiuma-salary_job-033-d",
+        text: "這行業確實比較低薪，沒辦法……",
+        archetype: "meek",
+        retort: "沒辦法？那你要不要轉行？",
+      },
+      {
+        id: "sanjiuma-salary_job-033-e",
+        text: "行情就是這樣，大家都差不多……",
+        archetype: "meek",
+        retort: "差不多是多少，你說清楚。",
+      },
+      {
+        id: "sanjiuma-salary_job-033-f",
+        text: "薪水低沒關係，我的靈魂很富有。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-033-g",
+        text: "行業不重要，重要的是我熱愛工作。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-033-h",
+        text: "至少我這行不是靠舅舅一句話進去的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-034",
+    text: "你是不是就靠死薪水過活，沒別的？",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-034-a",
+        text: "對啊，死薪水加上活得精彩，剛剛好。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-salary_job-034-b",
+        text: "舅媽這麼關心，要不要教我怎麼開源？",
+        archetype: "deflect",
+        retort: "開源？你自己也要努力想。",
+      },
+      {
+        id: "sanjiuma-salary_job-034-c",
+        text: "表哥除了死薪水還有什麼，教教我。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-salary_job-034-d",
+        text: "對，就靠薪水，沒有其他收入……",
+        archetype: "meek",
+        retort: "沒有？那你怎麼不多想辦法？",
+      },
+      {
+        id: "sanjiuma-salary_job-034-e",
+        text: "是啊，能存的真的不多……",
+        archetype: "meek",
+        retort: "不多是多少？你要說清楚。",
+      },
+      {
+        id: "sanjiuma-salary_job-034-f",
+        text: "我靠的是信念，薪水只是配菜。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-salary_job-034-g",
+        text: "死薪水沒關係，我活得很有生命力。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-034-h",
+        text: "至少不是靠舅舅每個月塞紅包過活。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-035",
+    text: "尾牙有沒有抽到獎金？表哥抽到機車。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-035-a",
+        text: "沒抽到，但我抽到了跟同事的好感情。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-salary_job-035-b",
+        text: "表哥抽到機車，要不要載我兜風？",
+        archetype: "deflect",
+        retort: "他自己都沒空了，你想什麼。",
+      },
+      {
+        id: "sanjiuma-salary_job-035-c",
+        text: "舅媽尾牙有沒有抽到，跟我分享一下？",
+        archetype: "deflect",
+        retort: "我哪有去，都在家等你們。",
+      },
+      {
+        id: "sanjiuma-salary_job-035-d",
+        text: "沒抽到，只抽到一包衛生紙……",
+        archetype: "meek",
+        retort: "衛生紙？那你到底運氣多差？",
+      },
+      {
+        id: "sanjiuma-salary_job-035-e",
+        text: "沒去尾牙，加班沒辦法參加……",
+        archetype: "meek",
+        retort: "加班？那薪水有比較多嗎？",
+      },
+      {
+        id: "sanjiuma-salary_job-035-f",
+        text: "我把自己抽成了年度最佳員工。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-035-g",
+        text: "抽獎不重要，重要的是尾牙的雞腿。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-035-h",
+        text: "表哥抽到機車該不會是內定的吧。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-036",
+    text: "報稅退了多少？表哥退稅退很多喔。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-036-a",
+        text: "退稅剛好夠請舅媽喝一杯珍奶。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-salary_job-036-b",
+        text: "舅媽這麼懂節稅，要不要教教我？",
+        archetype: "deflect",
+        retort: "這個要慢慢學，你要有耐心。",
+      },
+      {
+        id: "sanjiuma-salary_job-036-c",
+        text: "表哥退那麼多，是不是有做什麼扣除額？",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去查。",
+      },
+      {
+        id: "sanjiuma-salary_job-036-d",
+        text: "沒退多少，只有幾百塊而已……",
+        archetype: "meek",
+        retort: "幾百塊？那你薪水到底多少？",
+      },
+      {
+        id: "sanjiuma-salary_job-036-e",
+        text: "反而要補稅，扣了一大筆……",
+        archetype: "meek",
+        retort: "補稅？那你到底賺多少？",
+      },
+      {
+        id: "sanjiuma-salary_job-036-f",
+        text: "退稅是國家給我的紅包，開心。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-salary_job-036-g",
+        text: "退多退少不重要，報完就輕鬆了。",
+        archetype: "backfire",
+        retort: "……（沒人接話，空氣安靜了）",
+      },
+      {
+        id: "sanjiuma-salary_job-036-h",
+        text: "表哥退那麼多該不會做假帳吧。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-salary_job-037",
+    text: "我朋友的小孩月薪八萬，你差好多。",
+    topic: "salary_job",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-salary_job-037-a",
+        text: "差多好，我還有進步空間，比較有希望。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-salary_job-037-b",
+        text: "舅媽朋友的小孩好厲害，做什麼的啊？",
+        archetype: "deflect",
+        retort: "問這個幹嘛，你自己去比。",
+      },
+      {
+        id: "sanjiuma-salary_job-037-c",
+        text: "八萬好強，要不要介紹給我媽認識？",
+        archetype: "deflect",
+        retort: "認識幹嘛，你先顧好自己。",
+      },
+      {
+        id: "sanjiuma-salary_job-037-d",
+        text: "我沒有那麼多，差了快一半……",
+        archetype: "meek",
+        retort: "差一半？那你要怎麼追上？",
+      },
+      {
+        id: "sanjiuma-salary_job-037-e",
+        text: "沒辦法比，人家可能運氣好……",
+        archetype: "meek",
+        retort: "運氣？那你自己有沒有努力？",
+      },
+      {
+        id: "sanjiuma-salary_job-037-f",
+        text: "薪水不重要，重要的是我很快樂。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-salary_job-037-g",
+        text: "八萬算什麼，我的夢想是無價的。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-salary_job-037-h",
+        text: "那小孩是不是也是靠關係找的工作？",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+] satisfies Question[];

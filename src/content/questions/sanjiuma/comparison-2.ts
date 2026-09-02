@@ -1,0 +1,861 @@
+import type { Question } from "@/content/types";
+
+// situations:
+// 022 講表哥換工作被高薪挖角
+// 023 講表哥的員工旅遊去歐洲
+// 024 講表哥升職配公務車問你通勤
+// 025 講表哥的年終比你的月薪還多
+// 026 講表哥考到多張證照比你厲害
+// 027 舅媽朋友的小孩考上公職比較
+// 028 講表哥辦公室在市中心蛋黃區
+// 029 講表哥同事都叫他經理問你
+// 030 講表哥戴名牌手錶問你的手錶
+// 031 講表哥被挖去外商問你有沒有機會
+// 032 講表哥車貸都還完問你的存款
+// 033 講表哥歲末代表公司致詞問你
+// 034 講表哥買重機升級問你的代步工具
+// 035 講表哥的健身教練一對一問你的運動
+// 036 講表哥連續幾年拿到全勤獎問你
+
+export default [
+  {
+    id: "sanjiuma-comparison-022",
+    text: "表哥換工作被高薪挖角，你有人挖角嗎？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-022-a",
+        text: "沒人挖角，但我把自己活成搶手貨了。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-comparison-022-b",
+        text: "表哥被挖角好厲害，教教我怎麼被看見。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-022-c",
+        text: "舅媽有沒有被挖角過，分享經驗嘛？",
+        archetype: "deflect",
+        retort: "我那個年代哪有挖角這種事。",
+      },
+      {
+        id: "sanjiuma-comparison-022-d",
+        text: "沒人找我，我在原地待了很久……",
+        archetype: "meek",
+        retort: "待很久？那你有沒有想過離開？",
+      },
+      {
+        id: "sanjiuma-comparison-022-e",
+        text: "投過履歷，但都沒有下文……",
+        archetype: "meek",
+        retort: "沒下文？那你要不要修改一下？",
+      },
+      {
+        id: "sanjiuma-comparison-022-f",
+        text: "獵頭都被我的魅力嚇跑了。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-022-g",
+        text: "挖角不重要，重要的是我很滿足現況。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-022-h",
+        text: "表哥被挖角該不會是舅舅安排的戲碼。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-023",
+    text: "表哥員工旅遊去歐洲，你們公司去哪？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-023-a",
+        text: "我們公司員工旅遊在心裡，隨時都能出發。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-023-b",
+        text: "歐洲好棒，表哥要不要帶紀念品回來？",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-023-c",
+        text: "舅媽有沒有想去歐洲，我幫你查行程？",
+        archetype: "deflect",
+        retort: "我這把年紀去哪都好啦。",
+      },
+      {
+        id: "sanjiuma-comparison-023-d",
+        text: "我們公司沒有員工旅遊……",
+        archetype: "meek",
+        retort: "沒有？那福利也太差了吧。",
+      },
+      {
+        id: "sanjiuma-comparison-023-e",
+        text: "只有國內一日遊，差很多……",
+        archetype: "meek",
+        retort: "差很多？那你要不要考慮換工作？",
+      },
+      {
+        id: "sanjiuma-comparison-023-f",
+        text: "我的員工旅遊是每天通勤的風景。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-023-g",
+        text: "去哪不重要，重要的是心靈度假。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-comparison-023-h",
+        text: "表哥去歐洲該不會是舅舅出的旅費。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-024",
+    text: "表哥升職還配了公務車，你通勤靠什麼？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-024-a",
+        text: "我通勤靠雙腳，順便鍛鍊身體，比較划算。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-comparison-024-b",
+        text: "表哥有公務車真好命，改天載我一程嘛。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-024-c",
+        text: "舅媽以前上班靠什麼交通工具？",
+        archetype: "deflect",
+        retort: "我以前騎腳踏車上班的。",
+      },
+      {
+        id: "sanjiuma-comparison-024-d",
+        text: "騎機車通勤，風吹日曬……",
+        archetype: "meek",
+        retort: "風吹日曬？那你怎麼不換工作？",
+      },
+      {
+        id: "sanjiuma-comparison-024-e",
+        text: "搭公車，常常擠得要死……",
+        archetype: "meek",
+        retort: "擠得要死？那要不要考慮騎車？",
+      },
+      {
+        id: "sanjiuma-comparison-024-f",
+        text: "我的座駕是我的雙腿，環保又健身。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，繼續吃飯）",
+      },
+      {
+        id: "sanjiuma-comparison-024-g",
+        text: "有沒有公務車不重要，重要的是準時。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-024-h",
+        text: "表哥的公務車該不會是舅舅公司塞的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-025",
+    text: "表哥年終比你一整個月薪水還多，怎麼想？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-025-a",
+        text: "怎麼想？我覺得表哥該包紅包給大家慶祝。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-025-b",
+        text: "表哥年終這麼多，改天請我們吃大餐嘛。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-025-c",
+        text: "舅媽以前年終領多少，分享一下經驗？",
+        archetype: "deflect",
+        retort: "我那個年代哪有年終這種東西。",
+      },
+      {
+        id: "sanjiuma-comparison-025-d",
+        text: "確實比較少，公司規模差很多……",
+        archetype: "meek",
+        retort: "差很多？那你有沒有想過跳槽？",
+      },
+      {
+        id: "sanjiuma-comparison-025-e",
+        text: "沒辦法比，心裡是有點難過……",
+        archetype: "meek",
+        retort: "難過？那你要不要振作一點？",
+      },
+      {
+        id: "sanjiuma-comparison-025-f",
+        text: "年終不重要，重要的是我很努力。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-025-g",
+        text: "數字不重要，重要的是過年的氣氛。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-comparison-025-h",
+        text: "表哥年終那麼多該不會是舅舅簽的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-026",
+    text: "表哥考到五張證照了，你有幾張？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-026-a",
+        text: "我沒證照，但我有一張過年生存證書。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-comparison-026-b",
+        text: "表哥五張證照，教教我怎麼準備考試。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-026-c",
+        text: "舅媽有沒有想考證照，我陪你一起考？",
+        archetype: "deflect",
+        retort: "我這把年紀考什麼證照。",
+      },
+      {
+        id: "sanjiuma-comparison-026-d",
+        text: "我一張都沒有，沒時間準備……",
+        archetype: "meek",
+        retort: "沒時間？那你打算拖到什麼時候？",
+      },
+      {
+        id: "sanjiuma-comparison-026-e",
+        text: "有一張基本的，其他都沒考過……",
+        archetype: "meek",
+        retort: "其他呢？那你要不要多考幾張？",
+      },
+      {
+        id: "sanjiuma-comparison-026-f",
+        text: "我的證照是人生體驗證，比較稀有。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，繼續吃飯）",
+      },
+      {
+        id: "sanjiuma-comparison-026-g",
+        text: "證照數量不重要，重要的是實戰經驗。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-026-h",
+        text: "表哥五張證照該不會是舅舅花錢送考的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-027",
+    text: "我朋友的小孩考上公職了，你考慮過嗎？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-027-a",
+        text: "考慮過，但我覺得自由比鐵飯碗更適合我。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-027-b",
+        text: "那小孩好厲害，改天請他教我怎麼準備。",
+        archetype: "deflect",
+        retort: "認識幹嘛，你先顧好自己。",
+      },
+      {
+        id: "sanjiuma-comparison-027-c",
+        text: "舅媽以前有沒有考慮過考公職？",
+        archetype: "deflect",
+        retort: "我那個年代哪有那麼多選擇。",
+      },
+      {
+        id: "sanjiuma-comparison-027-d",
+        text: "考慮過，但覺得考試很難……",
+        archetype: "meek",
+        retort: "難？那你到底有沒有去準備？",
+      },
+      {
+        id: "sanjiuma-comparison-027-e",
+        text: "有報名過，但沒考上……",
+        archetype: "meek",
+        retort: "沒考上？那你打算重考嗎？",
+      },
+      {
+        id: "sanjiuma-comparison-027-f",
+        text: "我天生就是自由靈魂，不適合考試。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，繼續吃飯）",
+      },
+      {
+        id: "sanjiuma-comparison-027-g",
+        text: "公職不重要，重要的是我熱愛自由。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-comparison-027-h",
+        text: "那小孩考上該不會也是靠關係安排的。",
+        archetype: "landmine",
+        retort: "你這孩子怎麼這樣講話！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-028",
+    text: "表哥辦公室在市中心蛋黃區，你在哪上班？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-028-a",
+        text: "我在蛋殼區上班，蛋殼保護蛋黃，也很重要。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-comparison-028-b",
+        text: "表哥辦公室好厲害，改天約我去參觀嘛。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-028-c",
+        text: "舅媽以前上班在哪一區，分享一下？",
+        archetype: "deflect",
+        retort: "我以前在市場附近上班的。",
+      },
+      {
+        id: "sanjiuma-comparison-028-d",
+        text: "我在比較郊區，通勤要一小時……",
+        archetype: "meek",
+        retort: "一小時？那你有沒有想搬近一點？",
+      },
+      {
+        id: "sanjiuma-comparison-028-e",
+        text: "在工業區上班，環境比較差……",
+        archetype: "meek",
+        retort: "環境差？那你有沒有想換工作？",
+      },
+      {
+        id: "sanjiuma-comparison-028-f",
+        text: "地點不重要，我把自己活成蛋黃區。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-028-g",
+        text: "上班地點不重要，重要的是心情。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-028-h",
+        text: "表哥辦公室該不會是舅舅公司的地址。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-029",
+    text: "表哥同事都叫他經理，同事怎麼叫你？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-029-a",
+        text: "同事都叫我開心果，比經理還難得的頭銜。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-029-b",
+        text: "表哥經理當得怎樣，教教我怎麼升遷。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-029-c",
+        text: "舅媽以前同事怎麼叫你，分享一下嘛？",
+        archetype: "deflect",
+        retort: "他們都叫我大姊頭的。",
+      },
+      {
+        id: "sanjiuma-comparison-029-d",
+        text: "同事就叫我名字，沒什麼職稱……",
+        archetype: "meek",
+        retort: "沒職稱？那什麼時候能升遷？",
+      },
+      {
+        id: "sanjiuma-comparison-029-e",
+        text: "還是新人，大家都叫我菜鳥……",
+        archetype: "meek",
+        retort: "菜鳥？那你要不要多努力表現？",
+      },
+      {
+        id: "sanjiuma-comparison-029-f",
+        text: "職稱不重要，重要的是我心中是總裁。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-029-g",
+        text: "我自封辦公室氣氛總監，職稱響亮。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-029-h",
+        text: "表哥經理職稱該不會是舅舅打點的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-030",
+    text: "表哥戴的手錶是名牌，你手上這支多少錢？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-030-a",
+        text: "這支不貴，但陪我度過每個被追問的年夜。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-comparison-030-b",
+        text: "表哥名牌手錶好帥，教我怎麼選錶。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-030-c",
+        text: "舅媽戴的手錶也很好看，哪買的？",
+        archetype: "deflect",
+        retort: "這個秘密，不能隨便講。",
+      },
+      {
+        id: "sanjiuma-comparison-030-d",
+        text: "這支很便宜，路邊攤買的……",
+        archetype: "meek",
+        retort: "便宜？那你要不要換一支好的？",
+      },
+      {
+        id: "sanjiuma-comparison-030-e",
+        text: "沒戴手錶，看手機比較快……",
+        archetype: "meek",
+        retort: "看手機？那也太隨便了吧。",
+      },
+      {
+        id: "sanjiuma-comparison-030-f",
+        text: "我的手錶是時間管理大師的象徵。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-030-g",
+        text: "手錶不重要，重要的是我從不遲到。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-030-h",
+        text: "表哥的名牌手錶該不會是舅舅送的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-031",
+    text: "表哥被挖去外商工作了，你有機會嗎？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-031-a",
+        text: "機會遍地都是，我只是先培養被挖角的實力。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-031-b",
+        text: "表哥外商工作好厲害，教教我怎麼準備。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-031-c",
+        text: "舅媽有沒有認識外商的朋友，介紹一下？",
+        archetype: "deflect",
+        retort: "介紹？你自己要有實力。",
+      },
+      {
+        id: "sanjiuma-comparison-031-d",
+        text: "沒什麼機會，英文不夠好……",
+        archetype: "meek",
+        retort: "不夠好？那你要不要去學？",
+      },
+      {
+        id: "sanjiuma-comparison-031-e",
+        text: "投過履歷，但都石沉大海……",
+        archetype: "meek",
+        retort: "石沉大海？那你要不要修改？",
+      },
+      {
+        id: "sanjiuma-comparison-031-f",
+        text: "外商找我，但我拒絕了，太忙。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-031-g",
+        text: "機會不重要，重要的是我活得自在。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-comparison-031-h",
+        text: "表哥被挖角該不會是舅舅塞紅包給獵頭。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-032",
+    text: "表哥車貸都繳完了，你存款有多少？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-032-a",
+        text: "存款不多，但我沒有負債，一樣輕鬆。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-comparison-032-b",
+        text: "表哥車貸繳完好厲害，教教我理財。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-032-c",
+        text: "舅媽存款規劃得怎樣，分享一下嘛？",
+        archetype: "deflect",
+        retort: "這是秘密，不能隨便講。",
+      },
+      {
+        id: "sanjiuma-comparison-032-d",
+        text: "存款不多，扣掉開銷剩沒多少……",
+        archetype: "meek",
+        retort: "沒多少？說個數字給我聽。",
+      },
+      {
+        id: "sanjiuma-comparison-032-e",
+        text: "沒什麼存款，月光族一個……",
+        archetype: "meek",
+        retort: "月光？那你打算什麼時候存？",
+      },
+      {
+        id: "sanjiuma-comparison-032-f",
+        text: "存款是數字遊戲，我選擇不玩。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-032-g",
+        text: "沒存款沒關係，我心裡很富有。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-032-h",
+        text: "表哥車貸繳完該不會是舅舅偷偷幫忙付的。",
+        archetype: "landmine",
+        retort: "你！誰跟你講的！他才沒有！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-033",
+    text: "表哥尾牙代表公司致詞，你敢上台嗎？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-033-a",
+        text: "敢啊，我上台致詞比表哥還會炒熱氣氛。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-033-b",
+        text: "表哥致詞好厲害，教我怎麼上台不緊張。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-033-c",
+        text: "舅媽以前有沒有上台致詞過，分享一下？",
+        archetype: "deflect",
+        retort: "我以前可是里長候選人的。",
+      },
+      {
+        id: "sanjiuma-comparison-033-d",
+        text: "不敢，我很怕在公開場合講話……",
+        archetype: "meek",
+        retort: "怕？那你要不要練習一下？",
+      },
+      {
+        id: "sanjiuma-comparison-033-e",
+        text: "沒機會上台，都是主管在講……",
+        archetype: "meek",
+        retort: "都主管？那你什麼時候能上台？",
+      },
+      {
+        id: "sanjiuma-comparison-033-f",
+        text: "上台致詞太麻煩，我專心鼓掌就好。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-033-g",
+        text: "上不上台不重要，重要的是掌聲夠不夠大。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-033-h",
+        text: "表哥能代表公司致詞該不會是舅舅安排的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-034",
+    text: "表哥機車都換重機了，你騎什麼上班？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-034-a",
+        text: "我騎的是雙腳，環保又能保持身材。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的很會講。",
+      },
+      {
+        id: "sanjiuma-comparison-034-b",
+        text: "表哥重機好帥，改天載我去兜風嘛。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-034-c",
+        text: "舅媽以前騎過什麼車，分享一下？",
+        archetype: "deflect",
+        retort: "我以前騎腳踏車載你媽的。",
+      },
+      {
+        id: "sanjiuma-comparison-034-d",
+        text: "還騎舊機車，換不起重機……",
+        archetype: "meek",
+        retort: "換不起？那你打算存多久？",
+      },
+      {
+        id: "sanjiuma-comparison-034-e",
+        text: "搭公車上班，比較省錢……",
+        archetype: "meek",
+        retort: "省錢？那你多久才能存夠？",
+      },
+      {
+        id: "sanjiuma-comparison-034-f",
+        text: "我的座駕是我的雙腳，最省油。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，繼續吃飯）",
+      },
+      {
+        id: "sanjiuma-comparison-034-g",
+        text: "車不重要，重要的是抵達的心情。",
+        archetype: "backfire",
+        retort: "……（舅媽嘆氣，繼續滑手機）",
+      },
+      {
+        id: "sanjiuma-comparison-034-h",
+        text: "表哥的重機該不會是舅舅出錢買的。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-035",
+    text: "表哥請了一對一健身教練，你怎麼運動？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-035-a",
+        text: "我的教練是生活壓力，訓練效果特別好。",
+        archetype: "perfect",
+        retort: "……你這孩子，講話一套一套的。",
+      },
+      {
+        id: "sanjiuma-comparison-035-b",
+        text: "表哥健身教練厲害嗎？改天介紹我認識。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-035-c",
+        text: "舅媽有沒有在運動，要不要一起去走走？",
+        archetype: "deflect",
+        retort: "我這把年紀走走就好了。",
+      },
+      {
+        id: "sanjiuma-comparison-035-d",
+        text: "沒有教練，都自己隨便運動……",
+        archetype: "meek",
+        retort: "隨便運動？那有沒有效果？",
+      },
+      {
+        id: "sanjiuma-comparison-035-e",
+        text: "沒時間運動，下班只想休息……",
+        archetype: "meek",
+        retort: "休息？那你身體怎麼辦？",
+      },
+      {
+        id: "sanjiuma-comparison-035-f",
+        text: "我的健身教練是我自己，比較省錢。",
+        archetype: "backfire",
+        retort: "……（沒人聽懂，繼續吃飯）",
+      },
+      {
+        id: "sanjiuma-comparison-035-g",
+        text: "運動方式不重要，重要的是有動就好。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-035-h",
+        text: "表哥的健身教練該不會是舅舅出的錢。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+  {
+    id: "sanjiuma-comparison-036",
+    text: "表哥連續五年全勤，你有請過假嗎？",
+    topic: "comparison",
+    bossId: "sanjiuma",
+    options: [
+      {
+        id: "sanjiuma-comparison-036-a",
+        text: "我請過假，但都是回來陪舅媽聊表哥的事。",
+        archetype: "perfect",
+        retort: "……你這孩子，嘴巴真的厲害。",
+      },
+      {
+        id: "sanjiuma-comparison-036-b",
+        text: "表哥全勤好厲害，教教我怎麼保持健康。",
+        archetype: "deflect",
+        retort: "問表哥幹嘛，你自己去問他。",
+      },
+      {
+        id: "sanjiuma-comparison-036-c",
+        text: "舅媽以前上班有沒有全勤過，分享一下？",
+        archetype: "deflect",
+        retort: "我以前可是從不遲到的。",
+      },
+      {
+        id: "sanjiuma-comparison-036-d",
+        text: "我常常請假，身體不太好……",
+        archetype: "meek",
+        retort: "常請假？那薪水會不會被扣？",
+      },
+      {
+        id: "sanjiuma-comparison-036-e",
+        text: "偶爾遲到，扣了不少獎金……",
+        archetype: "meek",
+        retort: "扣多少？你要說清楚一點。",
+      },
+      {
+        id: "sanjiuma-comparison-036-f",
+        text: "全勤不重要，重要的是我請假時很快樂。",
+        archetype: "backfire",
+        retort: "……（沒人笑，表哥低頭吃菜）",
+      },
+      {
+        id: "sanjiuma-comparison-036-g",
+        text: "出勤率不重要，重要的是心態滿勤。",
+        archetype: "backfire",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
+      },
+      {
+        id: "sanjiuma-comparison-036-h",
+        text: "表哥連續全勤該不會是舅舅公司自己人放水。",
+        archetype: "landmine",
+        retort: "你這什麼意思！他是憑實力的！",
+      },
+    ],
+  },
+] satisfies Question[];
