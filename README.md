@@ -51,4 +51,4 @@ pnpm og             # 本機重新產生 public/og.png（需要系統中文字�
 
 ## 部署
 
-Vercel 專案 `cny-relatives-battle`（靜態輸出）。`vercel deploy --prod` 即可。
+正式站：https://cny-relatives-battle.vercel.app （Vercel 專案 `cny-relatives-battle`，靜態輸出）。更新：`vercel deploy --prod --yes`。
