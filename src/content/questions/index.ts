@@ -5,57 +5,58 @@ import q0 from "./ama/food_push";
 import q1 from "./ama/marriage";
 import q2 from "./ama/religion";
 import q3 from "./biaojie/comparison-1";
-import q4 from "./biaojie/housing-1";
-import q5 from "./biaojie/housing-2";
-import q6 from "./biaojie/kids-1";
-import q7 from "./biaojie/kids-2";
-import q8 from "./dabo/education-1";
-import q9 from "./dabo/education-2";
-import q10 from "./dabo/politics-1";
-import q11 from "./dabo/politics-2";
-import q12 from "./dabo/salary_job-1";
-import q13 from "./dabo/salary_job-2";
-import q14 from "./generic/appearance";
-import q15 from "./generic/comparison";
-import q16 from "./generic/education";
-import q17 from "./generic/elder_health";
-import q18 from "./generic/food_push";
-import q19 from "./generic/housing";
-import q20 from "./generic/kids";
-import q21 from "./generic/marriage";
-import q22 from "./generic/politics";
-import q23 from "./generic/red_envelope";
-import q24 from "./generic/religion";
-import q25 from "./generic/salary_job";
-import q26 from "./guzhang/elder_health-1";
-import q27 from "./guzhang/elder_health-2";
-import q28 from "./guzhang/food_push-1";
-import q29 from "./guzhang/food_push-2";
-import q30 from "./guzhang/politics-1";
-import q31 from "./guzhang/politics-2";
-import q32 from "./neighbor-chen/comparison-1";
-import q33 from "./neighbor-chen/comparison-2";
-import q34 from "./neighbor-chen/marriage-1";
-import q35 from "./neighbor-chen/marriage-2";
-import q36 from "./neighbor-chen/salary_job-1";
-import q37 from "./neighbor-chen/salary_job-2";
-import q38 from "./sangu/comparison-1";
-import q39 from "./sangu/housing-1";
-import q40 from "./sangu/kids-1";
-import q41 from "./sangu/marriage-1";
-import q42 from "./sangu/salary_job-1";
-import q43 from "./sanjiuma/comparison-1";
-import q44 from "./sanjiuma/comparison-2";
-import q45 from "./sanjiuma/comparison";
-import q46 from "./sanjiuma/housing-1";
-import q47 from "./sanjiuma/housing-2";
-import q48 from "./sanjiuma/housing";
-import q49 from "./sanjiuma/salary_job-1";
-import q50 from "./sanjiuma/salary_job-2";
-import q51 from "./sanjiuma/salary_job";
-import q52 from "./xiao-biaodi/appearance";
-import q53 from "./xiao-biaodi/comparison";
-import q54 from "./xiao-biaodi/red_envelope";
+import q4 from "./biaojie/comparison-2";
+import q5 from "./biaojie/housing-1";
+import q6 from "./biaojie/housing-2";
+import q7 from "./biaojie/kids-1";
+import q8 from "./biaojie/kids-2";
+import q9 from "./dabo/education-1";
+import q10 from "./dabo/education-2";
+import q11 from "./dabo/politics-1";
+import q12 from "./dabo/politics-2";
+import q13 from "./dabo/salary_job-1";
+import q14 from "./dabo/salary_job-2";
+import q15 from "./generic/appearance";
+import q16 from "./generic/comparison";
+import q17 from "./generic/education";
+import q18 from "./generic/elder_health";
+import q19 from "./generic/food_push";
+import q20 from "./generic/housing";
+import q21 from "./generic/kids";
+import q22 from "./generic/marriage";
+import q23 from "./generic/politics";
+import q24 from "./generic/red_envelope";
+import q25 from "./generic/religion";
+import q26 from "./generic/salary_job";
+import q27 from "./guzhang/elder_health-1";
+import q28 from "./guzhang/elder_health-2";
+import q29 from "./guzhang/food_push-1";
+import q30 from "./guzhang/food_push-2";
+import q31 from "./guzhang/politics-1";
+import q32 from "./guzhang/politics-2";
+import q33 from "./neighbor-chen/comparison-1";
+import q34 from "./neighbor-chen/comparison-2";
+import q35 from "./neighbor-chen/marriage-1";
+import q36 from "./neighbor-chen/marriage-2";
+import q37 from "./neighbor-chen/salary_job-1";
+import q38 from "./neighbor-chen/salary_job-2";
+import q39 from "./sangu/comparison-1";
+import q40 from "./sangu/housing-1";
+import q41 from "./sangu/kids-1";
+import q42 from "./sangu/marriage-1";
+import q43 from "./sangu/salary_job-1";
+import q44 from "./sanjiuma/comparison-1";
+import q45 from "./sanjiuma/comparison-2";
+import q46 from "./sanjiuma/comparison";
+import q47 from "./sanjiuma/housing-1";
+import q48 from "./sanjiuma/housing-2";
+import q49 from "./sanjiuma/housing";
+import q50 from "./sanjiuma/salary_job-1";
+import q51 from "./sanjiuma/salary_job-2";
+import q52 from "./sanjiuma/salary_job";
+import q53 from "./xiao-biaodi/appearance";
+import q54 from "./xiao-biaodi/comparison";
+import q55 from "./xiao-biaodi/red_envelope";
 
 export const QUESTIONS: Question[] = [
   ...q0,
@@ -113,6 +114,7 @@ export const QUESTIONS: Question[] = [
   ...q52,
   ...q53,
   ...q54,
+  ...q55,
 ];
 
 export const QUESTION_FILES = [
@@ -120,6 +122,7 @@ export const QUESTION_FILES = [
   "ama/marriage",
   "ama/religion",
   "biaojie/comparison-1",
+  "biaojie/comparison-2",
   "biaojie/housing-1",
   "biaojie/housing-2",
   "biaojie/kids-1",
