@@ -618,8 +618,13 @@ function enterResult(content: ContentBundle, state: GameState, lost: boolean): G
 // resumeStory
 // ---------------------------------------------------------------------------
 
-export function resumeStory(content: ContentBundle, seed: string, checkpointSceneIndex: number): GameState {
-  const base = createGame(content, "story", seed);
+export function resumeStory(
+  content: ContentBundle,
+  seed: string,
+  checkpointSceneIndex: number,
+  opts?: { lifeId?: string }
+): GameState {
+  const base = createGame(content, "story", seed, opts);
   const refreshed: GameState = {
     ...base,
     playerHp: base.playerMaxHp,

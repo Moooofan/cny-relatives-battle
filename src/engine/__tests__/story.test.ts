@@ -2,6 +2,7 @@ import { describe, expect, test } from "vitest";
 import { advance, createGame, resumeStory } from "@/engine/reducer";
 import type { GameState } from "@/engine/types";
 import {
+  FIXTURE_CONTENT,
   FIXTURE_CONTENT_NO_LIVES,
   FIXTURE_LAST_SCENE_INDEX,
   fakeLogEntry,
@@ -45,6 +46,16 @@ describe("story flow", () => {
     expect(s.sceneIndex).toBe(FIXTURE_LAST_SCENE_INDEX);
     expect(s.playerHp).toBe(100);
     expect(s.bossQueue[s.bossIndex]).toBe("ama");
+  });
+
+  test("resumeStory preserves an explicitly chosen life", () => {
+    const s = resumeStory(FIXTURE_CONTENT, "resume-life-test", FIXTURE_LAST_SCENE_INDEX, {
+      lifeId: "life-fixture-a",
+    });
+    expect(s.lifeId).toBe("life-fixture-a");
+    expect(s.playerMaxHp).toBe(90);
+    expect(s.playerHp).toBe(90);
+    expect(s.specials.heal).toBe(2); // SPECIALS.heal.perRun(1) + extraSpecials.heal(1)
   });
 });
 
