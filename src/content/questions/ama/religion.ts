@@ -9,7 +9,7 @@ export default [
     options: [
       {
         id: "ama-religion-001-a",
-        text: "好，我還要跟神明說阿嬤要健康到一百二，這個比較重要。",
+        text: "好，我還要拜託神明，把三姑的嘴封小聲一點。",
         archetype: "perfect",
         retort: "哎唷，你這孩子，阿嬤眼睛都要溼了。",
       },
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "ama-religion-001-h",
-        text: "拜拜又沒用，去年也拜了還不是一樣。",
+        text: "你很煩耶，拜拜有用你早就中樂透了。",
         archetype: "landmine",
-        retort: "你這樣講，神明會聽到的！",
+        retort: "……（阿嬤安靜下來，收起供品）",
       },
     ],
   },

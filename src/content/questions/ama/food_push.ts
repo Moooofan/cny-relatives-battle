@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "ama-food_push-001-a",
-        text: "阿嬤，我是在等你的雞腿，外面的都比不上。",
+        text: "阿嬤夾的我全吃，三姑夾的我拿去餵狗。",
         archetype: "perfect",
-        retort: "哎唷，就會講。再夾一塊給你。",
+        retort: "哎唷，狗都嫌三姑，再吃一塊！",
       },
       {
         id: "ama-food_push-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "ama-food_push-001-h",
-        text: "阿嬤我真的吃不下了，你不要一直夾好不好！",
+        text: "你很煩耶，一直夾是要撐死我嗎。",
         archetype: "landmine",
-        retort: "……好，阿嬤不夾了。",
+        retort: "……好，阿嬤不夾了。（放下筷子）",
       },
     ],
   },

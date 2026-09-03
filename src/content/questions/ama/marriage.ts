@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "ama-marriage-001-a",
-        text: "阿嬤，我先帶自己回來給你看。你看，有沒有變帥？",
+        text: "阿嬤先看我就好，比三姑的眼光準多了。",
         archetype: "perfect",
-        retort: "帥啦帥啦，就是嘴巴太會講。",
+        retort: "帥啦帥啦，就是嘴巴會討阿嬤歡心。",
       },
       {
         id: "ama-marriage-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "ama-marriage-001-h",
-        text: "阿嬤你不要跟三姑一樣一直問啦。",
+        text: "你很煩耶，別學三姑一直逼婚。",
         archetype: "landmine",
-        retort: "阿嬤是關心你，不是像三姑那樣……",
+        retort: "……好，阿嬤不問了。",
       },
     ],
   },
