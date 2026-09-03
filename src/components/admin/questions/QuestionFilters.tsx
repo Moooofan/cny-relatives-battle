@@ -8,6 +8,8 @@ export interface QuestionFilterState {
   topic: string; // "all" | Topic
   archetype: string; // "all" | Archetype
   search: string;
+  /** Show only questions with an override (edited / custom / hidden). */
+  onlyModified: boolean;
 }
 
 const selectClass = "h-9 rounded-btn bg-surface-2 border border-border px-2 text-sm text-text";
@@ -70,6 +72,19 @@ export function QuestionFilters({
         onChange={(e) => onChange({ ...value, search: e.target.value })}
         className="h-9 flex-1 min-w-[160px] rounded-btn bg-surface-2 border border-border px-3 text-sm text-text placeholder:text-text-muted"
       />
+
+      <button
+        type="button"
+        onClick={() => onChange({ ...value, onlyModified: !value.onlyModified })}
+        aria-pressed={value.onlyModified}
+        className={`h-9 rounded-full border px-3 text-xs whitespace-nowrap transition ${
+          value.onlyModified
+            ? "border-gold bg-gold/20 text-gold"
+            : "border-border bg-surface-2 text-text-muted"
+        }`}
+      >
+        只看修改過的
+      </button>
     </div>
   );
 }

@@ -8,6 +8,7 @@ import { useSettingsStore } from "@/store/settingsStore";
 import { useStatsStore } from "@/store/statsStore";
 import { useDailyStore } from "@/store/dailyStore";
 import { useResultsStore } from "@/store/resultsStore";
+import { useContentStore } from "@/store/contentStore";
 
 /** Phases reached only after `startBoss` has actually run — `bossMaxHp` must
  * be > 0 in every one of them for a real boss. `intro` (not yet advanced),
@@ -49,7 +50,17 @@ export function HydrationGate({ children }: { children: React.ReactNode }) {
       useStatsStore.persist.rehydrate(),
       useDailyStore.persist.rehydrate(),
       useResultsStore.persist.rehydrate(),
+      useContentStore.persist.rehydrate(),
     ])
+      .then(() => {
+        // Non-blocking: `refresh()` is fire-and-forget so the UI never waits
+        // on a network round trip before rendering. Until it resolves (or if
+        // Supabase isn't configured at all) the game plays on bundled
+        // CONTENT via contentStore's default `effectiveContent`. A run
+        // already in progress is unaffected either way — see
+        // src/store/gameStore.ts and src/store/contentStore.ts.
+        void useContentStore.getState().refresh();
+      })
       .then(() => {
         // A corrupt persisted game (unresolvable boss id, empty queue, ...)
         // must never be allowed to stick around — it would otherwise leave

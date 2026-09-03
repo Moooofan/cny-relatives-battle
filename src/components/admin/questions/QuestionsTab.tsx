@@ -1,17 +1,21 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Download } from "lucide-react";
+import { Download, Plus } from "lucide-react";
 import { CONTENT } from "@/content";
 import type { Question } from "@/engine/types";
-import { Card, SectionTitle } from "@/components/admin/Section";
+import { Card, SectionTitle, EmptyNote } from "@/components/admin/Section";
 import { QuestionFilters, type QuestionFilterState } from "@/components/admin/questions/QuestionFilters";
 import { QuestionRow } from "@/components/admin/questions/QuestionRow";
+import { QuestionEditor } from "@/components/admin/questions/QuestionEditor";
 import { downloadCSV, downloadJSON } from "@/lib/adminExport";
+import { isSupabaseEnabled } from "@/lib/adminSupabase";
+import { useContentStore } from "@/store/contentStore";
+import { buildAdminQuestionList, type AdminQuestionEntry } from "@/lib/contentOverrides";
 
 const PAGE_SIZE = 50;
 
-function matches(q: Question, filter: QuestionFilterState): boolean {
+function questionMatches(q: Question, filter: QuestionFilterState): boolean {
   if (filter.boss === "generic" && q.bossId !== undefined) return false;
   if (filter.boss !== "all" && filter.boss !== "generic" && q.bossId !== filter.boss) return false;
   if (filter.topic !== "all" && q.topic !== filter.topic) return false;
@@ -22,6 +26,11 @@ function matches(q: Question, filter: QuestionFilterState): boolean {
     if (!haystack.includes(needle)) return false;
   }
   return true;
+}
+
+function entryMatches(entry: AdminQuestionEntry, filter: QuestionFilterState): boolean {
+  if (filter.onlyModified && !entry.isEdited && !entry.isCustom && !entry.isHidden) return false;
+  return questionMatches(entry.question, filter);
 }
 
 function bossLabel(bossId: string | undefined): string {
@@ -46,14 +55,34 @@ function question8Headers(): string[] {
 }
 
 export function QuestionsTab() {
-  const [filter, setFilter] = useState<QuestionFilterState>({ boss: "all", topic: "all", archetype: "all", search: "" });
+  const enabled = isSupabaseEnabled();
+  const rows = useContentStore((s) => s.rows);
+  const effectiveContent = useContentStore((s) => s.effectiveContent);
+
+  const [filter, setFilter] = useState<QuestionFilterState>({
+    boss: "all",
+    topic: "all",
+    archetype: "all",
+    search: "",
+    onlyModified: false,
+  });
   const [page, setPage] = useState(0);
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
+  const [editing, setEditing] = useState<{ entry: AdminQuestionEntry | null } | null>(null);
 
-  const filtered = useMemo(() => CONTENT.questions.filter((q) => matches(q, filter)), [filter]);
+  // Admin listing merges the bundled question bank with every override row
+  // (including hidden ones, so the owner can find and un-hide them) — see
+  // src/lib/contentOverrides.ts. This is deliberately NOT `effectiveContent`,
+  // which is what the game itself plays (hidden questions removed).
+  const entries = useMemo(() => buildAdminQuestionList(CONTENT, rows), [rows]);
+  const filteredEntries = useMemo(() => entries.filter((e) => entryMatches(e, filter)), [entries, filter]);
+  const exportQuestions = useMemo(
+    () => effectiveContent.questions.filter((q) => questionMatches(q, filter)),
+    [effectiveContent, filter]
+  );
 
-  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-  const pageItems = filtered.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+  const pageCount = Math.max(1, Math.ceil(filteredEntries.length / PAGE_SIZE));
+  const pageItems = filteredEntries.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
 
   function handleFilterChange(next: QuestionFilterState) {
     setFilter(next);
@@ -75,15 +104,28 @@ export function QuestionsTab() {
        * page scrolls, so filters/count/export/展開收合 stay reachable across
        * a 1000-row list without scrolling back to the top. */}
       <div className="sticky top-[54px] z-20 -mx-4 -mt-4 bg-surface px-4 pt-4 pb-3 border-b border-border flex flex-col gap-2">
-        <SectionTitle>題庫（共 {CONTENT.questions.length} 題）</SectionTitle>
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <SectionTitle>題庫（共 {effectiveContent.questions.length} 題）</SectionTitle>
+          <button
+            type="button"
+            disabled={!enabled}
+            onClick={() => setEditing({ entry: null })}
+            className="flex items-center gap-1 rounded-btn border border-gold/50 bg-gold/10 px-3 py-1.5 text-xs text-gold disabled:opacity-40"
+          >
+            <Plus size={14} /> 新增題目
+          </button>
+        </div>
+
+        {!enabled && <EmptyNote>尚未設定 Supabase，無法編輯或新增題目，以下僅供瀏覽／匯出。</EmptyNote>}
+
         <QuestionFilters bosses={CONTENT.bosses} value={filter} onChange={handleFilterChange} />
 
         <div className="flex items-center justify-between flex-wrap gap-2">
-          <p className="text-sm text-text-muted tabular">符合條件：{filtered.length} 題</p>
+          <p className="text-sm text-text-muted tabular">符合條件：{filteredEntries.length} 題</p>
           <div className="flex gap-2 flex-wrap">
             <button
               type="button"
-              onClick={() => setOpenIds(new Set(pageItems.map((q) => q.id)))}
+              onClick={() => setOpenIds(new Set(pageItems.map((e) => e.question.id)))}
               className="rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
             >
               展開本頁
@@ -97,7 +139,7 @@ export function QuestionsTab() {
             </button>
             <button
               type="button"
-              onClick={() => downloadJSON("questions.json", filtered)}
+              onClick={() => downloadJSON("questions.json", exportQuestions)}
               className="flex items-center gap-1 rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
             >
               <Download size={14} /> 匯出 JSON
@@ -105,8 +147,8 @@ export function QuestionsTab() {
             <button
               type="button"
               onClick={() => {
-                const { headers, rows } = exportRows(filtered);
-                downloadCSV("questions.csv", headers, rows);
+                const { headers, rows: csvRows } = exportRows(exportQuestions);
+                downloadCSV("questions.csv", headers, csvRows);
               }}
               className="flex items-center gap-1 rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
             >
@@ -117,13 +159,15 @@ export function QuestionsTab() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        {pageItems.map((q) => (
+        {pageItems.map((entry) => (
           <QuestionRow
-            key={q.id}
-            question={q}
-            bossLabel={bossLabel(q.bossId)}
-            open={openIds.has(q.id)}
-            onToggle={() => toggle(q.id)}
+            key={entry.question.id}
+            entry={entry}
+            bossLabel={bossLabel(entry.question.bossId)}
+            open={openIds.has(entry.question.id)}
+            onToggle={() => toggle(entry.question.id)}
+            onEdit={() => setEditing({ entry })}
+            editDisabled={!enabled}
           />
         ))}
         {pageItems.length === 0 && <p className="text-sm text-text-muted italic py-4">沒有符合條件的題目。</p>}
@@ -151,6 +195,10 @@ export function QuestionsTab() {
             下一頁
           </button>
         </div>
+      )}
+
+      {editing && (
+        <QuestionEditor entry={editing.entry} bosses={CONTENT.bosses} onClose={() => setEditing(null)} />
       )}
     </Card>
   );

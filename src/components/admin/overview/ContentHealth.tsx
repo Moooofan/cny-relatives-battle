@@ -1,12 +1,15 @@
 import { CheckCircle2, AlertTriangle, XCircle } from "lucide-react";
 import { validateContent } from "@/engine/validate";
-import { CONTENT } from "@/content";
+import { useContentStore } from "@/store/contentStore";
 import { Card, SectionTitle } from "@/components/admin/Section";
 
-/** Runs the same content validator the test suite uses, split into hard
- * errors (block release) and "WARN:" lines (pool still being filled in). */
+/** Runs the same content validator the test suite uses (against the
+ * *effective* content — bundled + admin overrides — so a bad edit shows up
+ * here too), split into hard errors (block release) and "WARN:" lines (pool
+ * still being filled in). */
 export function ContentHealth() {
-  const issues = validateContent(CONTENT);
+  const effectiveContent = useContentStore((s) => s.effectiveContent);
+  const issues = validateContent(effectiveContent);
   const errors = issues.filter((line) => !line.startsWith("WARN:"));
   const warnings = issues.filter((line) => line.startsWith("WARN:"));
 

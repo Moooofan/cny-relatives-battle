@@ -25,8 +25,29 @@
 
 ## 後台
 
-`/admin`（通行碼預設 `sangu2026`，可用環境變數 `NEXT_PUBLIC_ADMIN_PASS` 覆蓋；靜態站僅為隱蔽用途，不是真正的權限控制）。
+`/admin`（通行碼預設 `sangu2026`，可用環境變數 `NEXT_PUBLIC_ADMIN_PASS` 覆蓋）。
 可瀏覽所有人生、關主、題目（篩選／搜尋／匯出）、劇情與稱號，以及本機的遊戲結果（匯入其他裝置匯出的 JSON 可合併統計）。
+
+沒有接 Supabase 時，通行碼只是純前端比對，靜態站僅為隱蔽用途，不是真正的權限控制。接上 Supabase 後（見下方「Supabase（選用）」），通行碼會送到 `admin_check` 這個 security-definer function 做伺服器端驗證，才是真正擋得住的權限控制。
+
+### 後台編輯（題庫）
+
+接上 Supabase 後，`/admin` 的「題庫」分頁可以直接編輯題目——這是純靜態站，沒有伺服器能把編輯結果寫回 `src/content/questions/**`，所以編輯內容存成 Supabase 的 **override（覆寫）**，遊戲啟動新的一場時會把它疊加在內建題庫上（`src/lib/contentOverrides.ts`）：
+
+- **編輯**一題內建題目 → 該 id 出現覆寫，遊戲之後抽到這題會用編輯後的版本，後台列表顯示「已修改」徽章。
+- **刪除／隱藏** → 軟刪除，這題不會再被抽到（內建或自訂 id 皆可），徽章顯示「已隱藏」。
+- **還原內建** → 只在「已修改」或「已隱藏」的內建題目上出現，會刪掉覆寫列，內建版本就恢復原樣。
+- **新增題目** → 產生 `custom-<topic>-<時間戳>` 這種 id，跟內建題目一樣會進入題庫（「自訂」徽章），可設定專屬關主或「通用」。
+- 篩選列有「只看修改過的」，只顯示已修改／自訂／已隱藏的題目；匯出（JSON／CSV）永遠匯出目前生效（疊加覆寫後）的題庫。
+- 編輯表單即時檢查配方（神回覆 1、踩雷 1、四兩撥千斤 2、乖乖回答 2、反擊失敗 2）與字數上限（題目 ≤32、選項與回嗆各 ≤30），並附上 `docs/TONE_V2.md` 的酸度規範小抄。
+- 一場已經開始的遊戲不會被後台編輯中途影響——新的覆寫只在「開新的一場」時生效。
+- 沒有接 Supabase 時，題庫分頁只能瀏覽／匯出內建題庫，看不到編輯／新增按鈕（會顯示提示）。
+
+**變更通行碼**：接上 Supabase 後，去 SQL Editor 執行：
+
+```sql
+update public.admin_config set value = '新的通行碼' where key = 'admin_passcode';
+```
 
 ## 開發
 
@@ -51,13 +72,13 @@ pnpm og             # 本機重新產生 public/og.png（需要系統中文字�
 
 ## Supabase（選用）
 
-站台預設純靜態、無後端，戰績只存在自己裝置的 localStorage。接上 Supabase 後，每場結束會**匿名**上傳一筆結果，換來全球排行榜（`/leaderboard/`）；未來後台也能看到所有人的結果。這是選用功能：不設定環境變數時整個功能自動關閉，`pnpm build` 一樣能成功。
+站台預設純靜態、無後端，戰績只存在自己裝置的 localStorage。接上 Supabase 後，每場結束會**匿名**上傳一筆結果，換來全球排行榜（`/leaderboard/`）；後台也能看到所有人的結果，並且能真正編輯題庫（見上方「後台編輯」）。這是選用功能：不設定環境變數時整個功能自動關閉，`pnpm build` 一樣能成功。
 
 **建立**：
 1. 在 [supabase.com](https://supabase.com) 建立新專案。
-2. 跑 migration（二選一）：
+2. 跑兩支 migration（依檔名順序：先 `20260903000000_results.sql` 再 `20260904000000_question_overrides.sql`）——二選一：
    - `supabase link --project-ref <your-project-ref>` 後 `supabase db push`
-   - 或直接用 psql／SQL Editor 貼上 `supabase/migrations/20260903000000_results.sql` 內容執行
+   - 或直接用 psql／SQL Editor 依序貼上兩個檔案內容執行
 3. 在專案設定 → API 頁面取得 Project URL 與 `anon` public key。
 4. 複製 `.env.example` 為 `.env.local`，填入：
    ```

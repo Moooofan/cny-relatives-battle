@@ -10,9 +10,22 @@ import {
   applySpecial as engineApplySpecial,
 } from "@/engine/reducer";
 import type { GameState, Mode } from "@/engine/types";
-import { CONTENT } from "@/content";
+import { useContentStore } from "@/store/contentStore";
 import { dailySeed } from "@/lib/dates";
 import { getClientId } from "@/lib/clientId";
+
+/**
+ * The owner's `/admin` question-bank edits (src/lib/contentOverrides.ts) are
+ * applied on top of the bundled content and cached in contentStore. Reading
+ * it fresh here — rather than importing `CONTENT` from "@/content" directly
+ * — means a newly started run always sees the latest edits, while an
+ * already-running game keeps whatever content produced its (already
+ * persisted) `state`: nothing here ever re-derives an in-progress game's
+ * deck from a different content snapshot.
+ */
+function content() {
+  return useContentStore.getState().effectiveContent;
+}
 
 const TURN_MS = TURN_SECONDS * 1000;
 
@@ -79,7 +92,7 @@ export const useGameStore = create<GameStore>()(
 
         startGame: (mode, opts) => {
           const seed = seedFor(mode);
-          const next = createGame(CONTENT, mode, seed, {
+          const next = createGame(content(), mode, seed, {
             bossId: opts?.bossId,
             lifeId: opts?.lifeId ?? undefined,
             salt: getClientId(),
@@ -90,30 +103,30 @@ export const useGameStore = create<GameStore>()(
         pickOption: (optionId) => {
           const cur = get().state;
           if (!cur || cur.phase !== "turn") return;
-          commit(engineApplyOption(CONTENT, cur, optionId));
+          commit(engineApplyOption(content(), cur, optionId));
         },
 
         timeout: () => {
           const cur = get().state;
           if (!cur || cur.phase !== "turn") return;
-          commit(engineApplyTimeout(CONTENT, cur));
+          commit(engineApplyTimeout(content(), cur));
         },
 
         applySpecial: (kind) => {
           const cur = get().state;
           if (!cur) return;
-          commit(engineApplySpecial(CONTENT, cur, kind));
+          commit(engineApplySpecial(content(), cur, kind));
         },
 
         advance: () => {
           const cur = get().state;
           if (!cur) return;
-          commit(engineAdvance(CONTENT, cur));
+          commit(engineAdvance(content(), cur));
         },
 
         resumeStoryCheckpoint: (sceneIndex, lifeId) => {
           const seed = seedFor("story");
-          commit(resumeStory(CONTENT, seed, sceneIndex, { lifeId: lifeId ?? undefined, salt: getClientId() }));
+          commit(resumeStory(content(), seed, sceneIndex, { lifeId: lifeId ?? undefined, salt: getClientId() }));
         },
 
         startTimer: () => set({ timerEndsAt: Date.now() + TURN_MS }),

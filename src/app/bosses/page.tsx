@@ -2,11 +2,12 @@
 
 import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { CONTENT } from "@/content";
+import { useContentStore } from "@/store/contentStore";
 import { BossCard } from "@/components/bosses/BossCard";
 
 export default function BossesPage() {
   const router = useRouter();
+  const effectiveContent = useContentStore((s) => s.effectiveContent);
 
   return (
     <main className="flex flex-1 flex-col mx-auto w-full max-w-md px-4 py-4 safe-pt safe-pb gap-3">
@@ -18,8 +19,8 @@ export default function BossesPage() {
       </div>
 
       <div className="flex flex-col gap-3 overflow-y-auto pb-4">
-        {CONTENT.bosses.map((boss) => (
-          <BossCard key={boss.id} boss={boss} questions={CONTENT.questions} />
+        {effectiveContent.bosses.map((boss) => (
+          <BossCard key={boss.id} boss={boss} questions={effectiveContent.questions} />
         ))}
       </div>
     </main>

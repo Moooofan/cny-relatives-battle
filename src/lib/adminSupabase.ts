@@ -12,6 +12,7 @@
  */
 import { getSupabase, isSupabaseEnabled } from "@/lib/supabase";
 import { taipeiDateString } from "@/lib/dates";
+import { getAdminKey } from "@/lib/adminAuth";
 import type { Mode } from "@/engine/types";
 
 export type Fetched<T> = T | { error: string } | null;
@@ -161,5 +162,76 @@ export async function fetchQuestionStats(): Promise<Fetched<QuestionStatRow[]>> 
     }));
   } catch (e) {
     return { error: toErrorMessage(e) };
+  }
+}
+
+/* ---------------- 題庫編輯（admin_* mutation RPCs） ----------------
+ * See supabase/migrations/20260904000000_question_overrides.sql. Every call
+ * sends the passcode last verified by src/lib/adminAuth.ts's checkPasscode —
+ * the RPC re-checks it server-side (admin_check), so a stale/missing key
+ * just fails the call rather than silently succeeding. Callers should only
+ * offer these actions once `isAdminAuthReal()` is true (Supabase configured);
+ * without it there is no server to write to. */
+
+export type AdminMutationResult = { ok: true } | { ok: false; error: string };
+
+function missingClientError(): AdminMutationResult {
+  return { ok: false, error: "尚未設定 Supabase，無法儲存到雲端。" };
+}
+
+function missingKeyError(): AdminMutationResult {
+  return { ok: false, error: "尚未通過密語驗證，請重新整理頁面登入後台。" };
+}
+
+/** Upserts one question override. `data` must already satisfy the same
+ * shape `engine/validate.ts` enforces (8 options, recipe counts, char caps,
+ * `${questionId}-a..h` option ids) — the editor validates before calling
+ * this; the RPC only re-checks the cheap structural rules server-side. */
+export async function adminUpsertQuestion(questionId: string, data: unknown): Promise<AdminMutationResult> {
+  const supabase = getSupabase();
+  if (!supabase) return missingClientError();
+  const key = getAdminKey();
+  if (!key) return missingKeyError();
+  try {
+    const { error } = await supabase.rpc("admin_upsert_question", {
+      p_key: key,
+      p_question_id: questionId,
+      p_data: data,
+    });
+    if (error) return { ok: false, error: error.message };
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: toErrorMessage(e) };
+  }
+}
+
+/** Soft-deletes (hides) a question — bundled or custom. */
+export async function adminDeleteQuestion(questionId: string): Promise<AdminMutationResult> {
+  const supabase = getSupabase();
+  if (!supabase) return missingClientError();
+  const key = getAdminKey();
+  if (!key) return missingKeyError();
+  try {
+    const { error } = await supabase.rpc("admin_delete_question", { p_key: key, p_question_id: questionId });
+    if (error) return { ok: false, error: error.message };
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: toErrorMessage(e) };
+  }
+}
+
+/** Removes the override row entirely — for a bundled id this brings back
+ * the shipped version; for a custom id it deletes it for good. */
+export async function adminRestoreQuestion(questionId: string): Promise<AdminMutationResult> {
+  const supabase = getSupabase();
+  if (!supabase) return missingClientError();
+  const key = getAdminKey();
+  if (!key) return missingKeyError();
+  try {
+    const { error } = await supabase.rpc("admin_restore_question", { p_key: key, p_question_id: questionId });
+    if (error) return { ok: false, error: error.message };
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: toErrorMessage(e) };
   }
 }
