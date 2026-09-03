@@ -153,9 +153,12 @@ export function enqueueResult(params: {
   writeQueue([row, ...queue]);
 }
 
-/** Uploads every queued row (upsert on result_code so re-flushing after a
- * partial failure never double-counts), removing only the ones that
- * succeed. No-op when Supabase is disabled or the queue is empty. */
+/** Uploads every queued row, removing only the ones that succeed. Uses a
+ * plain INSERT: the table's RLS only grants INSERT, and `ON CONFLICT`
+ * (upsert) would additionally require SELECT/UPDATE policies and be
+ * rejected with 42501. A duplicate primary key (23505) means the row already
+ * landed on an earlier flush, so it counts as success. No-op when Supabase
+ * is disabled or the queue is empty. */
 export async function flushQueue(): Promise<void> {
   const supabase = getSupabase();
   if (!supabase) return;
@@ -164,10 +167,8 @@ export async function flushQueue(): Promise<void> {
 
   const remaining: PendingResultRow[] = [];
   for (const row of queue) {
-    const { error } = await supabase
-      .from("results")
-      .upsert(row, { onConflict: "result_code", ignoreDuplicates: true });
-    if (error) remaining.push(row);
+    const { error } = await supabase.from("results").insert(row);
+    if (error && error.code !== "23505") remaining.push(row);
   }
   writeQueue(remaining);
 }
