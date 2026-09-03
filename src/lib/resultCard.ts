@@ -1,6 +1,7 @@
 import type { ContentBundle, GameState } from "@/engine/types";
 import { findLife } from "@/content/lives";
 import { formatDateTime } from "@/lib/dates";
+import { CLAMPED_SCORE_CAPTION, clampScoreForDisplay } from "@/lib/displayScore";
 
 const CARD_WIDTH = 1080;
 const CARD_HEIGHT = 1350;
@@ -203,8 +204,9 @@ export async function renderResultCard({ state, content }: RenderResultCardArgs)
   // --- score / turns / max combo row ------------------------------------
   const statsY = y + 60;
   const statBoxW = (CARD_WIDTH - 160 - 2 * 24) / 3;
+  const displayScore = clampScoreForDisplay(result.score);
   const stats: Array<[string, string | number]> = [
-    ["分數", result.score],
+    ["分數", displayScore.value],
     ["回合數", state.turns],
     ["最大連擊", state.maxCombo],
   ];
@@ -225,6 +227,13 @@ export async function renderResultCard({ state, content }: RenderResultCardArgs)
     ctx.fillStyle = COLOR_TEXT_MUTED;
     ctx.font = `400 26px ${sansFamily}`;
     ctx.fillText(label, boxX + statBoxW / 2, statsY + 112);
+
+    // Score-only caption, shown only when the raw (possibly negative) score
+    // was clamped to 0 for display.
+    if (i === 0 && displayScore.clamped) {
+      ctx.font = `400 20px ${sansFamily}`;
+      ctx.fillText(CLAMPED_SCORE_CAPTION, boxX + statBoxW / 2, statsY + 136);
+    }
   });
 
   // --- result code + date -----------------------------------------------

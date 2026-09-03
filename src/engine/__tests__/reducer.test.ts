@@ -143,6 +143,17 @@ describe("followUpOnMeek", () => {
     s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "meek"));
     expect(s.followUp).toBe(false);
   });
+
+  test("skipping the follow-up question clears the stale followUp flag", () => {
+    let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "followup-skip", { bossId: "sanjiuma" });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s);
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "meek"));
+    expect(s.followUp).toBe(true);
+
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s); // retort -> turn (the follow-up question)
+    s = applySpecial(FIXTURE_CONTENT_NO_LIVES, s, "skip");
+    expect(s.followUp).toBe(false);
+  });
 });
 
 describe("summonAtHalf", () => {

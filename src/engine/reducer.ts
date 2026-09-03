@@ -475,6 +475,7 @@ function applySkip(content: ContentBundle, state: GameState): GameState {
     specials: { ...state.specials, skip: state.specials.skip - 1 },
     log: [...state.log, logEntry],
     pendingSummonBossId: undefined,
+    followUp: false,
   };
   return drawQuestion(content, next);
 }

@@ -21,7 +21,7 @@ export function BattleScreen({ mode, bossId }: Props) {
   const timeout = useGameStore((s) => s.timeout);
   const applySpecial = useGameStore((s) => s.applySpecial);
   const advance = useGameStore((s) => s.advance);
-  const lifeId = useLifeStore((s) => s.lifeId);
+  const lifeStoreId = useLifeStore((s) => s.lifeId);
 
   useEnsureGame(mode, bossId);
   useBattleLifecycle(state, mode);
@@ -33,6 +33,11 @@ export function BattleScreen({ mode, bossId }: Props) {
       </div>
     );
   }
+
+  // The engine's own lifeId is the source of truth for what's actually being
+  // played (e.g. a resumed story checkpoint locks in whatever life started
+  // that run) — fall back to the life store only when the engine has none.
+  const lifeId = state.lifeId ?? lifeStoreId;
 
   function withUnlock<T extends unknown[]>(fn: (...a: T) => void) {
     return (...a: T) => {

@@ -7,11 +7,18 @@ interface TopicStat {
   total: number;
 }
 
+/** How many recently-recorded resultCodes to remember for dedupe. */
+const MAX_RECORDED_CODES = 200;
+
 interface StatsState {
   bestScore: Partial<Record<Mode, number>>;
   runs: number;
   bossesDefeated: Partial<Record<BossId, number>>;
   perfectRate: Partial<Record<Topic, TopicStat>>;
+  /** resultCodes already folded into these stats, most recent first — guards
+   * recordRun against double-counting the same run (e.g. a remount racing
+   * with useBattleLifecycle's own in-memory guard). */
+  recordedCodes: string[];
   recordRun: (state: GameState) => void;
 }
 
@@ -22,9 +29,13 @@ export const useStatsStore = create<StatsState>()(
       runs: 0,
       bossesDefeated: {},
       perfectRate: {},
+      recordedCodes: [],
       recordRun: (state) => {
-        const score = state.result?.score ?? 0;
+        const resultCode = state.result?.resultCode;
         const cur = get();
+        if (resultCode && cur.recordedCodes.includes(resultCode)) return; // already recorded
+
+        const score = state.result?.score ?? 0;
 
         const bestScore = { ...cur.bestScore };
         bestScore[state.mode] = Math.max(bestScore[state.mode] ?? 0, score);
@@ -43,7 +54,11 @@ export const useStatsStore = create<StatsState>()(
           };
         }
 
-        set({ bestScore, runs: cur.runs + 1, bossesDefeated, perfectRate });
+        const recordedCodes = resultCode
+          ? [resultCode, ...cur.recordedCodes].slice(0, MAX_RECORDED_CODES)
+          : cur.recordedCodes;
+
+        set({ bestScore, runs: cur.runs + 1, bossesDefeated, perfectRate, recordedCodes });
       },
     }),
     {

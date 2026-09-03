@@ -32,7 +32,7 @@ interface GameStore {
   timeout: () => void;
   applySpecial: (kind: "skip" | "heal") => void;
   advance: () => void;
-  resumeStoryCheckpoint: (sceneIndex: number) => void;
+  resumeStoryCheckpoint: (sceneIndex: number, lifeId?: string | null) => void;
   startTimer: () => void;
   resetGame: () => void;
 }
@@ -100,9 +100,9 @@ export const useGameStore = create<GameStore>()(
           commit(engineAdvance(CONTENT, cur));
         },
 
-        resumeStoryCheckpoint: (sceneIndex) => {
+        resumeStoryCheckpoint: (sceneIndex, lifeId) => {
           const seed = seedFor("story");
-          commit(resumeStory(CONTENT, seed, sceneIndex));
+          commit(resumeStory(CONTENT, seed, sceneIndex, { lifeId: lifeId ?? undefined }));
         },
 
         startTimer: () => set({ timerEndsAt: Date.now() + TURN_MS }),

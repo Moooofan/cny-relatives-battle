@@ -9,6 +9,7 @@ import { useLifeStore } from "@/store/lifeStore";
 import { useResultsStore } from "@/store/resultsStore";
 import { useDailyStore } from "@/store/dailyStore";
 import { deriveWon } from "@/components/admin/resultsMath";
+import { CLAMPED_SCORE_CAPTION, clampScoreForDisplay } from "@/lib/displayScore";
 import { PrimaryButton } from "@/components/common/PrimaryButton";
 import { LinkButton } from "@/components/common/LinkButton";
 import { TopicBars } from "@/components/result/TopicBars";
@@ -62,6 +63,7 @@ export default function ResultPage() {
   }
 
   const ending = state.mode === "story" ? CONTENT.storyEndings.find((e) => e.id === result.storyEndingId) : undefined;
+  const displayScore = clampScoreForDisplay(result.score);
 
   function handleRematch(): void {
     const mode = state!.mode;
@@ -80,7 +82,11 @@ export default function ResultPage() {
       </header>
 
       <div className="rpg-box grid grid-cols-2 gap-3 p-4 text-sm">
-        <ResultStat label="分數" value={result.score} />
+        <ResultStat
+          label="分數"
+          value={displayScore.value}
+          caption={displayScore.clamped ? CLAMPED_SCORE_CAPTION : undefined}
+        />
         <ResultStat label="回合數" value={state.turns} />
         <ResultStat label="最大連擊" value={state.maxCombo} />
         <ResultStat label="剩餘 HP" value={state.playerHp} />

@@ -22,7 +22,7 @@ export function useEnsureGame(mode: Mode, bossId?: string): void {
     // finished result out from under that redirect).
     if (state && state.mode === mode) return;
     if (mode === "story" && (!state || state.mode !== "story") && storyCheckpoint != null) {
-      resumeStoryCheckpoint(storyCheckpoint);
+      resumeStoryCheckpoint(storyCheckpoint, lifeId);
       return;
     }
     startGame(mode, { bossId, lifeId });
