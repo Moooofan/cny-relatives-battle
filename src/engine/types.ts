@@ -271,6 +271,11 @@ export interface GameState {
   playerMaxHp: number;
   /** id of the 人生 chosen for this run, or null when content.lives is empty */
   lifeId: string | null;
+  /** Per-device value folded into `makeResultCode`'s hash so two devices that
+   * land on the same seed/score/turns (e.g. daily mode, same date) don't
+   * produce the same resultCode. Never affects rng/content — null when
+   * omitted (e.g. `pnpm test`'s deterministic engine-only runs). */
+  salt: string | null;
   combo: number;
   maxCombo: number;
   /** question ids not yet asked by the current boss */

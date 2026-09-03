@@ -119,6 +119,22 @@ describe("makeResultCode", () => {
     expect(makeResultCode("L01", "seed", 100, 5)).not.toBe(makeResultCode("L01", "seed", 101, 5));
   });
 
+  test("same seed/score/turns with different salts produce different codes", () => {
+    expect(makeResultCode("L01", "seed", 100, 5, "device-a")).not.toBe(
+      makeResultCode("L01", "seed", 100, 5, "device-b")
+    );
+  });
+
+  test("same seed/score/turns with the same salt produce the same code", () => {
+    expect(makeResultCode("L01", "seed", 100, 5, "device-a")).toBe(
+      makeResultCode("L01", "seed", 100, 5, "device-a")
+    );
+  });
+
+  test("omitting salt is unchanged from the no-salt behavior", () => {
+    expect(makeResultCode("L01", "seed", 100, 5, undefined)).toBe(makeResultCode("L01", "seed", 100, 5));
+  });
+
   test("story result.resultCode is prefixed with the run's life code", () => {
     const state = finalRetortState({ log: [fakeLogEntry("ama", "perfect")], lifeId: "life-fixture-a" });
     let s = advance(FIXTURE_CONTENT, state);

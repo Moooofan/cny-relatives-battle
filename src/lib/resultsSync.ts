@@ -1,4 +1,5 @@
 import { getSupabase, isSupabaseEnabled } from "@/lib/supabase";
+import { getClientId } from "@/lib/clientId";
 import type { GameResult, GameState, TurnLog } from "@/engine/types";
 
 /**
@@ -8,7 +9,6 @@ import type { GameResult, GameState, TurnLog } from "@/engine/types";
  * the static export (no `window` at build time).
  */
 
-const CLIENT_ID_KEY = "dzsg:client";
 const QUEUE_KEY = "dzsg:sync-queue";
 const MAX_QUEUE = 50;
 const MAX_LOG_ENTRIES = 200;
@@ -52,22 +52,6 @@ function safeStorage(): Storage | null {
     return window.localStorage;
   } catch {
     return null;
-  }
-}
-
-/** Creates (once) and persists an anonymous per-device id used only to group
- * a single device's uploaded runs — never tied to any real identity. */
-export function getClientId(): string {
-  const storage = safeStorage();
-  if (!storage) return "anonymous";
-  try {
-    const existing = storage.getItem(CLIENT_ID_KEY);
-    if (existing) return existing;
-    const id = crypto.randomUUID();
-    storage.setItem(CLIENT_ID_KEY, id);
-    return id;
-  } catch {
-    return "anonymous";
   }
 }
 

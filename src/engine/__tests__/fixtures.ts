@@ -317,6 +317,7 @@ export function finalRetortState(overrides: Partial<GameState>): GameState {
     playerHp: 50,
     playerMaxHp: 100,
     lifeId: null,
+    salt: null,
     combo: 0,
     maxCombo: 0,
     deck: [],

@@ -12,6 +12,7 @@ import {
 import type { GameState, Mode } from "@/engine/types";
 import { CONTENT } from "@/content";
 import { dailySeed } from "@/lib/dates";
+import { getClientId } from "@/lib/clientId";
 
 const TURN_MS = TURN_SECONDS * 1000;
 
@@ -81,6 +82,7 @@ export const useGameStore = create<GameStore>()(
           const next = createGame(CONTENT, mode, seed, {
             bossId: opts?.bossId,
             lifeId: opts?.lifeId ?? undefined,
+            salt: getClientId(),
           });
           commit(next);
         },
@@ -111,7 +113,7 @@ export const useGameStore = create<GameStore>()(
 
         resumeStoryCheckpoint: (sceneIndex, lifeId) => {
           const seed = seedFor("story");
-          commit(resumeStory(CONTENT, seed, sceneIndex, { lifeId: lifeId ?? undefined }));
+          commit(resumeStory(CONTENT, seed, sceneIndex, { lifeId: lifeId ?? undefined, salt: getClientId() }));
         },
 
         startTimer: () => set({ timerEndsAt: Date.now() + TURN_MS }),

@@ -164,6 +164,9 @@ function buildDeckWithReuseInjection(
 interface CreateGameOpts {
   bossId?: BossId;
   lifeId?: string;
+  /** Per-device salt folded into the eventual resultCode hash — see
+   * GameState.salt. Never influences rng/content selection. */
+  salt?: string;
 }
 
 function buildBossQueue(
@@ -229,6 +232,7 @@ export function createGame(
     playerHp: playerMaxHp,
     playerMaxHp,
     lifeId,
+    salt: opts?.salt ?? null,
     combo: 0,
     maxCombo: 0,
     deck: [],
@@ -644,9 +648,19 @@ function computeStoryEnding(state: GameState, rank: RankTier, lost: boolean): St
   return "survived";
 }
 
-/** Deterministic share/lookup code: `${lifeCode}-${4 uppercase base36 chars}`. */
-export function makeResultCode(lifeCode: string, seed: string, score: number, turns: number): string {
-  const hash = hashSeed(`${seed}|${score}|${turns}`);
+/** Deterministic share/lookup code: `${lifeCode}-${4 uppercase base36 chars}`.
+ * `salt` (typically a per-device client id) is folded into the hash so two
+ * devices landing on the same seed/score/turns — e.g. daily mode, same date —
+ * don't collide on the same code; omitting it keeps the code fully
+ * deterministic from seed/score/turns alone, as before. */
+export function makeResultCode(
+  lifeCode: string,
+  seed: string,
+  score: number,
+  turns: number,
+  salt?: string
+): string {
+  const hash = hashSeed(`${seed}|${score}|${turns}|${salt ?? ""}`);
   const code4 = hash.toString(36).toUpperCase().padStart(4, "0").slice(-4);
   return `${lifeCode}-${code4}`;
 }
@@ -656,7 +670,13 @@ function enterResult(content: ContentBundle, state: GameState, lost: boolean): G
   const score = computeScore(finalState);
   const rank = selectRank(content, state.mode, score);
   const life = resolveLife(content, state.lifeId);
-  const resultCode = makeResultCode(life?.code ?? "L00", state.seed, score, state.turns);
+  const resultCode = makeResultCode(
+    life?.code ?? "L00",
+    state.seed,
+    score,
+    state.turns,
+    state.salt ?? undefined
+  );
   const result: GameResult = { score, rank, resultCode };
   if (state.mode === "story") {
     result.storyEndingId = computeStoryEnding(finalState, rank, lost);
@@ -672,7 +692,7 @@ export function resumeStory(
   content: ContentBundle,
   seed: string,
   checkpointSceneIndex: number,
-  opts?: { lifeId?: string }
+  opts?: { lifeId?: string; salt?: string }
 ): GameState {
   const base = createGame(content, "story", seed, opts);
   const refreshed: GameState = {
