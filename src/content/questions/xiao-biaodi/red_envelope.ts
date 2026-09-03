@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-001-a",
-        text: "我的紅包不看金額看緣分，先叫一聲哥／姊來聽聽。",
+        text: "先讓表姊解釋，她結婚沒包更多。",
         archetype: "perfect",
-        retort: "哥～～～（音量全開）",
+        retort: "……媽媽假裝滑手機",
       },
       {
         id: "xiao-biaodi-red_envelope-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-001-h",
-        text: "小孩子一直問錢很沒禮貌。",
+        text: "小孩子一直問錢，先把成績單拿出來。",
         archetype: "landmine",
-        retort: "阿嬤說有紅包才算過年耶……（全場安靜）",
+        retort: "媽媽狠狠瞪了你一眼",
       },
     ],
   },

@@ -26,9 +26,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-022-a",
-        text: "醜是我自己選的，帥不需要靠衣服證明。",
+        text: "醜是我自己選的，你老師管到穿搭了？",
         archetype: "perfect",
-        retort: "哇！這句話太狂了吧！",
+        retort: "……老師憋笑摸摸鼻子",
       },
       {
         id: "xiao-biaodi-appearance-022-b",
@@ -68,9 +68,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-022-h",
-        text: "這麼醜的衣服你也敢穿出來，笑死。",
+        text: "作業本翻開，看看誰的字比較醜。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我醜——",
+        retort: "嗚——他邊哭邊向老師告狀",
       },
     ],
   },
@@ -82,9 +82,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-023-a",
-        text: "想紅早紅了，這個髮色只是想讓過年更喜氣。",
+        text: "這髮色是要讓過年更喜氣，姑姑懂嗎？",
         archetype: "perfect",
-        retort: "哈哈哈這句話也太會凹了！",
+        retort: "……姑姑忍笑轉頭説悄悄話",
       },
       {
         id: "xiao-biaodi-appearance-023-b",
@@ -124,9 +124,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-023-h",
-        text: "這髮色也太醜了吧，你是不是壞掉了。",
+        text: "告狀之前先想想你考幾分。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我壞掉——",
+        retort: "姑姑立刻過來護著他",
       },
     ],
   },
@@ -138,9 +138,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-024-a",
-        text: "這頂帽子擋住的是我謙虛的帥氣，很重要。",
+        text: "這帽子擋的是我的帥，阿嬤嫉妒了？",
         archetype: "perfect",
-        retort: "哈哈哈謙虛的帥氣！好會講！",
+        retort: "……阿嬤笑著點頭",
       },
       {
         id: "xiao-biaodi-appearance-024-b",
@@ -180,9 +180,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-024-h",
-        text: "這帽子也太醜了吧，你是不是眼光壞掉。",
+        text: "先把你成績單交出來再說。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我眼光壞掉——",
+        retort: "阿嬤立刻過來護著他",
       },
     ],
   },
@@ -194,9 +194,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-025-a",
-        text: "憔悴是假的，我這叫做最原始的真實美。",
+        text: "憔悴是加班熬的，媽媽是熬夜追劇？",
         archetype: "perfect",
-        retort: "哈哈哈真實美！這句好會講！",
+        retort: "……媽媽偷笑不敢接話",
       },
       {
         id: "xiao-biaodi-appearance-025-b",
@@ -236,9 +236,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-025-h",
-        text: "憔悴成這樣很嚇人耶，你昨晚幹嘛去了。",
+        text: "Switch連我都打不過，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我嚇人——",
+        retort: "嗚——媽媽你看他兇我——",
       },
     ],
   },
@@ -250,9 +250,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-026-a",
-        text: "是我自己修的，兩邊不對稱才顯得有個性。",
+        text: "是我自己修的，姑姑要不要也來一副？",
         archetype: "perfect",
-        retort: "哈哈哈有個性！這句超敢講！",
+        retort: "……姑姑轉頭裝沒事",
       },
       {
         id: "xiao-biaodi-appearance-026-b",
@@ -292,9 +292,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-026-h",
-        text: "眉毛修這樣也太醜了吧，笑死人了。",
+        text: "回去問你媽這種事，少囉唆。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他笑我——",
+        retort: "嗚——姑姑瞪你一眼",
       },
     ],
   },
@@ -306,9 +306,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-027-a",
-        text: "這條分線是特意留的，方便我思考人生的路。",
+        text: "這條分線是留給人生用的，你老師懂？",
         archetype: "perfect",
-        retort: "哈哈哈人生的路！好會凹！",
+        retort: "……老師轉頭裝作沒聽到",
       },
       {
         id: "xiao-biaodi-appearance-027-b",
@@ -348,9 +348,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-027-h",
-        text: "分線這麼怪很好笑耶，你是不是壞掉了。",
+        text: "考卷簽名都簽不好，先別說我。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他笑我——",
+        retort: "老師嚴肅地瞪了你一眼",
       },
     ],
   },
@@ -362,9 +362,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-028-a",
-        text: "這個洞是留給紅包偷偷溜進去的通道。",
+        text: "這個洞留給紅包溜進去，阿嬤懂經濟。",
         archetype: "perfect",
-        retort: "哈哈哈這個理由太可愛了吧！",
+        retort: "……阿嬤笑著拍拍你的手",
       },
       {
         id: "xiao-biaodi-appearance-028-b",
@@ -404,9 +404,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-028-h",
-        text: "破成這樣很寒酸耶，你是不是沒錢買新的。",
+        text: "告狀學校都學不會，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我寒酸——",
+        retort: "嗚嗚——他躲進阿嬤懷裡哭",
       },
     ],
   },
@@ -418,9 +418,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-029-a",
-        text: "鞋底快掉是因為它陪我走過的路夠多了。",
+        text: "鞋底快掉是走過的路多，媽媽走得少？",
         archetype: "perfect",
-        retort: "哇！這句話好有感觸喔！",
+        retort: "……媽媽故意咳兩聲",
       },
       {
         id: "xiao-biaodi-appearance-029-b",
@@ -460,9 +460,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-029-h",
-        text: "這鞋子這麼破，你是不是很窮買不起新的。",
+        text: "先把聯絡簿拿出來，再說我的鞋。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我窮——",
+        retort: "媽媽立刻衝過來罵你",
       },
     ],
   },
@@ -474,9 +474,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-030-a",
-        text: "剪短是為了紅包袋拆得更順手，效率至上。",
+        text: "剪短是效率，姑丈的酒杯倒是剪不完。",
         archetype: "perfect",
-        retort: "哈哈哈效率至上！這句太會凹了！",
+        retort: "……姑丈假裝滑手機",
       },
       {
         id: "xiao-biaodi-appearance-030-b",
@@ -516,9 +516,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-030-h",
-        text: "剪這麼短很奇怪耶，你是不是很緊張怕什麼。",
+        text: "緊張的是你考試吧，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我奇怪——",
+        retort: "嗚嗚——他躲到姑丈身後哭",
       },
     ],
   },
@@ -530,9 +530,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-031-a",
-        text: "鬢角亂才顯得我今年過得很自在，懂嗎。",
+        text: "鬢角亂是自在，你老師連下課都要管？",
         archetype: "perfect",
-        retort: "哈哈哈自在！這句話說得妙！",
+        retort: "……老師乾笑兩聲走開",
       },
       {
         id: "xiao-biaodi-appearance-031-b",
@@ -572,9 +572,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-031-h",
-        text: "鬢角這麼亂很噁心耶，你是不是都不整理。",
+        text: "Switch連新手教學都過不了，別說我。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "嗚嗚——他躲到老師背後哭",
       },
     ],
   },
@@ -586,9 +586,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-032-a",
-        text: "拿下來也是圓的，阿嬤，圓的才有福氣。",
+        text: "拿下來也是圓的，阿嬤的嘴才停不下來。",
         archetype: "perfect",
-        retort: "哈哈哈他自己都這樣說了！",
+        retort: "……阿嬤笑開懷",
       },
       {
         id: "xiao-biaodi-appearance-032-b",
@@ -628,9 +628,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-032-h",
-        text: "拿下來就知道你多胖了，何必藏。",
+        text: "拿下來就知道你多會告狀，何必裝。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我胖——",
+        retort: "嗚——阿嬤瞪你一眼",
       },
     ],
   },
@@ -642,9 +642,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-033-a",
-        text: "鳥窩好啊，代表我這裡隨時歡迎小鳥棲息。",
+        text: "打結是鳥窩，媽媽要不要進來認養一隻。",
         archetype: "perfect",
-        retort: "哈哈哈歡迎小鳥棲息！好可愛！",
+        retort: "……媽媽轉頭裝忙",
       },
       {
         id: "xiao-biaodi-appearance-033-b",
@@ -684,9 +684,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-033-h",
-        text: "頭髮打結很噁心耶，你是不是都不洗頭。",
+        text: "先把考卷拿出來，再說我的頭。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "全場安靜，你媽臉綠了",
       },
     ],
   },
@@ -698,9 +698,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-034-a",
-        text: "好看，穿上它我就是全場最喜氣的那個人。",
+        text: "好看，穿上它我就是全場最喜氣的人。",
         archetype: "perfect",
-        retort: "阿嬤～他說喜氣～（阿嬤笑開懷）",
+        retort: "……姑姑愣住，假笑帶過",
       },
       {
         id: "xiao-biaodi-appearance-034-b",
@@ -740,9 +740,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-034-h",
-        text: "這件花襯衫醜死了，阿嬤眼光真的很怪。",
+        text: "阿嬤買的你嫌，先問過你媽敢不敢講。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他說你眼光怪——",
+        retort: "嗚嗚——他哭著找姑姑告狀",
       },
     ],
   },
@@ -754,9 +754,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-035-a",
-        text: "俗氣才親民，這叫接地氣的時尚哲學。",
+        text: "俗氣才親民，姑姑你上次買的還更俗。",
         archetype: "perfect",
-        retort: "哈哈哈接地氣！這句好會講！",
+        retort: "……老師説不出話",
       },
       {
         id: "xiao-biaodi-appearance-035-b",
@@ -796,9 +796,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-035-h",
-        text: "這條項鍊也太俗了吧，你眼光真的很差。",
+        text: "先把功課寫完，再挑剔我的項鍊。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我眼光差——",
+        retort: "嗚——他跑去找老師告狀",
       },
     ],
   },
@@ -810,9 +810,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-036-a",
-        text: "對，這是限定版，讓你們過年多看點新花樣。",
+        text: "對，這是限定版，讓你們多看新花樣。",
         archetype: "perfect",
-        retort: "哈哈哈新花樣！這孩子真會講！",
+        retort: "……姑姑轉頭跟阿嬤聊別的",
       },
       {
         id: "xiao-biaodi-appearance-036-b",
@@ -852,9 +852,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-036-h",
-        text: "這眼睛顏色好嚇人喔，你是不是壞掉了。",
+        text: "回去問你媽這什麼問題，少插嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我嚇人——",
+        retort: "姑姑臉一沉瞪著你",
       },
     ],
   },

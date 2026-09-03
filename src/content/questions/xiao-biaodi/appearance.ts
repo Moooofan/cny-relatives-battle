@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-001-a",
-        text: "過年就是要圓圓滿滿，阿嬤說圓的才有福氣。",
+        text: "姑姑的嘴比我的臉還圓，先顧好。",
         archetype: "perfect",
-        retort: "阿嬤～他說他有福氣～（阿嬤笑出來）",
+        retort: "……姑姑轉頭裝沒事",
       },
       {
         id: "xiao-biaodi-appearance-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-001-h",
-        text: "你才矮咧，跟你爸一樣。",
+        text: "先把成績單拿出來，再說我的臉。",
         archetype: "landmine",
-        retort: "嗚……爸爸——他說你矮——",
+        retort: "嗚——姑姑瞪你一眼",
       },
     ],
   },

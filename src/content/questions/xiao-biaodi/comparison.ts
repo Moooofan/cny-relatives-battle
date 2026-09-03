@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-001-a",
-        text: "對啊，跟你一樣沒人要，我們一國的，擊掌！",
+        text: "這問題該問媽媽，她結婚時幾歲？",
         archetype: "perfect",
-        retort: "耶！我們一國！",
+        retort: "……媽媽尷尬笑了兩聲",
       },
       {
         id: "xiao-biaodi-comparison-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-001-h",
-        text: "小孩子不要學大人亂講話，去旁邊玩。",
+        text: "小孩子不要學大人亂講話，先寫作業。",
         archetype: "landmine",
-        retort: "嗚嗚……媽媽——他兇我——",
+        retort: "嗚——媽媽他兇我——",
       },
     ],
   },

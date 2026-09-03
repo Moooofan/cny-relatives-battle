@@ -31,9 +31,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-002-a",
-        text: "遙控器讓你，我掌控的是人生方向盤。",
+        text: "遙控器讓你，我掌控的是媽媽的臉色。",
         archetype: "perfect",
-        retort: "哇！人生方向盤！（鼓掌）",
+        retort: "……媽媽尷尬轉頭",
       },
       {
         id: "xiao-biaodi-comparison-002-b",
@@ -73,9 +73,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-002-h",
-        text: "遙控器是我先拿到的，你去旁邊等。",
+        text: "遙控器搶輸我，先去看你的成績單。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他搶我遙控器——",
+        retort: "嗚嗚——他大哭跑走",
       },
     ],
   },
@@ -87,9 +87,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-003-a",
-        text: "我沒哭，我是在感動你進步這麼多。",
+        text: "我沒哭，是感動你連遊戲都要作弊贏。",
         archetype: "perfect",
-        retort: "真的假的！我進步了！（超開心）",
+        retort: "……老師也不知道怎麼接",
       },
       {
         id: "xiao-biaodi-comparison-003-b",
@@ -129,9 +129,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-003-h",
-        text: "小孩子懂什麼，遊戲而已幹嘛認真。",
+        text: "輸了就哭，先去練Switch再說。",
         archetype: "landmine",
-        retort: "哼！媽媽——他說我幼稚——",
+        retort: "老師皺眉瞪了你一眼",
       },
     ],
   },
@@ -143,9 +143,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-004-a",
-        text: "我橫向發展，體積比你多長五公分。",
+        text: "我橫向發展，體積比你長高划算多了。",
         archetype: "perfect",
-        retort: "哈哈哈橫向發展！（阿嬤也笑了）",
+        retort: "……阿嬤笑而不答",
       },
       {
         id: "xiao-biaodi-comparison-004-b",
@@ -185,9 +185,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-004-h",
-        text: "量身高很幼稚，你才國小懂什麼。",
+        text: "量身高很無聊，先量你考幾分。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我幼稚——",
+        retort: "嗚嗚——他大哭抱住阿嬤",
       },
     ],
   },
@@ -199,9 +199,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-005-a",
-        text: "有啊，滿滿都是我自己，帥到不需要別人。",
+        text: "滿滿都是我自己，這叫媽媽也管不到的隱私。",
         archetype: "perfect",
-        retort: "哇你也太愛自己了吧哈哈！",
+        retort: "……媽媽假裝滑手機",
       },
       {
         id: "xiao-biaodi-comparison-005-b",
@@ -241,9 +241,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-005-h",
-        text: "小孩子不要亂翻大人手機。",
+        text: "翻大人手機之前，先交出你的成績單。",
         archetype: "landmine",
-        retort: "哼，媽媽——他兇我還不給看——",
+        retort: "媽媽狠狠瞪了你一眼",
       },
     ],
   },
@@ -255,9 +255,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-006-a",
-        text: "少一截沒關係，我的假期比他多一大截。",
+        text: "少一截沒關係，我沒有一個表哥要天天比。",
         archetype: "perfect",
-        retort: "哇！這樣講也可以喔！（姑姑笑）",
+        retort: "……姑姑忍笑轉頭去找阿嬤",
       },
       {
         id: "xiao-biaodi-comparison-006-b",
@@ -297,9 +297,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-006-h",
-        text: "不要一直踢我的腳很煩耶。",
+        text: "踢我的腳之前，先想想誰月考沒過。",
         archetype: "landmine",
-        retort: "嗚……姑姑——他兇我——",
+        retort: "嗚——姑姑你看他兇我——",
       },
     ],
   },
@@ -311,9 +311,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-007-a",
-        text: "我連人生的難關都點了，這個小意思。",
+        text: "怕的是你老師吧，她敢自己點一支？",
         archetype: "perfect",
-        retort: "哇好帥喔！（遞打火機）",
+        retort: "……老師忍笑轉頭去忙別的",
       },
       {
         id: "xiao-biaodi-comparison-007-b",
@@ -353,9 +353,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-007-h",
-        text: "鞭炮而已你緊張什麼，膽小鬼。",
+        text: "膽小的是你，連鞭炮都要人陪。",
         archetype: "landmine",
-        retort: "哼！我才不是膽小鬼——媽媽——",
+        retort: "全場安靜，老師臉沉了",
       },
     ],
   },
@@ -367,9 +367,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-008-a",
-        text: "厲害！那我陪你去跟小美要簽名。",
+        text: "厲害，那你要不要先把自己考卷拿出來？",
         archetype: "perfect",
-        retort: "哈哈哈你也太捧場了吧！",
+        retort: "……阿嬤笑了，招手要橘子",
       },
       {
         id: "xiao-biaodi-comparison-008-b",
@@ -409,9 +409,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-008-h",
-        text: "考第一名有什麼了不起的。",
+        text: "考第一名有什麼了不起，別學小美告狀。",
         archetype: "landmine",
-        retort: "小美很厲害耶！你才幼稚——",
+        retort: "阿嬤心疼地瞪了你一眼",
       },
     ],
   },
@@ -423,9 +423,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-009-a",
-        text: "來，跟你碰一個，祝你先發財，我沾光。",
+        text: "祝姑丈先戒酒，我們才有紅包能領。",
         archetype: "perfect",
-        retort: "乾杯！我們一起發財！",
+        retort: "……姑丈灌了口茶不説話",
       },
       {
         id: "xiao-biaodi-comparison-009-b",
@@ -465,9 +465,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-009-h",
-        text: "小孩子喝什麼碰杯，去旁邊喝汽水。",
+        text: "小孩子喝什麼碰杯，先寫你的作業。",
         archetype: "landmine",
-        retort: "哼！我也要碰杯——媽媽——",
+        retort: "全場安靜，姑丈臉綠了",
       },
     ],
   },
@@ -479,9 +479,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-010-a",
-        text: "沒車好啊，塞車的時候你們才可憐，我在家。",
+        text: "沒車不可憐，可憐的是塞車的媽媽。",
         archetype: "perfect",
-        retort: "哈哈哈這樣講也對耶！",
+        retort: "……媽媽憋笑轉頭喝水",
       },
       {
         id: "xiao-biaodi-comparison-010-b",
@@ -521,9 +521,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-010-h",
-        text: "塞車很煩，你可以不要一直講話嗎。",
+        text: "塞車關你什麼事，先管好你的成績。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚——他哭著找媽媽",
       },
     ],
   },
@@ -535,9 +535,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-011-a",
-        text: "我不是慢，是精雕細琢，來看我的成品。",
+        text: "你老師改作業也拖三天，先說她。",
         archetype: "perfect",
-        retort: "哇！真的比我的漂亮！",
+        retort: "……老師尷尬清了清喉嚨",
       },
       {
         id: "xiao-biaodi-comparison-011-b",
@@ -577,9 +577,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-011-h",
-        text: "你拼那個很幼稚耶，長大就不會玩了。",
+        text: "拖拉是你月考卷才對，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我幼稚——",
+        retort: "嗚嗚——他哭著找老師評理",
       },
     ],
   },
@@ -591,9 +591,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-012-a",
-        text: "小時候矮沒關係，我後面爆發性成長。",
+        text: "舊照片而已，姑姑你當年腰圍呢？",
         archetype: "perfect",
-        retort: "真的假的！你也長高了！",
+        retort: "……姑姑乾笑兩聲閃人",
       },
       {
         id: "xiao-biaodi-comparison-012-b",
@@ -633,9 +633,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-012-h",
-        text: "小時候的照片有什麼好看的，收起來。",
+        text: "舊照片而已，先把你的考卷收好。",
         archetype: "landmine",
-        retort: "嗚……姑姑——他兇我——",
+        retort: "全場安靜，姑姑臉綠了",
       },
     ],
   },
@@ -647,9 +647,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-013-a",
-        text: "多兩顆給他，甜蜜的事不用計較這麼細。",
+        text: "兩顆糖也要比，阿嬤你偏心幾次？",
         archetype: "perfect",
-        retort: "哇！這麼大方！（阿嬤欣慰）",
+        retort: "……阿嬤笑了，摸摸口袋",
       },
       {
         id: "xiao-biaodi-comparison-013-b",
@@ -689,9 +689,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-013-h",
-        text: "阿嬤本來就比較疼表哥啊，不然咧。",
+        text: "阿嬤疼表哥關你屁事，先閉嘴啦。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他說你偏心——",
+        retort: "嗚——阿嬤你看他兇我——",
       },
     ],
   },
@@ -703,9 +703,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-014-a",
-        text: "歪的春聯才有創意，明年就流行這個。",
+        text: "歪的是春聯，偏心的是媽媽的心。",
         archetype: "perfect",
-        retort: "哈哈哈你也太會凹了吧！",
+        retort: "……媽媽偷笑不敢接話",
       },
       {
         id: "xiao-biaodi-comparison-014-b",
@@ -745,9 +745,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-014-h",
-        text: "你很煩耶，一直在旁邊講話。",
+        text: "煩的是你成績單吧，先別說我。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚——媽媽你看他兇我——",
       },
     ],
   },
@@ -759,9 +759,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-015-a",
-        text: "我的本事是讓你們每個人都笑著輸錢。",
+        text: "真本事是姑丈輸錢還敢說大話。",
         archetype: "perfect",
-        retort: "哈哈哈這句話太狂了！",
+        retort: "……姑丈轉頭裝忙",
       },
       {
         id: "xiao-biaodi-comparison-015-b",
@@ -801,9 +801,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-015-h",
-        text: "小孩子不要在旁邊吵，去別的地方玩。",
+        text: "打牌而已你敢玩？先寫完作業再說。",
         archetype: "landmine",
-        retort: "嗚……媽媽——姑丈兇我——",
+        retort: "姑丈立刻過來護著他",
       },
     ],
   },
@@ -815,9 +815,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-016-a",
-        text: "我是把機會讓給你，讓你也贏一次。",
+        text: "慢的是我，愛比的是你的成績單。",
         archetype: "perfect",
-        retort: "真的嗎！謝謝你哥／姊！",
+        retort: "……老師假裝在看課本",
       },
       {
         id: "xiao-biaodi-comparison-016-b",
@@ -857,9 +857,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-016-h",
-        text: "這種小遊戲很幼稚，我才不想玩。",
+        text: "慢的是你腦子吧，先去看成績單。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我幼稚——",
+        retort: "老師立刻過來拉開你們",
       },
     ],
   },
@@ -871,9 +871,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-017-a",
-        text: "龍配虎才是絕配，我們一起最潮。",
+        text: "紅包袋而已，姑姑你的審美才該檢討。",
         archetype: "perfect",
-        retort: "對耶！我們一起最潮！",
+        retort: "……姑姑忍笑轉頭説悄悄話",
       },
       {
         id: "xiao-biaodi-comparison-017-b",
@@ -913,9 +913,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-017-h",
-        text: "你的紅包袋很醜耶，圖案很俗氣。",
+        text: "紅包袋醜不醜關你什麼事，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……姑姑——他說我的醜——",
+        retort: "姑姑立刻過來護著他",
       },
     ],
   },
@@ -927,9 +927,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-018-a",
-        text: "阿嬤最漂亮，我留到最後才叫最大聲。",
+        text: "先叫的是我，阿嬤疼不疼看紅包後面。",
         archetype: "perfect",
-        retort: "哎唷～這孩子嘴真甜！",
+        retort: "……阿嬤笑到合不攏嘴",
       },
       {
         id: "xiao-biaodi-comparison-018-b",
@@ -969,9 +969,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-018-h",
-        text: "叫阿嬤很尷尬耶，幹嘛每次都要叫。",
+        text: "叫阿嬤尷尬，你連叫都不敢叫。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他說你很尷尬——",
+        retort: "全場安靜，阿嬤臉垮了",
       },
     ],
   },
@@ -983,9 +983,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-019-a",
-        text: "角落視野最好，方便我當攝影指導。",
+        text: "站中間的是表哥，逼婚的是媽媽。",
         archetype: "perfect",
-        retort: "哈哈哈你講話也太會了！",
+        retort: "……媽媽故意咳兩聲",
       },
       {
         id: "xiao-biaodi-comparison-019-b",
@@ -1025,9 +1025,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-019-h",
-        text: "你們拍照很煩耶，我要去玩了。",
+        text: "不想拍照就去寫作業，別在這鬧。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他不想拍照——",
+        retort: "媽媽立刻衝過來罵你",
       },
     ],
   },
@@ -1039,9 +1039,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-020-a",
-        text: "灑一點才有過年的氣氛，落地生財嘛。",
+        text: "端菜灑了，阿嬤偏心灑得更明顯。",
         archetype: "perfect",
-        retort: "哈哈哈落地生財，這句好棒！",
+        retort: "……阿嬤笑著點頭",
       },
       {
         id: "xiao-biaodi-comparison-020-b",
@@ -1081,9 +1081,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-020-h",
-        text: "很煩耶，端個菜是有多難。",
+        text: "端菜是有多難，先把碗端穩再說我。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他兇我——",
+        retort: "阿嬤立刻過來護著他",
       },
     ],
   },
@@ -1095,9 +1095,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-021-a",
-        text: "我沒哭，我在思考東山再起的策略。",
+        text: "哭的是你，輸不起的是老師的臉。",
         archetype: "perfect",
-        retort: "哇！策略家！好帥喔！",
+        retort: "……老師憋笑摸摸鼻子",
       },
       {
         id: "xiao-biaodi-comparison-021-b",
@@ -1137,9 +1137,9 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-021-h",
-        text: "陀螺而已你很愛計較耶，幼稚。",
+        text: "陀螺而已你才愛計較，先寫作業。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我幼稚——",
+        retort: "嗚——他邊哭邊向老師告狀",
       },
     ],
   },

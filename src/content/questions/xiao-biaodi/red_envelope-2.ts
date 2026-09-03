@@ -27,9 +27,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-022-a",
-        text: "紅包我收下，孝親費我另外包，雙份誠意。",
+        text: "孝親費而已，阿嬤你兒子包了嗎。",
         archetype: "perfect",
-        retort: "哎唷～這孩子真的貼心！",
+        retort: "……阿嬤笑著拍拍你的手",
       },
       {
         id: "xiao-biaodi-red_envelope-022-b",
@@ -69,9 +69,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-022-h",
-        text: "退什麼退，紅包是我的，不要一直問。",
+        text: "退什麼退，紅包是我的，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他兇我——",
+        retort: "嗚嗚——他躲進阿嬤懷裡哭",
       },
     ],
   },
@@ -83,9 +83,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-023-a",
-        text: "我算的不是金額，是算你今年乖不乖，及格才給。",
+        text: "算金額而已，老師你薪水算過我的嗎。",
         archetype: "perfect",
-        retort: "哈哈哈那我一定及格！",
+        retort: "……老師也不知道怎麼接",
       },
       {
         id: "xiao-biaodi-red_envelope-023-b",
@@ -125,9 +125,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-023-h",
-        text: "算這麼細幹嘛，小孩子很煩耶。",
+        text: "算這麼細做什麼，先算你自己及不及格。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "老師皺眉瞪了你一眼",
       },
     ],
   },
@@ -139,9 +139,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-024-a",
-        text: "不會忘記你的，忘記的都是不重要的人。",
+        text: "去年的事，姑姑你欠我的作業本呢。",
         archetype: "perfect",
-        retort: "哇！這句好會安慰人喔！",
+        retort: "……姑姑忍笑轉頭説悄悄話",
       },
       {
         id: "xiao-biaodi-red_envelope-024-b",
@@ -181,9 +181,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-024-h",
-        text: "去年的事翻出來講幹嘛，很煩耶。",
+        text: "去年的事翻出來講，你成績也沒進步。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "姑姑立刻過來護著他",
       },
     ],
   },
@@ -195,9 +195,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-025-a",
-        text: "我懂，所以我包的祝福是雙倍的，金額只是附加。",
+        text: "雙數而已，阿嬤你結婚年紀是雙數嗎。",
         archetype: "perfect",
-        retort: "哎唷～這孩子嘴巴真甜！",
+        retort: "……阿嬤笑開懷",
       },
       {
         id: "xiao-biaodi-red_envelope-025-b",
@@ -237,9 +237,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-025-h",
-        text: "雙數單數很無聊耶，你很愛計較。",
+        text: "雙數單數很無聊，先數你自己考幾分。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他說我無聊——",
+        retort: "嗚——阿嬤瞪你一眼",
       },
     ],
   },
@@ -251,9 +251,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-026-a",
-        text: "沒寫，因為我的紅包不用數字，用心意衡量。",
+        text: "寫金額？老師你考卷分數也寫錯過。",
         archetype: "perfect",
-        retort: "哇！心意衡量！這句好美喔！",
+        retort: "……老師忍笑轉頭去忙別的",
       },
       {
         id: "xiao-biaodi-red_envelope-026-b",
@@ -293,9 +293,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-026-h",
-        text: "填不填關你什麼事，很煩耶問這麼多。",
+        text: "填不填關你屁事，先填你的作業本。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "全場安靜，老師臉沉了",
       },
     ],
   },
@@ -307,9 +307,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-027-a",
-        text: "重複用才環保，我在幫地球省紙，你要謝謝我。",
+        text: "省而已，姑丈你的酒錢怎麼不省。",
         archetype: "perfect",
-        retort: "哈哈哈環保理由太狂了吧！",
+        retort: "……姑丈灌了口茶不説話",
       },
       {
         id: "xiao-biaodi-red_envelope-027-b",
@@ -349,9 +349,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-027-h",
-        text: "舊的怎麼了，你很愛嫌東嫌西耶。",
+        text: "舊的怎麼了，你的舊考卷更該檢討。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "全場安靜，姑丈臉綠了",
       },
     ],
   },
@@ -363,9 +363,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-028-a",
-        text: "假的也沒關係，我收的從來都是真心，不是鈔票。",
+        text: "假鈔而已，媽媽你保養品是真的嗎。",
         archetype: "perfect",
-        retort: "哇！這句超感人的！",
+        retort: "……媽媽尷尬轉頭",
       },
       {
         id: "xiao-biaodi-red_envelope-028-b",
@@ -405,9 +405,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-028-h",
-        text: "假的就假的，你很愛大驚小怪耶。",
+        text: "假的就假的，大驚小怪的是你的成績。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚嗚——他大哭跑走",
       },
     ],
   },
@@ -419,9 +419,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-029-a",
-        text: "有對象我一定包，包到讓姑姑你也羨慕。",
+        text: "有對象再說，姑姑你對象呢，先包。",
         archetype: "perfect",
-        retort: "哈哈哈這孩子講話真敢！",
+        retort: "……姑姑轉頭裝沒事",
       },
       {
         id: "xiao-biaodi-red_envelope-029-b",
@@ -461,9 +461,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-029-h",
-        text: "有沒有對象關你什麼事，很煩耶。",
+        text: "有沒有對象關你屁事，先寫你的作業。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚——姑姑瞪你一眼",
       },
     ],
   },
@@ -475,9 +475,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-030-a",
-        text: "厚薄不重要，我的紅包附贈跟我打球的服務。",
+        text: "厚薄而已，阿嬤你疼孫也分厚薄嗎。",
         archetype: "perfect",
-        retort: "哈哈哈這個服務太值錢了！",
+        retort: "……阿嬤笑而不答",
       },
       {
         id: "xiao-biaodi-red_envelope-030-b",
@@ -517,9 +517,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-030-h",
-        text: "輸就輸，你很愛比較耶，很幼稚。",
+        text: "輸就輸，愛比較的是你的月考排名。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我幼稚——",
+        retort: "嗚嗚——他大哭抱住阿嬤",
       },
     ],
   },
@@ -531,9 +531,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-031-a",
-        text: "軟軟的是因為裝滿了誠意，跟金額大小沒關係。",
+        text: "軟軟的，老師你薪水單也很軟嗎。",
         archetype: "perfect",
-        retort: "哇！誠意這句好會凹喔！",
+        retort: "……老師尷尬清了清喉嚨",
       },
       {
         id: "xiao-biaodi-red_envelope-031-b",
@@ -573,9 +573,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-031-h",
-        text: "一直捏很沒禮貌耶，你懂不懂規矩。",
+        text: "一直捏很沒禮貌，你考試也不懂規矩。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚嗚——他哭著找老師評理",
       },
     ],
   },
@@ -587,9 +587,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-032-a",
-        text: "爽快是要留給你的，我等你先拆給我看示範。",
+        text: "爽快而已，姑丈你欠的錢也當場還？",
         archetype: "perfect",
-        retort: "哈哈哈你也太會轉移話題了！",
+        retort: "……姑丈轉頭裝忙",
       },
       {
         id: "xiao-biaodi-red_envelope-032-b",
@@ -629,9 +629,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-032-h",
-        text: "當場拆很俗氣耶，你很愛看熱鬧。",
+        text: "當場拆很俗氣，你愛看熱鬧不寫作業。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我愛看熱鬧——",
+        retort: "姑丈立刻過來護著他",
       },
     ],
   },
@@ -643,9 +643,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-033-a",
-        text: "越少越好，代表我越來越有出息，不需要靠紅包。",
+        text: "越少越好，媽媽你零用錢也該少了。",
         archetype: "perfect",
-        retort: "哇！這句話成熟到讓人心疼！",
+        retort: "……媽媽假裝滑手機",
       },
       {
         id: "xiao-biaodi-red_envelope-033-b",
@@ -685,9 +685,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-033-h",
-        text: "變少關你什麼事，小孩子問這麼多幹嘛。",
+        text: "變少關你屁事，先管你的成績會不會變少。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "媽媽狠狠瞪了你一眼",
       },
     ],
   },
@@ -699,9 +699,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-034-a",
-        text: "代領可以，但代領費是你先幫阿嬤搥搥背。",
+        text: "代領而已，老師你先幫我代寫作業。",
         archetype: "perfect",
-        retort: "好！我現在就去幫阿嬤搥背！",
+        retort: "……阿嬤笑了，招手要橘子",
       },
       {
         id: "xiao-biaodi-red_envelope-034-b",
@@ -741,9 +741,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-034-h",
-        text: "代領什麼代領，你休想拿我的紅包。",
+        text: "代領什麼代領，先把你的作業代寫完。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "阿嬤心疼地瞪了你一眼",
       },
     ],
   },
@@ -755,9 +755,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-035-a",
-        text: "我藏的獎項是全年好運，中獎機率百分之百。",
+        text: "刮刮樂而已，姑丈你的簽注中了沒。",
         archetype: "perfect",
-        retort: "哇！百分之百中獎！超幸運！",
+        retort: "……姑丈尷尬喝了口酒",
       },
       {
         id: "xiao-biaodi-red_envelope-035-b",
@@ -797,9 +797,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-035-h",
-        text: "刮刮樂很幼稚耶，你不要一直問了。",
+        text: "刮刮樂很幼稚，先刮開你的考卷看幾分。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我幼稚——",
+        retort: "嗚——他哭著找姑丈告狀",
       },
     ],
   },
@@ -811,9 +811,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-036-a",
-        text: "包了，牠今年顧家有功，紅包是牠應得的。",
+        text: "狗都包了，阿嬤你偏心名單排第幾。",
         archetype: "perfect",
-        retort: "哈哈哈牠應得的！阿嬤也笑了！",
+        retort: "……阿嬤笑了，摸摸口袋",
       },
       {
         id: "xiao-biaodi-red_envelope-036-b",
@@ -853,9 +853,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-036-h",
-        text: "狗而已包什麼紅包，浪費錢。",
+        text: "狗而已包什麼紅包，你連狗都比不上乖。",
         archetype: "landmine",
-        retort: "嗚……阿嬤——他說浪費錢——",
+        retort: "嗚——阿嬤你看他兇我——",
       },
     ],
   },
@@ -867,9 +867,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-red_envelope-037-a",
-        text: "少不少不用講，我用滿意的笑容告訴你就夠了。",
+        text: "太少直接講，老師你加薪直接講了嗎。",
         archetype: "perfect",
-        retort: "哈哈哈這個笑容我看懂了！",
+        retort: "……老師假裝在看課本",
       },
       {
         id: "xiao-biaodi-red_envelope-037-b",
@@ -909,9 +909,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-037-h",
-        text: "嫌紅包少很沒禮貌，你懂不懂做人。",
+        text: "嫌紅包少很沒禮貌，你考卷嫌少過嗎。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "老師立刻過來拉開你們",
       },
     ],
   },

@@ -31,9 +31,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-002-a",
-        text: "這叫做笑紋，代表我這一年笑得比你多。",
+        text: "皺紋是媽媽自己講的，你才幾歲懂老？",
         archetype: "perfect",
-        retort: "哈哈哈笑紋！那我也要笑！",
+        retort: "……媽媽尷尬笑了兩聲",
       },
       {
         id: "xiao-biaodi-appearance-002-b",
@@ -73,9 +73,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-002-h",
-        text: "皺紋而已你很無聊耶，一直盯著看幹嘛。",
+        text: "你數學才考幾分，先別說我老。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚——媽媽他兇我——",
       },
     ],
   },
@@ -87,9 +87,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-003-a",
-        text: "空間留大一點，才裝得下更多聰明才智。",
+        text: "頭髮少不是我的錯，是遺傳，你問阿公。",
         archetype: "perfect",
-        retort: "哈哈哈這句超會凹的！",
+        retort: "……姑姑愣住，假笑帶過",
       },
       {
         id: "xiao-biaodi-appearance-003-b",
@@ -129,9 +129,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-003-h",
-        text: "頭髮少很好笑耶，你是不是要禿頭了。",
+        text: "Switch都破不了關，先別管我的頭。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他笑我——",
+        retort: "嗚嗚——他哭著找姑姑告狀",
       },
     ],
   },
@@ -143,9 +143,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-004-a",
-        text: "鏡片厚才看得清楚你們有多可愛，值得。",
+        text: "度數深是讀書換來的，你老師讀幾冊？",
         archetype: "perfect",
-        retort: "哇！這句話好溫暖喔！",
+        retort: "……老師説不出話",
       },
       {
         id: "xiao-biaodi-appearance-004-b",
@@ -185,9 +185,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-004-h",
-        text: "你一直盯著我的眼鏡看很沒禮貌耶。",
+        text: "你連注音都拼不好，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚——他跑去找老師告狀",
       },
     ],
   },
@@ -199,9 +199,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-005-a",
-        text: "復古就是新流行，我早你們好幾年跟上了。",
+        text: "這件是阿嬤買的，你嫌阿嬤沒眼光？",
         archetype: "perfect",
-        retort: "哈哈哈你也太超前部署了吧！",
+        retort: "……阿嬤笑開懷",
       },
       {
         id: "xiao-biaodi-appearance-005-b",
@@ -241,9 +241,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-005-h",
-        text: "舊了怎麼樣，你很愛嫌東嫌西耶。",
+        text: "作業寫完沒，先別管我穿什麼。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚——阿嬤瞪你一眼",
       },
     ],
   },
@@ -255,9 +255,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-006-a",
-        text: "痘痘是我努力生活的證據，跟壓力沒關係。",
+        text: "痘痘不是壓力，是姑丈勸酒勸出來的。",
         archetype: "perfect",
-        retort: "哈哈哈這樣講也太正向了！",
+        retort: "……姑丈尷尬喝了口酒",
       },
       {
         id: "xiao-biaodi-appearance-006-b",
@@ -297,9 +297,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-006-h",
-        text: "痘痘很噁心耶，你是不是都不洗臉。",
+        text: "鞭炮都不敢點，先閉嘴啦。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "嗚——他哭著找姑丈告狀",
       },
     ],
   },
@@ -311,9 +311,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-007-a",
-        text: "黑是健康的顏色，你看我氣色多好。",
+        text: "曬黑是認真上班，媽媽在家比較閒？",
         archetype: "perfect",
-        retort: "哈哈哈氣色真的不錯耶！",
+        retort: "……媽媽尷尬轉頭",
       },
       {
         id: "xiao-biaodi-appearance-007-b",
@@ -353,9 +353,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-007-h",
-        text: "黑成這樣很醜耶，你都不保養皮膚喔。",
+        text: "功課都不會寫，先別說我皮膚。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我醜——",
+        retort: "嗚嗚——他大哭跑走",
       },
     ],
   },
@@ -367,9 +367,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-008-a",
-        text: "這叫自然捲風格，睡不睡都長這樣，很省事。",
+        text: "亂是熬夜工作，你老師管很寬耶。",
         archetype: "perfect",
-        retort: "哈哈哈自然捲風格！好會講！",
+        retort: "……老師也不知道怎麼接",
       },
       {
         id: "xiao-biaodi-appearance-008-b",
@@ -409,9 +409,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-008-h",
-        text: "頭髮亂很醜耶，你是不是都不整理。",
+        text: "書包都收不好，先管好自己。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我醜——",
+        retort: "老師皺眉瞪了你一眼",
       },
     ],
   },
@@ -423,9 +423,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-009-a",
-        text: "這叫型男風格，刮太乾淨阿嬤才認不出我。",
+        text: "鬍子沒刮，阿嬤是要幫我刮還是嫌？",
         archetype: "perfect",
-        retort: "哈哈哈認得出來啦，帥的！",
+        retort: "……阿嬤笑而不答",
       },
       {
         id: "xiao-biaodi-appearance-009-b",
@@ -465,9 +465,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-009-h",
-        text: "鬍子沒刮很髒耶，你是不是都不洗臉。",
+        text: "臉都洗不乾淨，先閉嘴啦。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我髒——",
+        retort: "嗚嗚——他大哭抱住阿嬤",
       },
     ],
   },
@@ -479,9 +479,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-010-a",
-        text: "肚子大是福氣袋，裝的都是今年的好運氣。",
+        text: "肚子大是我認真吃飯，姑姑的嘴比較大。",
         archetype: "perfect",
-        retort: "哈哈哈福氣袋！這句超讚！",
+        retort: "……姑姑轉頭跟阿嬤聊別的",
       },
       {
         id: "xiao-biaodi-appearance-010-b",
@@ -521,9 +521,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-010-h",
-        text: "肚子這麼大很醜耶，你要不要少吃點。",
+        text: "數學都考不好，先別說我肚子。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我醜——",
+        retort: "姑姑臉一沉瞪著你",
       },
     ],
   },
@@ -535,9 +535,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-011-a",
-        text: "黑眼圈是我熬夜陪你們聊天的紀念章。",
+        text: "黑眼圈是加班換的，媽媽白天在忙什麼？",
         archetype: "perfect",
-        retort: "哇！這句話真的很貼心欸！",
+        retort: "……媽媽假裝滑手機",
       },
       {
         id: "xiao-biaodi-appearance-011-b",
@@ -577,9 +577,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-011-h",
-        text: "黑眼圈好恐怖喔，你看起來很嚇人。",
+        text: "作業拖到十點，先管好自己。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我嚇人——",
+        retort: "媽媽狠狠瞪了你一眼",
       },
     ],
   },
@@ -591,9 +591,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-012-a",
-        text: "拖鞋是我對過年最高規格的放鬆致敬。",
+        text: "拖鞋舒服，你老師管的也太寬了吧。",
         archetype: "perfect",
-        retort: "哈哈哈致敬這個詞用得妙！",
+        retort: "……老師忍笑轉頭去忙別的",
       },
       {
         id: "xiao-biaodi-appearance-012-b",
@@ -633,9 +633,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-012-h",
-        text: "穿拖鞋很沒禮貌耶，你怎麼這麼隨便。",
+        text: "鞋帶都不會綁，先閉嘴啦。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "全場安靜，老師臉沉了",
       },
     ],
   },
@@ -647,9 +647,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-013-a",
-        text: "留長才能彈吉他給你們聽，是特殊裝備。",
+        text: "留長是要幫阿嬤剝橘子，別嫌。",
         archetype: "perfect",
-        retort: "哇！那你快彈給阿嬤聽！",
+        retort: "……阿嬤笑了，招手要橘子",
       },
       {
         id: "xiao-biaodi-appearance-013-b",
@@ -689,9 +689,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-013-h",
-        text: "指甲這麼長很噁心耶，你都不剪的喔。",
+        text: "指甲咬到禿，先別說我的。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "阿嬤心疼地瞪了你一眼",
       },
     ],
   },
@@ -703,9 +703,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-014-a",
-        text: "這是我特意剪的，讓你們過年多一個笑點。",
+        text: "剪壞省下的錢，夠包姑姑的紅包了。",
         archetype: "perfect",
-        retort: "哈哈哈成功了！超好笑的！",
+        retort: "……姑姑忍笑轉頭去找阿嬤",
       },
       {
         id: "xiao-biaodi-appearance-014-b",
@@ -745,9 +745,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-014-h",
-        text: "這髮型也太醜了吧，你是不是被騙了。",
+        text: "Switch打輸我，先閉嘴啦。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我醜——",
+        retort: "嗚——姑姑你看他兇我——",
       },
     ],
   },
@@ -759,9 +759,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-015-a",
-        text: "扣錯格才有個性，這叫不對稱時尚。",
+        text: "扣錯格關你老師什麼事，她很閒喔？",
         archetype: "perfect",
-        retort: "哈哈哈不對稱時尚！好會凹！",
+        retort: "……老師尷尬清了清喉嚨",
       },
       {
         id: "xiao-biaodi-appearance-015-b",
@@ -801,9 +801,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-015-h",
-        text: "扣錯就扣錯，你很愛管我穿著耶。",
+        text: "拉鍊都拉不好，先管好自己。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他兇我——",
+        retort: "嗚嗚——他哭著找老師評理",
       },
     ],
   },
@@ -815,9 +815,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-016-a",
-        text: "扎不扎人不知道，但親起來一定很有感情。",
+        text: "扎不扎人試試看就知道，阿嬤你敢嗎？",
         archetype: "perfect",
-        retort: "哎唷～這孩子嘴巴真甜！",
+        retort: "……阿嬤笑了，摸摸口袋",
       },
       {
         id: "xiao-biaodi-appearance-016-b",
@@ -857,9 +857,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-016-h",
-        text: "鬍渣很噁心耶，你是不是都不刮鬍子。",
+        text: "回去問你媽這種事，別在這鬧。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "嗚——阿嬤你看他兇我——",
       },
     ],
   },
@@ -871,9 +871,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-017-a",
-        text: "是我自己剪的，省下的錢拿來包紅包給你。",
+        text: "是我自己剪的，姑丈你也想試試看？",
         archetype: "perfect",
-        retort: "哈哈哈這個理由太可愛了！",
+        retort: "……姑丈尷尬乾笑兩聲",
       },
       {
         id: "xiao-biaodi-appearance-017-b",
@@ -913,9 +913,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-017-h",
-        text: "自己剪的很醜耶，你去外面剪好不好。",
+        text: "告狀之前先想想你自己愛哭。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我醜——",
+        retort: "姑丈臉一沉瞪著你",
       },
     ],
   },
@@ -927,9 +927,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-018-a",
-        text: "牙齒黃是咖啡因戰士的勳章，喝越多越黃。",
+        text: "咖啡因是加班換的，媽媽你退休真好。",
         archetype: "perfect",
-        retort: "哈哈哈勳章這個講法太狂了！",
+        retort: "……媽媽憋笑轉頭喝水",
       },
       {
         id: "xiao-biaodi-appearance-018-b",
@@ -969,9 +969,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-018-h",
-        text: "牙齒黃很噁心耶，你都不刷牙的喔。",
+        text: "成績單要不要也拿出來比一比。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "嗚——他哭著找媽媽",
       },
     ],
   },
@@ -983,9 +983,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-019-a",
-        text: "眼睛小才看得比較準，這是精準模式。",
+        text: "眼睛小是認真備考，你老師教出來的？",
         archetype: "perfect",
-        retort: "哈哈哈精準模式！好會講！",
+        retort: "……老師假裝在看課本",
       },
       {
         id: "xiao-biaodi-appearance-019-b",
@@ -1025,9 +1025,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-019-h",
-        text: "眼睛這麼小很好笑耶，你是不是很累。",
+        text: "考卷都不敢拿出來，先閉嘴。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他笑我——",
+        retort: "老師立刻過來拉開你們",
       },
     ],
   },
@@ -1039,9 +1039,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-020-a",
-        text: "走路怪是因為我在練習大人的步伐，正常。",
+        text: "走路怪是在練大人的沉穩，阿嬤別笑。",
         archetype: "perfect",
-        retort: "哈哈哈練習大人步伐！好可愛！",
+        retort: "……阿嬤笑到合不攏嘴",
       },
       {
         id: "xiao-biaodi-appearance-020-b",
@@ -1081,9 +1081,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-020-h",
-        text: "走路怪怪的很好笑耶，你很滑稽。",
+        text: "Switch連新手村都過不去，別說我。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他笑我——",
+        retort: "全場安靜，阿嬤臉垮了",
       },
     ],
   },
@@ -1095,9 +1095,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-021-a",
-        text: "粗糙的是手，賺來的紅包可是滑嫩的。",
+        text: "手粗是工作辛苦，姑姑的嘴倒是很閒。",
         archetype: "perfect",
-        retort: "哈哈哈這句轉得太漂亮了！",
+        retort: "……姑姑乾笑兩聲閃人",
       },
       {
         id: "xiao-biaodi-appearance-021-b",
@@ -1137,9 +1137,9 @@ export default [
       },
       {
         id: "xiao-biaodi-appearance-021-h",
-        text: "手這麼粗很噁心耶，摸起來怪怪的。",
+        text: "先去把功課寫完，再管我的手。",
         archetype: "landmine",
-        retort: "嗚……媽媽——他說我噁心——",
+        retort: "全場安靜，姑姑臉綠了",
       },
     ],
   },
