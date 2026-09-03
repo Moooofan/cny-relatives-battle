@@ -3,6 +3,7 @@ import { useResultsStore } from "@/store/resultsStore";
 import { Card, SectionTitle, StatTile } from "@/components/admin/Section";
 import { ContentHealth } from "@/components/admin/overview/ContentHealth";
 import { QuestionMatrix } from "@/components/admin/overview/QuestionMatrix";
+import { GlobalCard } from "@/components/admin/overview/GlobalCard";
 
 export function OverviewTab() {
   const resultsCount = useResultsStore((s) => s.results.length);
@@ -24,6 +25,7 @@ export function OverviewTab() {
         </div>
       </Card>
 
+      <GlobalCard />
       <QuestionMatrix bosses={CONTENT.bosses} questions={CONTENT.questions} />
       <ContentHealth />
     </div>

@@ -1,76 +1,38 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { CONTENT } from "@/content";
-import { useResultsStore } from "@/store/resultsStore";
-import { useStatsStore } from "@/store/statsStore";
-import type { Mode } from "@/engine/types";
-import { Card, SectionTitle } from "@/components/admin/Section";
-import { ResultsTable } from "@/components/admin/results/ResultsTable";
-import { ResultsAggregates } from "@/components/admin/results/ResultsAggregates";
-import { ResultsImportExport } from "@/components/admin/results/ResultsImportExport";
+import { useState } from "react";
+import { LocalResultsView } from "@/components/admin/results/LocalResultsView";
+import { GlobalResultsView } from "@/components/admin/results/GlobalResultsView";
 
-const MODE_LABELS: Record<Mode, string> = { random: "隨機", daily: "每日", story: "故事", gauntlet: "闖關" };
-const selectClass = "h-9 rounded-btn bg-surface-2 border border-border px-2 text-sm text-text";
+type Scope = "local" | "global";
+
+const SCOPE_TABS: { key: Scope; label: string }[] = [
+  { key: "local", label: "本機" },
+  { key: "global", label: "全站" },
+];
 
 export function ResultsTab() {
-  const results = useResultsStore((s) => s.results);
-  const bossesDefeated = useStatsStore((s) => s.bossesDefeated);
-
-  const [modeFilter, setModeFilter] = useState<string>("all");
-  const [lifeFilter, setLifeFilter] = useState<string>("all");
-  const [codeQuery, setCodeQuery] = useState("");
-
-  const lifeCodes = useMemo(() => [...new Set(results.map((r) => r.lifeCode).filter((c): c is string => !!c))], [results]);
-
-  const filtered = useMemo(() => {
-    return results.filter((r) => {
-      if (modeFilter !== "all" && r.mode !== modeFilter) return false;
-      if (lifeFilter !== "all" && r.lifeCode !== lifeFilter) return false;
-      if (codeQuery.trim() && !r.resultCode.toLowerCase().includes(codeQuery.trim().toLowerCase())) return false;
-      return true;
-    });
-  }, [results, modeFilter, lifeFilter, codeQuery]);
+  const [scope, setScope] = useState<Scope>("local");
 
   return (
     <div className="flex flex-col gap-4">
-      <ResultsAggregates results={results} bossesDefeated={bossesDefeated} />
+      <div className="flex gap-1">
+        {SCOPE_TABS.map((t) => (
+          <button
+            key={t.key}
+            type="button"
+            onClick={() => setScope(t.key)}
+            aria-current={scope === t.key ? "page" : undefined}
+            className={`rounded-btn px-4 py-1.5 text-sm font-medium transition ${
+              scope === t.key ? "bg-primary text-on-primary" : "bg-surface-2 text-text-muted border border-border"
+            }`}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
 
-      <Card>
-        <SectionTitle>本機戰績（共 {results.length} 筆）</SectionTitle>
-
-        <div className="flex flex-wrap gap-2 items-center">
-          <select className={selectClass} value={modeFilter} onChange={(e) => setModeFilter(e.target.value)}>
-            <option value="all">全部模式</option>
-            {Object.entries(MODE_LABELS).map(([mode, label]) => (
-              <option key={mode} value={mode}>
-                {label}
-              </option>
-            ))}
-          </select>
-          <select className={selectClass} value={lifeFilter} onChange={(e) => setLifeFilter(e.target.value)}>
-            <option value="all">全部人生</option>
-            {lifeCodes.map((code) => (
-              <option key={code} value={code}>
-                {code} {CONTENT.lives.find((l) => l.code === code)?.name ?? ""}
-              </option>
-            ))}
-          </select>
-          <input
-            type="text"
-            placeholder="查代碼…"
-            value={codeQuery}
-            onChange={(e) => setCodeQuery(e.target.value)}
-            className="h-9 flex-1 min-w-[140px] rounded-btn bg-surface-2 border border-border px-3 text-sm text-text placeholder:text-text-muted"
-          />
-        </div>
-
-        <p className="text-sm text-text-muted tabular">符合條件：{filtered.length} 筆</p>
-
-        <ResultsImportExport filtered={filtered} />
-
-        <ResultsTable results={filtered} />
-      </Card>
+      {scope === "local" ? <LocalResultsView /> : <GlobalResultsView />}
     </div>
   );
 }
