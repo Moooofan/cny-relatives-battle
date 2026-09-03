@@ -55,9 +55,9 @@ export default [
       },
       {
         id: "dabo-education-001-e",
-        text: "你年輕時也沒讀什麼書吧。",
+        text: "你當年書讀更少，現在也沒混出什麼。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（拍桌）你這什麼態度！",
       },
       {
         id: "dabo-education-001-f",
@@ -73,9 +73,9 @@ export default [
       },
       {
         id: "dabo-education-001-h",
-        text: "讀多讀少，反正紅包一樣要包。",
+        text: "讀多讀少，總比只看電視學問多。",
         archetype: "perfect",
-        retort: "……有點道理，你倒是會抓重點。",
+        retort: "……（轉台，假裝找遙控器）",
       },
     ],
   },
@@ -93,15 +93,15 @@ export default [
       },
       {
         id: "dabo-education-002-b",
-        text: "你以前也沒機會選，別替我惋惜。",
+        text: "問這個之前，先想你自己工作做得好嗎。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "大伯母：這孩子太過分了！",
       },
       {
         id: "dabo-education-002-c",
-        text: "讀的系不重要，能養活自己最重要。",
+        text: "先講你當年那個系，畢業幹了什麼大事？",
         archetype: "perfect",
-        retort: "……有點道理，這樣講也對。",
+        retort: "大伯母：對啦對啦，我也這樣說。",
       },
       {
         id: "dabo-education-002-d",
@@ -155,9 +155,9 @@ export default [
       },
       {
         id: "dabo-education-003-c",
-        text: "意思是你講的話我也常常聽不懂。",
+        text: "意思是你中文都聽不懂還裝懂。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "沒大沒小，欠教訓是不是！",
       },
       {
         id: "dabo-education-003-d",
@@ -173,9 +173,9 @@ export default [
       },
       {
         id: "dabo-education-003-f",
-        text: "意思是新年快樂，祝你長命百歲。",
+        text: "意思是，別再跟著電視學英文。",
         archetype: "perfect",
-        retort: "……有點道理，這句我聽得懂。",
+        retort: "……（喝茶，不看你）",
       },
       {
         id: "dabo-education-003-g",
@@ -199,9 +199,9 @@ export default [
     options: [
       {
         id: "dabo-education-004-a",
-        text: "死薪水沒關係，活得開心比較重要。",
+        text: "死薪水總比你當年那份工作穩。",
         archetype: "perfect",
-        retort: "……有點道理，開心最重要。",
+        retort: "……（大伯母憋笑，遞你雞腿）",
       },
       {
         id: "dabo-education-004-b",
@@ -217,9 +217,9 @@ export default [
       },
       {
         id: "dabo-education-004-d",
-        text: "你薪水也沒比我碩士同學高多少。",
+        text: "你連碩士兩個字都寫不出來還敢嫌。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "（用台語罵）恁祖媽咧，見笑！",
       },
       {
         id: "dabo-education-004-e",
@@ -261,15 +261,15 @@ export default [
       },
       {
         id: "dabo-education-005-b",
-        text: "看完了，比電視上那個有深度多了。",
+        text: "看得懂，比電視上那些名嘴實在。",
         archetype: "perfect",
-        retort: "……有點道理，你倒是敢講。",
+        retort: "……（把電視音量轉大蓋過去）",
       },
       {
         id: "dabo-education-005-c",
-        text: "你家電視櫃上也沒幾本書吧。",
+        text: "你電視看得比書還多，還敢說我。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "叫你爸出來，我跟他說！",
       },
       {
         id: "dabo-education-005-d",
@@ -317,9 +317,9 @@ export default [
       },
       {
         id: "dabo-education-006-b",
-        text: "你連中文成語都用錯還敢問我。",
+        text: "你工作都保不住，還敢管我會不會日文。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "明年不用來了，聽到沒！",
       },
       {
         id: "dabo-education-006-c",
@@ -329,9 +329,9 @@ export default [
       },
       {
         id: "dabo-education-006-d",
-        text: "會一點，夠跟電視上那個吵架。",
+        text: "會啊，夠聽懂你名嘴亂扯什麼。",
         archetype: "perfect",
-        retort: "……有點道理，你這梗有意思。",
+        retort: "大伯母：講輸就別講了啦。",
       },
       {
         id: "dabo-education-006-e",
@@ -367,15 +367,15 @@ export default [
     options: [
       {
         id: "dabo-education-007-a",
-        text: "打拚最重要，讀書只是加分而已。",
+        text: "打拚一輩子，打拚出了什麼？",
         archetype: "perfect",
-        retort: "……有點道理，算你懂我意思。",
+        retort: "……（假裝滑手機，不接話）",
       },
       {
         id: "dabo-education-007-b",
-        text: "你打拚那麼久，現在還不是在看電視。",
+        text: "打拚一輩子，打拚出一台遙控器。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：你聽聽這是什麼話！",
       },
       {
         id: "dabo-education-007-c",
@@ -435,15 +435,15 @@ export default [
       },
       {
         id: "dabo-education-008-c",
-        text: "你連論文兩個字的意思都搞不懂吧。",
+        text: "你當年報告都抄的，敢嫌我論文。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "我是你長輩，你這什麼口氣！",
       },
       {
         id: "dabo-education-008-d",
-        text: "難是難，但至少比追劇有意義。",
+        text: "難是難，但至少寫得完，不像你。",
         archetype: "perfect",
-        retort: "……有點道理，算你有志氣。",
+        retort: "大伯母：早跟你說了吧？",
       },
       {
         id: "dabo-education-008-e",
@@ -497,9 +497,9 @@ export default [
       },
       {
         id: "dabo-education-009-d",
-        text: "考公職要看緣分，我比較隨緣。",
+        text: "先問你當年怎麼沒考上，我再想。",
         archetype: "perfect",
-        retort: "……有點道理，隨緣也是一種智慧。",
+        retort: "……（低頭扒飯，沒吭聲）",
       },
       {
         id: "dabo-education-009-e",
@@ -509,9 +509,9 @@ export default [
       },
       {
         id: "dabo-education-009-f",
-        text: "你自己上班那幾年也沒多穩定吧。",
+        text: "你自己沒考上，才在這邊酸涼的。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（臉色一沉）你再說一次看看！",
       },
       {
         id: "dabo-education-009-g",
@@ -547,9 +547,9 @@ export default [
       },
       {
         id: "dabo-education-010-c",
-        text: "你退休前的技能現在也都用不上了。",
+        text: "你連張證照都沒有，憑什麼嫌我。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "大伯母：翻臉了翻臉了！",
       },
       {
         id: "dabo-education-010-d",
@@ -559,9 +559,9 @@ export default [
       },
       {
         id: "dabo-education-010-e",
-        text: "有用啊，至少證明我書沒白讀。",
+        text: "有用啊，至少比你當年爭氣一點。",
         archetype: "perfect",
-        retort: "……有點道理，算你有實力。",
+        retort: "……（大伯母偷笑，猛點頭）",
       },
       {
         id: "dabo-education-010-f",
@@ -591,9 +591,9 @@ export default [
     options: [
       {
         id: "dabo-education-011-a",
-        text: "你以前買房的貸款不也還了一輩子。",
+        text: "你買房欠銀行三十年，敢說我負債？",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（用台語）你這囡仔沒禮貌！",
       },
       {
         id: "dabo-education-011-b",
@@ -627,9 +627,9 @@ export default [
       },
       {
         id: "dabo-education-011-g",
-        text: "還完了，用知識換來的債最值得。",
+        text: "還完了，總比你欠一屁股人情債好。",
         archetype: "perfect",
-        retort: "……有點道理，你想得挺開。",
+        retort: "……（藉口上廁所，先閃）",
       },
       {
         id: "dabo-education-011-h",
@@ -659,9 +659,9 @@ export default [
       },
       {
         id: "dabo-education-012-c",
-        text: "燒錢歸燒錢，總比燒紙錢實在。",
+        text: "燒錢歸燒錢，總比燒電視錢包值得。",
         archetype: "perfect",
-        retort: "……有點道理，算你會比喻。",
+        retort: "大伯母：你今年比較敢講喔。",
       },
       {
         id: "dabo-education-012-d",
@@ -671,9 +671,9 @@ export default [
       },
       {
         id: "dabo-education-012-e",
-        text: "你們那年代不用補習是因為根本沒得補。",
+        text: "你們那年代不補，是補不起還嘴硬。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "紅包收回去，看你還敢不敢！",
       },
       {
         id: "dabo-education-012-f",
@@ -727,9 +727,9 @@ export default [
       },
       {
         id: "dabo-education-013-e",
-        text: "你連手機都不太會用還敢問我。",
+        text: "你連手機都不太會，還敢考我。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：這什麼教養，太離譜！",
       },
       {
         id: "dabo-education-013-f",
@@ -739,9 +739,9 @@ export default [
       },
       {
         id: "dabo-education-013-g",
-        text: "會啊，我連你的存摺都能幫你算。",
+        text: "會啊，順便幫你算你欠了多少人情。",
         archetype: "perfect",
-        retort: "……有點道理，改天真要你幫忙。",
+        retort: "……（轉頭喊：菜好了沒）",
       },
       {
         id: "dabo-education-013-h",
@@ -759,15 +759,15 @@ export default [
     options: [
       {
         id: "dabo-education-014-a",
-        text: "你退休前的工作現在也被淘汰了。",
+        text: "你那份工作，早被淘汰不是AI害的。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "（摔筷子）誰教你這樣講話的！",
       },
       {
         id: "dabo-education-014-b",
-        text: "緊張啊，所以我先把大伯取代了。",
+        text: "緊張啊，所以先把電視名嘴取代了。",
         archetype: "perfect",
-        retort: "……有點道理，你這梗我聽懂了。",
+        retort: "大伯母：講不贏，坐好吃飯。",
       },
       {
         id: "dabo-education-014-c",
@@ -845,15 +845,15 @@ export default [
       },
       {
         id: "dabo-education-015-f",
-        text: "你自己的孩子還不是讀最貴的私校。",
+        text: "你孩子讀的私校，比我還貴好幾倍。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "你翅膀硬了是不是，啊！",
       },
       {
         id: "dabo-education-015-g",
-        text: "辛苦歸辛苦，至少我沒讓他們丟臉。",
+        text: "辛苦歸辛苦，至少沒讓他們丟臉。",
         archetype: "perfect",
-        retort: "……有點道理，算你孝順。",
+        retort: "……（摸鼻子，尷尬笑）",
       },
       {
         id: "dabo-education-015-h",
@@ -871,9 +871,9 @@ export default [
     options: [
       {
         id: "dabo-education-016-a",
-        text: "你這輩子也沒出過國吧。",
+        text: "你這輩子除了電視，哪都沒去過。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "大伯母：叫你媽出來評評理！",
       },
       {
         id: "dabo-education-016-b",
@@ -901,9 +901,9 @@ export default [
       },
       {
         id: "dabo-education-016-f",
-        text: "見過啊，最遠見到大伯的政論台世界。",
+        text: "見過，最遠見到你電視上那一台。",
         archetype: "perfect",
-        retort: "……有點道理，這梗我服了。",
+        retort: "大伯母：這叫惱羞成怒啦。",
       },
       {
         id: "dabo-education-016-g",
@@ -933,9 +933,9 @@ export default [
       },
       {
         id: "dabo-education-017-b",
-        text: "你以前也沒當過老闆還敢說我。",
+        text: "你當年也沒當過老闆，別說得像有。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（用台語吼）你是欠人修理喔！",
       },
       {
         id: "dabo-education-017-c",
@@ -951,9 +951,9 @@ export default [
       },
       {
         id: "dabo-education-017-e",
-        text: "打工也好，至少我不用背債。",
+        text: "打工也好，至少不用欠銀行三十年。",
         archetype: "perfect",
-        retort: "……有點道理，你想得倒是開。",
+        retort: "……（轉台轉到廣告去了）",
       },
       {
         id: "dabo-education-017-f",
@@ -989,9 +989,9 @@ export default [
       },
       {
         id: "dabo-education-018-b",
-        text: "找工作啊，先從說服大伯開始。",
+        text: "先找工作，第一步是說服你。",
         archetype: "perfect",
-        retort: "……有點道理，算你會抓時機。",
+        retort: "大伯母：對啦，講兩句就皮。",
       },
       {
         id: "dabo-education-018-c",
@@ -1013,9 +1013,9 @@ export default [
       },
       {
         id: "dabo-education-018-f",
-        text: "你連博士兩個字怎麼寫都不確定吧。",
+        text: "你連博士怎麼寫都不確定，別嫌我。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "這什麼家教，你爸媽教的！",
       },
       {
         id: "dabo-education-018-g",
@@ -1039,9 +1039,9 @@ export default [
     options: [
       {
         id: "dabo-education-019-a",
-        text: "誇張，但至少他們有選擇的機會。",
+        text: "誇張，但至少他們有得選擇。",
         archetype: "perfect",
-        retort: "……有點道理，這樣想也對。",
+        retort: "……（假裝專心夾菜）",
       },
       {
         id: "dabo-education-019-b",
@@ -1051,9 +1051,9 @@ export default [
       },
       {
         id: "dabo-education-019-c",
-        text: "你孫子補成這樣還不是你逼的。",
+        text: "你孫子補成這樣，還不是你自己逼的。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：氣死我了，太超過！",
       },
       {
         id: "dabo-education-019-d",
@@ -1107,9 +1107,9 @@ export default [
       },
       {
         id: "dabo-education-020-c",
-        text: "你當年應該也沒參加過什麼正經活動。",
+        text: "你當年參加的活動，大概只有摸魚社。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "你信不信我現在打給你媽！",
       },
       {
         id: "dabo-education-020-d",
@@ -1119,9 +1119,9 @@ export default [
       },
       {
         id: "dabo-education-020-e",
-        text: "有用啊，學會怎麼跟長輩尬聊。",
+        text: "有用，學會怎麼應付你這種問題。",
         archetype: "perfect",
-        retort: "……有點道理，算你會用。",
+        retort: "大伯母：你看你，被將軍了。",
       },
       {
         id: "dabo-education-020-f",

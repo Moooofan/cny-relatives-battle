@@ -55,9 +55,9 @@ export default [
       },
       {
         id: "dabo-politics-001-e",
-        text: "你不就整天窩在電視前面而已嗎？",
+        text: "你不就整天窩在電視前面而已。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "我是你長輩，你這什麼口氣！",
       },
       {
         id: "dabo-politics-001-f",
@@ -73,9 +73,9 @@ export default [
       },
       {
         id: "dabo-politics-001-h",
-        text: "你先講重點，我聽完幫你抓漏洞。",
+        text: "你先講重點，我幫你抓漏洞。",
         archetype: "perfect",
-        retort: "……有點道理，你去倒茶。",
+        retort: "大伯母：早跟你說了吧？",
       },
     ],
   },
@@ -93,15 +93,15 @@ export default [
       },
       {
         id: "dabo-politics-002-b",
-        text: "你那間房不也是阿公留的？",
+        text: "你那間房，不是你賺的，是阿公留的。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "（臉色一沉）你再說一次看看！",
       },
       {
         id: "dabo-politics-002-c",
-        text: "慘什麼，反正我也買不起，輕鬆。",
+        text: "慘什麼，反正你那間也不是你賺的。",
         archetype: "perfect",
-        retort: "……有點道理，這樣想也是一種本事。",
+        retort: "……（低頭扒飯，沒吭聲）",
       },
       {
         id: "dabo-politics-002-d",
@@ -157,7 +157,7 @@ export default [
         id: "dabo-politics-003-c",
         text: "你上次不是說要退休不做了？",
         archetype: "landmine",
-        retort: "你亂講什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：翻臉了翻臉了！",
       },
       {
         id: "dabo-politics-003-d",
@@ -173,9 +173,9 @@ export default [
       },
       {
         id: "dabo-politics-003-f",
-        text: "缺蛋沒關係，反正我不太吃早餐。",
+        text: "缺蛋沒關係，反正你話比蛋多。",
         archetype: "perfect",
-        retort: "……有點道理，年輕人都這樣。",
+        retort: "……（大伯母偷笑，猛點頭）",
       },
       {
         id: "dabo-politics-003-g",
@@ -199,9 +199,9 @@ export default [
     options: [
       {
         id: "dabo-politics-004-a",
-        text: "意思是笑一笑就好，別想太多。",
+        text: "意思是，別再信電視名嘴亂講。",
         archetype: "perfect",
-        retort: "……有點道理，你們年輕人會玩。",
+        retort: "……（藉口上廁所，先閃）",
       },
       {
         id: "dabo-politics-004-b",
@@ -217,9 +217,9 @@ export default [
       },
       {
         id: "dabo-politics-004-d",
-        text: "你自己看的新聞都嘛不查證。",
+        text: "你自己看的新聞，十則有九則是假的。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽這孩子！",
+        retort: "（用台語）你這囡仔沒禮貌！",
       },
       {
         id: "dabo-politics-004-e",
@@ -261,15 +261,15 @@ export default [
       },
       {
         id: "dabo-politics-005-b",
-        text: "我關心的是明天要不要放假。",
+        text: "我關心明天要不要放假而已。",
         archetype: "perfect",
-        retort: "……有點道理，我也想放假。",
+        retort: "大伯母：你今年比較敢講喔。",
       },
       {
         id: "dabo-politics-005-c",
-        text: "你每次熬夜看，隔天還不是照睡到中午？",
+        text: "你每次熬夜看，隔天照睡到中午。",
         archetype: "landmine",
-        retort: "你亂講什麼！大伯母，你聽聽！",
+        retort: "紅包收回去，看你還敢不敢！",
       },
       {
         id: "dabo-politics-005-d",
@@ -317,9 +317,9 @@ export default [
       },
       {
         id: "dabo-politics-006-b",
-        text: "你每次投完不都在抱怨結果？",
+        text: "你每次投完，還不是照樣抱怨。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽這孩子！",
+        retort: "大伯母：這什麼教養，太離譜！",
       },
       {
         id: "dabo-politics-006-c",
@@ -329,9 +329,9 @@ export default [
       },
       {
         id: "dabo-politics-006-d",
-        text: "有啊，投完還順便買了雞排。",
+        text: "投了，順便看看你選的人怎麼樣。",
         archetype: "perfect",
-        retort: "……有點道理，公民責任要做好。",
+        retort: "……（轉頭喊：菜好了沒）",
       },
       {
         id: "dabo-politics-006-e",
@@ -367,15 +367,15 @@ export default [
     options: [
       {
         id: "dabo-politics-007-a",
-        text: "領了啊，我特地留一份給你們。",
+        text: "領了，特地留一份給你去聊八卦。",
         archetype: "perfect",
-        retort: "……有點道理，還算孝順。",
+        retort: "大伯母：講不贏，坐好吃飯。",
       },
       {
         id: "dabo-politics-007-b",
-        text: "你不就是想去跟里長聊八卦？",
+        text: "你不就是想去找里長講我壞話。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（摔筷子）誰教你這樣講話的！",
       },
       {
         id: "dabo-politics-007-c",
@@ -437,13 +437,13 @@ export default [
         id: "dabo-politics-008-c",
         text: "你每次都跟著車尾巴喊凍蒜。",
         archetype: "landmine",
-        retort: "你亂講什麼！大伯母，你聽這孩子！",
+        retort: "你翅膀硬了是不是，啊！",
       },
       {
         id: "dabo-politics-008-d",
-        text: "聽到了，那首歌選得比政見好。",
+        text: "聽到了，那首歌比你的政見清楚。",
         archetype: "perfect",
-        retort: "……有點道理，你耳朵挺利的。",
+        retort: "……（摸鼻子，尷尬笑）",
       },
       {
         id: "dabo-politics-008-e",
@@ -497,9 +497,9 @@ export default [
       },
       {
         id: "dabo-politics-009-d",
-        text: "看完了，也順便查了一下真假。",
+        text: "看完了，順便查了一下是假的。",
         archetype: "perfect",
-        retort: "……有點道理，查證是應該的。",
+        retort: "大伯母：這叫惱羞成怒啦。",
       },
       {
         id: "dabo-politics-009-e",
@@ -509,9 +509,9 @@ export default [
       },
       {
         id: "dabo-politics-009-f",
-        text: "你傳的那些十則有九則是假的。",
+        text: "你傳的十則新聞，九則是假的。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：叫你媽出來評評理！",
       },
       {
         id: "dabo-politics-009-g",
@@ -547,9 +547,9 @@ export default [
       },
       {
         id: "dabo-politics-010-c",
-        text: "你那台車不是早就該換了？",
+        text: "你那台車，早該換了還在嘴硬。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "（用台語吼）你是欠人修理喔！",
       },
       {
         id: "dabo-politics-010-d",
@@ -559,9 +559,9 @@ export default [
       },
       {
         id: "dabo-politics-010-e",
-        text: "開不起，所以我都搭大伯的車。",
+        text: "開不起，所以都搭你的順風車。",
         archetype: "perfect",
-        retort: "……有點道理，算你會算。",
+        retort: "……（轉台轉到廣告去了）",
       },
       {
         id: "dabo-politics-010-f",
@@ -591,9 +591,9 @@ export default [
     options: [
       {
         id: "dabo-politics-011-a",
-        text: "你買的東西也沒比較省啊。",
+        text: "你買東西，也沒比較省到哪去。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "這什麼家教，你爸媽教的！",
       },
       {
         id: "dabo-politics-011-b",
@@ -629,7 +629,7 @@ export default [
         id: "dabo-politics-011-g",
         text: "日子照過，反正省下來的都給你。",
         archetype: "perfect",
-        retort: "……有點道理，算你有孝心。",
+        retort: "大伯母：對啦，講兩句就皮。",
       },
       {
         id: "dabo-politics-011-h",
@@ -659,9 +659,9 @@ export default [
       },
       {
         id: "dabo-politics-012-c",
-        text: "好啊，我開電風扇吹你的怒氣。",
+        text: "好，那你先把政論台的音量關小。",
         archetype: "perfect",
-        retort: "……有點道理，算你會省。",
+        retort: "……（假裝專心夾菜）",
       },
       {
         id: "dabo-politics-012-d",
@@ -671,9 +671,9 @@ export default [
       },
       {
         id: "dabo-politics-012-e",
-        text: "你房間冷氣不也是二十四小時開？",
+        text: "你房間冷氣，不也是二十四小時開。",
         archetype: "landmine",
-        retort: "你亂講什麼！大伯母，你聽這孩子！",
+        retort: "大伯母：氣死我了，太超過！",
       },
       {
         id: "dabo-politics-012-f",
@@ -727,9 +727,9 @@ export default [
       },
       {
         id: "dabo-politics-013-e",
-        text: "你每次也是嫌貴還是照樣點大份。",
+        text: "你每次嫌貴，還不是照樣點大份。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "你信不信我現在打給你媽！",
       },
       {
         id: "dabo-politics-013-f",
@@ -739,9 +739,9 @@ export default [
       },
       {
         id: "dabo-politics-013-g",
-        text: "吃得消，因為我都蹭大伯的菜。",
+        text: "吃得消，因為都在蹭你的菜。",
         archetype: "perfect",
-        retort: "……有點道理，算你識相。",
+        retort: "大伯母：你看你，被將軍了。",
       },
       {
         id: "dabo-politics-013-h",
@@ -759,15 +759,15 @@ export default [
     options: [
       {
         id: "dabo-politics-014-a",
-        text: "你那時候的股票不是也套牢到現在？",
+        text: "你那些股票，套牢到現在還沒解套。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（拍桌站起來）你講夠了沒！",
       },
       {
         id: "dabo-politics-014-b",
-        text: "沒在玩，我專心玩紅包比較實際。",
+        text: "沒玩，我專心玩你的紅包比較實在。",
         archetype: "perfect",
-        retort: "……有點道理，紅包比較穩。",
+        retort: "……（清清喉嚨，不再開口）",
       },
       {
         id: "dabo-politics-014-c",
@@ -845,15 +845,15 @@ export default [
       },
       {
         id: "dabo-politics-015-f",
-        text: "你上班那幾年不也一直抱怨老闆？",
+        text: "你上班那幾年，不也整天抱怨老闆。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "大伯母：這孩子今年很嗆喔！",
       },
       {
         id: "dabo-politics-015-g",
-        text: "亂歸亂，至少大家敢講出來。",
+        text: "亂歸亂，至少敢講比悶著強。",
         archetype: "perfect",
-        retort: "……有點道理，這樣想也對。",
+        retort: "大伯母：算了算了，吃飯吃飯。",
       },
       {
         id: "dabo-politics-015-h",
@@ -871,9 +871,9 @@ export default [
     options: [
       {
         id: "dabo-politics-016-a",
-        text: "你自己搞不懂還叫我簽？",
+        text: "你自己都搞不懂，還叫我簽。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "沒禮貌，長輩面前敢這樣講！",
       },
       {
         id: "dabo-politics-016-b",
@@ -901,9 +901,9 @@ export default [
       },
       {
         id: "dabo-politics-016-f",
-        text: "簽可以，但你要先跟我解釋內容。",
+        text: "簽可以，先跟我解釋內容是什麼。",
         archetype: "perfect",
-        retort: "……有點道理，你這叫謹慎。",
+        retort: "……（把新聞轉去氣象台）",
       },
       {
         id: "dabo-politics-016-g",
@@ -933,9 +933,9 @@ export default [
       },
       {
         id: "dabo-politics-017-b",
-        text: "你看這個看到都忘記吃飯了吧。",
+        text: "你看這個看到，飯都忘記吃。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "（用台語）夭壽喔，這什麼話！",
       },
       {
         id: "dabo-politics-017-c",
@@ -951,9 +951,9 @@ export default [
       },
       {
         id: "dabo-politics-017-e",
-        text: "學到了，吵架不能沒邏輯。",
+        text: "學到了，吵架不能沒邏輯亂喊。",
         archetype: "perfect",
-        retort: "……有點道理，算你有看重點。",
+        retort: "大伯母：他這叫詞窮，別理他。",
       },
       {
         id: "dabo-politics-017-f",
@@ -989,9 +989,9 @@ export default [
       },
       {
         id: "dabo-politics-018-b",
-        text: "我看重點，不是每句都要信。",
+        text: "我看重點，不是句句都要信。",
         archetype: "perfect",
-        retort: "……有點道理，算你有腦子。",
+        retort: "……（假裝沒聽到，繼續配飯）",
       },
       {
         id: "dabo-politics-018-c",
@@ -1013,9 +1013,9 @@ export default [
       },
       {
         id: "dabo-politics-018-f",
-        text: "你相信的新聞十則有八則是假的。",
+        text: "你信的新聞，十則有八則是假的。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：你哪根筋不對了！",
       },
       {
         id: "dabo-politics-018-g",
@@ -1039,9 +1039,9 @@ export default [
     options: [
       {
         id: "dabo-politics-019-a",
-        text: "關心啊，關心什麼時候能安穩過年。",
+        text: "關心啊，關心什麼時候能好好吃飯。",
         archetype: "perfect",
-        retort: "……有點道理，過年最重要。",
+        retort: "大伯母：講到重點了厚？",
       },
       {
         id: "dabo-politics-019-b",
@@ -1051,9 +1051,9 @@ export default [
       },
       {
         id: "dabo-politics-019-c",
-        text: "你講這個講幾十年也沒講出結果。",
+        text: "你講這個講幾十年，也沒講出結果。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "以後過年別來了，聽清楚！",
       },
       {
         id: "dabo-politics-019-d",
@@ -1107,9 +1107,9 @@ export default [
       },
       {
         id: "dabo-politics-020-c",
-        text: "你每次投完票還不是罵到底。",
+        text: "你每次投完票，還不是罵到底。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（拍桌）誰准你這樣頂嘴的！",
       },
       {
         id: "dabo-politics-020-d",
@@ -1119,9 +1119,9 @@ export default [
       },
       {
         id: "dabo-politics-020-e",
-        text: "好啊，載你去順便載你回家睡午覺。",
+        text: "好，載你去順便載你回家睡午覺。",
         archetype: "perfect",
-        retort: "……有點道理，你考慮周到。",
+        retort: "……（把眼鏡拿下來擦，避戰）",
       },
       {
         id: "dabo-politics-020-f",

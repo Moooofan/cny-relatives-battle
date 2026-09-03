@@ -27,9 +27,9 @@ export default [
     options: [
       {
         id: "dabo-salary_job-021-a",
-        text: "你退休前也沒換過工作，別勸我跳。",
+        text: "你退休前，也沒換過工作，別勸我跳。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "叫你爸出來，我跟他說！",
       },
       {
         id: "dabo-salary_job-021-b",
@@ -45,9 +45,9 @@ export default [
       },
       {
         id: "dabo-salary_job-021-d",
-        text: "不跳，因為那邊沒有大伯的紅包。",
+        text: "不跳，因為那邊沒有你這個節目看。",
         archetype: "perfect",
-        retort: "……有點道理，算你會拍馬屁。",
+        retort: "……（把電視音量轉大蓋過去）",
       },
       {
         id: "dabo-salary_job-021-e",
@@ -101,9 +101,9 @@ export default [
       },
       {
         id: "dabo-salary_job-022-d",
-        text: "準備了自信，還有大伯教的臉皮厚度。",
+        text: "準備了自信，還有你教的臉皮厚度。",
         archetype: "perfect",
-        retort: "……有點道理，算你有學到。",
+        retort: "大伯母：講輸就別講了啦。",
       },
       {
         id: "dabo-salary_job-022-e",
@@ -125,9 +125,9 @@ export default [
       },
       {
         id: "dabo-salary_job-022-h",
-        text: "你連履歷都不知道怎麼寫還敢教我。",
+        text: "你連履歷都不知道怎麼寫，還敢教我。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "明年不用來了，聽到沒！",
       },
     ],
   },
@@ -157,15 +157,15 @@ export default [
       },
       {
         id: "dabo-salary_job-023-d",
-        text: "公司找我，是因為我夠誠實有趣。",
+        text: "找我，是因為我夠誠實，不像某人。",
         archetype: "perfect",
-        retort: "……有點道理，算你有把握。",
+        retort: "……（假裝滑手機，不接話）",
       },
       {
         id: "dabo-salary_job-023-e",
-        text: "你以前找工作也是靠關係走後門吧。",
+        text: "你以前找工作，也是靠關係走後門。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "大伯母：你聽聽這是什麼話！",
       },
       {
         id: "dabo-salary_job-023-f",
@@ -201,9 +201,9 @@ export default [
       },
       {
         id: "dabo-salary_job-024-b",
-        text: "扛得住才是真本事，我服你。",
+        text: "扛得住才是真本事，算你厲害。",
         archetype: "perfect",
-        retort: "……有點道理，算你識貨。",
+        retort: "大伯母：早跟你說了吧？",
       },
       {
         id: "dabo-salary_job-024-c",
@@ -237,9 +237,9 @@ export default [
       },
       {
         id: "dabo-salary_job-024-h",
-        text: "你當學徒那年代，還不是靠關係進去的。",
+        text: "你當學徒那年代，還不是靠關係進去。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "我是你長輩，你這什麼口氣！",
       },
     ],
   },
@@ -251,9 +251,9 @@ export default [
     options: [
       {
         id: "dabo-salary_job-025-a",
-        text: "你自己的退休金也沒規劃得多好。",
+        text: "你自己的退休金，也沒規劃得多好。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "（臉色一沉）你再說一次看看！",
       },
       {
         id: "dabo-salary_job-025-b",
@@ -281,9 +281,9 @@ export default [
       },
       {
         id: "dabo-salary_job-025-f",
-        text: "有規劃，第一步就是討大伯歡心。",
+        text: "有規劃，第一步是先討你歡心。",
         archetype: "perfect",
-        retort: "……有點道理，算你有長遠打算。",
+        retort: "……（低頭扒飯，沒吭聲）",
       },
       {
         id: "dabo-salary_job-025-g",
@@ -331,9 +331,9 @@ export default [
       },
       {
         id: "dabo-salary_job-026-e",
-        text: "累啊，所以每天靠回家跟大伯鬥智恢復。",
+        text: "累啊，回家還要跟你鬥智恢復。",
         archetype: "perfect",
-        retort: "……有點道理，你這梗有兩下子。",
+        retort: "……（大伯母偷笑，猛點頭）",
       },
       {
         id: "dabo-salary_job-026-f",
@@ -349,9 +349,9 @@ export default [
       },
       {
         id: "dabo-salary_job-026-h",
-        text: "你以前開店那些員工也在背後嫌你吧。",
+        text: "你以前開店，員工也在背後嫌你。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：翻臉了翻臉了！",
       },
     ],
   },
@@ -369,15 +369,15 @@ export default [
       },
       {
         id: "dabo-salary_job-027-b",
-        text: "輕鬆才有力氣陪大伯聊政治。",
+        text: "輕鬆才有力氣，陪你聊這種話題。",
         archetype: "perfect",
-        retort: "……有點道理，算你有心。",
+        retort: "……（藉口上廁所，先閃）",
       },
       {
         id: "dabo-salary_job-027-c",
-        text: "你退休前上班也沒多認真過。",
+        text: "你退休前上班，也沒多認真過。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "（用台語）你這囡仔沒禮貌！",
       },
       {
         id: "dabo-salary_job-027-d",
@@ -425,9 +425,9 @@ export default [
       },
       {
         id: "dabo-salary_job-028-b",
-        text: "學學可以，但我更想學大伯的淡定。",
+        text: "學可以，但我更想學你的臉皮厚。",
         archetype: "perfect",
-        retort: "……有點道理，算你會拍馬屁。",
+        retort: "大伯母：你今年比較敢講喔。",
       },
       {
         id: "dabo-salary_job-028-c",
@@ -461,9 +461,9 @@ export default [
       },
       {
         id: "dabo-salary_job-028-h",
-        text: "阿明那份工作也是靠他爸關係進去的。",
+        text: "阿明那份工作，也是靠他爸關係進去的。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "紅包收回去，看你還敢不敢！",
       },
     ],
   },
@@ -493,9 +493,9 @@ export default [
       },
       {
         id: "dabo-salary_job-029-d",
-        text: "好啊，但顧店薪水要比外面高喔。",
+        text: "好啊，但顧店薪水要比外面高。",
         archetype: "perfect",
-        retort: "……有點道理，算你會談條件。",
+        retort: "……（轉頭喊：菜好了沒）",
       },
       {
         id: "dabo-salary_job-029-e",
@@ -505,9 +505,9 @@ export default [
       },
       {
         id: "dabo-salary_job-029-f",
-        text: "你這間店生意不好也不是我的問題。",
+        text: "你這間店生意不好，不是我的問題。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：這什麼教養，太離譜！",
       },
       {
         id: "dabo-salary_job-029-g",
@@ -531,9 +531,9 @@ export default [
     options: [
       {
         id: "dabo-salary_job-030-a",
-        text: "你以前跑業務也沒少偷懶過吧。",
+        text: "你以前跑業務，也沒少偷懶過。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "（摔筷子）誰教你這樣講話的！",
       },
       {
         id: "dabo-salary_job-030-b",
@@ -573,9 +573,9 @@ export default [
       },
       {
         id: "dabo-salary_job-030-h",
-        text: "累啊，但至少能躲過一頓年夜飯提問。",
+        text: "累啊，但至少躲過一頓你的提問。",
         archetype: "perfect",
-        retort: "……有點道理，算你很會找理由。",
+        retort: "大伯母：講不贏，坐好吃飯。",
       },
     ],
   },
@@ -593,9 +593,9 @@ export default [
       },
       {
         id: "dabo-salary_job-031-b",
-        text: "剩不多，但夠孝敬大伯一頓飯。",
+        text: "剩不多，但夠孝敬你一頓飯的量。",
         archetype: "perfect",
-        retort: "……有點道理，算你有心意。",
+        retort: "……（摸鼻子，尷尬笑）",
       },
       {
         id: "dabo-salary_job-031-c",
@@ -605,13 +605,13 @@ export default [
       },
       {
         id: "dabo-salary_job-031-d",
-        text: "你退休前繳的稅也沒比較多好嗎。",
+        text: "你退休前繳的稅，也沒比較多好嗎。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "你翅膀硬了是不是，啊！",
       },
       {
         id: "dabo-salary_job-031-e",
-        text: "扣完稅剩的錢，剛好夠付這個月房租零頭。",
+        text: "剩的錢，夠包一個比你薄的紅包。",
         archetype: "backfire",
         retort: "……（大伯搖頭，沒接話）",
       },
@@ -649,9 +649,9 @@ export default [
       },
       {
         id: "dabo-salary_job-032-b",
-        text: "你以前也沒幫員工加過幾次薪吧。",
+        text: "你以前，也沒幫員工加過幾次薪。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "大伯母：叫你媽出來評評理！",
       },
       {
         id: "dabo-salary_job-032-c",
@@ -685,9 +685,9 @@ export default [
       },
       {
         id: "dabo-salary_job-032-h",
-        text: "厲害，那我來練習跟大伯談紅包。",
+        text: "厲害，那我來練習跟你談紅包。",
         archetype: "perfect",
-        retort: "……有點道理，這孩子會舉一反三。",
+        retort: "大伯母：這叫惱羞成怒啦。",
       },
     ],
   },
@@ -699,9 +699,9 @@ export default [
     options: [
       {
         id: "dabo-salary_job-033-a",
-        text: "想過，退休第一件事就是跟大伯泡茶。",
+        text: "想過，退休第一件事是躲你泡茶。",
         archetype: "perfect",
-        retort: "……有點道理，那你要常來。",
+        retort: "……（轉台轉到廣告去了）",
       },
       {
         id: "dabo-salary_job-033-b",
@@ -729,9 +729,9 @@ export default [
       },
       {
         id: "dabo-salary_job-033-f",
-        text: "你退休後不也是每天閒閒沒事幹。",
+        text: "你退休後，不也是每天閒閒沒事幹。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "（用台語吼）你是欠人修理喔！",
       },
       {
         id: "dabo-salary_job-033-g",
@@ -773,9 +773,9 @@ export default [
       },
       {
         id: "dabo-salary_job-034-d",
-        text: "你以前那行業也早就被淘汰了。",
+        text: "你以前那行業，也早就被淘汰了。",
         archetype: "landmine",
-        retort: "你這什麼意思！大伯母，你聽聽！",
+        retort: "這什麼家教，你爸媽教的！",
       },
       {
         id: "dabo-salary_job-034-e",
@@ -799,7 +799,7 @@ export default [
         id: "dabo-salary_job-034-h",
         text: "前景好不好不知道，反正我適應力強。",
         archetype: "perfect",
-        retort: "……有點道理，算你想得開。",
+        retort: "大伯母：對啦，講兩句就皮。",
       },
     ],
   },
@@ -811,9 +811,9 @@ export default [
     options: [
       {
         id: "dabo-salary_job-035-a",
-        text: "算工作，還是唯一能跟大伯頂嘴的工作。",
+        text: "算，還是唯一能跟你頂嘴的工作。",
         archetype: "perfect",
-        retort: "……有點道理，算你敢講。",
+        retort: "……（假裝專心夾菜）",
       },
       {
         id: "dabo-salary_job-035-b",
@@ -829,13 +829,13 @@ export default [
       },
       {
         id: "dabo-salary_job-035-d",
-        text: "你退休前那份工作也沒多正經。",
+        text: "你退休前那份工作，也沒多正經。",
         archetype: "landmine",
-        retort: "你說什麼！大伯母，你聽聽這孩子！",
+        retort: "大伯母：氣死我了，太超過！",
       },
       {
         id: "dabo-salary_job-035-e",
-        text: "我這行算工作，也算是修行。",
+        text: "當然算工作，不然紅包哪來的？",
         archetype: "backfire",
         retort: "……（大伯搖頭，沒接話）",
       },
@@ -903,15 +903,15 @@ export default [
       },
       {
         id: "dabo-salary_job-036-g",
-        text: "你包的紅包也沒比別人多到哪去。",
+        text: "你包的紅包，也沒比別人多到哪去。",
         archetype: "landmine",
-        retort: "你這什麼態度！大伯母，你聽聽！",
+        retort: "你信不信我現在打給你媽！",
       },
       {
         id: "dabo-salary_job-036-h",
-        text: "是啊，所以大伯今年包厚一點救我。",
+        text: "是啊，所以你今年包厚一點救我。",
         archetype: "perfect",
-        retort: "……有點道理，你這孩子很會討。",
+        retort: "大伯母：你看你，被將軍了。",
       },
     ],
   },
