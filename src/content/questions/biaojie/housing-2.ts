@@ -26,9 +26,9 @@ export default [
       },
       {
         id: "biaojie-housing-021-c",
-        text: "翻新好，舊的地方也能發光發熱。",
+        text: "翻好是要收門票嗎？",
         archetype: "perfect",
-        retort: "說得真好，我要引用這句（笑）。",
+        retort: "……哪有，分享一下啦（笑）。",
       },
       {
         id: "biaojie-housing-021-d",
@@ -44,9 +44,9 @@ export default [
       },
       {
         id: "biaojie-housing-021-f",
-        text: "頂樓加蓋該不會是違建吧？",
+        text: "翻新費是公婆出的吧，別裝了。",
         archetype: "landmine",
-        retort: "……有申請，都是合法的。",
+        retort: "……才不是，你很沒禮貌。",
       },
       {
         id: "biaojie-housing-021-g",
@@ -82,9 +82,9 @@ export default [
       },
       {
         id: "biaojie-housing-022-c",
-        text: "難照顧才顯功力，你們選得聰明。",
+        text: "透天難顧，比小孩還難顧？",
         archetype: "perfect",
-        retort: "謝謝你這樣說（笑）。",
+        retort: "……是這樣沒錯啦（笑）。",
       },
       {
         id: "biaojie-housing-022-d",
@@ -100,9 +100,9 @@ export default [
       },
       {
         id: "biaojie-housing-022-f",
-        text: "電梯大樓，是不是管理費很貴？",
+        text: "妳老公顧不顧家，別裝沒事。",
         archetype: "landmine",
-        retort: "……有一點，但物有所值。",
+        retort: "……夠了，這個輪不到你管。",
       },
       {
         id: "biaojie-housing-022-g",
@@ -138,9 +138,9 @@ export default [
       },
       {
         id: "biaojie-housing-023-c",
-        text: "兩年可以慢慢存嫁妝，剛剛好。",
+        text: "兩年，夠老公多存幾桶金吧？",
         archetype: "perfect",
-        retort: "哈哈也是，你很會安排（笑）。",
+        retort: "……哈哈也是啦（笑）。",
       },
       {
         id: "biaojie-housing-023-d",
@@ -156,9 +156,9 @@ export default [
       },
       {
         id: "biaojie-housing-023-f",
-        text: "預售屋，是不是想賺轉手的價差？",
+        text: "說什麼自住，其實想炒房。",
         archetype: "landmine",
-        retort: "……不是，只是單純自住而已。",
+        retort: "……你很過分，不想聊了。",
       },
       {
         id: "biaojie-housing-023-g",
@@ -194,9 +194,9 @@ export default [
       },
       {
         id: "biaojie-housing-024-c",
-        text: "崩潰過後才懂事，這課學費值得。",
+        text: "崩潰完，工班的錢要得回來嗎？",
         archetype: "perfect",
-        retort: "你這樣講，我心裡好受一點（笑）。",
+        retort: "……要不回來，只能認了（笑）。",
       },
       {
         id: "biaojie-housing-024-d",
@@ -212,9 +212,9 @@ export default [
       },
       {
         id: "biaojie-housing-024-f",
-        text: "是不是你們自己沒事先做功課？",
+        text: "崩潰的時候，你老公人咧？",
         archetype: "landmine",
-        retort: "……也許吧，我們會更小心。",
+        retort: "……他在上班，別亂講他。",
       },
       {
         id: "biaojie-housing-024-g",
@@ -250,9 +250,9 @@ export default [
       },
       {
         id: "biaojie-housing-025-c",
-        text: "日子要過，苦中作樂才是真本事。",
+        text: "苦中作樂，房貸繳完了嗎？",
         archetype: "perfect",
-        retort: "你說得真好，謝謝你（笑）。",
+        retort: "……還早啦，慢慢還（笑）。",
       },
       {
         id: "biaojie-housing-025-d",
@@ -268,9 +268,9 @@ export default [
       },
       {
         id: "biaojie-housing-025-f",
-        text: "壓力那麼大，是不是買超過能力範圍？",
+        text: "買超過能力，活該自己扛。",
         archetype: "landmine",
-        retort: "……沒有，我們算過能負擔的。",
+        retort: "……我們算過了，別亂說。",
       },
       {
         id: "biaojie-housing-025-g",
@@ -306,9 +306,9 @@ export default [
       },
       {
         id: "biaojie-housing-026-c",
-        text: "賺到最好，我先預約來蹭冰箱。",
+        text: "送家電也要講，很怕人不知道？",
         archetype: "perfect",
-        retort: "哈哈歡迎你隨時來拿東西（笑）。",
+        retort: "……被你發現了（笑）。",
       },
       {
         id: "biaojie-housing-026-d",
@@ -324,9 +324,9 @@ export default [
       },
       {
         id: "biaojie-housing-026-f",
-        text: "送那麼多，該不會房價其實有灌水？",
+        text: "根本是灌水的行銷手法吧。",
         archetype: "landmine",
-        retort: "……沒有，我們有比較過行情。",
+        retort: "……才沒有，你很敢講欸。",
       },
       {
         id: "biaojie-housing-026-g",
@@ -362,9 +362,9 @@ export default [
       },
       {
         id: "biaojie-housing-027-c",
-        text: "太空主題好，順便訓練未來太空人。",
+        text: "佈置這麼美，是曬照片用的吧？",
         archetype: "perfect",
-        retort: "哈哈說不定真的可以（笑）。",
+        retort: "……對啦，就愛拍照（笑）。",
       },
       {
         id: "biaojie-housing-027-d",
@@ -380,9 +380,9 @@ export default [
       },
       {
         id: "biaojie-housing-027-f",
-        text: "花這麼多錢佈置，小孩真的在意嗎？",
+        text: "佈置成這樣，老二根本不在乎吧。",
         archetype: "landmine",
-        retort: "……他很喜歡，看他開心就值得。",
+        retort: "……他很愛啦，別亂講。",
       },
       {
         id: "biaojie-housing-027-g",
@@ -418,9 +418,9 @@ export default [
       },
       {
         id: "biaojie-housing-028-c",
-        text: "食農教育，我先預約來採收一把菜。",
+        text: "食農教育，還是想省買菜錢？",
         archetype: "perfect",
-        retort: "哈哈歡迎你隨時來採（笑）。",
+        retort: "……好啦，被你猜中了（笑）。",
       },
       {
         id: "biaojie-housing-028-d",
@@ -436,9 +436,9 @@ export default [
       },
       {
         id: "biaojie-housing-028-f",
-        text: "種那些菜，真的有拿來吃嗎？",
+        text: "種菜是假，炫耀才是真的吧。",
         archetype: "landmine",
-        retort: "……有啊，我們常常摘來煮。",
+        retort: "……夠了，這個不用你操心。",
       },
       {
         id: "biaojie-housing-028-g",
@@ -474,9 +474,9 @@ export default [
       },
       {
         id: "biaojie-housing-029-c",
-        text: "貼補房貸有一套，我要跟你請教。",
+        text: "貼補房貸，一個月賺多少？",
         archetype: "perfect",
-        retort: "沒問題，改天教你怎麼弄（笑）。",
+        retort: "……沒有很多啦，別問了（笑）。",
       },
       {
         id: "biaojie-housing-029-d",
@@ -492,9 +492,9 @@ export default [
       },
       {
         id: "biaojie-housing-029-f",
-        text: "租出去，是不是其實入不敷出？",
+        text: "入不敷出還硬撐，很累吧。",
         archetype: "landmine",
-        retort: "……不是，只是想多一份收入。",
+        retort: "……你很莫名其妙，不想講了。",
       },
       {
         id: "biaojie-housing-029-g",
@@ -530,9 +530,9 @@ export default [
       },
       {
         id: "biaojie-housing-030-c",
-        text: "講清楚最重要，避免以後吵成一團。",
+        text: "先講清楚，總比以後撕破臉好。",
         archetype: "perfect",
-        retort: "你這樣說真的很成熟（笑）。",
+        retort: "……也是啦，說的對（笑）。",
       },
       {
         id: "biaojie-housing-030-d",
@@ -548,9 +548,9 @@ export default [
       },
       {
         id: "biaojie-housing-030-f",
-        text: "先講清楚，是不是怕老二以後搶？",
+        text: "偏心老大，老二知道嗎？",
         archetype: "landmine",
-        retort: "……不是，只是提早溝通而已。",
+        retort: "……這是我們家的事，別管。",
       },
       {
         id: "biaojie-housing-030-g",
@@ -562,7 +562,7 @@ export default [
         id: "biaojie-housing-030-h",
         text: "先講清楚，那我先立遺囑好了。",
         archetype: "backfire",
-        retort: "……你還年輕，先別想這麼遠啦。",
+        retort: "……你這什麼冷笑話（笑），少烏鴉嘴。",
       },
     ],
   },
@@ -586,9 +586,9 @@ export default [
       },
       {
         id: "biaojie-housing-031-c",
-        text: "公平最重要，我先預約當公證人。",
+        text: "公平最重要，那家事也對分？",
         archetype: "perfect",
-        retort: "哈哈好啊，歡迎你來公證（笑）。",
+        retort: "……那個不一樣啦（笑）。",
       },
       {
         id: "biaojie-housing-031-d",
@@ -604,9 +604,9 @@ export default [
       },
       {
         id: "biaojie-housing-031-f",
-        text: "共同登記，是不是怕以後有變數？",
+        text: "公平是嘴上說的，出錢的才有理。",
         archetype: "landmine",
-        retort: "……沒有，只是覺得這樣公平。",
+        retort: "……你很毒欸，不想理你。",
       },
       {
         id: "biaojie-housing-031-g",
@@ -642,9 +642,9 @@ export default [
       },
       {
         id: "biaojie-housing-032-c",
-        text: "東西多是幸福的煩惱，我先羨慕一下。",
+        text: "東西多，是捨不得斷捨離吧？",
         archetype: "perfect",
-        retort: "哈哈也是啦，謝謝你（笑）。",
+        retort: "……好像也是啦（笑）。",
       },
       {
         id: "biaojie-housing-032-d",
@@ -660,9 +660,9 @@ export default [
       },
       {
         id: "biaojie-housing-032-f",
-        text: "搬那麼多東西，是不是捨不得丟舊的？",
+        text: "搬三天，是炫耀還是真的忙？",
         archetype: "landmine",
-        retort: "……有一部分啦，都是回憶。",
+        retort: "……臉色一沉，沒再說話。",
       },
       {
         id: "biaojie-housing-032-g",
@@ -698,9 +698,9 @@ export default [
       },
       {
         id: "biaojie-housing-033-c",
-        text: "心疼歸心疼，這代表房子真的值錢。",
+        text: "心疼歸心疼，該繳的一毛沒少。",
         archetype: "perfect",
-        retort: "你這樣說，我瞬間釋懷了（笑）。",
+        retort: "……是喔，那也沒辦法啊（笑）。",
       },
       {
         id: "biaojie-housing-033-d",
@@ -716,9 +716,9 @@ export default [
       },
       {
         id: "biaojie-housing-033-f",
-        text: "稅漲那麼多，該不會其實漏報什麼？",
+        text: "稅漲那麼多，還是老公幫妳算？",
         archetype: "landmine",
-        retort: "……沒有，我們都照實申報。",
+        retort: "……問這個做什麼，很沒禮貌。",
       },
       {
         id: "biaojie-housing-033-g",
@@ -754,9 +754,9 @@ export default [
       },
       {
         id: "biaojie-housing-034-c",
-        text: "採光好又沒蚊蟲，先借我曬太陽。",
+        text: "採光好，是曬照片還是曬太陽？",
         archetype: "perfect",
-        retort: "隨時歡迎你來曬（笑）。",
+        retort: "……真的順便啦（笑）。",
       },
       {
         id: "biaojie-housing-034-d",
@@ -772,9 +772,9 @@ export default [
       },
       {
         id: "biaojie-housing-034-f",
-        text: "高樓層，會不會其實反而很搖？",
+        text: "採光好，公婆是不是常來住？",
         archetype: "landmine",
-        retort: "……還好，我們住得很習慣。",
+        retort: "……偶爾啦，別問這麼細。",
       },
       {
         id: "biaojie-housing-034-g",
@@ -810,9 +810,9 @@ export default [
       },
       {
         id: "biaojie-housing-035-c",
-        text: "投資成功最重要，恭喜你們眼光好。",
+        text: "增值多少，拿去還房貸了嗎？",
         archetype: "perfect",
-        retort: "謝謝你，也是運氣加眼光（笑）。",
+        retort: "……還沒啦，慢慢來（笑）。",
       },
       {
         id: "biaojie-housing-035-d",
@@ -828,9 +828,9 @@ export default [
       },
       {
         id: "biaojie-housing-035-f",
-        text: "增值那麼多，是不是想賣掉套現？",
+        text: "口口聲聲自住，其實想套現吧。",
         archetype: "landmine",
-        retort: "……沒有，我們是自住為主。",
+        retort: "……才沒有，臉都綠了。",
       },
       {
         id: "biaojie-housing-035-g",
@@ -866,9 +866,9 @@ export default [
       },
       {
         id: "biaojie-housing-036-c",
-        text: "第一名恭喜你，我先預約去參觀。",
+        text: "第一名，要不要分享裝潢費？",
         archetype: "perfect",
-        retort: "隨時歡迎你來玩（笑）。",
+        retort: "……哈哈這個不能講啦（笑）。",
       },
       {
         id: "biaojie-housing-036-d",
@@ -884,9 +884,9 @@ export default [
       },
       {
         id: "biaojie-housing-036-f",
-        text: "坪數排第一，是不是特地拿出來比？",
+        text: "沒人問，你倒是搶著講。",
         archetype: "landmine",
-        retort: "……沒有，是大家自己聊起來的。",
+        retort: "……才沒有，你很白目欸。",
       },
       {
         id: "biaojie-housing-036-g",
@@ -922,9 +922,9 @@ export default [
       },
       {
         id: "biaojie-housing-037-c",
-        text: "吉利數字我早就準備好了，放心。",
+        text: "規矩這麼多，是要湊年終獎金？",
         archetype: "perfect",
-        retort: "哎唷，你真的很懂規矩（笑）。",
+        retort: "……哪有，圖個吉利啦（笑）。",
       },
       {
         id: "biaojie-housing-037-d",
@@ -940,9 +940,9 @@ export default [
       },
       {
         id: "biaojie-housing-037-f",
-        text: "這麼多規矩，是不是想多收一點？",
+        text: "講這麼多規矩，根本想多收錢。",
         archetype: "landmine",
-        retort: "……沒有，都是老一輩傳下來的。",
+        retort: "……講這什麼話，我不想聽。",
       },
       {
         id: "biaojie-housing-037-g",

@@ -27,9 +27,9 @@ export default [
       },
       {
         id: "biaojie-comparison-001-c",
-        text: "婚姻不是比賽，我要跑自己的賽道。",
+        text: "不急，我在等一個不用凡爾賽的人。",
         archetype: "perfect",
-        retort: "說得好，我竟然無法反駁（笑）。",
+        retort: "……我哪有凡爾賽（笑）。",
       },
       {
         id: "biaojie-comparison-001-d",
@@ -45,9 +45,9 @@ export default [
       },
       {
         id: "biaojie-comparison-001-f",
-        text: "五年了，你們是不是也有摩擦過？",
+        text: "五年了，你老公是不是根本不想來？",
         archetype: "landmine",
-        retort: "……有啦，但我們都會溝通。",
+        retort: "……好，我不講了。",
       },
       {
         id: "biaojie-comparison-001-g",
@@ -83,9 +83,9 @@ export default [
       },
       {
         id: "biaojie-comparison-002-c",
-        text: "我旅行的次數少，但每次都很值得。",
+        text: "我一年出國零次，存款倒是有三次。",
         archetype: "perfect",
-        retort: "說得好，質比量重要（笑）。",
+        retort: "……那也是種規劃啦（笑）。",
       },
       {
         id: "biaojie-comparison-002-d",
@@ -101,9 +101,9 @@ export default [
       },
       {
         id: "biaojie-comparison-002-f",
-        text: "三次是不是都刷卡分期出去的？",
+        text: "沒人問，妳何必主動報行程？",
         archetype: "landmine",
-        retort: "……沒有，是我們規劃好的預算。",
+        retort: "……我只是分享而已。",
       },
       {
         id: "biaojie-comparison-002-g",
@@ -139,9 +139,9 @@ export default [
       },
       {
         id: "biaojie-comparison-003-c",
-        text: "我的車小，但停車位好找很多。",
+        text: "座位多不代表家裡話題也多。",
         archetype: "perfect",
-        retort: "哈哈這樣想也對（笑）。",
+        retort: "……哪有，我們聊得可多了（笑）。",
       },
       {
         id: "biaojie-comparison-003-d",
@@ -157,9 +157,9 @@ export default [
       },
       {
         id: "biaojie-comparison-003-f",
-        text: "七人座，是不是硬撐買太大台？",
+        text: "七人座，該不會是老公自己還貸？",
         archetype: "landmine",
-        retort: "……不會，剛好夠我們家用。",
+        retort: "算了，這話題到此為止。",
       },
       {
         id: "biaojie-comparison-003-g",
@@ -195,9 +195,9 @@ export default [
       },
       {
         id: "biaojie-comparison-004-c",
-        text: "我還沒男友，但我自己薪水就夠了。",
+        text: "升職是他的成就，關我什麼事？",
         archetype: "perfect",
-        retort: "哎唷，獨立女性我喜歡（笑）。",
+        retort: "……對啦是我要炫耀（笑）。",
       },
       {
         id: "biaojie-comparison-004-d",
@@ -213,9 +213,9 @@ export default [
       },
       {
         id: "biaojie-comparison-004-f",
-        text: "升職是不是靠關係，不是實力？",
+        text: "老公升職，妳自己呢？別都算他的。",
         archetype: "landmine",
-        retort: "……不是，是他自己努力來的。",
+        retort: "臉一沉，抱起老二去換尿布。",
       },
       {
         id: "biaojie-comparison-004-g",
@@ -251,9 +251,9 @@ export default [
       },
       {
         id: "biaojie-comparison-005-c",
-        text: "沒車環保，我為地球盡一份心力。",
+        text: "兩台車，你們家客廳停得下嗎？",
         archetype: "perfect",
-        retort: "哈哈這個角度我沒想過（笑）。",
+        retort: "……哪有那麼誇張（笑）。",
       },
       {
         id: "biaojie-comparison-005-d",
@@ -269,9 +269,9 @@ export default [
       },
       {
         id: "biaojie-comparison-005-f",
-        text: "兩台車，貸款是不是壓力很大？",
+        text: "兩台車，是不是都算妳老公頭上？",
         archetype: "landmine",
-        retort: "……還好，都在能力範圍內。",
+        retort: "……我們家的事不用你算。",
       },
       {
         id: "biaojie-comparison-005-g",
@@ -307,9 +307,9 @@ export default [
       },
       {
         id: "biaojie-comparison-006-c",
-        text: "我留白，才有空間裝進意外的驚喜。",
+        text: "行程滿，不代表心裡不空。",
         archetype: "perfect",
-        retort: "這句話說得真美（笑）。",
+        retort: "……我哪有心空（笑）。",
       },
       {
         id: "biaojie-comparison-006-d",
@@ -325,9 +325,9 @@ export default [
       },
       {
         id: "biaojie-comparison-006-f",
-        text: "排那麼滿，是不是想逃避什麼？",
+        text: "排這麼滿，笑死，不就是等我們問？",
         archetype: "landmine",
-        retort: "……沒有，只是喜歡充實而已。",
+        retort: "……好啊，我以後不講了。",
       },
       {
         id: "biaojie-comparison-006-g",
@@ -363,9 +363,9 @@ export default [
       },
       {
         id: "biaojie-comparison-007-c",
-        text: "我追蹤數少，但每個都是真朋友。",
+        text: "破萬，那我私訊回覆率反而更高。",
         archetype: "perfect",
-        retort: "說得真好，我要學起來（笑）。",
+        retort: "……追蹤數才是重點吧（笑）。",
       },
       {
         id: "biaojie-comparison-007-d",
@@ -381,9 +381,9 @@ export default [
       },
       {
         id: "biaojie-comparison-007-f",
-        text: "追蹤數，是不是花錢買來的？",
+        text: "追蹤數，是買來的還是求來的？",
         archetype: "landmine",
-        retort: "……沒有，都是真實累積的。",
+        retort: "臉色一僵，轉頭問老大功課寫了沒。",
       },
       {
         id: "biaojie-comparison-007-g",
@@ -419,9 +419,9 @@ export default [
       },
       {
         id: "biaojie-comparison-008-c",
-        text: "存款數字不重要，我心裡富有就好。",
+        text: "破百萬不稀奇，稀奇的是妳一直講。",
         archetype: "perfect",
-        retort: "你這樣講，我竟然覺得有道理（笑）。",
+        retort: "……我只是隨口講講（笑）。",
       },
       {
         id: "biaojie-comparison-008-d",
@@ -437,9 +437,9 @@ export default [
       },
       {
         id: "biaojie-comparison-008-f",
-        text: "百萬，是不是家裡貼補一部分？",
+        text: "破百萬，頭期款到底誰出的？",
         archetype: "landmine",
-        retort: "……沒有，是我們自己存的。",
+        retort: "……這個你少打聽。",
       },
       {
         id: "biaojie-comparison-008-g",
@@ -475,9 +475,9 @@ export default [
       },
       {
         id: "biaojie-comparison-009-c",
-        text: "很好，你根本是行走的保養品廣告。",
+        text: "妳保養得好，話題也保養一下？",
         archetype: "perfect",
-        retort: "哎唷，你嘴巴真甜（笑）。",
+        retort: "……我哪有話題很多（笑）。",
       },
       {
         id: "biaojie-comparison-009-d",
@@ -493,9 +493,9 @@ export default [
       },
       {
         id: "biaojie-comparison-009-f",
-        text: "皮膚好，是不是靠醫美撐的？",
+        text: "皮膚好？妳只出現在濾鏡裡吧。",
         archetype: "landmine",
-        retort: "……沒有，是天生保養得好。",
+        retort: "假笑僵在臉上，沒再說話。",
       },
       {
         id: "biaojie-comparison-009-g",
@@ -531,9 +531,9 @@ export default [
       },
       {
         id: "biaojie-comparison-010-c",
-        text: "我的工作雖不穩定，但很自由。",
+        text: "穩定是他的事，精彩才是我的事。",
         archetype: "perfect",
-        retort: "自由也不錯，各有各的好（笑）。",
+        retort: "……你倒是很會轉移話題（笑）。",
       },
       {
         id: "biaojie-comparison-010-d",
@@ -549,9 +549,9 @@ export default [
       },
       {
         id: "biaojie-comparison-010-f",
-        text: "穩定，是不是靠親戚介紹進去的？",
+        text: "穩定，是不是妳家安插的？",
         archetype: "landmine",
-        retort: "……不是，是他自己考進去的。",
+        retort: "……我們家沒有那麼閒。",
       },
       {
         id: "biaojie-comparison-010-g",
@@ -587,9 +587,9 @@ export default [
       },
       {
         id: "biaojie-comparison-011-c",
-        text: "人少也好，紅包一個人可以領到飽。",
+        text: "人少紅包卻更多，划算的是我。",
         archetype: "perfect",
-        retort: "哈哈這個算法我喜歡（笑）。",
+        retort: "……你這樣算也行（笑）。",
       },
       {
         id: "biaojie-comparison-011-d",
@@ -605,9 +605,9 @@ export default [
       },
       {
         id: "biaojie-comparison-011-f",
-        text: "人多，是不是其實吵架也比較多？",
+        text: "人多，是不是每次都在吼小孩？",
         archetype: "landmine",
-        retort: "……偶爾啦，大部分時間和樂融融。",
+        retort: "臉一沉，說明年桌數再減。",
       },
       {
         id: "biaojie-comparison-011-g",
@@ -643,9 +643,9 @@ export default [
       },
       {
         id: "biaojie-comparison-012-c",
-        text: "我的進度是先把自己過好，剛剛好。",
+        text: "小孩會走路，不代表妳人生有方向。",
         archetype: "perfect",
-        retort: "說得真好，這句話我服了（笑）。",
+        retort: "……我方向感一直很好（笑）。",
       },
       {
         id: "biaojie-comparison-012-d",
@@ -661,9 +661,9 @@ export default [
       },
       {
         id: "biaojie-comparison-012-f",
-        text: "進度快，是不是壓縮了自己的時間？",
+        text: "除了小孩，妳還剩什麼進度？",
         archetype: "landmine",
-        retort: "……有一點，但我覺得值得。",
+        retort: "……我去看一下小孩。",
       },
       {
         id: "biaojie-comparison-012-g",
@@ -699,9 +699,9 @@ export default [
       },
       {
         id: "biaojie-comparison-013-c",
-        text: "我還沒對象，但我很會照顧自己。",
+        text: "顧家值得稱讚，不代表分數要比。",
         archetype: "perfect",
-        retort: "自己顧好也很重要（笑）。",
+        retort: "……我沒有要比啦（笑）。",
       },
       {
         id: "biaojie-comparison-013-d",
@@ -717,9 +717,9 @@ export default [
       },
       {
         id: "biaojie-comparison-013-f",
-        text: "顧家，是不是因為怕你在意才裝的？",
+        text: "顧家，是裝給我們看的表演嗎？",
         archetype: "landmine",
-        retort: "……不是，他是真心喜歡陪小孩。",
+        retort: "笑容僵住，轉頭逗老二玩。",
       },
       {
         id: "biaojie-comparison-013-g",
@@ -755,9 +755,9 @@ export default [
       },
       {
         id: "biaojie-comparison-014-c",
-        text: "我運動量少，但心態一直很健康。",
+        text: "我不重訓，但抗壓力練得很扎實。",
         archetype: "perfect",
-        retort: "心態好也很重要（笑）。",
+        retort: "……那倒也是個說法（笑）。",
       },
       {
         id: "biaojie-comparison-014-d",
@@ -773,9 +773,9 @@ export default [
       },
       {
         id: "biaojie-comparison-014-f",
-        text: "重訓三次，時間是不是丟給保母顧？",
+        text: "重訓時間，是不是都靠保母換來的？",
         archetype: "landmine",
-        retort: "……沒有，我都是趁小孩睡覺去。",
+        retort: "……管好你自己就好。",
       },
       {
         id: "biaojie-comparison-014-g",
@@ -811,9 +811,9 @@ export default [
       },
       {
         id: "biaojie-comparison-015-c",
-        text: "手機是工具，我把錢花在刀口上。",
+        text: "手機舊，但我的存款比較新鮮。",
         archetype: "perfect",
-        retort: "說得也是，實用比較重要（笑）。",
+        retort: "……存款跟手機是兩回事（笑）。",
       },
       {
         id: "biaojie-comparison-015-d",
@@ -829,9 +829,9 @@ export default [
       },
       {
         id: "biaojie-comparison-015-f",
-        text: "新手機，是不是老公私房錢買的？",
+        text: "新手機，是不是妳老公補償妳的？",
         archetype: "landmine",
-        retort: "……不是，是我自己薪水買的。",
+        retort: "……那是我們夫妻的事，你少管。",
       },
       {
         id: "biaojie-comparison-015-g",
@@ -867,9 +867,9 @@ export default [
       },
       {
         id: "biaojie-comparison-016-c",
-        text: "我留一點空白，才有力氣走更遠。",
+        text: "排滿行程，不如排好心情。",
         archetype: "perfect",
-        retort: "這句話說得很有哲理（笑）。",
+        retort: "……我心情也顧得很好（笑）。",
       },
       {
         id: "biaojie-comparison-016-d",
@@ -885,9 +885,9 @@ export default [
       },
       {
         id: "biaojie-comparison-016-f",
-        text: "排那麼滿，是不是想炫耀給大家看？",
+        text: "年假，是不是公婆幫忙才排得出來？",
         archetype: "landmine",
-        retort: "……不是，只是想好好陪小孩。",
+        retort: "……公婆沒意見，你意見倒不少。",
       },
       {
         id: "biaojie-comparison-016-g",
@@ -923,9 +923,9 @@ export default [
       },
       {
         id: "biaojie-comparison-017-c",
-        text: "有，我投資的是自己，長期都會漲。",
+        text: "我不投資，專心投資我自己的快樂。",
         archetype: "perfect",
-        retort: "這句話說得真好，謝謝你（笑）。",
+        retort: "……你這樣想也不錯（笑）。",
       },
       {
         id: "biaojie-comparison-017-d",
@@ -941,9 +941,9 @@ export default [
       },
       {
         id: "biaojie-comparison-017-f",
-        text: "理財，是不是聽老公的自己都不懂？",
+        text: "理財，是妳說了算還是老公點頭？",
         archetype: "landmine",
-        retort: "……不是，我也有自己研究。",
+        retort: "……我自己也很懂，不用你教。",
       },
       {
         id: "biaojie-comparison-017-g",
@@ -979,9 +979,9 @@ export default [
       },
       {
         id: "biaojie-comparison-018-c",
-        text: "澎湃是心意，我這桌雖少但精緻。",
+        text: "十二道，我這桌營養密度比較高。",
         archetype: "perfect",
-        retort: "說得真好，我要引用這句（笑）。",
+        retort: "……密度是什麼意思（笑）。",
       },
       {
         id: "biaojie-comparison-018-d",
@@ -997,9 +997,9 @@ export default [
       },
       {
         id: "biaojie-comparison-018-f",
-        text: "十二道，吃得完嗎還是拍照而已？",
+        text: "十二道，是要吃還是要發文？",
         archetype: "landmine",
-        retort: "……都吃得完，家人食量都很好。",
+        retort: "……我們家都吃光，你很沒禮貌。",
       },
       {
         id: "biaojie-comparison-018-g",
@@ -1035,9 +1035,9 @@ export default [
       },
       {
         id: "biaojie-comparison-019-c",
-        text: "我沒有每週回去，但心一直都在。",
+        text: "回不回娘家，不該拿來打分數。",
         archetype: "perfect",
-        retort: "這句話說得真溫暖（笑）。",
+        retort: "……我沒有要打分數啦（笑）。",
       },
       {
         id: "biaojie-comparison-019-d",
@@ -1053,9 +1053,9 @@ export default [
       },
       {
         id: "biaojie-comparison-019-f",
-        text: "每週回去，是不是想讓婆家有壓力？",
+        text: "每週回娘家，公婆沒有意見嗎？",
         archetype: "landmine",
-        retort: "……不是，只是單純想孝順而已。",
+        retort: "臉色一沉，說婆婆最疼她。",
       },
       {
         id: "biaojie-comparison-019-g",
@@ -1091,9 +1091,9 @@ export default [
       },
       {
         id: "biaojie-comparison-020-c",
-        text: "我的才藝是把日子過得剛剛好。",
+        text: "才藝多不多，不影響我過得好。",
         archetype: "perfect",
-        retort: "這句話說得真有智慧（笑）。",
+        retort: "……好啦你說得對（笑）。",
       },
       {
         id: "biaojie-comparison-020-d",
@@ -1109,9 +1109,9 @@ export default [
       },
       {
         id: "biaojie-comparison-020-f",
-        text: "學那麼多，是不是想證明自己很閒？",
+        text: "才藝一堆，是怕自己太空虛吧？",
         archetype: "landmine",
-        retort: "……不是，只是喜歡充實生活。",
+        retort: "……你很白目耶，閉嘴啦。",
       },
       {
         id: "biaojie-comparison-020-g",

@@ -26,9 +26,9 @@ export default [
       },
       {
         id: "biaojie-kids-001-c",
-        text: "等我準備好，第一個抱去給你們家老二玩。",
+        text: "你這麼上心，等等換你生老三？",
         archetype: "perfect",
-        retort: "唉唷，你這樣講我都要哭了（笑）。",
+        retort: "……我、我只是關心一下啦（笑）。",
       },
       {
         id: "biaojie-kids-001-d",
@@ -44,9 +44,9 @@ export default [
       },
       {
         id: "biaojie-kids-001-f",
-        text: "你自己顧得過來，才有臉催我。",
+        text: "陪我研究？你老公陪過你幾次？",
         archetype: "landmine",
-        retort: "……好，我知道了，我不多說了。",
+        retort: "……好，我不會再多問了。",
       },
       {
         id: "biaojie-kids-001-g",
@@ -82,9 +82,9 @@ export default [
       },
       {
         id: "biaojie-kids-002-c",
-        text: "先讓我把自己養好，才能養別人。",
+        text: "你邊餵奶邊八卦，練很久了喔？",
         archetype: "perfect",
-        retort: "……你這樣講，我也無法反駁（笑）。",
+        retort: "……哪有，我就順口問問（笑）。",
       },
       {
         id: "biaojie-kids-002-d",
@@ -94,9 +94,9 @@ export default [
       },
       {
         id: "biaojie-kids-002-e",
-        text: "你顧兩個是不是都靠婆婆？",
+        text: "顧小孩該不會全部丟給婆婆？",
         archetype: "landmine",
-        retort: "……沒有，大部分是我自己顧。",
+        retort: "……我自己顧的，謝謝關心。",
       },
       {
         id: "biaojie-kids-002-f",
@@ -144,15 +144,15 @@ export default [
       },
       {
         id: "biaojie-kids-003-d",
-        text: "哥哥先請你吃糖，當爸爸的事慢慢來。",
+        text: "我先觀摩你老公怎麼當爸的。",
         archetype: "perfect",
-        retort: "哎唷，你人真好，那給你揉一下（笑）。",
+        retort: "……他、他其實很忙的啦（笑）。",
       },
       {
         id: "biaojie-kids-003-e",
-        text: "小孩多了是不是比較容易吵架？",
+        text: "你老公顧小孩，一年出現幾次？",
         archetype: "landmine",
-        retort: "……我們家沒有你想的那樣。",
+        retort: "……夠了，換個話題好嗎。",
       },
       {
         id: "biaojie-kids-003-f",
@@ -182,9 +182,9 @@ export default [
     options: [
       {
         id: "biaojie-kids-004-a",
-        text: "懂了以後，我第一個約你們家老二。",
+        text: "懂了以後，換我教你訂位技巧。",
         archetype: "perfect",
-        retort: "哎唷，那我們隨時歡迎你（笑）。",
+        retort: "……是喔，那你也太厲害了（笑）。",
       },
       {
         id: "biaojie-kids-004-b",
@@ -212,9 +212,9 @@ export default [
       },
       {
         id: "biaojie-kids-004-f",
-        text: "你們是不是每次出來都很趕？",
+        text: "你家小孩尖叫，別人也要忍？",
         archetype: "landmine",
-        retort: "……還好啦，我們都有安排好。",
+        retort: "……好啦，我讓他們安靜點。",
       },
       {
         id: "biaojie-kids-004-g",
@@ -250,9 +250,9 @@ export default [
       },
       {
         id: "biaojie-kids-005-c",
-        text: "看到了，你們家基因真的贏很大。",
+        text: "滿月照喔，我猜按讚數你都在算。",
         archetype: "perfect",
-        retort: "哎唷，謝謝你，我轉給老公看（笑）。",
+        retort: "……才沒有，我很少看啦（笑）。",
       },
       {
         id: "biaojie-kids-005-d",
@@ -268,9 +268,9 @@ export default [
       },
       {
         id: "biaojie-kids-005-f",
-        text: "你們是不是每張照片都修很久？",
+        text: "發照片是曬娃，還是曬你自己？",
         archetype: "landmine",
-        retort: "……沒有，都是自然拍的啦。",
+        retort: "……算了，當我沒發過。",
       },
       {
         id: "biaojie-kids-005-g",
@@ -306,9 +306,9 @@ export default [
       },
       {
         id: "biaojie-kids-006-c",
-        text: "值得，能睡飽覺比什麼都珍貴。",
+        text: "八萬換一個月清靜，我先羨慕。",
         archetype: "perfect",
-        retort: "對吧！你懂，睡飽真的重要（笑）。",
+        retort: "……對啊，值得啦，你懂（笑）。",
       },
       {
         id: "biaojie-kids-006-d",
@@ -324,9 +324,9 @@ export default [
       },
       {
         id: "biaojie-kids-006-f",
-        text: "八萬是你自己賺的還是老公出的？",
+        text: "八萬到底誰付的，你敢說嗎？",
         archetype: "landmine",
-        retort: "……是我們家共同的錢，沒差。",
+        retort: "……我們家的錢，沒差好嗎。",
       },
       {
         id: "biaojie-kids-006-g",
@@ -362,15 +362,15 @@ export default [
       },
       {
         id: "biaojie-kids-007-c",
-        text: "付得起，到時候讓你來當顧問。",
+        text: "付得起，先問你付的是誰的錢？",
         archetype: "perfect",
-        retort: "哎唷，那我要收諮詢費喔（笑）。",
+        retort: "……我們家共同的，你很敢問（笑）。",
       },
       {
         id: "biaojie-kids-007-d",
         text: "三萬喔，那我先去考保母證照賺。",
         archetype: "backfire",
-        retort: "……你要先生小孩才有得帶啊。",
+        retort: "……你沒小孩，帶誰啊（笑）。",
       },
       {
         id: "biaojie-kids-007-e",
@@ -380,9 +380,9 @@ export default [
       },
       {
         id: "biaojie-kids-007-f",
-        text: "你請的保母該不會是婆婆吧？",
+        text: "你確定不是婆婆免費在顧？",
         archetype: "landmine",
-        retort: "……不是，我們有另外請人。",
+        retort: "……不是，我們有付她錢。",
       },
       {
         id: "biaojie-kids-007-g",
@@ -418,9 +418,9 @@ export default [
       },
       {
         id: "biaojie-kids-008-c",
-        text: "十萬換終身競爭力，划算的投資。",
+        text: "沒人問學費，你倒先報得真勤。",
         archetype: "perfect",
-        retort: "對啊！我都想再包一學期了（笑）。",
+        retort: "……我、我只是分享而已（笑）。",
       },
       {
         id: "biaojie-kids-008-d",
@@ -436,9 +436,9 @@ export default [
       },
       {
         id: "biaojie-kids-008-f",
-        text: "你確定他學得起來，不是你想炫耀？",
+        text: "花十萬炫耀，還是真心為老大？",
         archetype: "landmine",
-        retort: "……我只是想給他最好的而已。",
+        retort: "……當然是為他，別亂講。",
       },
       {
         id: "biaojie-kids-008-g",
@@ -474,9 +474,9 @@ export default [
       },
       {
         id: "biaojie-kids-009-c",
-        text: "天分是一回事，記得也要讓他休息。",
+        text: "天分像你，那壓力也算你的吧？",
         archetype: "perfect",
-        retort: "你說得對，我會注意的（笑）。",
+        retort: "……這、這樣說也對啦（笑）。",
       },
       {
         id: "biaojie-kids-009-d",
@@ -492,9 +492,9 @@ export default [
       },
       {
         id: "biaojie-kids-009-f",
-        text: "才藝班該不會是你想圓自己的夢？",
+        text: "才藝班是你的夢，別牽拖老大。",
         archetype: "landmine",
-        retort: "……也許吧，希望他喜歡就好。",
+        retort: "……是他自己想學的。",
       },
       {
         id: "biaojie-kids-009-g",
@@ -530,9 +530,9 @@ export default [
       },
       {
         id: "biaojie-kids-010-c",
-        text: "取名這種大事，還是你們自己決定好。",
+        text: "取名找我？你們家意見很少喔？",
         archetype: "perfect",
-        retort: "你這樣講也對，那我再想想（笑）。",
+        retort: "……沒有啦，隨口問問而已（笑）。",
       },
       {
         id: "biaojie-kids-010-d",
@@ -548,9 +548,9 @@ export default [
       },
       {
         id: "biaojie-kids-010-f",
-        text: "你們是不是連取名都要問長輩？",
+        text: "連取名都要公婆點頭才算？",
         archetype: "landmine",
-        retort: "……沒有，是我們自己決定的。",
+        retort: "……沒有，我們自己決定的。",
       },
       {
         id: "biaojie-kids-010-g",
@@ -586,9 +586,9 @@ export default [
       },
       {
         id: "biaojie-kids-011-c",
-        text: "沒人幫也沒關係，我比較獨立自主。",
+        text: "沒人幫，至少沒人來插手教法。",
         archetype: "perfect",
-        retort: "獨立是好事，但別太逞強喔。",
+        retort: "……你這樣說也是啦（笑）。",
       },
       {
         id: "biaojie-kids-011-d",
@@ -604,9 +604,9 @@ export default [
       },
       {
         id: "biaojie-kids-011-f",
-        text: "你不是常常抱怨婆婆管太多嗎？",
+        text: "婆婆幫顧？該不會順便管教？",
         archetype: "landmine",
-        retort: "……沒有，我們相處得很好。",
+        retort: "……她只是幫忙，沒有插手。",
       },
       {
         id: "biaojie-kids-011-g",
@@ -642,9 +642,9 @@ export default [
       },
       {
         id: "biaojie-kids-012-c",
-        text: "老三很好，家裡熱鬧，我先恭喜你。",
+        text: "老三很好，順便問問誰在顧。",
         archetype: "perfect",
-        retort: "謝謝你，也祝你早日跟上（笑）。",
+        retort: "……應該還是婆婆幫忙吧（笑）。",
       },
       {
         id: "biaojie-kids-012-d",
@@ -660,9 +660,9 @@ export default [
       },
       {
         id: "biaojie-kids-012-f",
-        text: "你們是不是想拚男孩才生老三？",
+        text: "沒人問老三，你倒急著先報。",
         archetype: "landmine",
-        retort: "……不是，我們只是喜歡小孩。",
+        retort: "……好，那我不講了。",
       },
       {
         id: "biaojie-kids-012-g",
@@ -698,9 +698,9 @@ export default [
       },
       {
         id: "biaojie-kids-013-c",
-        text: "會吃青菜，是因為有你這個好榜樣。",
+        text: "不像有些小孩？你在酸誰家的？",
         archetype: "perfect",
-        retort: "哎唷，你會講話，謝謝你（笑）。",
+        retort: "……沒有針對誰啦，別多想（笑）。",
       },
       {
         id: "biaojie-kids-013-d",
@@ -716,9 +716,9 @@ export default [
       },
       {
         id: "biaojie-kids-013-f",
-        text: "該不會是你逼他吃的吧？",
+        text: "拿老大酸別人小孩，很行喔？",
         archetype: "landmine",
-        retort: "……沒有，他自己願意吃的。",
+        retort: "……我沒那個意思，別誤會。",
       },
       {
         id: "biaojie-kids-013-g",
@@ -754,9 +754,9 @@ export default [
       },
       {
         id: "biaojie-kids-014-c",
-        text: "看情況啦，重點是陪伴的品質吧。",
+        text: "不給看手機，那誰陪他玩？",
         archetype: "perfect",
-        retort: "說得對，陪伴真的比較重要（笑）。",
+        retort: "……當然是我陪，怎麼樣（笑）。",
       },
       {
         id: "biaojie-kids-014-d",
@@ -772,9 +772,9 @@ export default [
       },
       {
         id: "biaojie-kids-014-f",
-        text: "你自己滑手機的時間應該也不少吧？",
+        text: "你滑手機時數，敢跟我比？",
         archetype: "landmine",
-        retort: "……我會盡量避開小孩在的時候。",
+        retort: "……我很少滑，別亂猜。",
       },
       {
         id: "biaojie-kids-014-g",
@@ -810,9 +810,9 @@ export default [
       },
       {
         id: "biaojie-kids-015-c",
-        text: "包多少不重要，重點是有沒有心意。",
+        text: "包多少不重要，你很在意喔？",
         archetype: "perfect",
-        retort: "你這樣講也是，那我隨意包（笑）。",
+        retort: "……是喔，那算我多嘴了（笑）。",
       },
       {
         id: "biaojie-kids-015-d",
@@ -828,9 +828,9 @@ export default [
       },
       {
         id: "biaojie-kids-015-f",
-        text: "你們家紅包是不是都比較看人？",
+        text: "紅包看人給，是你們家家規？",
         archetype: "landmine",
-        retort: "……沒有，我們每個都一樣用心。",
+        retort: "……沒有，我們一向都公平。",
       },
       {
         id: "biaojie-kids-015-g",
@@ -866,9 +866,9 @@ export default [
       },
       {
         id: "biaojie-kids-016-c",
-        text: "加入可以，等我也有自己的一家。",
+        text: "加入喔，那你老公這次會到？",
         archetype: "perfect",
-        retort: "好呀，那我幫你留位置（笑）。",
+        retort: "……他這次應該會來啦（笑）。",
       },
       {
         id: "biaojie-kids-016-d",
@@ -884,9 +884,9 @@ export default [
       },
       {
         id: "biaojie-kids-016-f",
-        text: "拍照是不是都要聽你安排？",
+        text: "全家福，你站C位很習慣喔？",
         archetype: "landmine",
-        retort: "……沒有，大家都有一起討論。",
+        retort: "……大家一起拍，別這樣說。",
       },
       {
         id: "biaojie-kids-016-g",
@@ -922,9 +922,9 @@ export default [
       },
       {
         id: "biaojie-kids-017-c",
-        text: "感動的是你，堅強的也是你，辛苦了。",
+        text: "握手陪產，手機有放下嗎？",
         archetype: "perfect",
-        retort: "謝謝你，這句話我要記下來（笑）。",
+        retort: "……才沒有，他真的有陪（笑）。",
       },
       {
         id: "biaojie-kids-017-d",
@@ -940,9 +940,9 @@ export default [
       },
       {
         id: "biaojie-kids-017-f",
-        text: "他該不會只是在滑手機拍照？",
+        text: "陪產照片呢？怎麼一張都沒？",
         archetype: "landmine",
-        retort: "……沒有，他真的全程都在。",
+        retort: "……手機忘記拿，別亂猜。",
       },
       {
         id: "biaojie-kids-017-g",
@@ -978,9 +978,9 @@ export default [
       },
       {
         id: "biaojie-kids-018-c",
-        text: "先讓我生一個，再來討論怎麼餵。",
+        text: "親餵一年，你的時間都給誰了？",
         archetype: "perfect",
-        retort: "說得也是，先求有再求好（笑）。",
+        retort: "……都給小孩啊，值得的（笑）。",
       },
       {
         id: "biaojie-kids-018-d",
@@ -996,9 +996,9 @@ export default [
       },
       {
         id: "biaojie-kids-018-f",
-        text: "堅持親餵是不是想證明什麼？",
+        text: "親餵一年，是餵他還是餵人設？",
         archetype: "landmine",
-        retort: "……沒有，只是覺得對小孩好。",
+        retort: "……我是真心想給他最好的。",
       },
       {
         id: "biaojie-kids-018-g",
@@ -1034,9 +1034,9 @@ export default [
       },
       {
         id: "biaojie-kids-019-c",
-        text: "謝謝提醒，等我坐月子再向你請教。",
+        text: "規矩這麼多，你老公陪你守？",
         archetype: "perfect",
-        retort: "隨時歡迎，我最愛分享這個了（笑）。",
+        retort: "……他也有跟著注意啦（笑）。",
       },
       {
         id: "biaojie-kids-019-d",
@@ -1052,9 +1052,9 @@ export default [
       },
       {
         id: "biaojie-kids-019-f",
-        text: "這些規矩該不會都是婆婆逼的？",
+        text: "月子規矩多，是婆婆在管你？",
         archetype: "landmine",
-        retort: "……沒有，是我自己也想遵守。",
+        retort: "……不是，是我自己想遵守。",
       },
       {
         id: "biaojie-kids-019-g",
@@ -1090,9 +1090,9 @@ export default [
       },
       {
         id: "biaojie-kids-020-c",
-        text: "習慣之前，先讓我習慣當姑姑就好。",
+        text: "習慣就好？隔壁桌可不習慣。",
         archetype: "perfect",
-        retort: "哎唷，你當姑姑一定很稱職（笑）。",
+        retort: "……小孩子難免會這樣啦（笑）。",
       },
       {
         id: "biaojie-kids-020-d",
@@ -1108,9 +1108,9 @@ export default [
       },
       {
         id: "biaojie-kids-020-f",
-        text: "你們家是不是常常這樣鬧？",
+        text: "吵成這樣，別人是該忍嗎？",
         archetype: "landmine",
-        retort: "……偶爾啦，大部分時間很乖。",
+        retort: "……好，我帶他們先離開。",
       },
       {
         id: "biaojie-kids-020-g",
