@@ -88,7 +88,9 @@ describe("validateContent: lives", () => {
       ...FIXTURE_CONTENT,
       lives: FIXTURE_CONTENT.lives!.map((l) => {
         if (l.id !== "life-fixture-b") return l;
-        const { ama, ...rest } = l.relations;
+        const rest = Object.fromEntries(
+          Object.entries(l.relations).filter(([k]) => k !== "ama"),
+        ) as typeof l.relations;
         return { ...l, relations: rest };
       }),
     };
