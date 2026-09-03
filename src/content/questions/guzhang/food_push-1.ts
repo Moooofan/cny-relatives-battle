@@ -16,9 +16,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-001-a",
-        text: "姑丈先乾，我看你的酒量學一下。",
+        text: "乾杯是男人？那你怎麼血壓超標？",
         archetype: "perfect",
-        retort: "哈哈好，看好了，這才叫氣勢。",
+        retort: "他愣住，半天擠不出一句話。",
       },
       {
         id: "guzhang-food_push-001-b",
@@ -58,9 +58,9 @@ export default [
       },
       {
         id: "guzhang-food_push-001-h",
-        text: "真的不想喝，可以不要逼我嗎。",
+        text: "你那身血壓，是乾出來的吧姑丈。",
         archetype: "landmine",
-        retort: "……好啦，不喝就不喝。",
+        retort: "他吼一句台語，轉身走開。",
       },
     ],
   },
@@ -72,9 +72,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-002-a",
-        text: "好，我喝完，姑丈也陪我一杯。",
+        text: "怕浪費？你那些偏方才真的浪費。",
         archetype: "perfect",
-        retort: "沒問題，我這杯也乾給你看。",
+        retort: "他假笑，轉頭跟別人聊。",
       },
       {
         id: "guzhang-food_push-002-b",
@@ -114,9 +114,9 @@ export default [
       },
       {
         id: "guzhang-food_push-002-h",
-        text: "浪費也沒關係啦，別硬灌我。",
+        text: "你肝那麼硬，是被你自己灌壞的。",
         archetype: "landmine",
-        retort: "……我是想跟你多聊聊而已。",
+        retort: "他臉一垮，甩開手不說話。",
       },
     ],
   },
@@ -128,9 +128,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-003-a",
-        text: "好喝，姑丈燉的功力真的沒話說。",
+        text: "燉三小時，燉得出血壓正常嗎？",
         archetype: "perfect",
-        retort: "哈哈那當然，我燉了三小時呢。",
+        retort: "他語塞，清了清喉嚨。",
       },
       {
         id: "guzhang-food_push-003-b",
@@ -170,9 +170,9 @@ export default [
       },
       {
         id: "guzhang-food_push-003-h",
-        text: "真的喝不下了，不要再逼我了。",
+        text: "這湯再補，也補不回你判斷力。",
         archetype: "landmine",
-        retort: "……好，那我幫你留起來。",
+        retort: "他氣到講台語，撂下一句狠話。",
       },
     ],
   },
@@ -184,9 +184,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-004-a",
-        text: "好，姑丈夾的菜配飯特別下飯。",
+        text: "過年吃三碗，是怕紅包吃不夠本？",
         archetype: "perfect",
-        retort: "哈哈，那就再多吃一碗。",
+        retort: "他愣住，動作停在半空。",
       },
       {
         id: "guzhang-food_push-004-b",
@@ -226,9 +226,9 @@ export default [
       },
       {
         id: "guzhang-food_push-004-h",
-        text: "真的吃不下了，不要一直盛。",
+        text: "吃這麼多，判斷力倒一口都沒有。",
         archetype: "landmine",
-        retort: "……好，那我不盛了。",
+        retort: "他臉一垮，重重嘆了口氣。",
       },
     ],
   },
@@ -240,9 +240,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-005-a",
-        text: "好，姑丈切的刀工比水果攤還細。",
+        text: "刀工這麼細，怎麼識人這麼粗？",
         archetype: "perfect",
-        retort: "哈哈那當然，我可是練過的。",
+        retort: "他訕訕地把話題帶過。",
       },
       {
         id: "guzhang-food_push-005-b",
@@ -282,9 +282,9 @@ export default [
       },
       {
         id: "guzhang-food_push-005-h",
-        text: "真的吃不下水果了，不要再切了。",
+        text: "這盤芭樂，比你的偏方還有用。",
         archetype: "landmine",
-        retort: "……我特地切給你的耶。",
+        retort: "他臉一垮，翻起去年的舊帳。",
       },
     ],
   },
@@ -296,9 +296,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-006-a",
-        text: "好，姑丈挑料的眼光真的很準。",
+        text: "料加這麼多，是想淹死我的碗？",
         archetype: "perfect",
-        retort: "哈哈那當然，都是精選食材。",
+        retort: "他語塞，臉紅了一下。",
       },
       {
         id: "guzhang-food_push-006-b",
@@ -338,9 +338,9 @@ export default [
       },
       {
         id: "guzhang-food_push-006-h",
-        text: "夠了啦，不要再加了，真的滿了。",
+        text: "料越加越多，你的謠言也是。",
         archetype: "landmine",
-        retort: "……好，那我不加了。",
+        retort: "他氣到講台語，收拾東西就走。",
       },
     ],
   },
@@ -352,9 +352,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-007-a",
-        text: "好，姑丈烤肉的火候真的專業。",
+        text: "顧攤位這麼久，顧得了血壓嗎？",
         archetype: "perfect",
-        retort: "哈哈那當然，翻面時機最重要。",
+        retort: "他愣住，眉頭皺了一下。",
       },
       {
         id: "guzhang-food_push-007-b",
@@ -394,9 +394,9 @@ export default [
       },
       {
         id: "guzhang-food_push-007-h",
-        text: "真的吃不下了，不要一直烤給我。",
+        text: "烤這麼多份，烤不熟你的偏方。",
         archetype: "landmine",
-        retort: "……好啦，那我自己吃。",
+        retort: "他臉一垮，說明年不用來了。",
       },
     ],
   },
@@ -408,9 +408,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-008-a",
-        text: "好，這杯敬姑丈退休生活精彩。",
+        text: "敬退休精彩，先敬血壓別破表。",
         archetype: "perfect",
-        retort: "哈哈，敬你也早日像我這樣。",
+        retort: "他語塞，找不到反駁的話。",
       },
       {
         id: "guzhang-food_push-008-b",
@@ -450,9 +450,9 @@ export default [
       },
       {
         id: "guzhang-food_push-008-h",
-        text: "我真的不想喝酒，可以不要嗎。",
+        text: "喝這杯，你血壓比酒還紅吧。",
         archetype: "landmine",
-        retort: "……好，不喝就不喝，沒關係。",
+        retort: "他臉一垮，狠狠瞪你一眼。",
       },
     ],
   },
@@ -464,9 +464,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-009-a",
-        text: "好，姑丈煮的湯圓比外面圓多了。",
+        text: "圓圓滿滿，滿不過你嘴巴會講。",
         archetype: "perfect",
-        retort: "哈哈那當然，手工搓的最實在。",
+        retort: "姑姑在旁邊憋笑憋很辛苦。",
       },
       {
         id: "guzhang-food_push-009-b",
@@ -506,9 +506,9 @@ export default [
       },
       {
         id: "guzhang-food_push-009-h",
-        text: "真的吃不下甜的了，別再盛了。",
+        text: "你煮的湯圓，沒一顆比你可信。",
         archetype: "landmine",
-        retort: "……好，那我幫你留著。",
+        retort: "他氣到講台語，轉頭不說話。",
       },
     ],
   },
@@ -520,9 +520,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-010-a",
-        text: "好，姑丈選的花生真的香又脆。",
+        text: "嗑瓜子的功夫，怎麼不拿去查證？",
         archetype: "perfect",
-        retort: "哈哈那當然，貨比三家買的。",
+        retort: "他愣住，手指抓了抓後腦。",
       },
       {
         id: "guzhang-food_push-010-b",
@@ -562,9 +562,9 @@ export default [
       },
       {
         id: "guzhang-food_push-010-h",
-        text: "真的不想吃零食了，別一直抓給我。",
+        text: "嗑這堆殼，也嗑不出一句真話。",
         archetype: "landmine",
-        retort: "……好，那我自己吃就好。",
+        retort: "他臉一垮，別開臉不吭聲。",
       },
     ],
   },
@@ -576,9 +576,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-011-a",
-        text: "好，姑丈滷的味道比餐廳還道地。",
+        text: "補膠原蛋白，先補一下耳根子。",
         archetype: "perfect",
-        retort: "哈哈那當然，滷汁是傳家的。",
+        retort: "他語塞，假裝在看別的地方。",
       },
       {
         id: "guzhang-food_push-011-b",
@@ -618,9 +618,9 @@ export default [
       },
       {
         id: "guzhang-food_push-011-h",
-        text: "真的吃不下豬腳了，別再夾了。",
+        text: "滷四小時，滷不出一次準偏方。",
         archetype: "landmine",
-        retort: "……我滷了四小時你這樣講。",
+        retort: "他吼一句台語，摔門進房。",
       },
     ],
   },
@@ -632,9 +632,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-012-a",
-        text: "好，姑丈的手藝可以去開藥行了。",
+        text: "自己泡的？跟朋友的朋友一樣可疑。",
         archetype: "perfect",
-        retort: "哈哈，過獎過獎，來再喝一口。",
+        retort: "他愣住，表情僵了一下。",
       },
       {
         id: "guzhang-food_push-012-b",
@@ -674,9 +674,9 @@ export default [
       },
       {
         id: "guzhang-food_push-012-h",
-        text: "這種來路不明的酒我不敢喝。",
+        text: "這罐藥酒，比你信的謠言可疑。",
         archetype: "landmine",
-        retort: "……我親手泡的，什麼叫來路不明。",
+        retort: "他臉一垮，冷笑一聲不說話。",
       },
     ],
   },
@@ -688,9 +688,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-013-a",
-        text: "好，我這杯敬全家健康平安。",
+        text: "繞一圈敬酒，繞不出血壓正常。",
         archetype: "perfect",
-        retort: "哈哈，好一句敬酒詞，喝！",
+        retort: "他訕笑，改口說算你厲害。",
       },
       {
         id: "guzhang-food_push-013-b",
@@ -730,9 +730,9 @@ export default [
       },
       {
         id: "guzhang-food_push-013-h",
-        text: "真的喝不下了，可以跳過我嗎。",
+        text: "敬成這樣，你肝比立場還硬。",
         archetype: "landmine",
-        retort: "……好啦，那就跳過你。",
+        retort: "他氣到講台語，罵你講話白目。",
       },
     ],
   },
@@ -744,9 +744,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-014-a",
-        text: "好，這杯敬姑丈退休天天開心。",
+        text: "這杯不能少，判斷力倒缺很多。",
         archetype: "perfect",
-        retort: "哈哈，這句話我收下了，乾！",
+        retort: "他語塞，講到一半改口。",
       },
       {
         id: "guzhang-food_push-014-b",
@@ -786,9 +786,9 @@ export default [
       },
       {
         id: "guzhang-food_push-014-h",
-        text: "真的不能再喝了，拜託放過我。",
+        text: "喝這麼多年，喝出的只有血壓高。",
         archetype: "landmine",
-        retort: "……好啦，不喝就不喝了。",
+        retort: "他臉一垮，起身走去別桌。",
       },
     ],
   },
@@ -800,9 +800,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-015-a",
-        text: "好吃，姑丈的人脈連禮盒都很讚。",
+        text: "人情要顧，你的耳根更該顧好。",
         archetype: "perfect",
-        retort: "哈哈那當然，這是誠意換來的。",
+        retort: "他愣住，話卡在喉嚨。",
       },
       {
         id: "guzhang-food_push-015-b",
@@ -842,9 +842,9 @@ export default [
       },
       {
         id: "guzhang-food_push-015-h",
-        text: "真的吃不下了，這禮盒留給別人吧。",
+        text: "這禮盒，跟朋友的朋友一樣不存在。",
         archetype: "landmine",
-        retort: "……好，那我自己收起來。",
+        retort: "他氣到講台語，說你沒大沒小。",
       },
     ],
   },
@@ -856,9 +856,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-016-a",
-        text: "好，姑丈切的年糕比店裡的還Q。",
+        text: "年年高升，升不了你判斷力。",
         archetype: "perfect",
-        retort: "哈哈那當然，蒸的火候有夠。",
+        retort: "姑姑在旁邊笑到快岔氣。",
       },
       {
         id: "guzhang-food_push-016-b",
@@ -898,9 +898,9 @@ export default [
       },
       {
         id: "guzhang-food_push-016-h",
-        text: "真的吃不下年糕了，別再切了。",
+        text: "這年糕黏牙，比不上你嘴硬。",
         archetype: "landmine",
-        retort: "……好，那我留給明天吃。",
+        retort: "他臉一垮，深吸一口氣不說話。",
       },
     ],
   },
@@ -912,9 +912,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-017-a",
-        text: "好，姑丈這鍋湯頭真的夠力。",
+        text: "湯頭夠力，你的立場倒是很軟。",
         archetype: "perfect",
-        retort: "哈哈那當然，米酒下得毫不手軟。",
+        retort: "他語塞，眼神飄向別處。",
       },
       {
         id: "guzhang-food_push-017-b",
@@ -954,9 +954,9 @@ export default [
       },
       {
         id: "guzhang-food_push-017-h",
-        text: "真的喝不下了，不要再加料了。",
+        text: "加這麼多料，蓋不了偏方沒效。",
         archetype: "landmine",
-        retort: "……好，那就不加了。",
+        retort: "他吼一句台語，轉頭不理你。",
       },
     ],
   },
@@ -968,9 +968,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-018-a",
-        text: "好，姑丈囤貨的眼光真的精準。",
+        text: "囤這一箱，跟你囤的謠言一樣多。",
         archetype: "perfect",
-        retort: "哈哈那當然，特價的時候就要囤。",
+        retort: "他愣住，動作僵在原地。",
       },
       {
         id: "guzhang-food_push-018-b",
@@ -1010,9 +1010,9 @@ export default [
       },
       {
         id: "guzhang-food_push-018-h",
-        text: "真的喝不下了，一箱太多了啦。",
+        text: "囤這箱，跟你被騙那次一樣衝動。",
         archetype: "landmine",
-        retort: "……好，那你就少喝一點。",
+        retort: "他臉一垮，甩手不想理你。",
       },
     ],
   },
@@ -1024,9 +1024,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-019-a",
-        text: "好吃，姑丈挑攤位的眼光真準。",
+        text: "排隊排最長，排不出真的偏方。",
         archetype: "perfect",
-        retort: "哈哈那當然，排隊排最長的準沒錯。",
+        retort: "他嘴硬回一句，但沒底氣。",
       },
       {
         id: "guzhang-food_push-019-b",
@@ -1066,9 +1066,9 @@ export default [
       },
       {
         id: "guzhang-food_push-019-h",
-        text: "真的吃不下香腸了，別再遞了。",
+        text: "這根香腸，比你的消息還可疑。",
         archetype: "landmine",
-        retort: "……好啦，那我自己吃。",
+        retort: "他氣到講台語，冷哼一聲。",
       },
     ],
   },
@@ -1080,9 +1080,9 @@ export default [
     options: [
       {
         id: "guzhang-food_push-020-a",
-        text: "好，姑丈連轉大人都幫我想到了。",
+        text: "轉大人？先轉一下你判斷力。",
         archetype: "perfect",
-        retort: "哈哈那當然，這是我的心意。",
+        retort: "他語塞，尷尬地清清喉嚨。",
       },
       {
         id: "guzhang-food_push-020-b",
@@ -1122,9 +1122,9 @@ export default [
       },
       {
         id: "guzhang-food_push-020-h",
-        text: "這年紀喝這個根本沒用啦。",
+        text: "喝這罐，喝不出一次準偏方。",
         archetype: "landmine",
-        retort: "……我是特地買給你的耶。",
+        retort: "他臉一垮，安靜了整整十秒。",
       },
     ],
   },

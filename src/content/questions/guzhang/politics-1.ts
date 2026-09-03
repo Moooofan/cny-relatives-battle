@@ -16,9 +16,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-001-a",
-        text: "有道理，好，我回去查一下數據。",
+        text: "名嘴講得準，你猜大樂透中了嗎？",
         archetype: "perfect",
-        retort: "對嘛，查完你就知道我沒亂講。",
+        retort: "他語塞，臉紅了一下。",
       },
       {
         id: "guzhang-politics-001-b",
@@ -58,9 +58,9 @@ export default [
       },
       {
         id: "guzhang-politics-001-h",
-        text: "這種節目講的都是他自己的意見啦。",
+        text: "名嘴亂講，你被騙那次也信亂講。",
         archetype: "landmine",
-        retort: "……你手機看的比較準就對了。",
+        retort: "他氣到講台語，收拾東西就走。",
       },
     ],
   },
@@ -72,9 +72,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-002-a",
-        text: "先別緊張，好，我回去查一下真假。",
+        text: "這消息哪來的，朋友的朋友傳的？",
         archetype: "perfect",
-        retort: "好，查清楚再跟我說一聲。",
+        retort: "他愣住，眉頭皺了一下。",
       },
       {
         id: "guzhang-politics-002-b",
@@ -108,15 +108,15 @@ export default [
       },
       {
         id: "guzhang-politics-002-g",
-        text: "沒退休金那就活到老做到老啦。",
+        text: "那我以後也天天傳早安圖騙讚好了。",
         archetype: "backfire",
-        retort: "（姑丈皺眉，覺得你在唱衰）",
+        retort: "（姑丈皺眉，覺得你在挖苦他）",
       },
       {
         id: "guzhang-politics-002-h",
-        text: "這種LINE群組講的都是假消息啦。",
+        text: "上次騙你的訊息，長得跟這篇像。",
         archetype: "landmine",
-        retort: "……你連這個都覺得我在騙你。",
+        retort: "他臉一垮，說明年不用來了。",
       },
     ],
   },
@@ -128,9 +128,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-003-a",
-        text: "對啊，好，我回去查一下產地價格。",
+        text: "漲成這樣，你薑黃是不是也漲了？",
         archetype: "perfect",
-        retort: "查一下，你會發現漲更多。",
+        retort: "他語塞，找不到反駁的話。",
       },
       {
         id: "guzhang-politics-003-b",
@@ -170,9 +170,9 @@ export default [
       },
       {
         id: "guzhang-politics-003-h",
-        text: "漲一點而已啦，姑丈不用那麼在意。",
+        text: "雞蛋漲價，你血壓也跟著漲。",
         archetype: "landmine",
-        retort: "……你賺得多當然不在意。",
+        retort: "他臉一垮，狠狠瞪你一眼。",
       },
     ],
   },
@@ -184,9 +184,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-004-a",
-        text: "有道理，好，我回去查投票時間。",
+        text: "投票很重要，你的群組怎麼靜音？",
         archetype: "perfect",
-        retort: "對嘛，年輕人本來就該關心。",
+        retort: "姑姑在旁邊憋笑憋很辛苦。",
       },
       {
         id: "guzhang-politics-004-b",
@@ -226,9 +226,9 @@ export default [
       },
       {
         id: "guzhang-politics-004-h",
-        text: "投不投票又不會改變什麼啦。",
+        text: "年輕人不投票，關你退休屁事？",
         archetype: "landmine",
-        retort: "……你這樣講讓我很失望。",
+        retort: "他氣到講台語，轉頭不說話。",
       },
     ],
   },
@@ -240,9 +240,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-005-a",
-        text: "確實，好，我回去查一下相關政策。",
+        text: "少子化？先問問你自己少講幾句。",
         archetype: "perfect",
-        retort: "查一下，你會發現問題不簡單。",
+        retort: "他愣住，手指抓了抓後腦。",
       },
       {
         id: "guzhang-politics-005-b",
@@ -282,9 +282,9 @@ export default [
       },
       {
         id: "guzhang-politics-005-h",
-        text: "生不生是我的事，不用你操心。",
+        text: "生不生，關你屁事，你很閒嗎？",
         archetype: "landmine",
-        retort: "……我是關心國家未來而已。",
+        retort: "他臉一垮，別開臉不吭聲。",
       },
     ],
   },
@@ -296,9 +296,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-006-a",
-        text: "對啊，好，我回去查一下物價指數。",
+        text: "找嘸零錢，你倒是找到不少偏方。",
         archetype: "perfect",
-        retort: "查一下就知道，漲得比想像多。",
+        retort: "他語塞，假裝在看別的地方。",
       },
       {
         id: "guzhang-politics-006-b",
@@ -338,9 +338,9 @@ export default [
       },
       {
         id: "guzhang-politics-006-h",
-        text: "幾塊錢而已，姑丈不用這麼計較。",
+        text: "計較幾塊錢，血壓倒是不計較。",
         archetype: "landmine",
-        retort: "……積少成多，你不懂啦。",
+        retort: "他吼一句台語，摔門進房。",
       },
     ],
   },
@@ -352,9 +352,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-007-a",
-        text: "好，我回去查一下他買什麼標的。",
+        text: "朋友的朋友又套牢？他是不是編的？",
         archetype: "perfect",
-        retort: "查一下，別跟著亂衝進場。",
+        retort: "他愣住，表情僵了一下。",
       },
       {
         id: "guzhang-politics-007-b",
@@ -394,9 +394,9 @@ export default [
       },
       {
         id: "guzhang-politics-007-h",
-        text: "誰叫他要亂買，活該套牢啦。",
+        text: "朋友的朋友，根本是你編出來的。",
         archetype: "landmine",
-        retort: "……他是我朋友耶，講話小心點。",
+        retort: "他臉一垮，冷笑一聲不說話。",
       },
     ],
   },
@@ -408,9 +408,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-008-a",
-        text: "是啊，好，我回去查一下標準。",
+        text: "退休了還吵放假，你是很閒嗎？",
         archetype: "perfect",
-        retort: "查一下就知道，標準不是隨便定的。",
+        retort: "他訕笑，改口說算你厲害。",
       },
       {
         id: "guzhang-politics-008-b",
@@ -450,9 +450,9 @@ export default [
       },
       {
         id: "guzhang-politics-008-h",
-        text: "放不放假跟我沒差，隨便啦。",
+        text: "退休沒事做，才會管這麼多閒事。",
         archetype: "landmine",
-        retort: "……你這樣講讓我覺得白說了。",
+        retort: "他氣到講台語，罵你講話白目。",
       },
     ],
   },
@@ -464,9 +464,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-009-a",
-        text: "有道理，好，我回去查一下趨勢。",
+        text: "AI搶工作，搶得走你的判斷力嗎？",
         archetype: "perfect",
-        retort: "查一下，多了解對你有幫助。",
+        retort: "他語塞，講到一半改口。",
       },
       {
         id: "guzhang-politics-009-b",
@@ -506,9 +506,9 @@ export default [
       },
       {
         id: "guzhang-politics-009-h",
-        text: "AI再厲害也不會取代我的工作啦。",
+        text: "AI再厲害，也騙不了你這麼容易。",
         archetype: "landmine",
-        retort: "……你這麼有把握，我倒想看看。",
+        retort: "他臉一垮，起身走去別桌。",
       },
     ],
   },
@@ -520,9 +520,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-010-a",
-        text: "好，我聽聽看，回去再查一下細節。",
+        text: "廟口消息，跟你被騙那通一樣準。",
         archetype: "perfect",
-        retort: "很好，多聽多查才不會被騙。",
+        retort: "他愣住，話卡在喉嚨。",
       },
       {
         id: "guzhang-politics-010-b",
@@ -562,9 +562,9 @@ export default [
       },
       {
         id: "guzhang-politics-010-h",
-        text: "那些朋友是不是很閒，整天講政治。",
+        text: "廟口那群，跟你一樣很閒退休沒事。",
         archetype: "landmine",
-        retort: "……那些都是我的老朋友耶。",
+        retort: "他氣到講台語，說你沒大沒小。",
       },
     ],
   },
@@ -576,9 +576,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-011-a",
-        text: "好，我先聽姑丈的，回去再查資料。",
+        text: "邊走邊聊，走不出一句真話。",
         archetype: "perfect",
-        retort: "很好，這樣才有自己的見解。",
+        retort: "姑姑在旁邊笑到快岔氣。",
       },
       {
         id: "guzhang-politics-011-b",
@@ -618,9 +618,9 @@ export default [
       },
       {
         id: "guzhang-politics-011-h",
-        text: "走路就走路，不要聊這些啦。",
+        text: "你的看法，跟謠言一樣沒查證過。",
         archetype: "landmine",
-        retort: "……我是想跟你多聊聊而已。",
+        retort: "他臉一垮，深吸一口氣不說話。",
       },
     ],
   },
@@ -632,9 +632,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-012-a",
-        text: "是啊，好，我回去查一下選情。",
+        text: "車牌都記得，記不記得上次被騙？",
         archetype: "perfect",
-        retort: "查一下，你會發現這區選得很拚。",
+        retort: "他語塞，眼神飄向別處。",
       },
       {
         id: "guzhang-politics-012-b",
@@ -674,9 +674,9 @@ export default [
       },
       {
         id: "guzhang-politics-012-h",
-        text: "選舉真的很煩，每次都這樣。",
+        text: "選舉很煩，你退休比選舉更閒。",
         archetype: "landmine",
-        retort: "……這是民主的過程，你懂嗎。",
+        retort: "他吼一句台語，轉頭不理你。",
       },
     ],
   },
@@ -688,9 +688,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-013-a",
-        text: "有一點，好，我回去查一下細節。",
+        text: "補助這麼熟，是不是又聽誰說的？",
         archetype: "perfect",
-        retort: "查一下，說不定你也能申請。",
+        retort: "他愣住，動作僵在原地。",
       },
       {
         id: "guzhang-politics-013-b",
@@ -730,9 +730,9 @@ export default [
       },
       {
         id: "guzhang-politics-013-h",
-        text: "這種補助最後都被有錢人領走啦。",
+        text: "這補助跟你的偏方一樣，聽聽就好。",
         archetype: "landmine",
-        retort: "……你講話越來越憤世嫉俗了。",
+        retort: "他臉一垮，甩手不想理你。",
       },
     ],
   },
@@ -744,9 +744,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-014-a",
-        text: "希望啦，好，我回去查一下細則。",
+        text: "當年買得便宜，眼光還是嘴巴準？",
         archetype: "perfect",
-        retort: "查一下，你會更清楚方向。",
+        retort: "他嘴硬回一句，但沒底氣。",
       },
       {
         id: "guzhang-politics-014-b",
@@ -786,9 +786,9 @@ export default [
       },
       {
         id: "guzhang-politics-014-h",
-        text: "反正房價再降我也買不起啦。",
+        text: "你那間房，比你的偏方值錢多了。",
         archetype: "landmine",
-        retort: "……你這樣講讓我不知道怎麼安慰你。",
+        retort: "他氣到講台語，冷哼一聲。",
       },
     ],
   },
@@ -800,9 +800,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-015-a",
-        text: "確實扯，好，我回去查一下年限。",
+        text: "你退得早，是真早還是嘴巴早？",
         archetype: "perfect",
-        retort: "查一下，你會發現差很多年。",
+        retort: "他語塞，尷尬地清清喉嚨。",
       },
       {
         id: "guzhang-politics-015-b",
@@ -842,9 +842,9 @@ export default [
       },
       {
         id: "guzhang-politics-015-h",
-        text: "反正我還早，現在想這個沒意義。",
+        text: "退休這麼閒，才會管這麼多閒事。",
         archetype: "landmine",
-        retort: "……早準備才不會到時候措手不及。",
+        retort: "他臉一垮，安靜了整整十秒。",
       },
     ],
   },
@@ -856,9 +856,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-016-a",
-        text: "好，我回去查一下最新的詐騙手法。",
+        text: "你也差點被騙，還敢說機警反應快？",
         archetype: "perfect",
-        retort: "查一下，多了解才不會被騙。",
+        retort: "他愣住，說不出話來。",
       },
       {
         id: "guzhang-politics-016-b",
@@ -898,9 +898,9 @@ export default [
       },
       {
         id: "guzhang-politics-016-h",
-        text: "我才不會被騙啦，姑丈想太多了。",
+        text: "你上次就被騙了，還敢說要提醒我？",
         archetype: "landmine",
-        retort: "……我是擔心你才提醒的耶。",
+        retort: "他臉一垮，半天說不出話。",
       },
     ],
   },
@@ -912,9 +912,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-017-a",
-        text: "有原因的，好，我回去查一下薪資。",
+        text: "正職不做？退休閒閒才叫不做正事。",
         archetype: "perfect",
-        retort: "查一下，你會理解他們的考量。",
+        retort: "他語塞，乾笑兩聲。",
       },
       {
         id: "guzhang-politics-017-b",
@@ -954,9 +954,9 @@ export default [
       },
       {
         id: "guzhang-politics-017-h",
-        text: "正職不做要怪誰，年輕人自己選的啦。",
+        text: "你退休沒事做，比外送員還閒。",
         archetype: "landmine",
-        retort: "……你這樣講太武斷了吧。",
+        retort: "他氣到講台語，轉身不理你。",
       },
     ],
   },
@@ -968,9 +968,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-018-a",
-        text: "好啊，好，我回去查一下環保袋。",
+        text: "早準備好環保袋？跟你偏方一樣多。",
         archetype: "perfect",
-        retort: "查一下，多用環保袋對地球好。",
+        retort: "姑姑在旁邊笑到肩膀抖。",
       },
       {
         id: "guzhang-politics-018-b",
@@ -1010,9 +1010,9 @@ export default [
       },
       {
         id: "guzhang-politics-018-h",
-        text: "收這種錢根本沒什麼用啦，做做樣子。",
+        text: "做做樣子，跟你的偏方一樣沒用。",
         archetype: "landmine",
-        retort: "……環保不是做做樣子的事情。",
+        retort: "他臉一垮，要姑姑幫他評評理。",
       },
     ],
   },
@@ -1024,9 +1024,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-019-a",
-        text: "厲害，好，我回去查一下怎麼操作。",
+        text: "學得比我快，怎麼分辨謠言比我慢？",
         archetype: "perfect",
-        retort: "查一下，學會了以後更方便。",
+        retort: "他改口說我回去查查看。",
       },
       {
         id: "guzhang-politics-019-b",
@@ -1066,9 +1066,9 @@ export default [
       },
       {
         id: "guzhang-politics-019-h",
-        text: "這種科技我看根本用不習慣啦。",
+        text: "你連謠言都分不清，還嫌機器？",
         archetype: "landmine",
-        retort: "……你手機用得比我熟還嫌棄我。",
+        retort: "他吼一句台語，甩門進房間。",
       },
     ],
   },
@@ -1080,9 +1080,9 @@ export default [
     options: [
       {
         id: "guzhang-politics-020-a",
-        text: "好，我回去查一下他們吵的重點。",
+        text: "吵成這樣，你猜他們薪水誰付的？",
         archetype: "perfect",
-        retort: "查一下，你會發現各有各的道理。",
+        retort: "他訕笑，轉頭跟姑姑討救兵。",
       },
       {
         id: "guzhang-politics-020-b",
@@ -1122,9 +1122,9 @@ export default [
       },
       {
         id: "guzhang-politics-020-h",
-        text: "這種節目根本沒營養，看了浪費時間。",
+        text: "看這節目，跟你信偏方一樣沒營養。",
         archetype: "landmine",
-        retort: "……我看得很開心耶，你何必這樣說。",
+        retort: "他臉一垮，別過頭不看你。",
       },
     ],
   },

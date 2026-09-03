@@ -20,9 +20,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-001-b",
-        text: "姑丈這張，我拿去投稿月曆了。",
+        text: "五點傳圖，是因為沒人回你嗎？",
         archetype: "perfect",
-        retort: "真的假的，好，我回去查一下地址。",
+        retort: "他愣住，說不出話來。",
       },
       {
         id: "guzhang-elder_health-001-c",
@@ -38,9 +38,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-001-e",
-        text: "五點傳訊息很吵，可以晚點嗎？",
+        text: "退休沒事做，只剩洗版找存在感？",
         archetype: "landmine",
-        retort: "……我這麼早想到你才傳的。",
+        retort: "他臉一垮，半天說不出話。",
       },
       {
         id: "guzhang-elder_health-001-f",
@@ -56,9 +56,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-001-h",
-        text: "我把它設成鬧鐘鈴聲了，超有效。",
+        text: "五點傳圖，比打卡鬧鐘還準時。",
         archetype: "backfire",
-        retort: "（姑丈一臉困惑，繼續傳下一張）",
+        retort: "（姑丈得意，還真心收下這稱讚）",
       },
     ],
   },
@@ -70,9 +70,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-002-a",
-        text: "好，我回去查一下這個配方。",
+        text: "朋友的朋友，怎麼從沒見過本人？",
         archetype: "perfect",
-        retort: "對嘛，年輕人就是要肯查資料。",
+        retort: "他語塞，乾笑兩聲。",
       },
       {
         id: "guzhang-elder_health-002-b",
@@ -112,9 +112,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-002-h",
-        text: "那個朋友的朋友到底是誰啊？",
+        text: "朋友的朋友根本不存在吧姑丈。",
         archetype: "landmine",
-        retort: "……你這樣講，我就不想分享了。",
+        retort: "他氣到講台語，轉身不理你。",
       },
     ],
   },
@@ -126,9 +126,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-003-a",
-        text: "好喝！好，我回去查配方比例。",
+        text: "這麼養生，怎麼你血壓還是高？",
         archetype: "perfect",
-        retort: "識貨！這杯我私藏的耶。",
+        retort: "姑姑在旁邊笑到肩膀抖。",
       },
       {
         id: "guzhang-elder_health-003-b",
@@ -168,9 +168,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-003-h",
-        text: "這味道真的很怪，我不想喝。",
+        text: "偏方喝這麼多年，有一個有效嗎？",
         archetype: "landmine",
-        retort: "……我特地為你泡的耶。",
+        retort: "他臉一垮，要姑姑幫他評評理。",
       },
     ],
   },
@@ -182,9 +182,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-004-a",
-        text: "顏色好深，好，我回去查功效。",
+        text: "抗氧化這麼強，姑姑怎麼不吃？",
         archetype: "perfect",
-        retort: "對啊，發酵越久越有效。",
+        retort: "他改口說我回去查查看。",
       },
       {
         id: "guzhang-elder_health-004-b",
@@ -224,9 +224,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-004-h",
-        text: "陽台曬那麼多東西很亂耶。",
+        text: "曬這些偏方，不如曬曬你血壓。",
         archetype: "landmine",
-        retort: "……這是我花心思弄的。",
+        retort: "他吼一句台語，甩門進房間。",
       },
     ],
   },
@@ -238,9 +238,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-005-a",
-        text: "好，我回去查一下輻射的資料。",
+        text: "那你自己怎麼還在滑手機傳圖？",
         archetype: "perfect",
-        retort: "對嘛，多了解對自己好。",
+        retort: "他訕笑，轉頭跟姑姑討救兵。",
       },
       {
         id: "guzhang-elder_health-005-b",
@@ -280,9 +280,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-005-h",
-        text: "手機那些說法都是假新聞啦。",
+        text: "怕輻射，怎麼不怕被詐騙訊息騙？",
         archetype: "landmine",
-        retort: "……你怎麼講話跟你爸一樣衝。",
+        retort: "他臉一垮，別過頭不看你。",
       },
     ],
   },
@@ -294,9 +294,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-006-a",
-        text: "好，我回去查一下怎麼加熱。",
+        text: "你養生知識，是哪個朋友教的？",
         archetype: "perfect",
-        retort: "用電鍋蒸就對了，記住喔。",
+        retort: "他愣了一下，眉頭挑起來。",
       },
       {
         id: "guzhang-elder_health-006-b",
@@ -336,9 +336,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-006-h",
-        text: "這年代誰還不用微波爐啦。",
+        text: "這種說法，跟你被騙那次差不多。",
         archetype: "landmine",
-        retort: "……我是為你的健康著想耶。",
+        retort: "他氣到講台語，說你很白目。",
       },
     ],
   },
@@ -350,9 +350,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-007-a",
-        text: "謝謝姑丈，好，我回去查溫水好處。",
+        text: "溫水這麼神，怎麼沒治好你血壓？",
         archetype: "perfect",
-        retort: "查一下就知道，溫水最養生。",
+        retort: "他嘴硬，眼神卻閃躲。",
       },
       {
         id: "guzhang-elder_health-007-b",
@@ -392,9 +392,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-007-h",
-        text: "喝冰的又不會怎樣，別緊張。",
+        text: "姑姑早就把你的群組設靜音了。",
         archetype: "landmine",
-        retort: "……我講的話對你來說沒用喔。",
+        retort: "他臉一垮，轉頭找姑姑理論。",
       },
     ],
   },
@@ -406,9 +406,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-008-a",
-        text: "好，我回去查一下正常數值。",
+        text: "你血壓標準，是換了新機器吧？",
         archetype: "perfect",
-        retort: "對，數值要記得看，別亂猜。",
+        retort: "他愣住，手機螢幕暗掉。",
       },
       {
         id: "guzhang-elder_health-008-b",
@@ -448,9 +448,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-008-h",
-        text: "不用量啦，我身體我自己清楚。",
+        text: "退休這麼閒，量血壓找存在感？",
         archetype: "landmine",
-        retort: "……好，那就不要量了。",
+        retort: "他臉一垮，冷著臉不說話。",
       },
     ],
   },
@@ -462,9 +462,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-009-a",
-        text: "好，我回去查一下這個牌子。",
+        text: "朋友推薦的，你查過真假了嗎？",
         archetype: "perfect",
-        retort: "查一下，這牌子評價很好。",
+        retort: "他語塞，重新想措辭。",
       },
       {
         id: "guzhang-elder_health-009-b",
@@ -504,9 +504,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-009-h",
-        text: "這種保健品吃了也沒什麼用啦。",
+        text: "朋友的朋友，怎麼每次都缺席？",
         archetype: "landmine",
-        retort: "……我特地留給你吃的耶。",
+        retort: "他氣到講台語，罵你不聽老人言。",
       },
     ],
   },
@@ -518,9 +518,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-010-a",
-        text: "好，我跟上，回去也查健走技巧。",
+        text: "走這麼快，是要甩開誰的閒言？",
         archetype: "perfect",
-        retort: "很好，年輕人就是要有體力。",
+        retort: "姑姑在旁邊笑到眼淚都出來。",
       },
       {
         id: "guzhang-elder_health-010-b",
@@ -560,9 +560,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-010-h",
-        text: "走這麼快很累耶，正常走就好。",
+        text: "健走治不好血壓，別騙自己了。",
         archetype: "landmine",
-        retort: "……我是想陪你多運動一下。",
+        retort: "他臉一垮，猛地站起來。",
       },
     ],
   },
@@ -574,9 +574,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-011-a",
-        text: "好，我回去查一下這個說法。",
+        text: "廟口聽的，跟詐騙電話有差嗎？",
         archetype: "perfect",
-        retort: "查完再跟我討論，很有意思。",
+        retort: "他愣住，半天擠不出一句話。",
       },
       {
         id: "guzhang-elder_health-011-b",
@@ -616,9 +616,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-011-h",
-        text: "廟口聽來的東西哪有什麼準的。",
+        text: "你上次被騙，也是聽人家說的吧。",
         archetype: "landmine",
-        retort: "……那是老一輩的智慧耶。",
+        retort: "他吼一句台語，轉身走開。",
       },
     ],
   },
@@ -630,9 +630,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-012-a",
-        text: "好，我學起來，回去也查資料。",
+        text: "這麼神，怎麼沒拍醒你自己？",
         archetype: "perfect",
-        retort: "對，學起來一輩子受用。",
+        retort: "他假笑，轉頭跟別人聊。",
       },
       {
         id: "guzhang-elder_health-012-b",
@@ -672,9 +672,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-012-h",
-        text: "這種東西我看網路都說沒用。",
+        text: "拍打拉筋，你信的都是唬爛的。",
         archetype: "landmine",
-        retort: "……你手機看的比我懂喔？",
+        retort: "他臉一垮，甩開手不說話。",
       },
     ],
   },
@@ -686,9 +686,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-013-a",
-        text: "好，我跟著甩，回去再查功效。",
+        text: "甩這麼勤，怎麼沒甩掉高血壓？",
         archetype: "perfect",
-        retort: "很好，甩久了你就懂了。",
+        retort: "他語塞，清了清喉嚨。",
       },
       {
         id: "guzhang-elder_health-013-b",
@@ -728,9 +728,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-013-h",
-        text: "甩這個真的很無聊，不想學。",
+        text: "甩手功年年甩，血壓年年高。",
         archetype: "landmine",
-        retort: "……好，那你就不要學。",
+        retort: "他氣到講台語，撂下一句狠話。",
       },
     ],
   },
@@ -742,9 +742,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-014-a",
-        text: "好，這個我這就去查清楚。",
+        text: "關wifi助眠，你血壓才是禍首吧。",
         archetype: "perfect",
-        retort: "查一下就知道，睡眠品質差很多。",
+        retort: "他愣住，動作停在半空。",
       },
       {
         id: "guzhang-elder_health-014-b",
@@ -784,9 +784,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-014-h",
-        text: "這種說法根本沒有科學根據吧。",
+        text: "難怪姑姑把你的群組設靜音。",
         archetype: "landmine",
-        retort: "……你講話越來越像你爸了。",
+        retort: "他臉一垮，重重嘆了口氣。",
       },
     ],
   },
@@ -798,9 +798,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-015-a",
-        text: "好，我回去查一下定時器功能。",
+        text: "怕風扇？你比較該怕自己血壓。",
         archetype: "perfect",
-        retort: "對，設定時器最保險。",
+        retort: "他訕訕地把話題帶過。",
       },
       {
         id: "guzhang-elder_health-015-b",
@@ -840,9 +840,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-015-h",
-        text: "吹整晚也不會怎樣啦，別緊張。",
+        text: "你的偏方跟風扇一樣，吹好玩的。",
         archetype: "landmine",
-        retort: "……你都不聽我講的話。",
+        retort: "他臉一垮，翻起去年的舊帳。",
       },
     ],
   },
@@ -854,9 +854,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-016-a",
-        text: "好，我回去查一下怎麼吃比較好。",
+        text: "空腹傷胃？空腹信謠言更傷。",
         archetype: "perfect",
-        retort: "對，飯後半小時吃最剛好。",
+        retort: "他語塞，臉紅了一下。",
       },
       {
         id: "guzhang-elder_health-016-b",
@@ -896,9 +896,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-016-h",
-        text: "這種說法網路上早就被闢謠了。",
+        text: "這些說法，跟你被騙那次一樣準。",
         archetype: "landmine",
-        retort: "……你手機看的都比較準就對了。",
+        retort: "他氣到講台語，收拾東西就走。",
       },
     ],
   },
@@ -910,9 +910,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-017-a",
-        text: "好，我洗耳恭聽，回去再查一次。",
+        text: "查這麼久，怎麼沒查你的偏方？",
         archetype: "perfect",
-        retort: "對，多聽多查，才不會被騙。",
+        retort: "他愣住，眉頭皺了一下。",
       },
       {
         id: "guzhang-elder_health-017-b",
@@ -952,9 +952,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-017-h",
-        text: "這種小事不用查啦，隨便吃。",
+        text: "查證這麼認真，怎麼還會被詐騙？",
         archetype: "landmine",
-        retort: "……我是關心你的身體耶。",
+        retort: "他臉一垮，說明年不用來了。",
       },
     ],
   },
@@ -966,9 +966,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-018-a",
-        text: "好舒服，好，我回去查泡法。",
+        text: "泡腳降火，先降降你的火氣吧。",
         archetype: "perfect",
-        retort: "對，比例抓好，效果最好。",
+        retort: "他語塞，找不到反駁的話。",
       },
       {
         id: "guzhang-elder_health-018-b",
@@ -1008,9 +1008,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-018-h",
-        text: "泡腳而已，有需要搞這麼大嗎。",
+        text: "泡腳降不了火，你血壓還是高。",
         archetype: "landmine",
-        retort: "……我是特地為你準備的。",
+        retort: "他臉一垮，狠狠瞪你一眼。",
       },
     ],
   },
@@ -1022,9 +1022,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-019-a",
-        text: "好喝，好，我回去查功效。",
+        text: "解百毒？先解一下你的偏聽吧。",
         archetype: "perfect",
-        retort: "查一下就知道，這湯很厲害。",
+        retort: "姑姑在旁邊憋笑憋很辛苦。",
       },
       {
         id: "guzhang-elder_health-019-b",
@@ -1064,9 +1064,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-019-h",
-        text: "這湯感覺沒什麼特別的功效啦。",
+        text: "解百毒，怎麼解不了你愛轉發？",
         archetype: "landmine",
-        retort: "……我熬三小時你這樣講。",
+        retort: "他氣到講台語，轉頭不說話。",
       },
     ],
   },
@@ -1078,9 +1078,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-020-a",
-        text: "好，我回去仔細查一下這篇。",
+        text: "這篇文章，跟你上次的謠言一樣。",
         archetype: "perfect",
-        retort: "對，查清楚以後吃東西更安心。",
+        retort: "他愣住，手指抓了抓後腦。",
       },
       {
         id: "guzhang-elder_health-020-b",
@@ -1120,9 +1120,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-020-h",
-        text: "這種文章LINE上面一堆都亂寫的。",
+        text: "這篇八成也是詐騙集團寫的。",
         archetype: "landmine",
-        retort: "……你連這個都不相信我。",
+        retort: "他臉一垮，別開臉不吭聲。",
       },
     ],
   },
