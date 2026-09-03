@@ -46,7 +46,11 @@ export function AdminApp() {
 
       <AdminTabs active={tab} onChange={changeTab} />
 
-      <div className="flex-1 overflow-y-auto pb-8">
+      {/* Page (not this div) is the scroll container — see AdminTabs/QuestionsTab
+       * for why: `overflow-y-auto` here would make it a scroll-container of
+       * record and break `position: sticky` on descendants (tab bar, filter
+       * bar) even though it never grows a scrollbar of its own. */}
+      <div className="flex-1 pb-8">
         {tab === "overview" && <OverviewTab />}
         {tab === "lives" && <LivesTab />}
         {tab === "bosses" && <BossesTab />}

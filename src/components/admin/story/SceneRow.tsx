@@ -22,32 +22,36 @@ export function SceneRow({ scene }: { scene: StoryScene }) {
         <span className={`rounded-full border px-2 py-0.5 text-xs font-medium ${KIND_CLASS[scene.kind]}`}>
           {KIND_LABEL[scene.kind]}
         </span>
-        <span className="text-xs text-text-muted tabular">{scene.id}</span>
+        <span className="text-xs text-text-muted font-mono tabular">{scene.id}</span>
       </div>
 
       {scene.kind === "narrative" && (
         <div>
-          {scene.header && <p className="text-sm text-gold mb-1">{scene.header}</p>}
-          {scene.lines.map((line, i) => (
-            <p key={i} className="text-sm text-text-muted">
-              {line}
-            </p>
-          ))}
+          {scene.header && <p className="text-xs text-gold mb-1.5">{scene.header}</p>}
+          {/* Mirrors the in-game SceneCard: narration lines inside the
+           * double-rule rpg-box dialogue frame. */}
+          <div className="rpg-box p-3 flex flex-col gap-1.5">
+            {scene.lines.map((line, i) => (
+              <p key={i} className="text-sm text-text">
+                {line}
+              </p>
+            ))}
+          </div>
         </div>
       )}
 
-      {scene.kind === "fight" && (
-        <FightSceneBody scene={scene} />
-      )}
+      {scene.kind === "fight" && <FightSceneBody scene={scene} />}
 
       {scene.kind === "rest" && (
         <div>
-          {scene.lines.map((line, i) => (
-            <p key={i} className="text-sm text-text-muted">
-              {line}
-            </p>
-          ))}
-          <p className="text-xs text-heal mt-1">全回血 + 特殊技補滿</p>
+          <div className="rpg-box p-3 flex flex-col gap-1.5">
+            {scene.lines.map((line, i) => (
+              <p key={i} className="text-sm text-text">
+                {line}
+              </p>
+            ))}
+          </div>
+          <p className="text-xs text-heal mt-1.5">全回血 + 特殊技補滿</p>
         </div>
       )}
     </div>
@@ -60,16 +64,25 @@ function FightSceneBody({ scene }: { scene: Extract<StoryScene, { kind: "fight" 
 
   return (
     <div className="flex items-start gap-3">
-      <GoldRingPortrait src={`/portraits/${scene.bossId}.svg`} alt={boss?.name ?? scene.bossId} size={40} />
-      <div className="text-sm text-text-muted flex-1">
-        <p className="text-text">{boss?.name ?? scene.bossId}</p>
-        {scene.hpOverride !== undefined && <p className="text-xs tabular">HP 覆蓋：{scene.hpOverride}</p>}
-        {extraLines.length > 0 && (
-          <ul className="text-xs list-disc pl-4">
+      <GoldRingPortrait src={`/portraits/${scene.bossId}.svg`} alt={boss?.name ?? scene.bossId} size={48} />
+      <div className="text-sm text-text-muted flex-1 min-w-0">
+        <p className="text-text font-medium">{boss?.name ?? scene.bossId}</p>
+        {(scene.hpOverride !== undefined || extraLines.length > 0) && (
+          <div className="flex flex-wrap gap-1 mt-1.5">
+            {scene.hpOverride !== undefined && (
+              <span className="rounded-full bg-hp-boss/20 border border-hp-boss/50 text-hp-boss px-2 py-0.5 text-xs tabular">
+                HP 覆蓋：{scene.hpOverride}
+              </span>
+            )}
             {extraLines.map((line, i) => (
-              <li key={i}>{line}</li>
+              <span
+                key={i}
+                className="rounded-full bg-gold/20 border border-gold/50 text-gold px-2 py-0.5 text-xs"
+              >
+                {line}
+              </span>
             ))}
-          </ul>
+          </div>
         )}
       </div>
     </div>

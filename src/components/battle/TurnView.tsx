@@ -1,6 +1,7 @@
 import { BossPortrait } from "@/components/battle/BossPortrait";
 import { DialogueBox } from "@/components/battle/DialogueBox";
 import { FollowUpBadge } from "@/components/battle/FollowUpBadge";
+import { GrudgeBadge } from "@/components/battle/GrudgeBadge";
 import { HpBar } from "@/components/battle/HpBar";
 import { OptionList } from "@/components/battle/OptionList";
 import { PlayerHud } from "@/components/battle/PlayerHud";
@@ -14,6 +15,10 @@ interface Props {
   life?: Life;
   actCaption?: string;
   summonedBoss?: Boss;
+  /** Set when the current question was injected via 三姑's 翻舊帳 gimmick
+   * (docs/CONTENT.md §4) — renders a gold badge next to the boss name plus
+   * this one-line caption under the question. */
+  grudgeCaption?: string;
   questionText: string;
   options: Option[];
   bossHp: number;
@@ -38,6 +43,7 @@ export function TurnView({
   life,
   actCaption,
   summonedBoss,
+  grudgeCaption,
   questionText,
   options,
   bossHp,
@@ -64,10 +70,12 @@ export function TurnView({
         <div className="flex-1 min-w-0">
           <HpBar label={boss.name} hp={bossHp} maxHp={bossMaxHp} variant="boss" />
         </div>
+        {grudgeCaption && <GrudgeBadge />}
       </div>
       {summonedBoss && <SummonNotice summonedBoss={summonedBoss} />}
       {followUp && <FollowUpBadge />}
       <DialogueBox text={questionText} speaker={boss.name} />
+      {grudgeCaption && <p className="text-center text-xs text-gold -mt-2">{grudgeCaption}</p>}
       {timerEndsAt && <TurnTimer endsAt={timerEndsAt} onExpire={onTimeout} />}
       <div className="flex-1 overflow-y-auto">
         <OptionList options={options} disabled={false} onPick={onPick} />

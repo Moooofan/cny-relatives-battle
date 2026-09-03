@@ -231,6 +231,9 @@ export interface TurnLog {
    * applied to `dealt`/`taken` this turn. 1 when there is no active life. */
   lifeDealtMult: number;
   lifeTakenMult: number;
+  /** true when this turn's question was injected via a boss's
+   * `reuseMeekQuestions` modifier — 三姑's 翻舊帳 gimmick (docs/CONTENT.md §4). */
+  grudge?: true;
 }
 
 export interface LastResolve {
@@ -301,4 +304,18 @@ export interface GameState {
    * `summonedBossId`. Cleared once consumed. Serialisable (plain string).
    */
   pendingSummonBossId?: BossId;
+  /**
+   * Internal bookkeeping: question ids injected at the front of the deck by
+   * `startBoss` when the current boss has `activeModifiers.reuseMeekQuestions`
+   * (up to 3, drawn from `meekQuestionIds`, may belong to ANY boss's pool).
+   * Recomputed on every `startBoss` call; empty for bosses without the flag.
+   */
+  reusedQuestionIds?: string[];
+  /**
+   * Set by `drawQuestion` for exactly the turn whose drawn question id is in
+   * `reusedQuestionIds` — 三姑's 翻舊帳 gimmick (docs/CONTENT.md §4).
+   * `originalBossId` is the bossId the question originally belonged to, or
+   * `null` for a generic (bossId-less) question. Cleared on every other draw.
+   */
+  grudge?: { questionId: string; originalBossId: BossId | null };
 }

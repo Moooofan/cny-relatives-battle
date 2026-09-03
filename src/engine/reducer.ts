@@ -124,16 +124,37 @@ function countFightsUpTo(scenes: StoryScene[], sceneIndex: number): number {
   return scenes.slice(0, sceneIndex + 1).filter((s) => s.kind === "fight").length;
 }
 
-function reorderForReuseMeek(
-  deckIds: string[],
+/**
+ * 三姑's 翻舊帳 gimmick (docs/CONTENT.md §4): when `modifiers.reuseMeekQuestions`
+ * is set, pull up to 3 questions the player answered meekly earlier in the run
+ * — most recent first, deduped, skipping ids this boss already asked or that
+ * don't exist in content — and place them at the front of the (already
+ * shuffled) deck. Those ids may belong to ANY boss's exclusive pool, not just
+ * this one, which is the whole point: the boss "remembers" what you said to
+ * someone else.
+ */
+function buildDeckWithReuseInjection(
+  content: ContentBundle,
   modifiers: BossModifiers,
-  meekQuestionIds: string[]
-): string[] {
-  if (!modifiers.reuseMeekQuestions) return deckIds;
-  const meekSet = new Set(meekQuestionIds);
-  const front = deckIds.filter((id) => meekSet.has(id));
-  const rest = deckIds.filter((id) => !meekSet.has(id));
-  return [...front, ...rest];
+  shuffledPoolIds: string[],
+  meekQuestionIds: string[],
+  askedByThisBoss: Set<string>
+): { deck: string[]; reusedQuestionIds: string[] } {
+  if (!modifiers.reuseMeekQuestions) return { deck: shuffledPoolIds, reusedQuestionIds: [] };
+
+  const seen = new Set<string>();
+  const reusedQuestionIds: string[] = [];
+  for (let i = meekQuestionIds.length - 1; i >= 0 && reusedQuestionIds.length < 3; i--) {
+    const id = meekQuestionIds[i];
+    if (seen.has(id) || askedByThisBoss.has(id)) continue;
+    seen.add(id);
+    if (!content.questions.some((q) => q.id === id)) continue;
+    reusedQuestionIds.push(id);
+  }
+
+  const reusedSet = new Set(reusedQuestionIds);
+  const rest = shuffledPoolIds.filter((id) => !reusedSet.has(id));
+  return { deck: [...reusedQuestionIds, ...rest], reusedQuestionIds };
 }
 
 // ---------------------------------------------------------------------------
@@ -222,6 +243,7 @@ export function createGame(
     summonUsed: false,
     followUp: false,
     activeModifiers: {},
+    reusedQuestionIds: [],
   };
 
   if (mode === "story") {
@@ -270,7 +292,16 @@ export function startBoss(content: ContentBundle, state: GameState): GameState {
 
   const pool = buildQuestionPool(content, boss);
   const [shuffled, rng1] = shuffle(pool.map((q) => q.id), state.rng);
-  const deck = reorderForReuseMeek(shuffled, activeModifiers, state.meekQuestionIds);
+  const askedByThisBoss = new Set(
+    state.log.filter((entry) => entry.bossId === boss.id).map((entry) => entry.questionId)
+  );
+  const { deck, reusedQuestionIds } = buildDeckWithReuseInjection(
+    content,
+    activeModifiers,
+    shuffled,
+    state.meekQuestionIds,
+    askedByThisBoss
+  );
 
   const started: GameState = {
     ...state,
@@ -278,6 +309,8 @@ export function startBoss(content: ContentBundle, state: GameState): GameState {
     bossMaxHp,
     activeModifiers,
     deck,
+    reusedQuestionIds,
+    grudge: undefined,
     rng: rng1,
     summonUsed: false,
     // A fresh fight starts a fresh combo — `maxCombo` still tracks the best
@@ -312,15 +345,21 @@ function trySummon(content: ContentBundle, state: GameState): GameState | undefi
 
 export function drawQuestion(content: ContentBundle, state: GameState): GameState {
   const summoned = trySummon(content, state);
-  if (summoned) return summoned;
+  // A summon draw never carries the 翻舊帳 badge — leave `reuseMeekQuestions`
+  // injection out of the summon pool entirely, but still resolve any stale
+  // grudge from the previous turn.
+  if (summoned) return { ...summoned, grudge: undefined };
 
   const boss = findBoss(content, state.bossQueue[state.bossIndex]);
   let deck = state.deck;
   let rng = state.rng;
   if (deck.length === 0) {
+    // The reuse injection only ever happens once, in `startBoss`; once the
+    // initial deck (injected front + shuffled pool) runs dry mid-fight, a
+    // reshuffle of the plain pool is enough.
     const pool = buildQuestionPool(content, boss);
     const [shuffled, nextRng] = shuffle(pool.map((q) => q.id), rng);
-    deck = reorderForReuseMeek(shuffled, state.activeModifiers, state.meekQuestionIds);
+    deck = shuffled;
     rng = nextRng;
   }
 
@@ -329,7 +368,11 @@ export function drawQuestion(content: ContentBundle, state: GameState): GameStat
   if (!question) throw new Error(`Unknown question id in deck: ${questionId}`);
   const [optionOrder, rng2] = shuffle(question.options.map((o) => o.id), rng);
 
-  return { ...state, deck: rest, currentQuestionId: questionId, optionOrder, rng: rng2, phase: "turn" };
+  const grudge = (state.reusedQuestionIds ?? []).includes(questionId)
+    ? { questionId, originalBossId: question.bossId ?? null }
+    : undefined;
+
+  return { ...state, deck: rest, currentQuestionId: questionId, optionOrder, rng: rng2, phase: "turn", grudge };
 }
 
 // ---------------------------------------------------------------------------
@@ -409,6 +452,7 @@ function resolveTurn(
     summonedBossId: state.pendingSummonBossId,
     lifeDealtMult,
     lifeTakenMult,
+    grudge: state.grudge ? true : undefined,
   };
 
   return {

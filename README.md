@@ -49,6 +49,27 @@ pnpm og             # 本機重新產生 public/og.png（需要系統中文字�
 - `src/components/battle/`：RPG 戰鬥畫面；`src/components/admin/`：後台。
 - 設計 tokens：`design-system/過年大戰三姑六婆/MASTER.md` 與 `src/app/globals.css`。
 
+## Supabase（選用）
+
+站台預設純靜態、無後端，戰績只存在自己裝置的 localStorage。接上 Supabase 後，每場結束會**匿名**上傳一筆結果，換來全球排行榜（`/leaderboard/`）；未來後台也能看到所有人的結果。這是選用功能：不設定環境變數時整個功能自動關閉，`pnpm build` 一樣能成功。
+
+**建立**：
+1. 在 [supabase.com](https://supabase.com) 建立新專案。
+2. 跑 migration（二選一）：
+   - `supabase link --project-ref <your-project-ref>` 後 `supabase db push`
+   - 或直接用 psql／SQL Editor 貼上 `supabase/migrations/20260903000000_results.sql` 內容執行
+3. 在專案設定 → API 頁面取得 Project URL 與 `anon` public key。
+4. 複製 `.env.example` 為 `.env.local`，填入：
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=xxxxx
+   ```
+5. 部署到 Vercel 時，在專案設定 → Environment Variables 加上同樣兩個值，重新 deploy。
+
+**收集的資料**：每場結束會送出結果代碼、模式、分數、稱號、人生代碼（`L01`–`L30`，不含任何個資）、回合數／連擊／HP 等統計，以及本機隨機產生、與任何帳號無關的裝置代碼（`dzsg:client`）。不收集姓名、Email、IP 或裝置指紋等個資。資料表 `public.results` 啟用 RLS，只開放匿名 **新增**；所有讀取（排行榜、人生戰績）都經過唯讀的 SQL function（`leaderboard`／`daily_leaderboard`／`life_stats`／`boss_stats`／`question_stats`／`global_counts`），前端與外部都無法直接查詢原始表。
+
+**停用**：把 `.env.local`（或 Vercel 上的環境變數）兩個 `NEXT_PUBLIC_SUPABASE_*` 值移除即可，`/leaderboard/` 會顯示「排行榜尚未開放」，其餘功能不受影響。
+
 ## 部署
 
 正式站：https://cny-relatives-battle.vercel.app （Vercel 專案 `cny-relatives-battle`，靜態輸出）。更新：`vercel deploy --prod --yes`。

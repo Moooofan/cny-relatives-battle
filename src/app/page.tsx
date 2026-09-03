@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
-import { Dices, CalendarCheck, BookOpen, Swords, LibraryBig, Volume2, VolumeX } from "lucide-react";
+import { Dices, CalendarCheck, BookOpen, Swords, LibraryBig, Trophy, Volume2, VolumeX } from "lucide-react";
 import { CONTENT } from "@/content";
 import { findLife } from "@/content/lives";
 import { LifeIcon } from "@/components/common/LifeIcon";
@@ -12,6 +13,7 @@ import { useGameStore } from "@/store/gameStore";
 import { useLifeStore } from "@/store/lifeStore";
 import { useDailyStore, isDailyDoneToday } from "@/store/dailyStore";
 import { useSettingsStore } from "@/store/settingsStore";
+import { flushQueue } from "@/lib/resultsSync";
 import type { Mode } from "@/engine/types";
 
 const MODE_LABELS: Record<Mode, string> = {
@@ -32,6 +34,10 @@ export default function TitlePage() {
 
   const dailyDone = isDailyDoneToday(daily);
   const inProgress = gameState && gameState.phase !== "result";
+
+  useEffect(() => {
+    void flushQueue();
+  }, []);
 
   const checkpointScene = storyCheckpoint != null ? CONTENT.scenes[storyCheckpoint] : undefined;
   const storyLabel = checkpointScene ? `續玩第 ${checkpointScene.act} 幕` : "開始故事";
@@ -103,10 +109,16 @@ export default function TitlePage() {
       </div>
 
       <div className="flex items-center justify-between pt-2">
-        <Link href="/bosses" className="flex items-center gap-2 text-sm text-text-muted">
-          <LibraryBig size={18} />
-          親戚圖鑑
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/bosses" className="flex items-center gap-2 text-sm text-text-muted">
+            <LibraryBig size={18} />
+            親戚圖鑑
+          </Link>
+          <Link href="/leaderboard" className="flex items-center gap-2 text-sm text-text-muted">
+            <Trophy size={18} />
+            排行榜
+          </Link>
+        </div>
         <button type="button" onClick={toggleSfx} className="flex items-center gap-2 text-sm text-text-muted" aria-pressed={sfx}>
           {sfx ? <Volume2 size={18} /> : <VolumeX size={18} />}
           音效{sfx ? "開" : "關"}

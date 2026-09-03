@@ -25,7 +25,7 @@ function matches(q: Question, filter: QuestionFilterState): boolean {
 }
 
 function bossLabel(bossId: string | undefined): string {
-  if (bossId === undefined) return "generic";
+  if (bossId === undefined) return "共用";
   return CONTENT.bosses.find((b) => b.id === bossId)?.name ?? bossId;
 }
 
@@ -48,6 +48,7 @@ function question8Headers(): string[] {
 export function QuestionsTab() {
   const [filter, setFilter] = useState<QuestionFilterState>({ boss: "all", topic: "all", archetype: "all", search: "" });
   const [page, setPage] = useState(0);
+  const [openIds, setOpenIds] = useState<Set<string>>(new Set());
 
   const filtered = useMemo(() => CONTENT.questions.filter((q) => matches(q, filter)), [filter]);
 
@@ -59,37 +60,71 @@ export function QuestionsTab() {
     setPage(0);
   }
 
+  function toggle(id: string) {
+    setOpenIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
   return (
     <Card>
-      <SectionTitle>題庫（共 {CONTENT.questions.length} 題）</SectionTitle>
-      <QuestionFilters bosses={CONTENT.bosses} value={filter} onChange={handleFilterChange} />
+      {/* Sticky sub-header: stays under the sticky tab bar (~54px) while the
+       * page scrolls, so filters/count/export/展開收合 stay reachable across
+       * a 1000-row list without scrolling back to the top. */}
+      <div className="sticky top-[54px] z-20 -mx-4 -mt-4 bg-surface px-4 pt-4 pb-3 border-b border-border flex flex-col gap-2">
+        <SectionTitle>題庫（共 {CONTENT.questions.length} 題）</SectionTitle>
+        <QuestionFilters bosses={CONTENT.bosses} value={filter} onChange={handleFilterChange} />
 
-      <div className="flex items-center justify-between flex-wrap gap-2">
-        <p className="text-sm text-text-muted tabular">符合條件：{filtered.length} 題</p>
-        <div className="flex gap-2">
-          <button
-            type="button"
-            onClick={() => downloadJSON("questions.json", filtered)}
-            className="flex items-center gap-1 rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
-          >
-            <Download size={14} /> 匯出 JSON
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              const { headers, rows } = exportRows(filtered);
-              downloadCSV("questions.csv", headers, rows);
-            }}
-            className="flex items-center gap-1 rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
-          >
-            <Download size={14} /> 匯出 CSV
-          </button>
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <p className="text-sm text-text-muted tabular">符合條件：{filtered.length} 題</p>
+          <div className="flex gap-2 flex-wrap">
+            <button
+              type="button"
+              onClick={() => setOpenIds(new Set(pageItems.map((q) => q.id)))}
+              className="rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
+            >
+              展開本頁
+            </button>
+            <button
+              type="button"
+              onClick={() => setOpenIds(new Set())}
+              className="rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
+            >
+              收合本頁
+            </button>
+            <button
+              type="button"
+              onClick={() => downloadJSON("questions.json", filtered)}
+              className="flex items-center gap-1 rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
+            >
+              <Download size={14} /> 匯出 JSON
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                const { headers, rows } = exportRows(filtered);
+                downloadCSV("questions.csv", headers, rows);
+              }}
+              className="flex items-center gap-1 rounded-btn border border-border bg-surface-2 px-3 py-1.5 text-xs text-text"
+            >
+              <Download size={14} /> 匯出 CSV
+            </button>
+          </div>
         </div>
       </div>
 
       <div className="flex flex-col gap-1.5">
         {pageItems.map((q) => (
-          <QuestionRow key={q.id} question={q} bossLabel={bossLabel(q.bossId)} />
+          <QuestionRow
+            key={q.id}
+            question={q}
+            bossLabel={bossLabel(q.bossId)}
+            open={openIds.has(q.id)}
+            onToggle={() => toggle(q.id)}
+          />
         ))}
         {pageItems.length === 0 && <p className="text-sm text-text-muted italic py-4">沒有符合條件的題目。</p>}
       </div>

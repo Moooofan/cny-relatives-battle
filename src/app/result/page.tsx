@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Trophy } from "lucide-react";
 import { CONTENT } from "@/content";
 import { findLife } from "@/content/lives";
 import { useGameStore } from "@/store/gameStore";
@@ -10,6 +12,7 @@ import { useResultsStore } from "@/store/resultsStore";
 import { useDailyStore } from "@/store/dailyStore";
 import { deriveWon } from "@/components/admin/resultsMath";
 import { CLAMPED_SCORE_CAPTION, clampScoreForDisplay } from "@/lib/displayScore";
+import { enqueueResult, flushQueue } from "@/lib/resultsSync";
 import { PrimaryButton } from "@/components/common/PrimaryButton";
 import { LinkButton } from "@/components/common/LinkButton";
 import { TopicBars } from "@/components/result/TopicBars";
@@ -35,6 +38,11 @@ export default function ResultPage() {
   useEffect(() => {
     if (!state || !result) return;
     markResultSeen();
+    const alreadyRecorded = useResultsStore.getState().results[0]?.resultCode === result.resultCode;
+    const won = deriveWon(
+      { mode: state.mode, bossesDefeated: state.bossesDefeated, endingId: result.storyEndingId },
+      state.bossQueue.length
+    );
     addResult({
       resultCode: result.resultCode,
       lifeId: state.lifeId,
@@ -43,10 +51,7 @@ export default function ResultPage() {
       score: result.score,
       rankTitle: result.rank.title,
       endingId: result.storyEndingId,
-      won: deriveWon(
-        { mode: state.mode, bossesDefeated: state.bossesDefeated, endingId: result.storyEndingId },
-        state.bossQueue.length
-      ),
+      won,
       bossesDefeated: state.bossesDefeated,
       turns: state.turns,
       maxCombo: state.maxCombo,
@@ -54,6 +59,10 @@ export default function ResultPage() {
       seed: state.seed,
       at: new Date().toISOString(),
     });
+    if (!alreadyRecorded) {
+      enqueueResult({ state, result, lifeCode: life?.code ?? null, won });
+      void flushQueue();
+    }
     if (state.mode === "daily") markDailyDone(result.score, result.rank.title);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [result?.resultCode]);
@@ -108,6 +117,11 @@ export default function ResultPage() {
       >
         結果代碼：{result.resultCode}（點擊複製）
       </button>
+
+      <Link href="/leaderboard" className="flex items-center justify-center gap-1.5 text-xs text-text-muted py-1">
+        <Trophy size={14} />
+        看排行榜
+      </Link>
 
       <TopicBars log={state.log} />
 

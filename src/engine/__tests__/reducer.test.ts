@@ -230,6 +230,73 @@ describe("summonAtHalf", () => {
   });
 });
 
+describe("reuseMeekQuestions grudge (三姑's 翻舊帳)", () => {
+  function reuseMeekState(overrides: Partial<GameState>): GameState {
+    return {
+      mode: "random",
+      seed: "grudge-test",
+      rng: 0,
+      phase: "intro",
+      bossQueue: ["ama"],
+      bossIndex: 0,
+      bossHp: 0,
+      bossMaxHp: 0,
+      playerHp: 100,
+      playerMaxHp: 100,
+      lifeId: null,
+      combo: 0,
+      maxCombo: 0,
+      deck: [],
+      optionOrder: [],
+      specials: { skip: 1, heal: 1 },
+      log: [],
+      bossesDefeated: 0,
+      damageDealt: 0,
+      turns: 0,
+      landmineCount: 0,
+      meekQuestionIds: [],
+      summonUsed: false,
+      followUp: false,
+      activeModifiers: {},
+      ...overrides,
+    };
+  }
+
+  test("a question the player answered meekly against a DIFFERENT boss (xiao-biaodi) is injected as ama's first question, with grudge set and logged", () => {
+    // xiao-biaodi-comparison-001 is xiao-biaodi's own exclusive question — not
+    // part of ama's pool (food_push topic) at all.
+    let s = reuseMeekState({ meekQuestionIds: ["xiao-biaodi-comparison-001"] });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s); // intro -> turn (ama, reused question first)
+
+    expect(s.phase).toBe("turn");
+    expect(s.currentQuestionId).toBe("xiao-biaodi-comparison-001");
+    expect(s.reusedQuestionIds).toContain("xiao-biaodi-comparison-001");
+    expect(s.grudge).toEqual({ questionId: "xiao-biaodi-comparison-001", originalBossId: "xiao-biaodi" });
+
+    s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "perfect"));
+    expect(s.log[s.log.length - 1].grudge).toBe(true);
+
+    // The grudge clears once the next (non-injected) question is drawn.
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s); // retort -> turn (normal pool question)
+    expect(s.grudge).toBeUndefined();
+  });
+
+  test("a boss without reuseMeekQuestions never injects a foreign meek question", () => {
+    // sanjiuma has no reuseMeekQuestions modifier; its pool is salary_job only,
+    // so xiao-biaodi-comparison-001 could never appear there unless injected.
+    let s = reuseMeekState({
+      bossQueue: ["sanjiuma"],
+      meekQuestionIds: ["xiao-biaodi-comparison-001"],
+    });
+    s = advance(FIXTURE_CONTENT_NO_LIVES, s); // intro -> turn (sanjiuma)
+
+    expect(s.phase).toBe("turn");
+    expect(s.currentQuestionId).not.toBe("xiao-biaodi-comparison-001");
+    expect(s.reusedQuestionIds ?? []).toHaveLength(0);
+    expect(s.grudge).toBeUndefined();
+  });
+});
+
 describe("gauntlet heal / rest flow", () => {
   function gauntletState(overrides: Partial<GameState>): GameState {
     return {

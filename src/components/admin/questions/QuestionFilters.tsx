@@ -29,7 +29,7 @@ export function QuestionFilters({
         onChange={(e) => onChange({ ...value, boss: e.target.value })}
       >
         <option value="all">全部關主</option>
-        <option value="generic">generic（共用）</option>
+        <option value="generic">共用（無專屬關主）</option>
         {bosses.map((b) => (
           <option key={b.id} value={b.id}>
             {b.name}
@@ -55,7 +55,7 @@ export function QuestionFilters({
         value={value.archetype}
         onChange={(e) => onChange({ ...value, archetype: e.target.value })}
       >
-        <option value="all">全部 archetype</option>
+        <option value="all">全部應對類型</option>
         {ARCHETYPES.map((a: Archetype) => (
           <option key={a} value={a}>
             {ARCHETYPE_TABLE[a].label}

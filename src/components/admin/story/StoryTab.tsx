@@ -14,7 +14,10 @@ export function StoryTab() {
             <SectionTitle>
               第{act.act}幕 · {act.title}
             </SectionTitle>
-            <p className="text-xs text-text-muted">{act.header}</p>
+            {/* Header caption styled like the in-game SceneCard's header line
+             * (text-xs text-gold above the rpg-box narration frame). */}
+            <p className="text-xs text-gold">{act.header}</p>
+            <p className="text-xs text-text-muted tabular">{scenes.length} 個場景</p>
             <div className="flex flex-col gap-2">
               {scenes.map((scene) => (
                 <SceneRow key={scene.id} scene={scene} />
@@ -29,8 +32,8 @@ export function StoryTab() {
         <div className="flex flex-col gap-2">
           {CONTENT.storyEndings.map((ending) => (
             <div key={ending.id} className="rounded-box border border-border bg-surface-2/40 p-3">
-              <p className="text-sm text-gold tabular">
-                {ending.id} · {ending.title}
+              <p className="text-sm text-gold">
+                <span className="font-mono tabular">{ending.id}</span> · {ending.title}
               </p>
               {ending.lines.map((line, i) => (
                 <p key={i} className="text-xs text-text-muted">
@@ -44,7 +47,11 @@ export function StoryTab() {
 
       <Card>
         <SectionTitle>稱號等級（分數門檻）</SectionTitle>
-        <div className="overflow-x-auto">
+
+        {/* Desktop: aligned table. Mobile: one card per rank — a 4-mode row
+         * doesn't fit 375px without either truncation or horizontal scroll,
+         * so it's restructured into a label/value grid instead. */}
+        <div className="hidden md:block overflow-x-auto">
           <table className="text-xs tabular w-full border-collapse min-w-[560px]">
             <thead>
               <tr className="text-left text-text-muted">
@@ -71,6 +78,25 @@ export function StoryTab() {
               ))}
             </tbody>
           </table>
+        </div>
+
+        <div className="flex flex-col gap-2 md:hidden">
+          {CONTENT.rankTiers.map((tier) => (
+            <div key={tier.rank} className="rounded-box border border-border bg-surface-2/40 p-3">
+              <div className="flex items-baseline gap-2">
+                <span className="text-gold tabular text-sm">Rank {tier.rank}</span>
+                <span className="text-text text-sm">{tier.title}</span>
+              </div>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1 mt-2 text-xs">
+                {Object.entries(MODE_LABELS).map(([mode, label]) => (
+                  <div key={mode} className="flex items-center justify-between tabular">
+                    <span className="text-text-muted">{label}</span>
+                    <span className="text-text">{tier.minScore[mode as keyof typeof MODE_LABELS]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </Card>
     </div>

@@ -47,11 +47,16 @@ export function BossAdminCard({
       </div>
 
       {modifierLines.length > 0 && (
-        <ul className="text-xs text-text-muted list-disc pl-4">
+        <div className="flex flex-wrap gap-1">
           {modifierLines.map((line, i) => (
-            <li key={i}>{line}</li>
+            <span
+              key={i}
+              className="rounded-full bg-gold/20 border border-gold/50 text-gold px-2 py-0.5 text-xs"
+            >
+              {line}
+            </span>
           ))}
-        </ul>
+        </div>
       )}
 
       <div className="text-xs text-text-muted flex flex-col gap-0.5">

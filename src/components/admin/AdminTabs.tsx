@@ -11,7 +11,7 @@ export const TABS: { key: TabKey; label: string }[] = [
 
 export function AdminTabs({ active, onChange }: { active: TabKey; onChange: (key: TabKey) => void }) {
   return (
-    <nav className="flex gap-1 overflow-x-auto border-b border-border pb-2 -mx-4 px-4 sm:mx-0 sm:px-0">
+    <nav className="sticky top-0 z-30 flex gap-1 overflow-x-auto border-b border-border bg-bg pb-2 pt-2 -mx-4 px-4 -mt-2 sm:mx-0 sm:px-0">
       {TABS.map((tab) => {
         const isActive = tab.key === active;
         return (

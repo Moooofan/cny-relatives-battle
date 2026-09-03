@@ -66,6 +66,11 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
     const summonedBoss = state.pendingSummonBossId
       ? CONTENT.bosses.find((b) => b.id === state.pendingSummonBossId)
       : undefined;
+    const grudgeCaption = state.grudge
+      ? state.grudge.originalBossId
+        ? `三姑：你剛剛不是這樣回${CONTENT.bosses.find((b) => b.id === state.grudge!.originalBossId)?.name ?? "別人"}的嗎？`
+        : "三姑：你剛剛不是這樣說的嗎？"
+      : undefined;
 
     return (
       <TurnView
@@ -73,6 +78,7 @@ export function BattlePhase({ state, life, timerEndsAt, onFight, onContinue, onP
         life={life}
         actCaption={actCaption}
         summonedBoss={summonedBoss}
+        grudgeCaption={grudgeCaption}
         questionText={question.text}
         options={options}
         bossHp={state.bossHp}

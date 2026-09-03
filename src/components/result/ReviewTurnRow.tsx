@@ -32,6 +32,11 @@ export function ReviewTurnRow({ entry, index }: { entry: TurnLog; index: number 
           第 {index + 1} 回合 · {boss.name}
           {entry.summonedBossId && "（召喚）"}
         </span>
+        {entry.grudge && (
+          <span className="rounded-full bg-gold/20 border border-gold px-2 py-0.5 text-[10px] text-gold shrink-0">
+            翻舊帳
+          </span>
+        )}
       </div>
 
       <p className="text-sm mb-2 leading-relaxed">{question.text}</p>
