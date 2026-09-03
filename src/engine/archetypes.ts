@@ -11,7 +11,14 @@ export interface ArchetypeStats {
   taken: number;
   /** "inc" = combo +1, "hold" = keep combo, "reset" = combo → 0 */
   combo: "inc" | "hold" | "reset";
-  /** whether the boss heals (amount = boss.modifiers.healOnLandmine ?? DEFAULT_LANDMINE_HEAL) */
+  /**
+   * Whether this archetype heals the boss by default. Only ever true for a
+   * (hypothetical) archetype whose base behaviour is to heal — `landmine`
+   * itself is `false` (it deals the biggest hit of any option). A boss can
+   * still opt in to healing on a landmine specifically via
+   * `boss.modifiers.healOnLandmine` (see reducer.ts `resolveTurn`); that
+   * override is independent of this flag.
+   */
   healsBoss: boolean;
   label: string;
   /** short explanation for the review screen */
@@ -52,16 +59,16 @@ export const ARCHETYPE_TABLE: Record<Archetype, ArchetypeStats> = {
     hint: "想耍嘴皮結果冷場，全桌沉默三秒。",
   },
   landmine: {
-    dealt: 0,
-    taken: 35,
+    dealt: 35,
+    taken: 15,
     combo: "reset",
-    healsBoss: true,
+    healsBoss: false,
     label: "踩雷",
-    hint: "戳到痛處，親戚反而更有力氣了。",
+    hint: "戳到痛處，場面炸了：對方大傷，你也不好過。",
   },
 };
 
-export const DEFAULT_LANDMINE_HEAL = 10;
+export const DEFAULT_LANDMINE_HEAL = 0;
 
 /** Consecutive perfects needed to trigger a 暴擊 (×CRIT_MULTIPLIER) */
 export const CRIT_COMBO = 3;

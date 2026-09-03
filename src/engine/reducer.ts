@@ -434,7 +434,9 @@ function resolveTurn(
   const taken = Math.round(
     base.taken * TIER_POWER[boss.tier] * (mods.takenMultiplier?.[option.archetype] ?? 1) * lifeTakenMult
   );
-  const healed = base.healsBoss ? mods.healOnLandmine ?? DEFAULT_LANDMINE_HEAL : 0;
+  // landmine no longer heals the boss by default (DEFAULT_LANDMINE_HEAL = 0);
+  // a boss can still opt in via modifiers.healOnLandmine (only ama does).
+  const healed = option.archetype === "landmine" ? mods.healOnLandmine ?? DEFAULT_LANDMINE_HEAL : 0;
 
   const bossHp = clamp(state.bossHp - dealt + healed, 0, state.bossMaxHp);
   const playerHp = clamp(state.playerHp - taken, 0, state.playerMaxHp);

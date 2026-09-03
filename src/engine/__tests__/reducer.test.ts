@@ -95,7 +95,7 @@ describe("worked example (docs/PLAN.md §1): sanjiuma hard x1.5", () => {
 });
 
 describe("landmine", () => {
-  test("heals the boss and resets combo", () => {
+  test("deals the biggest hit to the boss, resets combo, and does not heal by default", () => {
     let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "landmine-combo", { bossId: "sanjiuma" });
     s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
@@ -104,21 +104,27 @@ describe("landmine", () => {
     s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBeforeLandmine = s.bossHp;
+    const playerHpBefore = s.playerHp;
     s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "landmine"));
 
     expect(s.combo).toBe(0);
-    expect(s.bossHp).toBe(Math.min(130, hpBeforeLandmine + DEFAULT_LANDMINE_HEAL));
+    // sanjiuma has no healOnLandmine override, so DEFAULT_LANDMINE_HEAL (0)
+    // applies: the boss just takes the full 35 landmine hit.
+    expect(DEFAULT_LANDMINE_HEAL).toBe(0);
+    expect(hpBeforeLandmine - s.bossHp).toBe(35);
+    // base taken 15 * hard power 1.5 = 22.5 -> round 23 (no takenMultiplier override here)
+    expect(playerHpBefore - s.playerHp).toBe(23);
     expect(s.landmineCount).toBe(1);
   });
 
-  test("xiao-biaodi doubles landmine damage taken", () => {
+  test("xiao-biaodi doubles landmine recoil (damage taken)", () => {
     let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "biaodi-landmine", { bossId: "xiao-biaodi" });
     s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBefore = s.playerHp;
     s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "landmine"));
-    // base taken 35 * easy power 1.0 * takenMultiplier.landmine 2 = 70
-    expect(hpBefore - s.playerHp).toBe(70);
+    // base taken 15 * easy power 1.0 * takenMultiplier.landmine 2 = 30
+    expect(hpBefore - s.playerHp).toBe(30);
   });
 });
 
@@ -133,13 +139,43 @@ describe("ama modifiers", () => {
     expect(hpBefore - s.bossHp).toBe(13);
   });
 
-  test("heals 20 (not the default 10) on landmine", () => {
+  test("heals 20 (not the default 0) on landmine, an opt-in override", () => {
     let s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "ama-landmine", { bossId: "ama" });
     s = advance(FIXTURE_CONTENT_NO_LIVES, s);
 
     const hpBefore = s.bossHp;
     s = applyOption(FIXTURE_CONTENT_NO_LIVES, s, findOptionId(FIXTURE_CONTENT_NO_LIVES, s.currentQuestionId!, "landmine"));
-    expect(s.bossHp).toBe(Math.min(130, hpBefore + 20));
+    // FIXTURE_AMA has no dealtMultiplier.landmine override, so dealt is the
+    // full base 35; healOnLandmine 20 still applies on top of that.
+    expect(s.bossHp).toBe(Math.min(130, hpBefore - 35 + 20));
+  });
+});
+
+describe("ama's real-content landmine override (docs/BALANCE.md v2)", () => {
+  test("reduces landmine damage dealt, increases recoil taken, and still heals 20", async () => {
+    const { CONTENT } = await import("@/content");
+    let s = createGame(CONTENT, "random", "ama-real-landmine", { bossId: "ama" });
+    s = advance(CONTENT, s);
+    // Neutralize life modifiers (createGame picks a random life per seed)
+    // so this test only exercises ama's own boss modifiers.
+    s = { ...s, lifeId: null };
+
+    // Chip the boss down first (two `deflect` turns, unaffected by ama's
+    // modifiers) so the boss isn't sitting at full HP — otherwise the
+    // upcoming heal would clamp at bossMaxHp and mask the dealt reduction.
+    for (let i = 0; i < 2; i++) {
+      s = applyOption(CONTENT, s, findOptionId(CONTENT, s.currentQuestionId!, "deflect"));
+      s = advance(CONTENT, s);
+    }
+
+    const bossHpBefore = s.bossHp;
+    const playerHpBefore = s.playerHp;
+    s = applyOption(CONTENT, s, findOptionId(CONTENT, s.currentQuestionId!, "landmine"));
+
+    // dealt: round(35 * dealtMultiplier.landmine 0.2) = 7; healed 20 (override)
+    expect(s.bossHp).toBe(Math.min(s.bossMaxHp, bossHpBefore - 7 + 20));
+    // taken: round(15 * normal power 1.2 * takenMultiplier.landmine 1.5) = 27
+    expect(playerHpBefore - s.playerHp).toBe(27);
   });
 });
 

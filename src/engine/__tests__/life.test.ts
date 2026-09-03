@@ -28,8 +28,8 @@ describe("life: damage multipliers", () => {
     s = advance(FIXTURE_CONTENT, s);
     const hpBefore = s.playerHp;
     s = applyOption(FIXTURE_CONTENT, s, findOptionId(FIXTURE_CONTENT, s.currentQuestionId!, "landmine"));
-    // base 35 * hard power 1.5 * life-fixture-a's boss.ama.landmine.taken 1.5
-    expect(hpBefore - s.playerHp).toBe(Math.round(35 * 1.5 * 1.5));
+    // base 15 * hard power 1.5 * life-fixture-a's boss.ama.landmine.taken 1.5
+    expect(hpBefore - s.playerHp).toBe(Math.round(15 * 1.5 * 1.5));
     expect(s.log[s.log.length - 1].lifeTakenMult).toBe(1.5);
   });
 

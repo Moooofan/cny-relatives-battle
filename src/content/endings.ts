@@ -22,37 +22,37 @@ export const RANK_TIERS: RankTier[] = [
     rank: 2,
     title: "紅包拿了就跑",
     blurb: "戰績不重要，錢有拿到就好，明年再戰。",
-    minScore: { random: 20, daily: 20, story: 25, gauntlet: 10 },
+    minScore: { random: 60, daily: 60, story: 185, gauntlet: 235 },
   },
   {
     rank: 3,
     title: "尷尬微笑專家",
     blurb: "你的嘴角撐了三天沒垮，這也是一種實力。",
-    minScore: { random: 60, daily: 60, story: 100, gauntlet: 60 },
+    minScore: { random: 110, daily: 110, story: 210, gauntlet: 370 },
   },
   {
     rank: 4,
     title: "勉強撐到初三",
     blurb: "有輸有贏，家族群組裡沒有人提到你，這就是勝利。",
-    minScore: { random: 120, daily: 120, story: 200, gauntlet: 320 },
+    minScore: { random: 270, daily: 270, story: 245, gauntlet: 580 },
   },
   {
     rank: 5,
     title: "四兩撥千斤達人",
     blurb: "每一題都被你笑著帶過，親戚們回家還在想到底被回了什麼。",
-    minScore: { random: 300, daily: 300, story: 260, gauntlet: 440 },
+    minScore: { random: 320, daily: 320, story: 320, gauntlet: 780 },
   },
   {
     rank: 6,
     title: "家族群組流量密碼",
     blurb: "你的回答被截圖傳遍三個群組，表姊偷偷存起來。",
-    minScore: { random: 350, daily: 350, story: 420, gauntlet: 725 },
+    minScore: { random: 370, daily: 370, story: 440, gauntlet: 965 },
   },
   {
     rank: 7,
     title: "三姑六婆終結者",
     blurb: "三姑親自幫你倒茶。明年，換你問。",
-    minScore: { random: 400, daily: 400, story: 460, gauntlet: 825 },
+    minScore: { random: 420, daily: 420, story: 490, gauntlet: 1040 },
   },
 ];
 

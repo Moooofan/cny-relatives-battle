@@ -9,7 +9,10 @@ export default {
   topics: ["food_push", "marriage", "religion"],
   order: 7,
   modifiers: {
-    dealtMultiplier: { perfect: 0.5 },
+    // 對阿嬤踩雷幾乎沒用，她只會更擔心你：傷害打折、反傷加重，
+    // 而且她會心疼到回血——「溫柔地贏」才是對付阿嬤的正解。
+    dealtMultiplier: { perfect: 0.5, landmine: 0.2 },
+    takenMultiplier: { landmine: 1.5 },
     healOnLandmine: 20,
   },
   emoji: "👵",

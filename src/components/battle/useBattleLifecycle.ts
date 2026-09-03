@@ -30,7 +30,10 @@ export function useBattleLifecycle(state: GameState | null, mode: Mode): void {
     if (!state || state.mode !== mode) return;
     if (state.phase === "retort" && state.lastResolve) {
       const r = state.lastResolve;
-      const name: SfxName = r.crit ? "crit" : r.taken >= 30 ? "landmine" : r.dealt > 0 ? "hit" : "hurt";
+      // landmine is now the biggest hit against the boss (not the biggest
+      // self-damage), so key the cue off the archetype itself rather than a
+      // taken-damage threshold that no longer lines up with its numbers.
+      const name: SfxName = r.crit ? "crit" : r.archetype === "landmine" ? "landmine" : r.dealt > 0 ? "hit" : "hurt";
       playSfx(name, sfxEnabled);
     } else if (state.phase === "bossDefeated") {
       playSfx("win", sfxEnabled);

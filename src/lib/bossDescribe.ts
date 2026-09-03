@@ -31,10 +31,13 @@ export function describeBossModifiers(modifiers: BossModifiers | undefined): str
   }
   for (const [archetype, mult] of Object.entries(modifiers.takenMultiplier ?? {})) {
     const label = ARCHETYPE_TABLE[archetype as keyof typeof ARCHETYPE_TABLE].label;
-    lines.push(`你「${label}」時受到的傷害 ${pct(mult)}`);
+    // landmine's "taken" is recoil from your own counterattack, not the
+    // boss hitting harder — call it out as 反傷 to avoid confusion.
+    const verb = archetype === "landmine" ? "反傷" : "受到的傷害";
+    lines.push(`你「${label}」時${verb} ${pct(mult)}`);
   }
   if (modifiers.healOnLandmine !== undefined && modifiers.healOnLandmine !== DEFAULT_LANDMINE_HEAL) {
-    lines.push(`你踩雷時它回復 ${modifiers.healOnLandmine} HP（一般為 ${DEFAULT_LANDMINE_HEAL}）`);
+    lines.push(`你踩雷時它意外回復 ${modifiers.healOnLandmine} HP（多數關主踩雷不會回血）`);
   }
   if (modifiers.followUpOnMeek) lines.push("你乖乖回答時，它會立刻追問一題");
   if (modifiers.summonAtHalf) lines.push("HP 低於一半時，會召喚一位你打過的親戚支援");

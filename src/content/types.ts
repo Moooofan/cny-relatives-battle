@@ -93,7 +93,8 @@ export interface BossModifiers {
   dealtMultiplier?: Partial<Record<Archetype, number>>;
   /** 玩家受傷倍率（依 archetype）。例：小表弟 landmine 2 */
   takenMultiplier?: Partial<Record<Archetype, number>>;
-  /** 踩雷時關主回血量，預設 10。阿嬤 20 */
+  /** 踩雷時關主回血量，預設 0（踩雷是玩家最強的反擊，一般不會幫關主回血）。
+   * 少數關主可選擇性覆寫：阿嬤 20（對阿嬤裝可憐踩雷幾乎沒用，她只會更擔心你）。 */
   healOnLandmine?: number;
   /** 三舅媽：玩家 meek 時同回合立刻追問一題（不重新計時器重置為 full） */
   followUpOnMeek?: boolean;

@@ -27,12 +27,17 @@ export function describeLifeModifiers(life: Life, bosses: Boss[]): string[] {
   const lines: string[] = [];
   const m = life.modifiers;
 
+  // For `landmine`, "taken" is recoil damage from the counterattack itself
+  // (dealt is still damage against the boss), so it reads as 反傷 rather
+  // than plain 受傷 to avoid implying the boss is the one hitting back.
+  const takenLabel = (archetype: string) => (archetype === "landmine" ? "反傷" : "受傷");
+
   for (const [topic, scale] of Object.entries(m.topic ?? {})) {
     for (const [archetype, v] of Object.entries(scale ?? {})) {
       const label = ARCHETYPE_TABLE[archetype as keyof typeof ARCHETYPE_TABLE].label;
       const topicLabel = TOPIC_LABELS[topic as Topic];
       if (v?.dealt !== undefined) lines.push(`「${topicLabel}」題目：${label} 傷害 ${pct(v.dealt)}`);
-      if (v?.taken !== undefined) lines.push(`「${topicLabel}」題目：${label} 受傷 ${pct(v.taken)}`);
+      if (v?.taken !== undefined) lines.push(`「${topicLabel}」題目：${label} ${takenLabel(archetype)} ${pct(v.taken)}`);
     }
   }
 
@@ -41,7 +46,7 @@ export function describeLifeModifiers(life: Life, bosses: Boss[]): string[] {
     for (const [archetype, v] of Object.entries(scale ?? {})) {
       const label = ARCHETYPE_TABLE[archetype as keyof typeof ARCHETYPE_TABLE].label;
       if (v?.dealt !== undefined) lines.push(`對「${bossName}」：${label} 傷害 ${pct(v.dealt)}`);
-      if (v?.taken !== undefined) lines.push(`對「${bossName}」：${label} 受傷 ${pct(v.taken)}`);
+      if (v?.taken !== undefined) lines.push(`對「${bossName}」：${label} ${takenLabel(archetype)} ${pct(v.taken)}`);
     }
   }
 
