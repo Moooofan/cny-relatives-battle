@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-001-a",
-        text: "小公司好啊，年終是老闆親手發的，表哥的是系統發的。",
+        text: "升經理有意義嗎？他不是說想離職？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "你！他才沒有！你亂講什麼！",
       },
       {
         id: "sanjiuma-comparison-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-001-h",
-        text: "經理？他上次不是跟我說做得很累想離職？",
+        text: "升經理，還是舅舅公司自己人輪流？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你說什麼！我跟你講他很爭氣！",
       },
     ],
   },

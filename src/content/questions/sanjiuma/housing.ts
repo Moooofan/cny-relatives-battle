@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-001-a",
-        text: "對啊，我房東說我是他最孝順的孩子。",
+        text: "至少我沒有一間房，管三十年還在管我。",
         archetype: "perfect",
-        retort: "……你這樣講我都不知道要怎麼接。",
+        retort: "……（舅媽臉色瞬間僵住，說不出話）",
       },
       {
         id: "sanjiuma-housing-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-001-h",
-        text: "舅媽你那間是三十年前兩百萬買的吧，換你現在買買看。",
+        text: "妳那間三十年前的房，換現在妳買得起？",
         archetype: "landmine",
-        retort: "我們那時候多辛苦你知道嗎！",
+        retort: "……（舅媽聲音發抖，你這什麼態度！）",
       },
     ],
   },

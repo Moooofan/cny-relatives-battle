@@ -31,9 +31,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-002-a",
-        text: "調整到我都不好意思跟舅媽算。",
+        text: "調薪幅度，妳問這個是要幫我加薪嗎？",
         archetype: "perfect",
-        retort: "你這孩子，嘴巴越來越厲害了。",
+        retort: "舅媽翻白眼，隨便你怎麼想。",
       },
       {
         id: "sanjiuma-salary_job-002-b",
@@ -73,7 +73,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-002-h",
-        text: "舅媽你自己都退休領勞保了還問？",
+        text: "妳自己退休領勞保了，還好意思問？",
         archetype: "landmine",
         retort: "你說什麼！我這是關心你！",
       },
@@ -87,9 +87,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-003-a",
-        text: "叫『比表哥公司低調』有限公司。",
+        text: "公司名字不重要，重要的是不靠關係進的。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽把手機螢幕轉暗）",
       },
       {
         id: "sanjiuma-salary_job-003-b",
@@ -129,9 +129,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-003-h",
-        text: "反正不是舅舅那種靠關係的公司。",
+        text: "反正不像舅舅那種靠關係養的公司。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你嘛卡差不多咧！他是憑實力的！",
       },
     ],
   },
@@ -143,9 +143,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-004-a",
-        text: "六個月喔？那我幫表哥算算利息。",
+        text: "六個月，是他厲害，還是舅舅公司自己人？",
         archetype: "perfect",
-        retort: "……你這孩子，算得比會計還快。",
+        retort: "……（舅媽轉頭跟阿姨聊別的了）",
       },
       {
         id: "sanjiuma-salary_job-004-b",
@@ -185,9 +185,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-004-h",
-        text: "六個月是因為在舅舅公司上班吧。",
+        text: "六個月年終，是不是在舅舅公司才有？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽氣到說起台語罵人）",
       },
     ],
   },
@@ -199,9 +199,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-005-a",
-        text: "沒有加班費，所以我很少加班，賺時間。",
+        text: "沒加班費，所以我很少加班，妳兒子呢？",
         archetype: "perfect",
-        retort: "……你這孩子，算盤打得真精。",
+        retort: "……（舅媽轉頭找別桌講話）",
       },
       {
         id: "sanjiuma-salary_job-005-b",
@@ -241,9 +241,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-005-h",
-        text: "責任制根本就是不想付加班費的藉口。",
+        text: "責任制根本是慣老闆凹員工的藉口。",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "你這孩子，白養你這麼多年！",
       },
     ],
   },
@@ -255,9 +255,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-006-a",
-        text: "有提啊，我打算靠自己退休，不麻煩表哥。",
+        text: "自提退休金，總比靠兒子養老實在。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……舅媽臉一僵，說你亂講。",
       },
       {
         id: "sanjiuma-salary_job-006-b",
@@ -297,7 +297,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-006-h",
-        text: "舅媽你退休金領那麼多還好意思問？",
+        text: "妳退休金領那麼多，還好意思問我？",
         archetype: "landmine",
         retort: "你說什麼！我這是關心你！",
       },
@@ -311,9 +311,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-007-a",
-        text: "有啊，我專買套牢股，跟緣分一樣長情。",
+        text: "有買股票，妳問這個是想抽成嗎？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽沒接話，喝茶壓驚）",
       },
       {
         id: "sanjiuma-salary_job-007-b",
@@ -353,9 +353,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-007-h",
-        text: "舅媽你不是去年才被套牢還在哭？",
+        text: "妳去年不是才被套牢在那邊哭？",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "……（舅媽瞪著你，眼眶紅了）",
       },
     ],
   },
@@ -367,9 +367,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-008-a",
-        text: "存款不多，但夠買表哥一顆平安符。",
+        text: "存款不多，但沒欠誰人情，妳懂嗎？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "舅媽乾笑兩聲，改扒飯。",
       },
       {
         id: "sanjiuma-salary_job-008-b",
@@ -409,9 +409,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-008-h",
-        text: "舅媽你的存款不是都被表哥拿去周轉？",
+        text: "妳的存款，不是都被他拿去周轉？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你信不信我現在就打電話問他！",
       },
     ],
   },
@@ -423,9 +423,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-009-a",
-        text: "小公司好，我認識全部同事，表哥認識誰？",
+        text: "小公司好，至少同事不是靠關係塞的。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽轉頭滑手機，沒接話）",
       },
       {
         id: "sanjiuma-salary_job-009-b",
@@ -467,7 +467,7 @@ export default [
         id: "sanjiuma-salary_job-009-h",
         text: "反正不是靠關係進去的小公司。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼態度！我這是關心他！",
       },
     ],
   },
@@ -479,9 +479,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-010-a",
-        text: "我們不同公司，我靠自己調薪比較踏實。",
+        text: "不同公司，我靠自己調薪，妳兒子靠誰？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽臉一僵，含糊帶過。",
       },
       {
         id: "sanjiuma-salary_job-010-b",
@@ -521,9 +521,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-010-h",
-        text: "表哥調薪還不是舅舅點頭就有。",
+        text: "他調薪，還不是舅舅點頭就有？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼意思！臉都變了！",
       },
     ],
   },
@@ -535,9 +535,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-011-a",
-        text: "轉正了，而且是靠實力，不是靠關係。",
+        text: "轉正靠實力，不是靠一通電話講的。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
       },
       {
         id: "sanjiuma-salary_job-011-b",
@@ -577,9 +577,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-011-h",
-        text: "反正不像表哥靠舅舅一句話就轉正。",
+        text: "反正不像他靠舅舅一句話就轉正。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽臉色一沉，沒再說話）",
       },
     ],
   },
@@ -591,9 +591,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-012-a",
-        text: "剛好夠包一個讓舅媽驚豔的紅包。",
+        text: "年終數字別問，問了妳會嫌他少。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴越來越厲害。",
+        retort: "……（舅媽愣住，喝了口茶）",
       },
       {
         id: "sanjiuma-salary_job-012-b",
@@ -633,9 +633,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-012-h",
-        text: "反正不像表哥的年終是舅舅簽的。",
+        text: "反正不像他的年終是舅舅簽的。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "夠了！你這孩子怎麼這樣講話！",
       },
     ],
   },
@@ -647,9 +647,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-013-a",
-        text: "考公職？我現在的工作已經很穩，謝謝。",
+        text: "公職穩定，但沒有妳兒子那種靠山穩。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽瞪你一眼，改扒飯。",
       },
       {
         id: "sanjiuma-salary_job-013-b",
@@ -689,9 +689,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-013-h",
-        text: "考公職？跟靠舅舅安插的工作不一樣。",
+        text: "考公職？跟靠舅舅安插不一樣好嗎。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你嘛卡差不多咧！他是憑實力的！",
       },
     ],
   },
@@ -703,9 +703,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-014-a",
-        text: "準時下班，我的時間比表哥的加班費值錢。",
+        text: "準時下班，我的時間不用靠誰施捨。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……舅媽愣了一下，說你別亂猜。",
       },
       {
         id: "sanjiuma-salary_job-014-b",
@@ -745,9 +745,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-014-h",
-        text: "責任制根本是慣老闆凹員工的藉口。",
+        text: "問下班時間，妳查勤查得比公司還勤。",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "你欠教訓是不是，我跟你媽講！",
       },
     ],
   },
@@ -759,9 +759,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-015-a",
-        text: "有買，我保的是心臟，因為常被舅媽嚇到。",
+        text: "保單先不買，怕買到妳兒子的業績。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "舅媽哼一聲，你少在那邊會講。",
       },
       {
         id: "sanjiuma-salary_job-015-b",
@@ -801,7 +801,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-015-h",
-        text: "表哥保單那麼多不就是舅媽的業績。",
+        text: "他保單那麼多，不就是妳的業績？",
         archetype: "landmine",
         retort: "你說什麼！我這是關心他！",
       },
@@ -815,9 +815,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-016-a",
-        text: "養得起，還能養一隻貓，比表哥浪漫。",
+        text: "養得起自己，不用靠誰公司養活。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽比個「呵呵」，轉頭夾菜。",
       },
       {
         id: "sanjiuma-salary_job-016-b",
@@ -859,7 +859,7 @@ export default [
         id: "sanjiuma-salary_job-016-h",
         text: "至少不是靠舅舅公司養活的。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽摔筷子，全場安靜了）",
       },
     ],
   },
@@ -871,9 +871,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-017-a",
-        text: "有接一點，剛好夠付表哥聚餐的錢。",
+        text: "接案賺外快，不用靠誰牽線介紹。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽嘴硬：我是為你好而已。",
       },
       {
         id: "sanjiuma-salary_job-017-b",
@@ -913,9 +913,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-017-h",
-        text: "表哥副業做那麼大是不是靠舅舅牽線。",
+        text: "他副業做那麼大，是不是舅舅牽線？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你這孩子是白眼狼是不是！",
       },
     ],
   },
@@ -927,9 +927,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-018-a",
-        text: "沒分紅，但同事感情比股票值錢。",
+        text: "沒分紅，但沒人能拿股票堵我的嘴。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽拿長輩身分壓：沒大沒小。",
       },
       {
         id: "sanjiuma-salary_job-018-b",
@@ -969,9 +969,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-018-h",
-        text: "表哥分紅那麼多是不是舅舅塞的股票。",
+        text: "他分紅那麼多，是不是舅舅塞的股票？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你說什麼！我跟你講他很爭氣！",
       },
     ],
   },
@@ -983,9 +983,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-019-a",
-        text: "舅媽眼睛真利，這叫做關心到位。",
+        text: "偷看別人手機，是關心還是查勤？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "……（舅媽對表哥使眼色求救）",
       },
       {
         id: "sanjiuma-salary_job-019-b",
@@ -1025,7 +1025,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-019-h",
-        text: "舅媽你也太愛看別人手機了吧。",
+        text: "妳這麼愛看別人手機，管太多了吧？",
         archetype: "landmine",
         retort: "你這孩子怎麼這樣講話！",
       },
@@ -1039,9 +1039,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-020-a",
-        text: "能養，而且我養的人會覺得很幸福。",
+        text: "養家靠實力，不是靠誰塞紅包幫忙。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽笑僵在臉上，說改天再聊。",
       },
       {
         id: "sanjiuma-salary_job-020-b",
@@ -1083,7 +1083,7 @@ export default [
         id: "sanjiuma-salary_job-020-h",
         text: "反正不是靠舅舅塞紅包才能養家。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼意思！他自己賺的！",
       },
     ],
   },
@@ -1095,9 +1095,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-021-a",
-        text: "漲了不少，漲幅比表哥的髮際線快。",
+        text: "薪水漲幅，妳問這個是想比較誰而已？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽突然說：菜要涼了，快吃。",
       },
       {
         id: "sanjiuma-salary_job-021-b",
@@ -1139,7 +1139,7 @@ export default [
         id: "sanjiuma-salary_job-021-h",
         text: "反正不是靠舅舅一句話就調薪的。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽臉色瞬間僵住，說不出話）",
       },
     ],
   },

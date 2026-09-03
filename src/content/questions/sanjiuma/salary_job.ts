@@ -9,9 +9,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-001-a",
-        text: "破十萬喔？那今年表哥的紅包包大一點，我來幫忙領。",
+        text: "破十萬？那先問問他是不是想離職了。",
         archetype: "perfect",
-        retort: "你這孩子……嘴巴怎麼跟你媽一樣厲害。",
+        retort: "你！他才沒有！你亂講什麼！",
       },
       {
         id: "sanjiuma-salary_job-001-b",
@@ -51,9 +51,9 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-001-h",
-        text: "表哥領十萬，是因為在舅舅公司上班吧？",
+        text: "破十萬，是他厲害，還是在舅舅公司？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你欠教訓是不是，我跟你媽講！",
       },
     ],
   },

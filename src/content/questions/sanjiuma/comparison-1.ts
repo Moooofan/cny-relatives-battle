@@ -31,9 +31,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-002-a",
-        text: "我這台是骨董，開出去比新車更吸引目光。",
+        text: "他換車，妳比較開心還是我該開心？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽轉頭跟阿姨聊別的了）",
       },
       {
         id: "sanjiuma-comparison-002-b",
@@ -73,9 +73,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-002-h",
-        text: "表哥新車該不會是舅舅出的頭期款。",
+        text: "頭期款是舅舅出的吧，問問看？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你說什麼！臉都綠了你知道嗎！",
       },
     ],
   },
@@ -87,9 +87,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-003-a",
-        text: "沒出國，但我的心已經環遊世界很多次。",
+        text: "滑雪傷腿，妳兒子那雙腿保得起嗎？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……舅媽愣了一下，改口說注意安全。",
       },
       {
         id: "sanjiuma-comparison-003-b",
@@ -129,9 +129,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-003-h",
-        text: "表哥去滑雪該不會是舅舅出的旅費。",
+        text: "機票錢該不會也是舅舅刷卡的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼意思！臉都變了！",
       },
     ],
   },
@@ -143,9 +143,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-004-a",
-        text: "我的運動是躲舅媽的問題，強度很夠。",
+        text: "他去健身房，是想甩開誰的碎念？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "舅媽瞪你，隨便你怎麼說。",
       },
       {
         id: "sanjiuma-comparison-004-b",
@@ -185,9 +185,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-004-h",
-        text: "表哥辦會員該不會是舅舅幫忙付的。",
+        text: "會員費該不會又是舅舅簽單的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽臉色一沉，沒再說話）",
       },
     ],
   },
@@ -199,9 +199,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-005-a",
-        text: "在進修，我修的是人生的抗壓學分。",
+        text: "證照多不代表本事多，妳懂吧？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽假裝去倒茶不接話）",
       },
       {
         id: "sanjiuma-comparison-005-b",
@@ -241,9 +241,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-005-h",
-        text: "表哥證照那麼多是不是舅媽花錢送考的。",
+        text: "證照是妳花錢送考的吧，說啊？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你嘛卡差不多咧！誰跟你講的！",
       },
     ],
   },
@@ -255,9 +255,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-006-a",
-        text: "我朋友都是未來的老闆，我先卡位認識。",
+        text: "認識老闆，還不是要靠自己升上去？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽哼一聲，你少會講。",
       },
       {
         id: "sanjiuma-comparison-006-b",
@@ -297,9 +297,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-006-h",
-        text: "表哥那些老闆朋友該不會都是舅舅介紹的。",
+        text: "那些老闆該不會全是舅舅牽線的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼態度！我在跟你講他！",
       },
     ],
   },
@@ -311,9 +311,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-007-a",
-        text: "我包的是誠意，數字寫在心裡最實在。",
+        text: "紅包比誠意，妳確定妳兒子贏得了？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽轉頭找別桌講話）",
       },
       {
         id: "sanjiuma-comparison-007-b",
@@ -353,9 +353,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-007-h",
-        text: "表哥包八千該不會是舅舅先塞給他的。",
+        text: "八千是舅舅先塞給他包的吧？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "夠了！你這孩子怎麼這樣講話！",
       },
     ],
   },
@@ -367,9 +367,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-008-a",
-        text: "用五年了，跟舅媽的碎念一樣耐操。",
+        text: "換手機頻率跟他換工作念頭差不多快？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "……舅媽臉一僵，說你亂講。",
       },
       {
         id: "sanjiuma-comparison-008-b",
@@ -409,9 +409,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-008-h",
-        text: "表哥新手機該不會是舅舅刷卡買的。",
+        text: "新手機是不是舅舅刷卡買單的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你欠教訓是不是，我跟你媽講！",
       },
     ],
   },
@@ -423,9 +423,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-009-a",
-        text: "我的才藝是把場面聊得比鋼琴還動聽。",
+        text: "才藝比場面話，妳兒子場面話比較多。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽沒接話，喝茶壓驚）",
       },
       {
         id: "sanjiuma-comparison-009-b",
@@ -465,9 +465,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-009-h",
-        text: "那小孩是不是靠補習班硬塞出來的。",
+        text: "那小孩會彈琴，還是補習班硬塞的？",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "……（舅媽摔筷子，全場安靜了）",
       },
     ],
   },
@@ -479,9 +479,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-010-a",
-        text: "我以前考的是人緣第一名，比較實用。",
+        text: "考第一名，還不是妳在旁邊盯出來的？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽乾笑兩聲，改扒飯。",
       },
       {
         id: "sanjiuma-comparison-010-b",
@@ -521,9 +521,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-010-h",
-        text: "那小孩考第一該不會是家教硬塞出來的。",
+        text: "第一名是家教餵出來的，還是真本事？",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "你這孩子是白眼狼是不是！",
       },
     ],
   },
@@ -535,9 +535,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-011-a",
-        text: "我沒股票，但我的存在感就是紅利。",
+        text: "分紅多不多，看的是實力還是姓氏？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽轉頭滑手機，沒接話）",
       },
       {
         id: "sanjiuma-comparison-011-b",
@@ -577,9 +577,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-011-h",
-        text: "表哥的分紅該不會是舅舅塞的股票。",
+        text: "分紅該不會又是舅舅塞的乾股？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你說什麼！我跟你講他很爭氣！",
       },
     ],
   },
@@ -591,9 +591,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-012-a",
-        text: "我停路邊，順便訓練停車技術，比較實用。",
+        text: "市中心車位，是本事還是妳兒子的靠山？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽臉一僵，含糊帶過。",
       },
       {
         id: "sanjiuma-comparison-012-b",
@@ -633,9 +633,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-012-h",
-        text: "表哥車位該不會也是舅舅買的。",
+        text: "那個車位，該不會也是舅舅買的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這孩子怎麼這樣講話！",
       },
     ],
   },
@@ -647,9 +647,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-013-a",
-        text: "我學歷普通，但社會歷練是研究所等級。",
+        text: "研究所是他考的，還是妳託人考的？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
       },
       {
         id: "sanjiuma-comparison-013-b",
@@ -689,9 +689,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-013-h",
-        text: "表哥考上研究所該不會是舅舅打點的。",
+        text: "研究所名額，該不會舅舅打點過？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼意思！他自己賺的！",
       },
     ],
   },
@@ -703,9 +703,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-014-a",
-        text: "有計畫，我打算先環遊我家附近，累積經驗。",
+        text: "出國進修，還是出國散心避開妳？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽愣住，喝了口茶）",
       },
       {
         id: "sanjiuma-comparison-014-b",
@@ -745,9 +745,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-014-h",
-        text: "表哥出國進修學費是不是舅舅出的。",
+        text: "學費是舅舅出的吧，妳最清楚。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽臉色瞬間僵住，說不出話）",
       },
     ],
   },
@@ -759,9 +759,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-015-a",
-        text: "我送的是真心，比名牌包更難仿冒。",
+        text: "送名牌包，是真心還是刷卡送的？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽瞪你一眼，改扒飯。",
       },
       {
         id: "sanjiuma-comparison-015-b",
@@ -801,9 +801,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-015-h",
-        text: "表哥買名牌包該不會是舅舅刷卡的。",
+        text: "名牌包錢，是不是舅舅結的帳？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽聲音發抖，說不出話）",
       },
     ],
   },
@@ -815,9 +815,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-016-a",
-        text: "我的興趣是聽舅媽講表哥的事，很療癒。",
+        text: "打高爾夫，是興趣還是應酬給妳看的？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "……舅媽愣了一下，說你別亂猜。",
       },
       {
         id: "sanjiuma-comparison-016-b",
@@ -857,9 +857,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-016-h",
-        text: "表哥打高爾夫該不會是舅舅出的會費。",
+        text: "會費是不是舅舅幫他繳的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "去，去叫你媽出來講清楚！",
       },
     ],
   },
@@ -871,9 +871,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-017-a",
-        text: "我的存摺位數少，但幸福感位數很多。",
+        text: "七位數是他賺的，還是妳每年偷塞的？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽哼一聲，你少在那邊會講。",
       },
       {
         id: "sanjiuma-comparison-017-b",
@@ -913,9 +913,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-017-h",
-        text: "表哥七位數是不是舅舅每年偷偷塞的。",
+        text: "存款七位數，舅舅補了幾位數？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你嘛卡差不多咧！他自己存的！",
       },
     ],
   },
@@ -927,9 +927,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-018-a",
-        text: "我的頭銜是自由，比副理還難升等。",
+        text: "副理頭銜，是實績還是舅舅一句話？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽比個「呵呵」，轉頭夾菜。",
       },
       {
         id: "sanjiuma-comparison-018-b",
@@ -969,9 +969,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-018-h",
-        text: "表哥副理該不會是舅舅打點好的職位。",
+        text: "副理是升的，還是舅舅指定的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼態度，明年別來了！",
       },
     ],
   },
@@ -983,9 +983,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-019-a",
-        text: "我考核不重要，重要的是我從不缺席聚餐。",
+        text: "連三年甲等，是他強，還是自己人強？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽嘴硬：我是為你好而已。",
       },
       {
         id: "sanjiuma-comparison-019-b",
@@ -1025,9 +1025,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-019-h",
-        text: "表哥連續甲等該不會是舅舅公司自己人。",
+        text: "甲等是考的，還是舅舅公司自己蓋的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽翻舊帳：你小時候……）",
       },
     ],
   },
@@ -1039,9 +1039,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-020-a",
-        text: "我抽到跟舅媽聊天的機會，價值連城。",
+        text: "抽到機票，還是妳早幫他寫好籤？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "舅媽拿長輩身分壓：沒大沒小。",
       },
       {
         id: "sanjiuma-comparison-020-b",
@@ -1081,9 +1081,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-020-h",
-        text: "表哥抽到機票該不會是內定的吧。",
+        text: "尾牙機票，是抽的還是內定的？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你！他才沒有！你亂講什麼！",
       },
     ],
   },
@@ -1095,9 +1095,9 @@ export default [
     options: [
       {
         id: "sanjiuma-comparison-021-a",
-        text: "我朋友都在基層，但基層才是社會的骨幹。",
+        text: "社團全老闆，還是妳幫他鋪好的路？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽對表哥使眼色求救）",
       },
       {
         id: "sanjiuma-comparison-021-b",
@@ -1137,9 +1137,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-021-h",
-        text: "表哥那些老闆朋友該不會都是舅媽介紹的。",
+        text: "那些老闆，是不是妳親自介紹的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽手一抖，湯匙掉了）",
       },
     ],
   },

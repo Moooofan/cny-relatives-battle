@@ -27,9 +27,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-022-a",
-        text: "我沒車貸沒房貸，喘氣特別順暢。",
+        text: "他不喘，是因為有人幫他分攤吧？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽轉頭滑手機，沒接話）",
       },
       {
         id: "sanjiuma-housing-022-b",
@@ -69,9 +69,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-022-h",
-        text: "他繳得輕鬆是因為舅舅幫忙分攤吧。",
+        text: "他繳得輕鬆，是不是舅舅幫忙分攤？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "夠了！你這孩子怎麼這樣講話！",
       },
     ],
   },
@@ -83,9 +83,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-023-a",
-        text: "謝謝舅媽，但我想靠自己的實力買。",
+        text: "私房錢？舅舅知道妳有這筆帳嗎？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "舅媽臉一僵，含糊帶過。",
       },
       {
         id: "sanjiuma-housing-023-b",
@@ -119,15 +119,15 @@ export default [
       },
       {
         id: "sanjiuma-housing-023-g",
-        text: "投資不重要，重要的是舅媽的心意。",
+        text: "私房錢？舅媽是要拉我入股嗎？",
         archetype: "backfire",
         retort: "……（沒人接話，空氣安靜了）",
       },
       {
         id: "sanjiuma-housing-023-h",
-        text: "私房錢該不會是舅舅不知道的帳戶吧。",
+        text: "私房錢，是不是舅舅不知道的帳戶？",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "你欠教訓是不是，我跟你媽講！",
       },
     ],
   },
@@ -139,9 +139,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-024-a",
-        text: "一小時，剛好拿來構思人生規劃。",
+        text: "通勤一小時，剛好躲過妳一小時碎念。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽沒聽懂，繼續問下去）",
       },
       {
         id: "sanjiuma-housing-024-b",
@@ -181,9 +181,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-024-h",
-        text: "反正不是每個人都能住舅舅買的房子。",
+        text: "反正不是每個人都能住舅舅買的房。",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽摔筷子，全場安靜了）",
       },
     ],
   },
@@ -195,9 +195,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-025-a",
-        text: "謝謝舅媽，但我想留一份債務給自己扛。",
+        text: "跟舅舅借錢？他那個辦法妳最清楚。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽愣住，喝了口茶）",
       },
       {
         id: "sanjiuma-housing-025-b",
@@ -231,15 +231,15 @@ export default [
       },
       {
         id: "sanjiuma-housing-025-g",
-        text: "買房不重要，重要的是家人情義。",
+        text: "我跟舅舅稱兄道弟，就不用還了吧。",
         archetype: "backfire",
         retort: "……（沒人接話，空氣安靜了）",
       },
       {
         id: "sanjiuma-housing-025-h",
-        text: "反正舅舅的錢還不是靠關係賺的。",
+        text: "舅舅那些辦法，是靠關係換來的吧？",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "你這孩子是白眼狼是不是！",
       },
     ],
   },
@@ -251,9 +251,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-026-a",
-        text: "還沒結婚，先努力存錢比較實際。",
+        text: "聘金拿來當頭期款，那結婚圖什麼？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽瞪你一眼，改扒飯。",
       },
       {
         id: "sanjiuma-housing-026-b",
@@ -293,9 +293,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-026-h",
-        text: "反正這種事最後還是舅舅說了算。",
+        text: "反正這種事，最後還不是妳說了算？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你說什麼！我跟你講他很爭氣！",
       },
     ],
   },
@@ -307,9 +307,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-027-a",
-        text: "改建好啊，順便把回憶重新裝潢一次。",
+        text: "都更能賺，妳是等著分回憶還是分錢？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……舅媽愣了一下，說你別亂猜。",
       },
       {
         id: "sanjiuma-housing-027-b",
@@ -349,7 +349,7 @@ export default [
       },
       {
         id: "sanjiuma-housing-027-h",
-        text: "反正到最後還不是舅舅決定分配。",
+        text: "都更分配，到最後還不是妳決定？",
         archetype: "landmine",
         retort: "你這孩子怎麼這樣講話！",
       },
@@ -363,9 +363,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-028-a",
-        text: "驗了，缺失清單比表哥的還完整。",
+        text: "驗屋仔細，是因為錢多還是心虛？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽哼一聲，你少在那邊會講。",
       },
       {
         id: "sanjiuma-housing-028-b",
@@ -405,9 +405,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-028-h",
-        text: "表哥驗屋仔細是因為舅舅出的錢多吧。",
+        text: "他驗屋那麼仔細，是舅舅出的錢多吧？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼意思！他自己賺的！",
       },
     ],
   },
@@ -419,9 +419,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-029-a",
-        text: "座向不重要，只要住的人心正就是好風水。",
+        text: "座向不重要，重要的是誰在裡面住得心安。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽比個「呵呵」，轉頭夾菜。",
       },
       {
         id: "sanjiuma-housing-029-b",
@@ -461,9 +461,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-029-h",
-        text: "表哥請風水老師是不是舅舅出的錢。",
+        text: "請風水老師的錢，是不是舅舅出的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "……（舅媽臉色瞬間僵住，說不出話）",
       },
     ],
   },
@@ -475,9 +475,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-030-a",
-        text: "買不起，但我看得懂，這也是一種能力。",
+        text: "買不起沒關係，妳那間也不是妳付清的吧。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽嘴硬：我是為你好而已。",
       },
       {
         id: "sanjiuma-housing-030-b",
@@ -517,9 +517,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-030-h",
-        text: "反正你自己那間也不是靠自己買的。",
+        text: "妳那間房，是舅舅出的，還是妳賺的？",
         archetype: "landmine",
-        retort: "我們那時候多辛苦你知道嗎！",
+        retort: "……（舅媽聲音發抖，說不出話）",
       },
     ],
   },
@@ -531,9 +531,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-031-a",
-        text: "有簽，條款比表哥的婚前協議還清楚。",
+        text: "有簽約啊，不像有些人靠關係就有房。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的很會講。",
+        retort: "舅媽拿長輩身分壓：沒大沒小。",
       },
       {
         id: "sanjiuma-housing-031-b",
@@ -573,9 +573,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-031-h",
-        text: "反正舅媽的房子也不是靠自己賺的吧。",
+        text: "妳那間房，該不會也是舅舅出的？",
         archetype: "landmine",
-        retort: "我們那時候多辛苦你知道嗎！",
+        retort: "去，去叫你媽出來講清楚！",
       },
     ],
   },
@@ -587,9 +587,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-032-a",
-        text: "先租後買比較穩，我喜歡循序漸進。",
+        text: "先租後買比較穩，不用靠誰先墊錢。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "……（舅媽對表哥使眼色求救）",
       },
       {
         id: "sanjiuma-housing-032-b",
@@ -629,9 +629,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-032-h",
-        text: "表哥直接買是不是舅舅先出頭期款。",
+        text: "他直接買，是不是舅舅先出頭期款？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "你這什麼態度，明年別來了！",
       },
     ],
   },
@@ -643,9 +643,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-033-a",
-        text: "沒有，但我有一間叫做租來的家，很溫暖。",
+        text: "收租第二間，是本事還是家裡本來就多間？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "舅媽笑僵在臉上，說改天再聊。",
       },
       {
         id: "sanjiuma-housing-033-b",
@@ -685,9 +685,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-033-h",
-        text: "第二間房該不會也是舅舅出的頭期款。",
+        text: "第二間房，是不是也是舅舅出的？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "……（舅媽翻舊帳：你小時候……）",
       },
     ],
   },
@@ -699,9 +699,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-034-a",
-        text: "有申請，候補號碼比表哥的股票代號好記。",
+        text: "候補社宅，總比靠關係插隊實在。",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽突然說：菜要涼了，快吃。",
       },
       {
         id: "sanjiuma-housing-034-b",
@@ -741,9 +741,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-034-h",
-        text: "反正這種資源到最後也是靠關係搶的。",
+        text: "這種資源，是不是也是靠關係搶的？",
         archetype: "landmine",
-        retort: "你這孩子怎麼這樣講話！",
+        retort: "你！他才沒有！你亂講什麼！",
       },
     ],
   },
@@ -755,9 +755,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-035-a",
-        text: "搬家次數多，代表我適應力比表哥還強。",
+        text: "搬家次數多，代表我不用靠誰才住得下。",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽把問題丟給隔壁阿姨）",
       },
       {
         id: "sanjiuma-housing-035-b",
@@ -797,9 +797,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-035-h",
-        text: "反正你自己那間也沒讓你搬過家。",
+        text: "妳那間都沒讓妳搬過家，運氣好而已。",
         archetype: "landmine",
-        retort: "我們那時候多辛苦你知道嗎！",
+        retort: "……（舅媽手一抖，湯匙掉了）",
       },
     ],
   },
@@ -811,9 +811,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-036-a",
-        text: "還早啦，但我打算租到最有人情味的地方。",
+        text: "退休房子，等我退休再想，妳急什麼？",
         archetype: "perfect",
-        retort: "……你這孩子，講話一套一套的。",
+        retort: "舅媽小聲碎念，你這什麼態度。",
       },
       {
         id: "sanjiuma-housing-036-b",
@@ -853,9 +853,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-036-h",
-        text: "反正你那間退休金早就被表哥用光了吧。",
+        text: "妳那間退休金，早被他花光了吧？",
         archetype: "landmine",
-        retort: "你！誰跟你講的！他才沒有！",
+        retort: "你這什麼意思！我這是關心你！",
       },
     ],
   },
@@ -867,9 +867,9 @@ export default [
     options: [
       {
         id: "sanjiuma-housing-037-a",
-        text: "商量過了，預算跟愛心一樣，慢慢加。",
+        text: "預算談好了，還不是妳幫他補到位？",
         archetype: "perfect",
-        retort: "……你這孩子，嘴巴真的厲害。",
+        retort: "……（舅媽清清喉嚨，換話題）",
       },
       {
         id: "sanjiuma-housing-037-b",
@@ -909,9 +909,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-037-h",
-        text: "反正表哥的預算舅舅早就補好了。",
+        text: "他的預算，是不是舅舅早補好的？",
         archetype: "landmine",
-        retort: "你這什麼意思！他是憑實力的！",
+        retort: "夠了，你這什麼態度啊你！",
       },
     ],
   },
