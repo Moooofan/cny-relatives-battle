@@ -159,7 +159,9 @@ function buildBossQueue(
     const bossQueue = storyFightScenes(content).map((s) => s.bossId);
     return { bossQueue, rng: rng0 };
   }
-  if (opts?.bossId) return { bossQueue: [opts.bossId], rng: rng0 };
+  if (opts?.bossId && content.bosses.some((b) => b.id === opts.bossId)) {
+    return { bossQueue: [opts.bossId], rng: rng0 };
+  }
   const [boss, rng] = pick(content.bosses, rng0);
   return { bossQueue: [boss.id], rng };
 }

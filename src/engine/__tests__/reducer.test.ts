@@ -19,6 +19,19 @@ describe("createGame + startBoss (via advance from 'intro')", () => {
     expect(started.optionOrder).toHaveLength(8);
   });
 
+  test("random mode with an unknown bossId falls back to an rng pick instead of persisting a broken boss", () => {
+    const s = createGame(FIXTURE_CONTENT_NO_LIVES, "random", "seed-1", { bossId: "xiaobiaodi" });
+    expect(s.bossQueue).toHaveLength(1);
+    const bossId = s.bossQueue[0];
+    expect(FIXTURE_CONTENT_NO_LIVES.bosses.some((b) => b.id === bossId)).toBe(true);
+
+    // The boss actually resolves and the fight starts normally — it never
+    // gets stuck with bossMaxHp 0 the way an unresolvable id would.
+    const started = advance(FIXTURE_CONTENT_NO_LIVES, s);
+    expect(started.phase).toBe("turn");
+    expect(started.bossMaxHp).toBeGreaterThan(0);
+  });
+
   test("gauntlet mode queues all bosses sorted by order", () => {
     const s = createGame(FIXTURE_CONTENT_NO_LIVES, "gauntlet", "seed-2");
     expect(s.bossQueue).toEqual(["xiao-biaodi", "sanjiuma", "ama"]);

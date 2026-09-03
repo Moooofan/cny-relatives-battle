@@ -68,7 +68,15 @@ export default function TitlePage() {
             </div>
           </>
         ) : (
-          <p className="text-sm text-text-muted flex-1">尚未選擇人生，點此挑選（或開戰時隨機）</p>
+          <>
+            <Dices size={26} className="text-gold shrink-0" />
+            <div className="flex-1 min-w-0">
+              <p className="text-sm text-text">
+                目前人生：<span className="text-gold">隨機人生</span>
+              </p>
+              <p className="text-xs text-text-muted">尚未指定，開戰時系統會隨機決定，點此可自行挑選</p>
+            </div>
+          </>
         )}
       </Link>
 

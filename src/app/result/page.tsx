@@ -20,14 +20,21 @@ export default function ResultPage() {
   const router = useRouter();
   const state = useGameStore((s) => s.state);
   const resetGame = useGameStore((s) => s.resetGame);
-  const lifeId = useLifeStore((s) => s.lifeId);
+  const markResultSeen = useGameStore((s) => s.markResultSeen);
+  const lifeStoreId = useLifeStore((s) => s.lifeId);
   const addResult = useResultsStore((s) => s.addResult);
   const markDailyDone = useDailyStore((s) => s.markDone);
+  // The engine's own lifeId is the source of truth for what was actually
+  // played (it may have been rng-picked at createGame time even when the
+  // life store itself has nothing explicitly chosen) — fall back to the life
+  // store only when the engine has none (e.g. content has no lives at all).
+  const lifeId = state?.lifeId ?? lifeStoreId;
   const life = lifeId ? findLife(lifeId) : undefined;
   const result = state?.phase === "result" ? state.result : undefined;
 
   useEffect(() => {
     if (!state || !result) return;
+    markResultSeen();
     addResult({
       resultCode: result.resultCode,
       lifeId: state.lifeId,

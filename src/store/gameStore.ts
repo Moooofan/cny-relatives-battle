@@ -26,6 +26,13 @@ interface GameStore {
   /** Story mode only: scene index to resume at after a loss, persisted even
    * once `state` itself moves on to another mode. */
   storyCheckpoint: number | null;
+  /** True once `/result/` has rendered for the current `state.result`. Reset
+   * to false by every `commit()` (i.e. any new action/game), so it only ever
+   * describes "has *this* finished run been shown yet". Mode pages use it to
+   * tell a just-finished (not yet redirected) run — which should still be
+   * allowed to redirect to /result — apart from a stale, already-viewed one
+   * that a fresh page mount should start over instead of bouncing back to. */
+  resultSeen: boolean;
 
   startGame: (mode: Mode, opts?: StartOpts) => void;
   pickOption: (optionId: string) => void;
@@ -35,6 +42,7 @@ interface GameStore {
   resumeStoryCheckpoint: (sceneIndex: number, lifeId?: string | null) => void;
   startTimer: () => void;
   resetGame: () => void;
+  markResultSeen: () => void;
 }
 
 function seedFor(mode: Mode): string {
@@ -59,13 +67,14 @@ export const useGameStore = create<GameStore>()(
           }
         }
 
-        set({ state: next, timerEndsAt, storyCheckpoint });
+        set({ state: next, timerEndsAt, storyCheckpoint, resultSeen: false });
       }
 
       return {
         state: null,
         timerEndsAt: null,
         storyCheckpoint: null,
+        resultSeen: false,
 
         startGame: (mode, opts) => {
           const seed = seedFor(mode);
@@ -107,14 +116,16 @@ export const useGameStore = create<GameStore>()(
 
         startTimer: () => set({ timerEndsAt: Date.now() + TURN_MS }),
 
-        resetGame: () => set({ state: null, timerEndsAt: null }),
+        resetGame: () => set({ state: null, timerEndsAt: null, resultSeen: false }),
+
+        markResultSeen: () => set({ resultSeen: true }),
       };
     },
     {
       name: "dzsg:game",
       storage: createJSONStorage(() => localStorage),
       skipHydration: true,
-      partialize: (s) => ({ state: s.state, storyCheckpoint: s.storyCheckpoint }),
+      partialize: (s) => ({ state: s.state, storyCheckpoint: s.storyCheckpoint, resultSeen: s.resultSeen }),
     }
   )
 );

@@ -21,6 +21,7 @@ const AUTO_ADVANCE_MS = 1600;
 export function useBattleLifecycle(state: GameState | null, mode: Mode): void {
   const router = useRouter();
   const advance = useGameStore((s) => s.advance);
+  const resultSeen = useGameStore((s) => s.resultSeen);
   const sfxEnabled = useSettingsStore((s) => s.sfx);
   const recordRun = useStatsStore((s) => s.recordRun);
   const recordedRef = useRef<string | null>(null);
@@ -47,16 +48,22 @@ export function useBattleLifecycle(state: GameState | null, mode: Mode): void {
   }, [state?.mode, state?.phase, state?.turns, mode, advance]);
 
   useEffect(() => {
+    // `!resultSeen` excludes a stale, already-viewed result: without it, a
+    // fresh mount of this same mode's page with an old finished game sitting
+    // in the store (e.g. navigating /random -> /random after already seeing
+    // /result for that run) would bounce straight back to /result instead of
+    // letting useEnsureGame start the fresh run the user actually asked for.
     if (
       state &&
       state.mode === mode &&
       state.phase === "result" &&
       state.result &&
+      !resultSeen &&
       recordedRef.current !== state.result.resultCode
     ) {
       recordedRef.current = state.result.resultCode;
       recordRun(state);
       router.push("/result");
     }
-  }, [state, mode, router, recordRun]);
+  }, [state, mode, router, recordRun, resultSeen]);
 }
