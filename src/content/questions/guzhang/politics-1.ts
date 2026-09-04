@@ -240,7 +240,7 @@ export default [
     options: [
       {
         id: "guzhang-politics-005-a",
-        text: "少子化？先問問你自己少講幾句。",
+        text: "少子化？你退休群組倒是很旺盛。",
         archetype: "perfect",
         retort: "他愣住，手指抓了抓後腦。",
       },

@@ -130,7 +130,7 @@ export default [
       { id: "generic-education-008-e", text: "說實話，我對出國念書有點害怕……", archetype: "meek", retort: "害怕也要試試看，別限制自己。" },
       { id: "generic-education-008-f", text: "我打算靠追劇自學留學經驗。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-education-008-g", text: "我在等免費留學機會自己找上門。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-education-008-h", text: "出不出國念書是我的事，你很雞婆喔。", archetype: "landmine", retort: "現在小孩真的都這樣厚！" },
+      { id: "generic-education-008-h", text: "出不出國不用你操心，操心你自己的人生。", archetype: "landmine", retort: "現在小孩真的都這樣厚！" },
     ],
   },
   {

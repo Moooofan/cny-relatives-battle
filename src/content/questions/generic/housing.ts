@@ -115,7 +115,7 @@ export default [
       { id: "generic-housing-007-e", text: "說實話，現在真的買不下手……", archetype: "meek", retort: "買不下手也要想辦法籌措。" },
       { id: "generic-housing-007-f", text: "我打算等房價跌到我能接受再買。", archetype: "backfire", retort: "（沒人接話，場面安靜）" },
       { id: "generic-housing-007-g", text: "我在研究元宇宙買房比較划算。", archetype: "backfire", retort: "（大家聽不懂在講什麼）" },
-      { id: "generic-housing-007-h", text: "買不買房是我的事，你很閒厚。", archetype: "landmine", retort: "（甩手離開）跟你講不下去！" },
+      { id: "generic-housing-007-h", text: "買不買房干你屁事，你顧好自己的存款吧。", archetype: "landmine", retort: "（甩手離開）跟你講不下去！" },
     ],
   },
   {

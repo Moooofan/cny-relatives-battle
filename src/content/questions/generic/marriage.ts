@@ -85,7 +85,7 @@ export default [
       { id: "generic-marriage-005-e", text: "說實話，有時候真的很累……", archetype: "meek", retort: "累就要好好想清楚啊。" },
       { id: "generic-marriage-005-f", text: "科技這麼發達，視訊等於同居啦。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-marriage-005-g", text: "說我們不穩，你們夫妻感情才…算了當我沒說。", archetype: "backfire", retort: "（場面安靜三秒）" },
-      { id: "generic-marriage-005-h", text: "撐不撐是我們的事，不用你來算命。", archetype: "landmine", retort: "你這什麼態度，明年不用來了！" },
+      { id: "generic-marriage-005-h", text: "撐不撐是我們的事，你先撐好你自己的婚姻。", archetype: "landmine", retort: "你這什麼態度，明年不用來了！" },
     ],
   },
   {

@@ -40,7 +40,7 @@ export default [
       { id: "generic-religion-002-e", text: "說實話，我對這個不太懂怎麼判斷……", archetype: "meek", retort: "不懂可以問廟裡的人啊。" },
       { id: "generic-religion-002-f", text: "我打算自己在家畫一盞燈意思意思。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-religion-002-g", text: "我覺得手機的手電筒也算光明燈。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-religion-002-h", text: "安不安太歲是我的事，你比乩身還雞婆。", archetype: "landmine", retort: "你這孩子講話越來越衝了！" },
+      { id: "generic-religion-002-h", text: "安不安太歲干你屁事，你先管好你自己。", archetype: "landmine", retort: "你這孩子講話越來越衝了！" },
     ],
   },
   {
@@ -85,7 +85,7 @@ export default [
       { id: "generic-religion-005-e", text: "說實話，我平常不太看農民曆……", archetype: "meek", retort: "不看也要學著看一下，有用的。" },
       { id: "generic-religion-005-f", text: "我打算靠丟硬幣決定黃道吉日。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-religion-005-g", text: "我覺得每天對我來說都是吉日。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-religion-005-h", text: "挑不挑日子是我的事，你很會挑毛病。", archetype: "landmine", retort: "你這什麼態度，明年不用來了！" },
+      { id: "generic-religion-005-h", text: "挑不挑日子干你屁事，你先管好你自己。", archetype: "landmine", retort: "你這什麼態度，明年不用來了！" },
     ],
   },
   {

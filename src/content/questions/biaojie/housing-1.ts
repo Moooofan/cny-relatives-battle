@@ -324,7 +324,7 @@ export default [
       },
       {
         id: "biaojie-housing-006-f",
-        text: "兩百萬裝潢，還不是想壓人。",
+        text: "兩百萬裝潢，你老公點頭了嗎？",
         archetype: "landmine",
         retort: "……好，我不說了。",
       },
@@ -716,7 +716,7 @@ export default [
       },
       {
         id: "biaojie-housing-013-f",
-        text: "陽台大，廢話講這麼久。",
+        text: "陽台大，晾得出你多少存款？",
         archetype: "landmine",
         retort: "……好，不提陽台了。",
       },

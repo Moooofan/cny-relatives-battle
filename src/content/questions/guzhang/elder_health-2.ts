@@ -15,7 +15,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-021-a",
-        text: "拔罐通血路，怎麼沒通你的財路？",
+        text: "拔罐通血路，怎麼沒拔醒你的判斷力？",
         archetype: "perfect",
         retort: "他語塞，假裝在看別的地方。",
       },
@@ -1079,7 +1079,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-040-a",
-        text: "紅包換保健品，你也太會省了。",
+        text: "紅包換保健品，你的偏方比較貴吧？",
         archetype: "perfect",
         retort: "姑姑在旁邊笑到眼淚都出來。",
       },

@@ -114,7 +114,7 @@ export default [
       },
       {
         id: "guzhang-food_push-002-h",
-        text: "你肝那麼硬，是被你自己灌壞的。",
+        text: "灌成這樣，血壓才是真的被你灌壞。",
         archetype: "landmine",
         retort: "他臉一垮，甩開手不說話。",
       },
@@ -184,7 +184,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-004-a",
-        text: "過年吃三碗，是怕紅包吃不夠本？",
+        text: "吃這麼多，你的養生文章都白轉了？",
         archetype: "perfect",
         retort: "他愣住，動作停在半空。",
       },
@@ -464,7 +464,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-009-a",
-        text: "圓圓滿滿，滿不過你嘴巴會講。",
+        text: "圓圓滿滿，滿不過你的偏方效果。",
         archetype: "perfect",
         retort: "姑姑在旁邊憋笑憋很辛苦。",
       },

@@ -70,7 +70,7 @@ export default [
       { id: "generic-salary_job-004-e", text: "應該還好吧，我也不太確定……", archetype: "meek", retort: "不確定就要多留意，別太安逸。" },
       { id: "generic-salary_job-004-f", text: "如果被裁，我就轉行去擺攤啦。", archetype: "backfire", retort: "（沒人接話，場面安靜）" },
       { id: "generic-salary_job-004-g", text: "我已經默默存了一筆逃難基金。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-salary_job-004-h", text: "穩不穩是我的事，不用你來唱衰。", archetype: "landmine", retort: "我是為你好，你這樣對我！" },
+      { id: "generic-salary_job-004-h", text: "穩不穩干你屁事，你先顧好你自己的工作。", archetype: "landmine", retort: "我是為你好，你這樣對我！" },
     ],
   },
   {
@@ -115,7 +115,7 @@ export default [
       { id: "generic-salary_job-007-e", text: "說實話，這個月案子比較少……", archetype: "meek", retort: "案子少要多接觸人脈啊。" },
       { id: "generic-salary_job-007-f", text: "我打算靠信用卡分期撐過淡季。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-salary_job-007-g", text: "我在等中樂透補貼收入落差。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-salary_job-007-h", text: "穩不穩是我的事，不用你來擔保。", archetype: "landmine", retort: "（甩手離開）跟你講不下去！" },
+      { id: "generic-salary_job-007-h", text: "穩不穩干你屁事，你先顧好你自己的飯碗。", archetype: "landmine", retort: "（甩手離開）跟你講不下去！" },
     ],
   },
   {

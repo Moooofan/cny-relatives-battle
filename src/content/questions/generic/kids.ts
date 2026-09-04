@@ -145,7 +145,7 @@ export default [
       { id: "generic-kids-009-e", text: "說實話，有時候真的會猶豫……", archetype: "meek", retort: "猶豫太久，機會會過去。" },
       { id: "generic-kids-009-f", text: "我在等星座運勢說適合生育的那年。", archetype: "backfire", retort: "（沒人接話）" },
       { id: "generic-kids-009-g", text: "我打算等中樂透再說，比較安心。", archetype: "backfire", retort: "（場面尷尬地笑）" },
-      { id: "generic-kids-009-h", text: "拖不拖是我的人生，不用你們催。", archetype: "landmine", retort: "（找救兵）你們聽聽看她剛剛講什麼！" },
+      { id: "generic-kids-009-h", text: "拖不拖是我的人生，干你屁事。", archetype: "landmine", retort: "（找救兵）你們聽聽看她剛剛講什麼！" },
     ],
   },
   {
@@ -160,7 +160,7 @@ export default [
       { id: "generic-kids-010-e", text: "說實話，最近工作真的很忙……", archetype: "meek", retort: "忙也要留點時間給自己的人生。" },
       { id: "generic-kids-010-f", text: "我打算先報名鐵人三項練體力。", archetype: "backfire", retort: "（沒人聽懂這跟生小孩的關係）" },
       { id: "generic-kids-010-g", text: "我覺得年紀大生小孩比較有智慧。", archetype: "backfire", retort: "（大家一臉疑惑）" },
-      { id: "generic-kids-010-h", text: "生不生我自己決定，年紀不用你算。", archetype: "landmine", retort: "你這什麼口氣，太誇張了！" },
+      { id: "generic-kids-010-h", text: "生不生干你屁事，你先管好你自己的嘴。", archetype: "landmine", retort: "你這什麼口氣，太誇張了！" },
     ],
   },
 ] satisfies Question[];

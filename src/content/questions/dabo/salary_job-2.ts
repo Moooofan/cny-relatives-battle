@@ -201,7 +201,7 @@ export default [
       },
       {
         id: "dabo-salary_job-024-b",
-        text: "扛得住才是真本事，算你厲害。",
+        text: "會扛是本事，可惜你扛的都是遙控器。",
         archetype: "perfect",
         retort: "大伯母：早跟你說了吧？",
       },

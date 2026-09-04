@@ -350,7 +350,7 @@ export default [
       },
       {
         id: "dabo-politics-026-h",
-        text: "你去那邊，不就是想找人聊八卦。",
+        text: "你在里民大會，才有人假裝聽你說話。",
         archetype: "landmine",
         retort: "沒大沒小，欠教訓是不是！",
       },

@@ -182,7 +182,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-024-a",
-        text: "煎這麼酥，酥不過你的臉皮。",
+        text: "煎這麼酥，酥不過你的偏方話術。",
         archetype: "perfect",
         retort: "他改口說我回去查查看。",
       },
@@ -224,7 +224,7 @@ export default [
       },
       {
         id: "guzhang-food_push-024-h",
-        text: "這塊蘿蔔糕，比你立場還軟。",
+        text: "這塊蘿蔔糕，比你的偏方還真。",
         archetype: "landmine",
         retort: "他吼一句台語，甩門進房間。",
       },
@@ -630,7 +630,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-032-a",
-        text: "包這麼扎實，扎實不了你立場。",
+        text: "包這麼扎實，扎實不了你的偏方。",
         archetype: "perfect",
         retort: "他假笑，轉頭跟別人聊。",
       },

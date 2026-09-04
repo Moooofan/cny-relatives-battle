@@ -85,7 +85,7 @@ export default [
       { id: "generic-elder_health-005-e", text: "說實話，這種訊息我通常不太相信……", archetype: "meek", retort: "不相信也要試試看，沒壞處。" },
       { id: "generic-elder_health-005-f", text: "我覺得這篇文章寫得比醫生還專業。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-elder_health-005-g", text: "我打算把這篇印出來貼在牆上。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-elder_health-005-h", text: "這篇準不準不用你堅持，你先去查證再傳。", archetype: "landmine", retort: "好心關心還被兇，真是的！" },
+      { id: "generic-elder_health-005-h", text: "準不準干你屁事，你先管好你自己再傳。", archetype: "landmine", retort: "好心關心還被兇，真是的！" },
     ],
   },
   {

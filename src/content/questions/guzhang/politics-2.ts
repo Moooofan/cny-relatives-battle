@@ -168,7 +168,7 @@ export default [
       },
       {
         id: "guzhang-politics-023-h",
-        text: "你那點退休金，也沒比我多懂。",
+        text: "退休金算得清，詐騙簡訊卻看不清。",
         archetype: "landmine",
         retort: "他臉一垮，冷著臉不說話。",
       },

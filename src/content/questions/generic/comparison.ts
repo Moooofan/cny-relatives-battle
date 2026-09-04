@@ -70,7 +70,7 @@ export default [
       { id: "generic-comparison-004-e", text: "說真的，聽你這樣講有點小失落……", archetype: "meek", retort: "難過歸難過，還是要多回來。" },
       { id: "generic-comparison-004-f", text: "我打算用視訊孝順，效果一樣。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-comparison-004-g", text: "我請假的頻率跟他成反比啦。", archetype: "backfire", retort: "（大家聽不太懂）" },
-      { id: "generic-comparison-004-h", text: "他回來次數你數這麼細，很雞婆喔。", archetype: "landmine", retort: "（氣到甩筷子）欠管教喔你！" },
+      { id: "generic-comparison-004-h", text: "他回不回來干你屁事，你先管好你自己。", archetype: "landmine", retort: "（氣到甩筷子）欠管教喔你！" },
     ],
   },
   {

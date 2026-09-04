@@ -100,7 +100,7 @@ export default [
       { id: "generic-red_envelope-006-e", text: "說實話，我沒想到還要包給他……", archetype: "meek", retort: "沒想到也要趕快準備一下。" },
       { id: "generic-red_envelope-006-f", text: "我打算包給他一張加油打氣的紙條。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-red_envelope-006-g", text: "我準備了一個空紅包袋當作驚喜。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-red_envelope-006-h", text: "包不包是我的事，不用你來安排名單。", archetype: "landmine", retort: "你這什麼話，明年不用來了！" },
+      { id: "generic-red_envelope-006-h", text: "包不包干你屁事，你先把自己紅包包好。", archetype: "landmine", retort: "你這什麼話，明年不用來了！" },
     ],
   },
   {
@@ -145,7 +145,7 @@ export default [
       { id: "generic-red_envelope-009-e", text: "說實話，我可能會拿去花掉一部分……", archetype: "meek", retort: "花掉太可惜，要學會存錢。" },
       { id: "generic-red_envelope-009-f", text: "我打算全部拿去買樂透翻身。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-red_envelope-009-g", text: "我的投資策略是放在枕頭底下。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-red_envelope-009-h", text: "花不花是我的事，不用你來當理專。", archetype: "landmine", retort: "（找救兵）你們聽聽看她剛剛講什麼！" },
+      { id: "generic-red_envelope-009-h", text: "花不花干你屁事，你先管好你自己的錢包。", archetype: "landmine", retort: "（找救兵）你們聽聽看她剛剛講什麼！" },
     ],
   },
   {

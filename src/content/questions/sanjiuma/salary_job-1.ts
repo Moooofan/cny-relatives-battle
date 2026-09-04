@@ -241,7 +241,7 @@ export default [
       },
       {
         id: "sanjiuma-salary_job-005-h",
-        text: "責任制根本是慣老闆凹員工的藉口。",
+        text: "妳兒子加班費多少，妳比我還清楚吧？",
         archetype: "landmine",
         retort: "你這孩子，白養你這麼多年！",
       },
