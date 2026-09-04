@@ -14,33 +14,33 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-001-a",
-        text: "有看到啦，但眼睛還沒睜開……",
+        text: "幹……看到了啦，眼睛還沒睜開……",
         archetype: "meek",
-        retort: "五點就是要起來動一動！",
+        retort: "五點不起來，你以後會後悔！",
       },
       {
         id: "guzhang-elder_health-001-b",
-        text: "五點傳圖，是因為沒人回你嗎？",
+        text: "幹，五點傳圖是想證明我失眠？",
         archetype: "perfect",
-        retort: "他愣住，說不出話來。",
+        retort: "他語塞，乾笑轉頭找話題。",
       },
       {
         id: "guzhang-elder_health-001-c",
-        text: "姑丈才是最勤勞的晨型人啦。",
+        text: "姑丈才是本家族晨型霸主啦。",
         archetype: "deflect",
-        retort: "哎唷，退休就是要早起活動。",
+        retort: "哎唷，退休就要早起活動。",
       },
       {
         id: "guzhang-elder_health-001-d",
-        text: "早安圖是不是都套同一個模板？",
+        text: "幹，早安圖是不是都套同個模板？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，又傳一張）",
       },
       {
         id: "guzhang-elder_health-001-e",
-        text: "退休沒事做，只剩洗版找存在感？",
+        text: "幹，死老頭退休沒事做，只剩洗版找存在感？",
         archetype: "landmine",
-        retort: "他臉一垮，半天說不出話。",
+        retort: "他臉一垮，摔杯罵你欠揍！",
       },
       {
         id: "guzhang-elder_health-001-f",
@@ -50,15 +50,15 @@ export default [
       },
       {
         id: "guzhang-elder_health-001-g",
-        text: "姑丈要不要開個早安圖工作室？",
+        text: "靠，姑丈要不要開個早安圖工作室？",
         archetype: "deflect",
-        retort: "你這個提議，不錯喔！",
+        retort: "你這提議，不錯喔！",
       },
       {
         id: "guzhang-elder_health-001-h",
-        text: "五點傳圖，比打卡鬧鐘還準時。",
+        text: "他媽的，五點傳圖比打卡鬧鐘還準時。",
         archetype: "backfire",
-        retort: "（姑丈得意，還真心收下這稱讚）",
+        retort: "（姑丈得意，真心收下稱讚）",
       },
     ],
   },
@@ -70,25 +70,25 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-002-a",
-        text: "朋友的朋友，怎麼從沒見過本人？",
+        text: "幹，朋友的朋友怎麼每次都缺席？",
         archetype: "perfect",
-        retort: "他語塞，乾笑兩聲。",
+        retort: "他語塞，乾笑罵一句幹恁娘。",
       },
       {
         id: "guzhang-elder_health-002-b",
-        text: "姑丈朋友的朋友是不是也很忙？",
+        text: "姑丈朋友的朋友是不是全年無休？",
         archetype: "deflect",
         retort: "他很忙沒錯，但很照顧朋友。",
       },
       {
         id: "guzhang-elder_health-002-c",
-        text: "那姑丈也在吃嗎？效果如何？",
+        text: "靠，那姑丈自己在吃嗎，效果如何？",
         archetype: "deflect",
         retort: "當然，你看我氣色多好！",
       },
       {
         id: "guzhang-elder_health-002-d",
-        text: "喔……好，我等一下查查看……",
+        text: "幹……好，我等一下查查看……",
         archetype: "meek",
         retort: "不是等一下，現在就查！",
       },
@@ -100,9 +100,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-002-f",
-        text: "那我加咖哩一起吃是不是更強？",
+        text: "幹，加咖哩一起吃是不是更強？",
         archetype: "backfire",
-        retort: "（姑丈認真思考，然後傳連結）",
+        retort: "（姑丈認真思考，傳來連結）",
       },
       {
         id: "guzhang-elder_health-002-g",
@@ -112,9 +112,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-002-h",
-        text: "朋友的朋友根本不存在吧姑丈。",
+        text: "幹你娘，朋友的朋友根本不存在吧。",
         archetype: "landmine",
-        retort: "他氣到講台語，轉身不理你。",
+        retort: "他氣到爆粗口，摔杯轉身。",
       },
     ],
   },
@@ -126,7 +126,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-003-a",
-        text: "這麼養生，怎麼你血壓還是高？",
+        text: "他媽的這麼養生，怎麼血壓還高？",
         archetype: "perfect",
         retort: "姑姑在旁邊笑到肩膀抖。",
       },
@@ -138,13 +138,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-003-c",
-        text: "姑丈先喝一口示範一下嘛。",
+        text: "靠，姑丈先喝一口示範一下嘛。",
         archetype: "deflect",
         retort: "好啊，看我喝給你看！",
       },
       {
         id: "guzhang-elder_health-003-d",
-        text: "味道有點特別，我小口喝……",
+        text: "幹……味道有點特別，我小口喝……",
         archetype: "meek",
         retort: "習慣就好，多喝幾杯就順口。",
       },
@@ -156,21 +156,21 @@ export default [
       },
       {
         id: "guzhang-elder_health-003-f",
-        text: "這味道，我拿去當萬用清潔劑好了。",
+        text: "幹，這味道拿去當萬用清潔劑好了。",
         archetype: "backfire",
         retort: "（姑丈皺眉，把杯子推回來）",
       },
       {
         id: "guzhang-elder_health-003-g",
-        text: "喝完會不會變成醋罈子啊哈哈。",
+        text: "靠，喝完會不會變成醋罈子啊哈哈。",
         archetype: "backfire",
         retort: "（姑丈沒聽懂梗，繼續講功效）",
       },
       {
         id: "guzhang-elder_health-003-h",
-        text: "偏方喝這麼多年，有一個有效嗎？",
+        text: "去你的偏方，喝這麼多年有一個有效嗎？",
         archetype: "landmine",
-        retort: "他臉一垮，要姑姑幫他評評理。",
+        retort: "他臉一垮，罵你欠教訓。",
       },
     ],
   },
@@ -182,9 +182,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-004-a",
-        text: "抗氧化這麼強，姑姑怎麼不吃？",
+        text: "靠北，抗氧化這麼強，姑姑怎麼不吃？",
         archetype: "perfect",
-        retort: "他改口說我回去查查看。",
+        retort: "他改口說回去查查看。",
       },
       {
         id: "guzhang-elder_health-004-b",
@@ -194,13 +194,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-004-c",
-        text: "曬幾天才會變這樣，教教我啦。",
+        text: "靠，曬幾天才變這樣，教教我啦。",
         archetype: "deflect",
         retort: "至少要一個月，慢慢等。",
       },
       {
         id: "guzhang-elder_health-004-d",
-        text: "看起來有點像燒焦的……",
+        text: "幹……看起來有點像燒焦的……",
         archetype: "meek",
         retort: "這是熟成，不是燒焦啦！",
       },
@@ -212,21 +212,21 @@ export default [
       },
       {
         id: "guzhang-elder_health-004-f",
-        text: "陽台是不是快變成中藥行了？",
+        text: "幹，陽台是不是快變成中藥行了？",
         archetype: "backfire",
-        retort: "（姑丈認真點頭，沒發現是玩笑）",
+        retort: "（姑丈認真點頭，沒發現玩笑）",
       },
       {
         id: "guzhang-elder_health-004-g",
         text: "黑蒜配咖啡應該很特別齁哈哈。",
         archetype: "backfire",
-        retort: "（姑丈一臉認真考慮這個組合）",
+        retort: "（姑丈一臉認真考慮這組合）",
       },
       {
         id: "guzhang-elder_health-004-h",
-        text: "曬這些偏方，不如曬曬你血壓。",
+        text: "幹，死老頭曬這些偏方，不如曬曬你血壓。",
         archetype: "landmine",
-        retort: "他吼一句台語，甩門進房間。",
+        retort: "他吼一句幹恁娘，甩門進房。",
       },
     ],
   },
@@ -238,9 +238,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-005-a",
-        text: "那你自己怎麼還在滑手機傳圖？",
+        text: "他媽的那你自己怎麼還在滑手機？",
         archetype: "perfect",
-        retort: "他訕笑，轉頭跟姑姑討救兵。",
+        retort: "他訕笑，轉頭找姑姑討救兵。",
       },
       {
         id: "guzhang-elder_health-005-b",
@@ -250,13 +250,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-005-c",
-        text: "姑丈教我怎麼設定飛航模式吧。",
+        text: "靠，姑丈教我怎麼設定飛航模式吧。",
         archetype: "deflect",
         retort: "來來來，我教你，很簡單。",
       },
       {
         id: "guzhang-elder_health-005-d",
-        text: "可是開了朋友傳訊息我看不到……",
+        text: "幹……可是開了朋友傳訊息看不到……",
         archetype: "meek",
         retort: "睡覺誰找你啦，快關一關。",
       },
@@ -268,7 +268,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-005-f",
-        text: "那我把手機丟進冰箱好了哈哈。",
+        text: "幹，那我把手機丟進冰箱好了。",
         archetype: "backfire",
         retort: "（姑丈皺眉，不覺得好笑）",
       },
@@ -280,9 +280,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-005-h",
-        text: "怕輻射，怎麼不怕被詐騙訊息騙？",
+        text: "去你的，怕輻射怎麼不怕被詐騙訊息騙？",
         archetype: "landmine",
-        retort: "他臉一垮，別過頭不看你。",
+        retort: "他臉一垮，罵你三小，別過頭。",
       },
     ],
   },
@@ -294,7 +294,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-006-a",
-        text: "你養生知識，是哪個朋友教的？",
+        text: "幹，你這養生知識是被誰騙的？",
         archetype: "perfect",
         retort: "他愣了一下，眉頭挑起來。",
       },
@@ -306,13 +306,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-006-c",
-        text: "姑丈教我電鍋的正確用法。",
+        text: "靠，姑丈教我電鍋的正確用法。",
         archetype: "deflect",
         retort: "好，來，我示範給你看。",
       },
       {
         id: "guzhang-elder_health-006-d",
-        text: "可是微波比較快，我懶得等……",
+        text: "幹……可是微波比較快，我懶得等……",
         archetype: "meek",
         retort: "懶惰是會影響健康的知道嗎。",
       },
@@ -324,21 +324,21 @@ export default [
       },
       {
         id: "guzhang-elder_health-006-f",
-        text: "那我用炭火烤好了，最養生。",
+        text: "幹，那我用炭火烤好了最養生。",
         archetype: "backfire",
         retort: "（姑丈翻白眼，繼續碎念）",
       },
       {
         id: "guzhang-elder_health-006-g",
-        text: "微波爐是不是會把菜變機器人？",
+        text: "靠，微波爐是不是會把菜變機器人？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，一臉疑惑）",
       },
       {
         id: "guzhang-elder_health-006-h",
-        text: "這種說法，跟你被騙那次差不多。",
+        text: "他媽的這種說法，跟你被騙那次一樣準。",
         archetype: "landmine",
-        retort: "他氣到講台語，說你很白目。",
+        retort: "他氣到講台語，罵你白目。",
       },
     ],
   },
@@ -350,7 +350,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-007-a",
-        text: "溫水這麼神，怎麼沒治好你血壓？",
+        text: "幹，溫水這麼神怎麼沒治好血壓？",
         archetype: "perfect",
         retort: "他嘴硬，眼神卻閃躲。",
       },
@@ -362,13 +362,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-007-c",
-        text: "姑丈平常喝幾杯溫水啊？",
+        text: "靠，姑丈平常喝幾杯溫水啊？",
         archetype: "deflect",
         retort: "早中晚各三杯，你也要學。",
       },
       {
         id: "guzhang-elder_health-007-d",
-        text: "好啦，我慢慢喝……有點燙……",
+        text: "幹……好啦，我慢慢喝，有點燙……",
         archetype: "meek",
         retort: "燙才有效，忍一下就好。",
       },
@@ -380,7 +380,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-007-f",
-        text: "那我加冰塊中和一下好了。",
+        text: "幹，那我加冰塊中和一下好了。",
         archetype: "backfire",
         retort: "（姑丈一把搶走冰塊）",
       },
@@ -388,11 +388,11 @@ export default [
         id: "guzhang-elder_health-007-g",
         text: "溫水配薑黃是不是無敵組合？",
         archetype: "backfire",
-        retort: "（姑丈眼睛一亮，開始長篇大論）",
+        retort: "（姑丈眼睛一亮，長篇大論）",
       },
       {
         id: "guzhang-elder_health-007-h",
-        text: "姑姑早就把你的群組設靜音了。",
+        text: "幹，姑姑早把你群組設靜音了老東西。",
         archetype: "landmine",
         retort: "他臉一垮，轉頭找姑姑理論。",
       },
@@ -406,7 +406,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-008-a",
-        text: "你血壓標準，是換了新機器吧？",
+        text: "靠北，你血壓標準是換新機器吧？",
         archetype: "perfect",
         retort: "他愣住，手機螢幕暗掉。",
       },
@@ -418,13 +418,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-008-c",
-        text: "姑丈自己數值正常嗎？分享一下。",
+        text: "靠，姑丈自己數值正常嗎？分享一下。",
         archetype: "deflect",
         retort: "我很標準，都在正常範圍。",
       },
       {
         id: "guzhang-elder_health-008-d",
-        text: "好啦，坐下來量，會不會很痛……",
+        text: "幹……好啦，坐下來量，會不會很痛……",
         archetype: "meek",
         retort: "不會痛，就夾一下而已。",
       },
@@ -436,7 +436,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-008-f",
-        text: "血壓機是不是能順便測心情？",
+        text: "幹，血壓機是不是能順便測心情？",
         archetype: "backfire",
         retort: "（姑丈一臉正經地搖頭）",
       },
@@ -448,9 +448,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-008-h",
-        text: "退休這麼閒，量血壓找存在感？",
+        text: "他媽的退休這麼閒，量血壓找存在感？",
         archetype: "landmine",
-        retort: "他臉一垮，冷著臉不說話。",
+        retort: "他臉一垮，冷著臉罵你欠揍。",
       },
     ],
   },
@@ -462,7 +462,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-009-a",
-        text: "朋友推薦的，你查過真假了嗎？",
+        text: "幹，朋友推薦的，你查過真假沒？",
         archetype: "perfect",
         retort: "他語塞，重新想措辭。",
       },
@@ -474,13 +474,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-009-c",
-        text: "姑丈吃了多久，效果怎麼樣？",
+        text: "靠，姑丈吃了多久，效果怎麼樣？",
         archetype: "deflect",
         retort: "半年了，感覺整個人更靈活。",
       },
       {
         id: "guzhang-elder_health-009-d",
-        text: "顆粒有點大，我怕吞不下去……",
+        text: "幹……顆粒有點大，我怕吞不下去……",
         archetype: "meek",
         retort: "配溫水一口吞就好了啦。",
       },
@@ -492,19 +492,19 @@ export default [
       },
       {
         id: "guzhang-elder_health-009-f",
-        text: "吃這麼多顆是不是會變魚？",
+        text: "幹，吃這麼多顆是不是會變魚？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續倒出更多）",
       },
       {
         id: "guzhang-elder_health-009-g",
-        text: "這罐是不是能拿去釣魚當餌？",
+        text: "靠，這罐是不是能拿去釣魚當餌？",
         archetype: "backfire",
         retort: "（姑丈臉一沉，把罐子收回去）",
       },
       {
         id: "guzhang-elder_health-009-h",
-        text: "朋友的朋友，怎麼每次都缺席？",
+        text: "去死啦，朋友的朋友怎麼每次都缺席老不死？",
         archetype: "landmine",
         retort: "他氣到講台語，罵你不聽老人言。",
       },
@@ -518,7 +518,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-010-a",
-        text: "走這麼快，是要甩開誰的閒言？",
+        text: "靠北，走這麼快是要甩開誰的閒言？",
         archetype: "perfect",
         retort: "姑姑在旁邊笑到眼淚都出來。",
       },
@@ -530,13 +530,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-010-c",
-        text: "姑丈教我正確的健走姿勢吧。",
+        text: "靠，姑丈教我正確的健走姿勢吧。",
         archetype: "deflect",
         retort: "來，跟著我這樣擺手。",
       },
       {
         id: "guzhang-elder_health-010-d",
-        text: "有點喘，我需要休息一下……",
+        text: "幹……有點喘，我需要休息一下……",
         archetype: "meek",
         retort: "才走這樣就喘，太不像話。",
       },
@@ -548,7 +548,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-010-f",
-        text: "姑丈是不是要出道當教練了？",
+        text: "幹，姑丈是不是要出道當教練了？",
         archetype: "backfire",
         retort: "（姑丈點頭稱是，繼續加速）",
       },
@@ -560,9 +560,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-010-h",
-        text: "健走治不好血壓，別騙自己了。",
+        text: "他媽的健走治不好血壓，死老頭別騙自己了。",
         archetype: "landmine",
-        retort: "他臉一垮，猛地站起來。",
+        retort: "他臉一垮，猛地站起來罵人。",
       },
     ],
   },
@@ -574,9 +574,9 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-011-a",
-        text: "廟口聽的，跟詐騙電話有差嗎？",
+        text: "幹，廟口聽的跟詐騙電話有差嗎？",
         archetype: "perfect",
-        retort: "他愣住，半天擠不出一句話。",
+        retort: "他愣住，半天擠不出話。",
       },
       {
         id: "guzhang-elder_health-011-b",
@@ -586,13 +586,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-011-c",
-        text: "那攤老闆還說了什麼，講給我聽。",
+        text: "靠，那攤老闆還說了什麼，講給我聽。",
         archetype: "deflect",
         retort: "他說的可多了，慢慢跟你講。",
       },
       {
         id: "guzhang-elder_health-011-d",
-        text: "喔……好，我姑且聽聽看……",
+        text: "幹……喔好，我姑且聽聽看……",
         archetype: "meek",
         retort: "不是姑且，是要認真聽！",
       },
@@ -604,7 +604,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-011-f",
-        text: "廟口的偏方是不是都要收驚費？",
+        text: "幹，廟口的偏方是不是都要收驚費？",
         archetype: "backfire",
         retort: "（姑丈搖頭，覺得你不識貨）",
       },
@@ -616,9 +616,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-011-h",
-        text: "你上次被騙，也是聽人家說的吧。",
+        text: "去你的，你上次被騙也是聽人家說的吧。",
         archetype: "landmine",
-        retort: "他吼一句台語，轉身走開。",
+        retort: "他吼一句幹恁娘，轉身走開。",
       },
     ],
   },
@@ -630,7 +630,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-012-a",
-        text: "這麼神，怎麼沒拍醒你自己？",
+        text: "靠北，這麼神怎麼沒拍醒你自己？",
         archetype: "perfect",
         retort: "他假笑，轉頭跟別人聊。",
       },
@@ -642,13 +642,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-012-c",
-        text: "姑丈示範一次，我在旁邊看。",
+        text: "靠，姑丈示範一次，我在旁邊看。",
         archetype: "deflect",
         retort: "好，你看仔細，這樣拍。",
       },
       {
         id: "guzhang-elder_health-012-d",
-        text: "拍下去有點痛耶，會瘀青嗎……",
+        text: "幹……拍下去有點痛耶，會瘀青嗎……",
         archetype: "meek",
         retort: "瘀青才代表有效果啦。",
       },
@@ -660,21 +660,21 @@ export default [
       },
       {
         id: "guzhang-elder_health-012-f",
-        text: "拍成這樣是不是要去報警了？",
+        text: "幹，拍成這樣是不是要去報警了？",
         archetype: "backfire",
         retort: "（姑丈一臉正經，沒聽懂笑點）",
       },
       {
         id: "guzhang-elder_health-012-g",
-        text: "拉筋拉到骨頭喀喀響很酷耶。",
+        text: "靠，拉筋拉到骨頭喀喀響很酷耶。",
         archetype: "backfire",
         retort: "（姑丈皺眉，覺得你在耍寶）",
       },
       {
         id: "guzhang-elder_health-012-h",
-        text: "拍打拉筋，你信的都是唬爛的。",
+        text: "他媽的拍打拉筋，你信的都是唬爛的老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，甩開手不說話。",
+        retort: "他臉一垮，甩開手罵三小。",
       },
     ],
   },
@@ -686,7 +686,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-013-a",
-        text: "甩這麼勤，怎麼沒甩掉高血壓？",
+        text: "幹，甩這麼勤怎麼沒甩掉高血壓？",
         archetype: "perfect",
         retort: "他語塞，清了清喉嚨。",
       },
@@ -698,13 +698,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-013-c",
-        text: "姑丈甩手功是跟誰學的啊？",
+        text: "靠，姑丈甩手功是跟誰學的啊？",
         archetype: "deflect",
         retort: "公園那個老師教的，很專業。",
       },
       {
         id: "guzhang-elder_health-013-d",
-        text: "才甩十下手就痠了，好累……",
+        text: "幹……才甩十下手就痠了，好累……",
         archetype: "meek",
         retort: "才十下就喊累，太年輕了吧。",
       },
@@ -716,7 +716,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-013-f",
-        text: "甩成這樣是不是要飛起來了？",
+        text: "幹，甩成這樣是不是要飛起來了？",
         archetype: "backfire",
         retort: "（姑丈沒理你，繼續認真甩）",
       },
@@ -728,9 +728,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-013-h",
-        text: "甩手功年年甩，血壓年年高。",
+        text: "去你的，甩手功年年甩，血壓年年高死老頭。",
         archetype: "landmine",
-        retort: "他氣到講台語，撂下一句狠話。",
+        retort: "他氣到講台語，撂下狠話。",
       },
     ],
   },
@@ -742,7 +742,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-014-a",
-        text: "關wifi助眠，你血壓才是禍首吧。",
+        text: "幹，關wifi助眠？你血壓才是禍首吧。",
         archetype: "perfect",
         retort: "他愣住，動作停在半空。",
       },
@@ -754,13 +754,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-014-c",
-        text: "姑丈教我怎麼設定定時關機。",
+        text: "靠，姑丈教我怎麼設定定時關機。",
         archetype: "deflect",
         retort: "好，這功能很簡單，我教你。",
       },
       {
         id: "guzhang-elder_health-014-d",
-        text: "可是關了就不能追劇了……",
+        text: "幹……可是關了就不能追劇了……",
         archetype: "meek",
         retort: "追劇哪有睡眠重要啦。",
       },
@@ -772,7 +772,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-014-f",
-        text: "那我乾脆睡覺前拔電源好了。",
+        text: "幹，那我乾脆睡覺前拔電源好了。",
         archetype: "backfire",
         retort: "（姑丈點頭，覺得你終於懂了）",
       },
@@ -784,9 +784,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-014-h",
-        text: "難怪姑姑把你的群組設靜音。",
+        text: "他媽的難怪姑姑把你群組設靜音，老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，重重嘆了口氣。",
+        retort: "他臉一垮，重重罵一句幹。",
       },
     ],
   },
@@ -798,7 +798,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-015-a",
-        text: "怕風扇？你比較該怕自己血壓。",
+        text: "靠北，怕風扇？你比較該怕自己血壓。",
         archetype: "perfect",
         retort: "他訕訕地把話題帶過。",
       },
@@ -810,13 +810,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-015-c",
-        text: "姑丈幫我調一下風扇角度嘛。",
+        text: "靠，姑丈幫我調一下風扇角度嘛。",
         archetype: "deflect",
         retort: "好，這樣吹比較均勻。",
       },
       {
         id: "guzhang-elder_health-015-d",
-        text: "可是不吹風扇我會很熱睡不著……",
+        text: "幹……可是不吹風扇我會很熱睡不著……",
         archetype: "meek",
         retort: "那你設定時器，別整晚開。",
       },
@@ -828,19 +828,19 @@ export default [
       },
       {
         id: "guzhang-elder_health-015-f",
-        text: "那我乾脆抱冰塊睡好了哈哈。",
+        text: "幹，那我乾脆抱冰塊睡好了。",
         archetype: "backfire",
         retort: "（姑丈皺眉，覺得你不當一回事）",
       },
       {
         id: "guzhang-elder_health-015-g",
-        text: "風扇轉一整晚是不是會變仙人？",
+        text: "靠，風扇轉一整晚是不是會變仙人？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續叮嚀）",
       },
       {
         id: "guzhang-elder_health-015-h",
-        text: "你的偏方跟風扇一樣，吹好玩的。",
+        text: "他媽的你的偏方跟風扇一樣，吹好玩的。",
         archetype: "landmine",
         retort: "他臉一垮，翻起去年的舊帳。",
       },
@@ -854,7 +854,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-016-a",
-        text: "空腹傷胃？空腹信謠言更傷。",
+        text: "幹，空腹傷胃？空腹信謠言更傷。",
         archetype: "perfect",
         retort: "他語塞，臉紅了一下。",
       },
@@ -866,13 +866,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-016-c",
-        text: "姑丈幫我選一下要吃哪種水果。",
+        text: "靠，姑丈幫我選一下要吃哪種水果。",
         archetype: "deflect",
         retort: "來，這顆芭樂最適合你。",
       },
       {
         id: "guzhang-elder_health-016-d",
-        text: "喔，我肚子餓才想吃水果耶……",
+        text: "幹……喔，我肚子餓才想吃水果耶……",
         archetype: "meek",
         retort: "餓也要忍一下，先吃飯。",
       },
@@ -884,7 +884,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-016-f",
-        text: "那我把水果打成汁配飯吃好了。",
+        text: "幹，那我把水果打成汁配飯吃好了。",
         archetype: "backfire",
         retort: "（姑丈一臉困惑，搖頭不語）",
       },
@@ -896,7 +896,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-016-h",
-        text: "這些說法，跟你被騙那次一樣準。",
+        text: "去你的，這些說法跟你被騙那次一樣準死老頭。",
         archetype: "landmine",
         retort: "他氣到講台語，收拾東西就走。",
       },
@@ -910,7 +910,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-017-a",
-        text: "查這麼久，怎麼沒查你的偏方？",
+        text: "幹，查這麼久怎麼沒查你的偏方？",
         archetype: "perfect",
         retort: "他愣住，眉頭皺了一下。",
       },
@@ -922,13 +922,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-017-c",
-        text: "那姑丈家的隔夜菜都怎麼處理？",
+        text: "靠，那姑丈家的隔夜菜都怎麼處理？",
         archetype: "deflect",
         retort: "冰起來，隔天蒸熱再吃。",
       },
       {
         id: "guzhang-elder_health-017-d",
-        text: "喔……好，那我等一下丟掉好了……",
+        text: "幹……喔好，那我等一下丟掉好了……",
         archetype: "meek",
         retort: "不用丟啦，聽我說完再決定。",
       },
@@ -940,7 +940,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-017-f",
-        text: "隔夜菜是不是會半夜自己動？",
+        text: "幹，隔夜菜是不是會半夜自己動？",
         archetype: "backfire",
         retort: "（姑丈一臉正經，沒聽懂玩笑）",
       },
@@ -952,9 +952,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-017-h",
-        text: "查證這麼認真，怎麼還會被詐騙？",
+        text: "他媽的查證這麼認真，怎麼還會被詐騙老不死？",
         archetype: "landmine",
-        retort: "他臉一垮，說明年不用來了。",
+        retort: "他臉一垮，罵你明年不用來了。",
       },
     ],
   },
@@ -966,7 +966,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-018-a",
-        text: "泡腳降火，先降降你的火氣吧。",
+        text: "靠北，泡腳降火，先降降你的火氣吧。",
         archetype: "perfect",
         retort: "他語塞，找不到反駁的話。",
       },
@@ -978,13 +978,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-018-c",
-        text: "姑丈平常泡多久，教教我。",
+        text: "靠，姑丈平常泡多久，教教我。",
         archetype: "deflect",
         retort: "二十分鐘剛好，泡到微微出汗。",
       },
       {
         id: "guzhang-elder_health-018-d",
-        text: "水有點燙，我腳伸不進去……",
+        text: "幹……水有點燙，我腳伸不進去……",
         archetype: "meek",
         retort: "加點冷水，別怕燙嘛。",
       },
@@ -996,7 +996,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-018-f",
-        text: "泡完是不是會變成薑母鴨？",
+        text: "幹，泡完是不是會變成薑母鴨？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續加薑片）",
       },
@@ -1008,9 +1008,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-018-h",
-        text: "泡腳降不了火，你血壓還是高。",
+        text: "去你的，泡腳降不了火，你血壓還是高。",
         archetype: "landmine",
-        retort: "他臉一垮，狠狠瞪你一眼。",
+        retort: "他臉一垮，狠狠瞪你罵三小。",
       },
     ],
   },
@@ -1022,7 +1022,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-019-a",
-        text: "解百毒？先解一下你的偏聽吧。",
+        text: "他媽的解百毒？先解一下你的偏聽吧。",
         archetype: "perfect",
         retort: "姑姑在旁邊憋笑憋很辛苦。",
       },
@@ -1034,13 +1034,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-019-c",
-        text: "姑丈教我怎麼煮這麼綿密。",
+        text: "靠，姑丈教我怎麼煮這麼綿密。",
         archetype: "deflect",
         retort: "秘訣是小火慢熬，我教你。",
       },
       {
         id: "guzhang-elder_health-019-d",
-        text: "我喝甜的容易脹氣，喝一點就好……",
+        text: "幹……我喝甜的容易脹氣，喝一點就好……",
         archetype: "meek",
         retort: "脹氣才代表在排毒啦。",
       },
@@ -1052,7 +1052,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-019-f",
-        text: "解百毒是不是連八卦都能解？",
+        text: "幹，解百毒是不是連八卦都能解？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續盛湯）",
       },
@@ -1064,7 +1064,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-019-h",
-        text: "解百毒，怎麼解不了你愛轉發？",
+        text: "去死啦，解百毒怎麼解不了你愛轉發老東西？",
         archetype: "landmine",
         retort: "他氣到講台語，轉頭不說話。",
       },
@@ -1078,7 +1078,7 @@ export default [
     options: [
       {
         id: "guzhang-elder_health-020-a",
-        text: "這篇文章，跟你上次的謠言一樣。",
+        text: "幹，這篇文章跟你上次的謠言一樣。",
         archetype: "perfect",
         retort: "他愣住，手指抓了抓後腦。",
       },
@@ -1090,13 +1090,13 @@ export default [
       },
       {
         id: "guzhang-elder_health-020-c",
-        text: "姑丈記得住這麼多組合，太強了。",
+        text: "靠，姑丈記得住這麼多組合，太強了。",
         archetype: "deflect",
         retort: "多看幾次就記住了，你也可以。",
       },
       {
         id: "guzhang-elder_health-020-d",
-        text: "我看不完啦，字好多……",
+        text: "幹……我看不完啦，字好多……",
         archetype: "meek",
         retort: "慢慢看，這是為你好。",
       },
@@ -1108,7 +1108,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-020-f",
-        text: "食物相剋是不是像武俠小說招式？",
+        text: "幹，食物相剋是不是像武俠招式？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續講解禁忌）",
       },
@@ -1120,9 +1120,9 @@ export default [
       },
       {
         id: "guzhang-elder_health-020-h",
-        text: "這篇八成也是詐騙集團寫的。",
+        text: "他媽的這篇八成也是詐騙集團寫的老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，別開臉不吭聲。",
+        retort: "他臉一垮，別開臉罵幹。",
       },
     ],
   },

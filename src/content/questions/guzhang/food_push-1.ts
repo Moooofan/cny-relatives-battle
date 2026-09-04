@@ -16,7 +16,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-001-a",
-        text: "乾杯是男人？那你怎麼血壓超標？",
+        text: "幹，乾杯是男人？那你怎麼血壓超標？",
         archetype: "perfect",
         retort: "他愣住，半天擠不出一句話。",
       },
@@ -28,13 +28,13 @@ export default [
       },
       {
         id: "guzhang-food_push-001-c",
-        text: "姑丈教我怎麼喝才不會醉。",
+        text: "靠，姑丈教我怎麼喝才不會醉。",
         archetype: "deflect",
         retort: "來，小口小口喝，我教你。",
       },
       {
         id: "guzhang-food_push-001-d",
-        text: "我等一下要開車，喝一點就好……",
+        text: "幹……我等一下要開車，喝一點就好……",
         archetype: "meek",
         retort: "一點點沒關係啦，喝喝喝。",
       },
@@ -46,7 +46,7 @@ export default [
       },
       {
         id: "guzhang-food_push-001-f",
-        text: "我用茶代替，感情一樣深啦哈哈。",
+        text: "幹，我用茶代替，感情一樣深啦。",
         archetype: "backfire",
         retort: "（姑丈搖頭，覺得你不夠意思）",
       },
@@ -58,9 +58,9 @@ export default [
       },
       {
         id: "guzhang-food_push-001-h",
-        text: "你那身血壓，是乾出來的吧姑丈。",
+        text: "他媽的你那身血壓，是乾出來的吧死老頭。",
         archetype: "landmine",
-        retort: "他吼一句台語，轉身走開。",
+        retort: "他吼一句幹恁娘，轉身走開。",
       },
     ],
   },
@@ -72,7 +72,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-002-a",
-        text: "怕浪費？你那些偏方才真的浪費。",
+        text: "靠北，怕浪費？你那些偏方才真的浪費。",
         archetype: "perfect",
         retort: "他假笑，轉頭跟別人聊。",
       },
@@ -84,13 +84,13 @@ export default [
       },
       {
         id: "guzhang-food_push-002-c",
-        text: "姑丈平常都配什麼下酒菜啊？",
+        text: "靠，姑丈平常都配什麼下酒菜啊？",
         archetype: "deflect",
         retort: "花生最搭，來，配著喝。",
       },
       {
         id: "guzhang-food_push-002-d",
-        text: "我已經有點脹了，喝一半就好……",
+        text: "幹……我已經有點脹了，喝一半就好……",
         archetype: "meek",
         retort: "一半太少了，再多喝一點。",
       },
@@ -102,7 +102,7 @@ export default [
       },
       {
         id: "guzhang-food_push-002-f",
-        text: "啤酒配薑黃是不是更養生？",
+        text: "幹，啤酒配薑黃是不是更養生？",
         archetype: "backfire",
         retort: "（姑丈眼睛一亮，開始認真思考）",
       },
@@ -114,9 +114,9 @@ export default [
       },
       {
         id: "guzhang-food_push-002-h",
-        text: "灌成這樣，血壓才是真的被你灌壞。",
+        text: "去你的，灌成這樣血壓才是真的被你灌壞。",
         archetype: "landmine",
-        retort: "他臉一垮，甩開手不說話。",
+        retort: "他臉一垮，甩開手罵三小。",
       },
     ],
   },
@@ -128,7 +128,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-003-a",
-        text: "燉三小時，燉得出血壓正常嗎？",
+        text: "他媽的燉三小時，燉得出血壓正常嗎？",
         archetype: "perfect",
         retort: "他語塞，清了清喉嚨。",
       },
@@ -140,13 +140,13 @@ export default [
       },
       {
         id: "guzhang-food_push-003-c",
-        text: "這湯配薑黃是不是更有味道？",
+        text: "靠，這湯配薑黃是不是更有味道？",
         archetype: "deflect",
         retort: "有加喔，你喝得出來嗎？",
       },
       {
         id: "guzhang-food_push-003-d",
-        text: "我肚子已經很飽了，喝一半好嗎……",
+        text: "幹……我肚子已經很飽了，喝一半好嗎……",
         archetype: "meek",
         retort: "一半怎麼行，這麼補的湯。",
       },
@@ -158,21 +158,21 @@ export default [
       },
       {
         id: "guzhang-food_push-003-f",
-        text: "喝完是不是能長出雞翅膀？",
+        text: "幹，喝完是不是能長出雞翅膀？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續盛湯）",
       },
       {
         id: "guzhang-food_push-003-g",
-        text: "這湯是不是能拿去參加比賽？",
+        text: "靠，這湯是不是能拿去參加比賽？",
         archetype: "backfire",
         retort: "（姑丈皺眉，覺得你在敷衍）",
       },
       {
         id: "guzhang-food_push-003-h",
-        text: "這湯再補，也補不回你判斷力。",
+        text: "去死，這湯再補，也補不回你判斷力老東西。",
         archetype: "landmine",
-        retort: "他氣到講台語，撂下一句狠話。",
+        retort: "他氣到講台語，撂下狠話。",
       },
     ],
   },
@@ -184,7 +184,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-004-a",
-        text: "吃這麼多，你的養生文章都白轉了？",
+        text: "幹，吃這麼多，你的養生文章都白轉了？",
         archetype: "perfect",
         retort: "他愣住，動作停在半空。",
       },
@@ -196,13 +196,13 @@ export default [
       },
       {
         id: "guzhang-food_push-004-c",
-        text: "姑丈幫我盛，這樣才有過年感。",
+        text: "靠，姑丈幫我盛，這樣才有過年感。",
         archetype: "deflect",
         retort: "好，來，姑丈盛給你最豪邁。",
       },
       {
         id: "guzhang-food_push-004-d",
-        text: "我剛吃了兩碗，真的飽了……",
+        text: "幹……我剛吃了兩碗，真的飽了……",
         archetype: "meek",
         retort: "才兩碗，過年要吃三碗才夠。",
       },
@@ -214,7 +214,7 @@ export default [
       },
       {
         id: "guzhang-food_push-004-f",
-        text: "再吃一碗是不是要辦大胃王賽？",
+        text: "幹，再吃一碗是不是要辦大胃王賽？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續盛飯）",
       },
@@ -226,9 +226,9 @@ export default [
       },
       {
         id: "guzhang-food_push-004-h",
-        text: "吃這麼多，判斷力倒一口都沒有。",
+        text: "他媽的吃這麼多，判斷力倒一口都沒有。",
         archetype: "landmine",
-        retort: "他臉一垮，重重嘆了口氣。",
+        retort: "他臉一垮，重重罵一句幹。",
       },
     ],
   },
@@ -240,7 +240,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-005-a",
-        text: "刀工這麼細，怎麼識人這麼粗？",
+        text: "靠北，刀工這麼細，怎麼識人這麼粗？",
         archetype: "perfect",
         retort: "他訕訕地把話題帶過。",
       },
@@ -252,13 +252,13 @@ export default [
       },
       {
         id: "guzhang-food_push-005-c",
-        text: "姑丈教我怎麼切才不會歪。",
+        text: "靠，姑丈教我怎麼切才不會歪。",
         archetype: "deflect",
         retort: "好，來，我示範一次給你看。",
       },
       {
         id: "guzhang-food_push-005-d",
-        text: "我剛吃很飽，先吃幾片就好……",
+        text: "幹……我剛吃很飽，先吃幾片就好……",
         archetype: "meek",
         retort: "幾片怎麼夠，這麼大盤。",
       },
@@ -270,7 +270,7 @@ export default [
       },
       {
         id: "guzhang-food_push-005-f",
-        text: "吃完是不是要負責洗籽？",
+        text: "幹，吃完是不是要負責洗籽？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續切下一顆）",
       },
@@ -282,7 +282,7 @@ export default [
       },
       {
         id: "guzhang-food_push-005-h",
-        text: "這盤芭樂，比你的偏方還有用。",
+        text: "他媽的這盤芭樂，比你的偏方還有用老東西。",
         archetype: "landmine",
         retort: "他臉一垮，翻起去年的舊帳。",
       },
@@ -296,7 +296,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-006-a",
-        text: "料加這麼多，是想淹死我的碗？",
+        text: "幹，料加這麼多，是想淹死我的碗？",
         archetype: "perfect",
         retort: "他語塞，臉紅了一下。",
       },
@@ -308,13 +308,13 @@ export default [
       },
       {
         id: "guzhang-food_push-006-c",
-        text: "姑丈教我怎麼涮才不會老。",
+        text: "靠，姑丈教我怎麼涮才不會老。",
         archetype: "deflect",
         retort: "秒數要抓好，我教你涮法。",
       },
       {
         id: "guzhang-food_push-006-d",
-        text: "碗裡已經滿出來了，吃不完……",
+        text: "幹……碗裡已經滿出來了，吃不完……",
         archetype: "meek",
         retort: "滿出來才夠味，快吃。",
       },
@@ -326,7 +326,7 @@ export default [
       },
       {
         id: "guzhang-food_push-006-f",
-        text: "碗都快滿到姑丈臉了哈哈。",
+        text: "幹，碗都快滿到姑丈臉了。",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續加料）",
       },
@@ -338,7 +338,7 @@ export default [
       },
       {
         id: "guzhang-food_push-006-h",
-        text: "料越加越多，你的謠言也是。",
+        text: "去你的，料越加越多，你的謠言也是。",
         archetype: "landmine",
         retort: "他氣到講台語，收拾東西就走。",
       },
@@ -352,7 +352,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-007-a",
-        text: "顧攤位這麼久，顧得了血壓嗎？",
+        text: "幹，顧攤位這麼久，顧得了血壓嗎？",
         archetype: "perfect",
         retort: "他愣住，眉頭皺了一下。",
       },
@@ -364,13 +364,13 @@ export default [
       },
       {
         id: "guzhang-food_push-007-c",
-        text: "姑丈教我怎麼烤才不會焦。",
+        text: "靠，姑丈教我怎麼烤才不會焦。",
         archetype: "deflect",
         retort: "好，火不要太大，我教你。",
       },
       {
         id: "guzhang-food_push-007-d",
-        text: "我剛吃了一份，真的很飽……",
+        text: "幹……我剛吃了一份，真的很飽……",
         archetype: "meek",
         retort: "一份哪夠，過年就是要多吃。",
       },
@@ -382,19 +382,19 @@ export default [
       },
       {
         id: "guzhang-food_push-007-f",
-        text: "再吃是不是要付攤位費啊哈哈。",
+        text: "幹，再吃是不是要付攤位費啊。",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續翻面烤肉）",
       },
       {
         id: "guzhang-food_push-007-g",
-        text: "烤肉配薑黃是不是新吃法？",
+        text: "靠，烤肉配薑黃是不是新吃法？",
         archetype: "backfire",
         retort: "（姑丈認真考慮起這個組合）",
       },
       {
         id: "guzhang-food_push-007-h",
-        text: "烤這麼多份，烤不熟你的偏方。",
+        text: "他媽的烤這麼多份，烤不熟你的偏方死老頭。",
         archetype: "landmine",
         retort: "他臉一垮，說明年不用來了。",
       },
@@ -408,7 +408,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-008-a",
-        text: "敬退休精彩，先敬血壓別破表。",
+        text: "靠北，敬退休精彩，先敬血壓別破表。",
         archetype: "perfect",
         retort: "他語塞，找不到反駁的話。",
       },
@@ -420,13 +420,13 @@ export default [
       },
       {
         id: "guzhang-food_push-008-c",
-        text: "姑丈教我怎麼品酒才專業。",
+        text: "靠，姑丈教我怎麼品酒才專業。",
         archetype: "deflect",
         retort: "來，先聞香再入口，我教你。",
       },
       {
         id: "guzhang-food_push-008-d",
-        text: "我對紅酒沒研究，喝一小口……",
+        text: "幹……我對紅酒沒研究，喝一小口……",
         archetype: "meek",
         retort: "一小口太少，多喝一點。",
       },
@@ -438,7 +438,7 @@ export default [
       },
       {
         id: "guzhang-food_push-008-f",
-        text: "紅酒配薑黃是不是變成藥酒？",
+        text: "幹，紅酒配薑黃是不是變成藥酒？",
         archetype: "backfire",
         retort: "（姑丈眼睛一亮，開始認真討論）",
       },
@@ -450,9 +450,9 @@ export default [
       },
       {
         id: "guzhang-food_push-008-h",
-        text: "喝這杯，你血壓比酒還紅吧。",
+        text: "去死，喝這杯，你血壓比酒還紅吧老不死。",
         archetype: "landmine",
-        retort: "他臉一垮，狠狠瞪你一眼。",
+        retort: "他臉一垮，狠狠瞪你罵三小。",
       },
     ],
   },
@@ -464,7 +464,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-009-a",
-        text: "圓圓滿滿，滿不過你的偏方效果。",
+        text: "他媽的圓圓滿滿，滿不過你的偏方效果。",
         archetype: "perfect",
         retort: "姑姑在旁邊憋笑憋很辛苦。",
       },
@@ -476,13 +476,13 @@ export default [
       },
       {
         id: "guzhang-food_push-009-c",
-        text: "姑丈教我怎麼搓才會圓。",
+        text: "靠，姑丈教我怎麼搓才會圓。",
         archetype: "deflect",
         retort: "好，來，手心這樣轉，我教你。",
       },
       {
         id: "guzhang-food_push-009-d",
-        text: "我已經吃一碗了，真的很甜很飽……",
+        text: "幹……我已經吃一碗了，真的很甜很飽……",
         archetype: "meek",
         retort: "甜才有福氣，再吃一碗。",
       },
@@ -494,7 +494,7 @@ export default [
       },
       {
         id: "guzhang-food_push-009-f",
-        text: "湯圓是不是能拿去打乒乓球？",
+        text: "幹，湯圓是不是能拿去打乒乓球？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續舀湯圓）",
       },
@@ -506,7 +506,7 @@ export default [
       },
       {
         id: "guzhang-food_push-009-h",
-        text: "你煮的湯圓，沒一顆比你可信。",
+        text: "去你的，你煮的湯圓，沒一顆比你可信。",
         archetype: "landmine",
         retort: "他氣到講台語，轉頭不說話。",
       },
@@ -520,7 +520,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-010-a",
-        text: "嗑瓜子的功夫，怎麼不拿去查證？",
+        text: "幹，嗑瓜子的功夫，怎麼不拿去查證？",
         archetype: "perfect",
         retort: "他愣住，手指抓了抓後腦。",
       },
@@ -532,13 +532,13 @@ export default [
       },
       {
         id: "guzhang-food_push-010-c",
-        text: "姑丈教我怎麼嗑才不會咬到殼。",
+        text: "靠，姑丈教我怎麼嗑才不會咬到殼。",
         archetype: "deflect",
         retort: "來，用門牙輕輕一咬，我教你。",
       },
       {
         id: "guzhang-food_push-010-d",
-        text: "我剛吃完飯，先不吃零食好了……",
+        text: "幹……我剛吃完飯，先不吃零食好了……",
         archetype: "meek",
         retort: "零食是配電視用的，吃啦。",
       },
@@ -550,7 +550,7 @@ export default [
       },
       {
         id: "guzhang-food_push-010-f",
-        text: "嗑瓜子是不是能練出鋼牙？",
+        text: "幹，嗑瓜子是不是能練出鋼牙？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續嗑瓜子）",
       },
@@ -562,9 +562,9 @@ export default [
       },
       {
         id: "guzhang-food_push-010-h",
-        text: "嗑這堆殼，也嗑不出一句真話。",
+        text: "他媽的嗑這堆殼，也嗑不出一句真話老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，別開臉不吭聲。",
+        retort: "他臉一垮，別開臉罵幹。",
       },
     ],
   },
@@ -576,7 +576,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-011-a",
-        text: "補膠原蛋白，先補一下耳根子。",
+        text: "靠北，補膠原蛋白，先補一下耳根子。",
         archetype: "perfect",
         retort: "他語塞，假裝在看別的地方。",
       },
@@ -588,13 +588,13 @@ export default [
       },
       {
         id: "guzhang-food_push-011-c",
-        text: "姑丈幫我挑一支肉最多的。",
+        text: "靠，姑丈幫我挑一支肉最多的。",
         archetype: "deflect",
         retort: "好，這支給你，肉最厚。",
       },
       {
         id: "guzhang-food_push-011-d",
-        text: "我剛吃很多菜了，先吃半支好嗎……",
+        text: "幹……我剛吃很多菜了，先吃半支好嗎……",
         archetype: "meek",
         retort: "半支怎麼夠，這麼補的東西。",
       },
@@ -606,21 +606,21 @@ export default [
       },
       {
         id: "guzhang-food_push-011-f",
-        text: "吃完是不是皮膚會變豬皮亮？",
+        text: "幹，吃完是不是皮膚會變豬皮亮？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續夾豬腳）",
       },
       {
         id: "guzhang-food_push-011-g",
-        text: "滷豬腳配薑黃是不是更補？",
+        text: "靠，滷豬腳配薑黃是不是更補？",
         archetype: "backfire",
         retort: "（姑丈眼睛一亮，認真思考起來）",
       },
       {
         id: "guzhang-food_push-011-h",
-        text: "滷四小時，滷不出一次準偏方。",
+        text: "去你的，滷四小時，滷不出一次準偏方。",
         archetype: "landmine",
-        retort: "他吼一句台語，摔門進房。",
+        retort: "他吼一句幹恁娘，摔門進房。",
       },
     ],
   },
@@ -632,7 +632,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-012-a",
-        text: "自己泡的？跟朋友的朋友一樣可疑。",
+        text: "他媽的自己泡的？跟朋友的朋友一樣可疑。",
         archetype: "perfect",
         retort: "他愣住，表情僵了一下。",
       },
@@ -644,13 +644,13 @@ export default [
       },
       {
         id: "guzhang-food_push-012-c",
-        text: "姑丈教我怎麼分辨泡得夠不夠。",
+        text: "靠，姑丈教我怎麼分辨泡得夠不夠。",
         archetype: "deflect",
         retort: "顏色要深，聞起來要香，我教你。",
       },
       {
         id: "guzhang-food_push-012-d",
-        text: "味道有點嗆，我小口喝就好……",
+        text: "幹……味道有點嗆，我小口喝就好……",
         archetype: "meek",
         retort: "嗆才有效果，多喝一口。",
       },
@@ -662,7 +662,7 @@ export default [
       },
       {
         id: "guzhang-food_push-012-f",
-        text: "這味道，我拿去泡腳好了。",
+        text: "幹，這味道，我拿去泡腳好了。",
         archetype: "backfire",
         retort: "（姑丈皺眉，把罐子收回去）",
       },
@@ -674,9 +674,9 @@ export default [
       },
       {
         id: "guzhang-food_push-012-h",
-        text: "這罐藥酒，比你信的謠言可疑。",
+        text: "去死，這罐藥酒，比你信的謠言可疑老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，冷笑一聲不說話。",
+        retort: "他臉一垮，冷笑罵你欠揍。",
       },
     ],
   },
@@ -688,7 +688,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-013-a",
-        text: "繞一圈敬酒，繞不出血壓正常。",
+        text: "幹，繞一圈敬酒，繞不出血壓正常。",
         archetype: "perfect",
         retort: "他訕笑，改口說算你厲害。",
       },
@@ -700,13 +700,13 @@ export default [
       },
       {
         id: "guzhang-food_push-013-c",
-        text: "姑丈先敬一輪，我在旁邊學。",
+        text: "靠，姑丈先敬一輪，我在旁邊學。",
         archetype: "deflect",
         retort: "好，看好了，這才叫氣勢。",
       },
       {
         id: "guzhang-food_push-013-d",
-        text: "繞一圈我已經喝三杯了，有點暈……",
+        text: "幹……繞一圈我已經喝三杯了，有點暈……",
         archetype: "meek",
         retort: "暈才代表氣氛到位，繼續！",
       },
@@ -718,7 +718,7 @@ export default [
       },
       {
         id: "guzhang-food_push-013-f",
-        text: "這樣繞圈是不是在跳土風舞？",
+        text: "幹，這樣繞圈是不是在跳土風舞？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續倒下一杯）",
       },
@@ -730,9 +730,9 @@ export default [
       },
       {
         id: "guzhang-food_push-013-h",
-        text: "敬成這樣，你肝比立場還硬。",
+        text: "他媽的敬成這樣，你肝比立場還硬死老頭。",
         archetype: "landmine",
-        retort: "他氣到講台語，罵你講話白目。",
+        retort: "他氣到講台語，罵你白目。",
       },
     ],
   },
@@ -744,7 +744,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-014-a",
-        text: "這杯不能少，判斷力倒缺很多。",
+        text: "靠北，這杯不能少，判斷力倒缺很多。",
         archetype: "perfect",
         retort: "他語塞，講到一半改口。",
       },
@@ -756,13 +756,13 @@ export default [
       },
       {
         id: "guzhang-food_push-014-c",
-        text: "姑丈教我怎麼敬酒才有禮貌。",
+        text: "靠，姑丈教我怎麼敬酒才有禮貌。",
         archetype: "deflect",
         retort: "杯子要低一點，我教你。",
       },
       {
         id: "guzhang-food_push-014-d",
-        text: "剛剛已經敬過一輪了，真的飽和了……",
+        text: "幹……剛剛已經敬過一輪了，真的飽和了……",
         archetype: "meek",
         retort: "飽和也要再乾一杯啊。",
       },
@@ -774,7 +774,7 @@ export default [
       },
       {
         id: "guzhang-food_push-014-f",
-        text: "敬酒是不是可以用眼神代替？",
+        text: "幹，敬酒是不是可以用眼神代替？",
         archetype: "backfire",
         retort: "（姑丈皺眉，覺得你太隨便）",
       },
@@ -786,7 +786,7 @@ export default [
       },
       {
         id: "guzhang-food_push-014-h",
-        text: "喝這麼多年，喝出的只有血壓高。",
+        text: "他媽的喝這麼多年，喝出的只有血壓高。",
         archetype: "landmine",
         retort: "他臉一垮，起身走去別桌。",
       },
@@ -800,7 +800,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-015-a",
-        text: "人情要顧，你的耳根更該顧好。",
+        text: "幹，人情要顧，你的耳根更該顧好。",
         archetype: "perfect",
         retort: "他愣住，話卡在喉嚨。",
       },
@@ -812,13 +812,13 @@ export default [
       },
       {
         id: "guzhang-food_push-015-c",
-        text: "姑丈幫我挑一塊你最愛的口味。",
+        text: "靠，姑丈幫我挑一塊你最愛的口味。",
         archetype: "deflect",
         retort: "好，這塊芋頭餡的最讚。",
       },
       {
         id: "guzhang-food_push-015-d",
-        text: "我剛吃了很多甜的，先吃半塊……",
+        text: "幹……我剛吃了很多甜的，先吃半塊……",
         archetype: "meek",
         retort: "半塊哪算數，整塊吃完。",
       },
@@ -830,19 +830,19 @@ export default [
       },
       {
         id: "guzhang-food_push-015-f",
-        text: "吃完是不是要回禮包個紅包？",
+        text: "幹，吃完是不是要回禮包個紅包？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續切下一塊）",
       },
       {
         id: "guzhang-food_push-015-g",
-        text: "這禮盒是不是也送了薑黃口味？",
+        text: "靠，這禮盒是不是也送了薑黃口味？",
         archetype: "backfire",
         retort: "（姑丈認真翻找禮盒內容物）",
       },
       {
         id: "guzhang-food_push-015-h",
-        text: "這禮盒，跟朋友的朋友一樣不存在。",
+        text: "去你的，這禮盒，跟朋友的朋友一樣不存在。",
         archetype: "landmine",
         retort: "他氣到講台語，說你沒大沒小。",
       },
@@ -856,7 +856,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-016-a",
-        text: "年年高升，升不了你判斷力。",
+        text: "他媽的年年高升，升不了你判斷力。",
         archetype: "perfect",
         retort: "姑姑在旁邊笑到快岔氣。",
       },
@@ -868,13 +868,13 @@ export default [
       },
       {
         id: "guzhang-food_push-016-c",
-        text: "姑丈教我怎麼煎才不會黏鍋。",
+        text: "靠，姑丈教我怎麼煎才不會黏鍋。",
         archetype: "deflect",
         retort: "好，油要先熱，我教你。",
       },
       {
         id: "guzhang-food_push-016-d",
-        text: "已經吃了一塊，真的黏牙又飽……",
+        text: "幹……已經吃了一塊，真的黏牙又飽……",
         archetype: "meek",
         retort: "黏牙才夠Q，再吃一塊。",
       },
@@ -886,7 +886,7 @@ export default [
       },
       {
         id: "guzhang-food_push-016-f",
-        text: "年年高升是不是吃了會長高？",
+        text: "幹，年年高升是不是吃了會長高？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續切下一塊）",
       },
@@ -898,9 +898,9 @@ export default [
       },
       {
         id: "guzhang-food_push-016-h",
-        text: "這年糕黏牙，比不上你嘴硬。",
+        text: "去死，這年糕黏牙，比不上你嘴硬老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，深吸一口氣不說話。",
+        retort: "他臉一垮，深吸一口氣罵幹。",
       },
     ],
   },
@@ -912,7 +912,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-017-a",
-        text: "湯頭夠力，你的立場倒是很軟。",
+        text: "幹，湯頭夠力，你的立場倒是很軟。",
         archetype: "perfect",
         retort: "他語塞，眼神飄向別處。",
       },
@@ -924,13 +924,13 @@ export default [
       },
       {
         id: "guzhang-food_push-017-c",
-        text: "姑丈教我怎麼掌握米酒比例。",
+        text: "靠，姑丈教我怎麼掌握米酒比例。",
         archetype: "deflect",
         retort: "秘訣是慢慢加，我教你。",
       },
       {
         id: "guzhang-food_push-017-d",
-        text: "我對米酒味比較敏感，喝一點就好……",
+        text: "幹……我對米酒味比較敏感，喝一點就好……",
         archetype: "meek",
         retort: "酒精都煮掉了啦，多喝點。",
       },
@@ -942,7 +942,7 @@ export default [
       },
       {
         id: "guzhang-food_push-017-f",
-        text: "喝完是不是會醉到不會走路？",
+        text: "幹，喝完是不是會醉到不會走路？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續加米酒）",
       },
@@ -954,9 +954,9 @@ export default [
       },
       {
         id: "guzhang-food_push-017-h",
-        text: "加這麼多料，蓋不了偏方沒效。",
+        text: "他媽的加這麼多料，蓋不了偏方沒效死老頭。",
         archetype: "landmine",
-        retort: "他吼一句台語，轉頭不理你。",
+        retort: "他吼一句幹恁娘，轉頭不理你。",
       },
     ],
   },
@@ -968,7 +968,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-018-a",
-        text: "囤這一箱，跟你囤的謠言一樣多。",
+        text: "靠北，囤這一箱，跟你囤的謠言一樣多。",
         archetype: "perfect",
         retort: "他愣住，動作僵在原地。",
       },
@@ -980,13 +980,13 @@ export default [
       },
       {
         id: "guzhang-food_push-018-c",
-        text: "姑丈平常都幾點喝這個補鈣？",
+        text: "靠，姑丈平常都幾點喝這個補鈣？",
         archetype: "deflect",
         retort: "早晚各一瓶，你也該養成習慣。",
       },
       {
         id: "guzhang-food_push-018-d",
-        text: "我今天已經喝了牛奶了……",
+        text: "幹……我今天已經喝了牛奶了……",
         archetype: "meek",
         retort: "再喝一瓶，鈣質不嫌多。",
       },
@@ -998,7 +998,7 @@ export default [
       },
       {
         id: "guzhang-food_push-018-f",
-        text: "這箱是不是要囤到下個過年？",
+        text: "幹，這箱是不是要囤到下個過年？",
         archetype: "backfire",
         retort: "（姑丈皺眉，覺得你在虧他）",
       },
@@ -1010,9 +1010,9 @@ export default [
       },
       {
         id: "guzhang-food_push-018-h",
-        text: "囤這箱，跟你被騙那次一樣衝動。",
+        text: "去你的，囤這箱，跟你被騙那次一樣衝動。",
         archetype: "landmine",
-        retort: "他臉一垮，甩手不想理你。",
+        retort: "他臉一垮，甩手罵你三小。",
       },
     ],
   },
@@ -1024,7 +1024,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-019-a",
-        text: "排隊排最長，排不出真的偏方。",
+        text: "幹，排隊排最長，排不出真的偏方。",
         archetype: "perfect",
         retort: "他嘴硬回一句，但沒底氣。",
       },
@@ -1036,13 +1036,13 @@ export default [
       },
       {
         id: "guzhang-food_push-019-c",
-        text: "姑丈幫我配蒜片，剛剛好的量。",
+        text: "靠，姑丈幫我配蒜片，剛剛好的量。",
         archetype: "deflect",
         retort: "好，多加點蒜片才夠味。",
       },
       {
         id: "guzhang-food_push-019-d",
-        text: "我剛吃了很多，一根就好……",
+        text: "幹……我剛吃了很多，一根就好……",
         archetype: "meek",
         retort: "一根不夠意思，再吃一根。",
       },
@@ -1054,19 +1054,19 @@ export default [
       },
       {
         id: "guzhang-food_push-019-f",
-        text: "吃完是不是全身會有蒜味走天下？",
+        text: "幹，吃完是不是全身會有蒜味走天下？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續遞下一根）",
       },
       {
         id: "guzhang-food_push-019-g",
-        text: "香腸配薑黃是不是黑暗料理？",
+        text: "靠，香腸配薑黃是不是黑暗料理？",
         archetype: "backfire",
         retort: "（姑丈皺眉，覺得你太誇張）",
       },
       {
         id: "guzhang-food_push-019-h",
-        text: "這根香腸，比你的消息還可疑。",
+        text: "他媽的這根香腸，比你的消息還可疑老不死。",
         archetype: "landmine",
         retort: "他氣到講台語，冷哼一聲。",
       },
@@ -1080,7 +1080,7 @@ export default [
     options: [
       {
         id: "guzhang-food_push-020-a",
-        text: "轉大人？先轉一下你判斷力。",
+        text: "靠北，轉大人？先轉一下你判斷力。",
         archetype: "perfect",
         retort: "他語塞，尷尬地清清喉嚨。",
       },
@@ -1092,13 +1092,13 @@ export default [
       },
       {
         id: "guzhang-food_push-020-c",
-        text: "姑丈自己也有喝這款的嗎？",
+        text: "靠，姑丈自己也有喝這款的嗎？",
         archetype: "deflect",
         retort: "有喔，我每天早上都喝一瓶。",
       },
       {
         id: "guzhang-food_push-020-d",
-        text: "我早就過了轉大人的年紀了……",
+        text: "幹……我早就過了轉大人的年紀了……",
         archetype: "meek",
         retort: "年紀哪有關係，喝了都有效。",
       },
@@ -1110,7 +1110,7 @@ export default [
       },
       {
         id: "guzhang-food_push-020-f",
-        text: "喝完是不是明天就會長高十公分？",
+        text: "幹，喝完是不是明天就會長高十公分？",
         archetype: "backfire",
         retort: "（姑丈沒聽懂，繼續講解成分）",
       },
@@ -1122,9 +1122,9 @@ export default [
       },
       {
         id: "guzhang-food_push-020-h",
-        text: "喝這罐，喝不出一次準偏方。",
+        text: "他媽的喝這罐，喝不出一次準偏方老東西。",
         archetype: "landmine",
-        retort: "他臉一垮，安靜了整整十秒。",
+        retort: "他臉一垮，安靜十秒罵幹。",
       },
     ],
   },
