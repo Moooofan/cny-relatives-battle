@@ -27,13 +27,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-022-a",
-        text: "撐十二點算什麼，阿嬤撐我幾十年更厲害。",
+        text: "撐十二點算什麼，他媽的，阿嬤撐更狠。",
         archetype: "perfect",
         retort: "……阿嬤笑著拍拍你的手",
       },
       {
         id: "xiao-biaodi-comparison-022-b",
-        text: "我們來比賽誰先講出今年的關鍵字。",
+        text: "笑死，來比賽誰先講出今年關鍵字。",
         archetype: "deflect",
         retort: "好啊！我先講！過年！",
       },
@@ -45,7 +45,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-022-d",
-        text: "我可能撐不到十二點……有點想睡……",
+        text: "我可能撐不到十二點……靠，想睡……",
         archetype: "meek",
         retort: "撐不到喔，那算長大失敗。",
       },
@@ -57,19 +57,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-022-f",
-        text: "我是閉眼養神，不是想睡。",
+        text: "我是閉眼養神，機掰才不是想睡。",
         archetype: "backfire",
         retort: "……（小表弟已經打哈欠了）",
       },
       {
         id: "xiao-biaodi-comparison-022-g",
-        text: "真正的長大是懂得適時休息。",
+        text: "真正長大是懂得休息，幹嘛硬撐。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續撐著）",
       },
       {
         id: "xiao-biaodi-comparison-022-h",
-        text: "守歲無聊就去睡，別在這裡告狀。",
+        text: "去死，小屁孩守歲無聊就去睡。",
         archetype: "landmine",
         retort: "嗚嗚——他躲進阿嬤懷裡哭",
       },
@@ -83,13 +83,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-023-a",
-        text: "收藏十年份，姑姑你嫁妝準備幾年？",
+        text: "收藏十年份，機掰，姑姑嫁妝準備幾年？",
         archetype: "perfect",
         retort: "……姑姑轉頭裝沒事",
       },
       {
         id: "xiao-biaodi-comparison-023-b",
-        text: "厲害！那你最喜歡哪一年的圖案？",
+        text: "笑死，那你最喜歡哪一年的圖案？",
         archetype: "deflect",
         retort: "我最喜歡兔子那年！",
       },
@@ -101,7 +101,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-023-d",
-        text: "我沒有特別收藏耶，都直接花掉了……",
+        text: "我沒有特別收藏耶……靠，都花掉了……",
         archetype: "meek",
         retort: "花掉喔，都沒有留紀念？",
       },
@@ -113,19 +113,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-023-f",
-        text: "我的收藏是無形的，叫做回憶資產。",
+        text: "我的收藏是無形的，北七才不懂。",
         archetype: "backfire",
         retort: "……（小表弟繼續翻他的收藏本）",
       },
       {
         id: "xiao-biaodi-comparison-023-g",
-        text: "極簡主義者不需要收藏實體物品。",
+        text: "極簡主義不需要收藏實體，幹嘛執著。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，收起本子）",
       },
       {
         id: "xiao-biaodi-comparison-023-h",
-        text: "收藏而已，先把你的獎狀拿出來比。",
+        text: "機掰，廢物小孩先把獎狀拿出來比。",
         archetype: "landmine",
         retort: "嗚——姑姑瞪你一眼",
       },
@@ -139,13 +139,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-024-a",
-        text: "表哥寫得快，媽媽催我催得更快。",
+        text: "表哥寫得快，幹，你催我催得更快。",
         archetype: "perfect",
         retort: "……媽媽轉頭裝忙",
       },
       {
         id: "xiao-biaodi-comparison-024-b",
-        text: "要不要比賽算數學，我出題你算？",
+        text: "笑死，要不要比賽算數學，我出題？",
         archetype: "deflect",
         retort: "好啊！我最會算數學了！",
       },
@@ -157,7 +157,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-024-d",
-        text: "我作業還有一半沒寫……有點焦慮……",
+        text: "我作業還有一半沒寫……靠，有點焦慮……",
         archetype: "meek",
         retort: "還有一半？那要趕快寫了。",
       },
@@ -169,19 +169,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-024-f",
-        text: "拖到最後一天才是真正的效率美學。",
+        text: "拖到最後一天，機掰才是效率美學。",
         archetype: "backfire",
         retort: "……（小表弟已經在寫自己的作業）",
       },
       {
         id: "xiao-biaodi-comparison-024-g",
-        text: "我在等靈感降臨才動筆。",
+        text: "我在等靈感降臨才動筆，幹嘛急。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續埋頭寫）",
       },
       {
         id: "xiao-biaodi-comparison-024-h",
-        text: "催我寫作業前，先檢查你自己的。",
+        text: "幹，死小孩催我前先檢查你自己的。",
         archetype: "landmine",
         retort: "全場安靜，你媽臉綠了",
       },
@@ -195,13 +195,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-025-a",
-        text: "騎車而已，老師你敢學我平衡人生嗎？",
+        text: "騎車而已，靠北，老師敢學平衡人生嗎？",
         archetype: "perfect",
         retort: "……他轉頭裝作沒聽到",
       },
       {
         id: "xiao-biaodi-comparison-025-b",
-        text: "要不要教我怎麼騎得比較穩？",
+        text: "笑死，要不要教我怎麼騎得比較穩？",
         archetype: "deflect",
         retort: "好啊！我教你祕訣！",
       },
@@ -213,7 +213,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-025-d",
-        text: "我很久沒騎了，可能會摔……",
+        text: "我很久沒騎了……靠，可能會摔……",
         archetype: "meek",
         retort: "會摔喔，那你長大失敗了。",
       },
@@ -225,19 +225,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-025-f",
-        text: "我騎的是隱形的人生腳踏車。",
+        text: "我騎的是隱形人生腳踏車，機掰境界高。",
         archetype: "backfire",
         retort: "……（小表弟已經騎上真的腳踏車）",
       },
       {
         id: "xiao-biaodi-comparison-025-g",
-        text: "四個輪子才是真正的高級玩法。",
+        text: "四個輪子才是高級玩法，幹嘛騎兩輪。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續練直排輪）",
       },
       {
         id: "xiao-biaodi-comparison-025-h",
-        text: "騎腳踏車而已，你會了再說我。",
+        text: "幹你娘，小屁孩你會了再說我。",
         archetype: "landmine",
         retort: "他媽媽嚴肅地瞪了你一眼",
       },
@@ -251,13 +251,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-026-a",
-        text: "才藝不重要，姑姑你當年才藝呢？",
+        text: "才藝不重要，他媽的，姑姑當年才藝呢？",
         archetype: "perfect",
         retort: "……姑姑愣住，假笑帶過",
       },
       {
         id: "xiao-biaodi-comparison-026-b",
-        text: "你先表演一個，我幫你打分數。",
+        text: "笑死，你先表演一個，我幫你打分數。",
         archetype: "deflect",
         retort: "好！看我的舞步！",
       },
@@ -269,7 +269,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-026-d",
-        text: "我什麼才藝都不太會耶……",
+        text: "我什麼才藝都不太會耶……靠……",
         archetype: "meek",
         retort: "都不會喔，那怎麼上場？",
       },
@@ -281,19 +281,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-026-f",
-        text: "我的才藝是行為藝術，需要慢慢欣賞。",
+        text: "我的才藝是行為藝術，機掰要慢慢欣賞。",
         archetype: "backfire",
         retort: "……（姑姑已經在催下一個表演）",
       },
       {
         id: "xiao-biaodi-comparison-026-g",
-        text: "沉默也是一種表演形式，很前衛。",
+        text: "沉默也是一種表演，幹嘛這麼直白。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，直接跳到台上唱歌）",
       },
       {
         id: "xiao-biaodi-comparison-026-h",
-        text: "才藝表演很簡單，你敢上去試試。",
+        text: "他媽的，廢物小孩才藝表演敢不敢上去。",
         archetype: "landmine",
         retort: "嗚嗚——他哭著找姑姑告狀",
       },
@@ -307,13 +307,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-027-a",
-        text: "課金而已，媽媽你買的包才叫敗家。",
+        text: "課金而已，機掰，你買的包才叫敗家。",
         archetype: "perfect",
         retort: "……媽媽尷尬笑了兩聲",
       },
       {
         id: "xiao-biaodi-comparison-027-b",
-        text: "你手遊玩什麼，我教你怎麼免費拿寶物。",
+        text: "笑死，你手遊玩什麼，我教你免費拿寶物。",
         archetype: "deflect",
         retort: "真的嗎！快教我！",
       },
@@ -325,7 +325,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-027-d",
-        text: "對啊……我這個月是課多了一點……",
+        text: "對啊……靠，我這個月是課多了一點……",
         archetype: "meek",
         retort: "課多了喔，那存款呢？",
       },
@@ -337,21 +337,21 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-027-f",
-        text: "我課的金是給遊戲公司做公益。",
+        text: "我課的金是給遊戲公司做公益，北七才懂。",
         archetype: "backfire",
         retort: "……（小表弟繼續玩他自己不課金的遊戲）",
       },
       {
         id: "xiao-biaodi-comparison-027-g",
-        text: "虛擬寶物才是未來的硬通貨。",
+        text: "虛擬寶物才是未來硬通貨，幹嘛計較。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續打怪）",
       },
       {
         id: "xiao-biaodi-comparison-027-h",
-        text: "花多少錢關你屁事，先寫你的作業。",
+        text: "去你的，死小孩花多少錢關你屁事。",
         archetype: "landmine",
-        retort: "嗚——媽媽他兇我——",
+        retort: "嗚——媽媽他罵髒話兇我——",
       },
     ],
   },
@@ -363,13 +363,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-028-a",
-        text: "字醜沒關係，老師你薪水找到了嗎。",
+        text: "字醜沒關係，幹，老師你薪水找到了嗎。",
         archetype: "perfect",
         retort: "……他乾笑兩聲，跑走了",
       },
       {
         id: "xiao-biaodi-comparison-028-b",
-        text: "你的名字要不要教我怎麼寫比較好看？",
+        text: "笑死，你名字要不要教我怎麼寫好看？",
         archetype: "deflect",
         retort: "好啊！看我示範！",
       },
@@ -381,7 +381,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-028-d",
-        text: "我的字真的滿醜的……在練習了……",
+        text: "我的字真的滿醜的……靠，在練習了……",
         archetype: "meek",
         retort: "醜喔，那要多練字了。",
       },
@@ -393,19 +393,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-028-f",
-        text: "我的字是抽象藝術風格，懂的人才懂。",
+        text: "我的字是抽象藝術，機掰懂的人才懂。",
         archetype: "backfire",
         retort: "（他拿起賀卡，皺眉不說話）",
       },
       {
         id: "xiao-biaodi-comparison-028-g",
-        text: "字醜的人通常字裡都藏著才華。",
+        text: "字醜的人字裡都藏才華，幹嘛笑我。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續寫賀卡）",
       },
       {
         id: "xiao-biaodi-comparison-028-h",
-        text: "字醜的是你作業本，先照鏡子。",
+        text: "去死，小屁孩字醜的是作業本吧。",
         archetype: "landmine",
         retort: "嗚嗚——他躲到媽媽背後哭",
       },
@@ -419,13 +419,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-029-a",
-        text: "吃辣算什麼，阿嬤你當年嫁人才勇敢。",
+        text: "吃辣算什麼，靠北，阿嬤當年嫁人才勇敢。",
         archetype: "perfect",
         retort: "……阿嬤笑開懷",
       },
       {
         id: "xiao-biaodi-comparison-029-b",
-        text: "你先吃一口給我看看會不會噴火。",
+        text: "笑死，你先吃一口看看會不會噴火。",
         archetype: "deflect",
         retort: "看我的！超辣也不怕！",
       },
@@ -437,7 +437,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-029-d",
-        text: "我不太敢吃辣，會辣到流眼淚……",
+        text: "我不太敢吃辣……靠，會辣到流眼淚……",
         archetype: "meek",
         retort: "流眼淚喔，那不算真男人。",
       },
@@ -449,19 +449,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-029-f",
-        text: "辣是給普通人吃的，我吃的是境界。",
+        text: "辣是給普通人吃的，機掰我吃的是境界。",
         archetype: "backfire",
         retort: "……（小表弟已經被辣到猛灌水）",
       },
       {
         id: "xiao-biaodi-comparison-029-g",
-        text: "真正的高手是用眼神吃辣，不用嘴巴。",
+        text: "真高手用眼神吃辣，幹嘛用嘴巴。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續吃辣椒）",
       },
       {
         id: "xiao-biaodi-comparison-029-h",
-        text: "吃辣算什麼，先問你敢不敢吃苦讀書。",
+        text: "機掰，吃辣算什麼，廢物小孩讀書呢。",
         archetype: "landmine",
         retort: "嗚——阿嬤瞪你一眼",
       },
@@ -475,25 +475,25 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-030-a",
-        text: "黏走活該，老師你換過幾顆假牙。",
+        text: "黏走活該，他媽的，老師換過幾顆假牙。",
         archetype: "perfect",
         retort: "……他愣住，說不出話",
       },
       {
         id: "xiao-biaodi-comparison-030-b",
-        text: "你現在換了幾顆牙，給我看看？",
+        text: "笑死，你現在換了幾顆牙，給我看看？",
         archetype: "deflect",
         retort: "我換了三顆，你看！",
       },
       {
         id: "xiao-biaodi-comparison-030-c",
-        text: "年糕要沾花生粉比較不會黏，你要試試？",
+        text: "年糕要沾花生粉比較不會黏，要試試？",
         archetype: "deflect",
         retort: "好啊！我要沾花生粉！",
       },
       {
         id: "xiao-biaodi-comparison-030-d",
-        text: "我最近剛好在換牙，有點怕痛……",
+        text: "我最近剛好在換牙……靠，有點怕痛……",
         archetype: "meek",
         retort: "怕痛喔，那不要吃年糕了。",
       },
@@ -505,19 +505,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-030-f",
-        text: "我的牙齒是為了以後長更整齊做準備。",
+        text: "我的牙是為了以後更整齊，機掰準備。",
         archetype: "backfire",
         retort: "……（小表弟繼續小心咬年糕）",
       },
       {
         id: "xiao-biaodi-comparison-030-g",
-        text: "換牙是升級，不是退步，懂嗎。",
+        text: "換牙是升級，不是退步，幹嘛怕。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續研究自己的牙齒）",
       },
       {
         id: "xiao-biaodi-comparison-030-h",
-        text: "年糕而已你緊張什麼，先別哭。",
+        text: "幹，死小孩年糕而已緊張什麼。",
         archetype: "landmine",
         retort: "嗚——他跑去找媽媽告狀",
       },
@@ -531,13 +531,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-031-a",
-        text: "作文而已，老師你的教案寫得完嗎。",
+        text: "作文而已，機掰，老師你教案寫得完嗎。",
         archetype: "perfect",
         retort: "……他呆住，不知道怎麼接",
       },
       {
         id: "xiao-biaodi-comparison-031-b",
-        text: "你的新年新希望是什麼，先講給我聽？",
+        text: "笑死，你的新年新希望是什麼，先講？",
         archetype: "deflect",
         retort: "我要打贏全班同學的Switch！",
       },
@@ -549,7 +549,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-031-d",
-        text: "我作文寫得普普通通啦……",
+        text: "我作文寫得普普通通啦……靠……",
         archetype: "meek",
         retort: "普普通通喔，那要多練習。",
       },
@@ -561,19 +561,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-031-f",
-        text: "我的成功不需要靠作文，靠氣勢。",
+        text: "我的成功不靠作文，北七才靠氣勢。",
         archetype: "backfire",
         retort: "……（小表弟繼續認真寫他的作文）",
       },
       {
         id: "xiao-biaodi-comparison-031-g",
-        text: "空白也是一種留白的藝術表現。",
+        text: "空白也是留白的藝術，幹嘛計較分數。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續寫他的作文）",
       },
       {
         id: "xiao-biaodi-comparison-031-h",
-        text: "作文而已，先把你的考卷拿出來。",
+        text: "幹你娘，小屁孩先把考卷拿出來。",
         archetype: "landmine",
         retort: "他媽媽皺眉瞪了你一眼",
       },
@@ -587,13 +587,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-032-a",
-        text: "認字而已，阿嬤你認得清自己偏心嗎。",
+        text: "認字而已，幹，阿嬤認得清自己偏心嗎。",
         archetype: "perfect",
         retort: "……阿嬤笑而不答",
       },
       {
         id: "xiao-biaodi-comparison-032-b",
-        text: "你猜這個字怎麼唸，我們比賽猜。",
+        text: "笑死，你猜這個字怎麼唸，我們比賽猜。",
         archetype: "deflect",
         retort: "好啊！我先猜，這個唸春！",
       },
@@ -605,7 +605,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-032-d",
-        text: "有幾個字我看不太懂……",
+        text: "有幾個字我看不太懂……靠……",
         archetype: "meek",
         retort: "看不懂喔，那你怎麼出頭天？",
       },
@@ -617,19 +617,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-032-f",
-        text: "我認的是氣勢，不是字，懂嗎。",
+        text: "我認的是氣勢，機掰不是字，懂嗎。",
         archetype: "backfire",
         retort: "……（阿嬤已經開始考他認字）",
       },
       {
         id: "xiao-biaodi-comparison-032-g",
-        text: "文字是低階溝通，我用眼神交流。",
+        text: "文字是低階溝通，幹嘛不用眼神交流。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續指著字問）",
       },
       {
         id: "xiao-biaodi-comparison-032-h",
-        text: "認字很簡單，你考我之前先考自己。",
+        text: "他媽的，廢物小孩認字前先考自己。",
         archetype: "landmine",
         retort: "嗚嗚——他大哭抱住阿嬤",
       },
@@ -643,13 +643,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-033-a",
-        text: "跑輸而已，老師你跑得贏我作業量？",
+        text: "跑輸而已，靠北，老師跑得贏我作業量？",
         archetype: "perfect",
         retort: "……他忍笑，轉頭裝沒聽到",
       },
       {
         id: "xiao-biaodi-comparison-033-b",
-        text: "要不要比賽誰先跑到巷口的柑仔店？",
+        text: "笑死，要不要比賽誰先跑到柑仔店？",
         archetype: "deflect",
         retort: "好啊！輸的人請客！",
       },
@@ -661,7 +661,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-033-d",
-        text: "我跑步真的比較慢，喘得很快……",
+        text: "我跑步真的比較慢……靠，喘得很快……",
         archetype: "meek",
         retort: "喘得快喔，那體力不太好耶。",
       },
@@ -673,19 +673,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-033-f",
-        text: "我是策略型跑者，後段才會發力。",
+        text: "我是策略型跑者，機掰後段才發力。",
         archetype: "backfire",
         retort: "……（小表弟已經先衝到終點了）",
       },
       {
         id: "xiao-biaodi-comparison-033-g",
-        text: "慢才是為了節省體力打持久戰。",
+        text: "慢才是節省體力打持久戰，幹嘛急。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續往前跑）",
       },
       {
         id: "xiao-biaodi-comparison-033-h",
-        text: "跑步而已你才愛計較，先寫作業。",
+        text: "去你的，死小孩跑步而已愛計較。",
         archetype: "landmine",
         retort: "全場安靜，他臉沉了",
       },
@@ -699,13 +699,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-034-a",
-        text: "存錢算什麼，姑丈你的酒錢存下來看看。",
+        text: "存錢算什麼，他媽的，姑丈酒錢存下來看看。",
         archetype: "perfect",
         retort: "……姑丈尷尬喝了口酒",
       },
       {
         id: "xiao-biaodi-comparison-034-b",
-        text: "你撲滿裡存了多少，秀給我看看？",
+        text: "笑死，你撲滿裡存了多少，秀給我看看？",
         archetype: "deflect",
         retort: "我存了三百多喔！",
       },
@@ -717,7 +717,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-034-d",
-        text: "我沒什麼存款，都花光光了……",
+        text: "我沒什麼存款……靠，都花光光了……",
         archetype: "meek",
         retort: "花光光喔，那怎麼辦？",
       },
@@ -729,19 +729,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-034-f",
-        text: "我把錢都投資在快樂上了，回報率很高。",
+        text: "我把錢投資在快樂上，機掰回報率高。",
         archetype: "backfire",
         retort: "……（姑丈搖搖頭繼續喝茶）",
       },
       {
         id: "xiao-biaodi-comparison-034-g",
-        text: "月光族才是真正懂得活在當下的人。",
+        text: "月光族才懂活在當下，幹嘛存那麼多。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續數他的零錢）",
       },
       {
         id: "xiao-biaodi-comparison-034-h",
-        text: "存錢而已你會嗎，先把撲滿拿出來。",
+        text: "去死，小屁孩存錢前先把撲滿拿出來。",
         archetype: "landmine",
         retort: "嗚——他哭著找姑丈告狀",
       },
@@ -755,13 +755,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-035-a",
-        text: "排位而已，表哥你人生排位第幾？",
+        text: "排位而已，機掰，表哥你人生排位第幾？",
         archetype: "perfect",
         retort: "……表哥説不出話",
       },
       {
         id: "xiao-biaodi-comparison-035-b",
-        text: "鑽石段位是不是很難打，教我幾招？",
+        text: "笑死，鑽石段位很難打，教我幾招？",
         archetype: "deflect",
         retort: "好啊！我教你連招！",
       },
@@ -773,7 +773,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-035-d",
-        text: "對啊……我排位真的打得不太好……",
+        text: "對啊……靠，我排位真的打得不太好……",
         archetype: "meek",
         retort: "打不好喔，那要多練習。",
       },
@@ -785,19 +785,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-035-f",
-        text: "我玩的是心態的最高段位。",
+        text: "我玩的是心態的最高段位，北七不懂。",
         archetype: "backfire",
         retort: "……（小表弟已經在秀他的段位截圖）",
       },
       {
         id: "xiao-biaodi-comparison-035-g",
-        text: "銅牌其實是深藏不露的高手偽裝。",
+        text: "銅牌是深藏不露的高手偽裝，幹嘛笑。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續打排位）",
       },
       {
         id: "xiao-biaodi-comparison-035-h",
-        text: "排位而已，先問你自己敢不敢打排位。",
+        text: "機掰，廢物小孩排位而已敢不敢打。",
         archetype: "landmine",
         retort: "嗚——他哭著找表哥告狀",
       },
@@ -811,13 +811,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-036-a",
-        text: "不會游泳而已，老師你敢跳下水嗎。",
+        text: "不會游泳而已，幹，老師敢跳下水嗎。",
         archetype: "perfect",
         retort: "……他尷尬地清了清喉嚨",
       },
       {
         id: "xiao-biaodi-comparison-036-b",
-        text: "要不要教我狗爬式，我一直學不會。",
+        text: "笑死，要不要教我狗爬式，我學不會。",
         archetype: "deflect",
         retort: "好啊！我教你！很簡單！",
       },
@@ -829,7 +829,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-036-d",
-        text: "我到現在還不太會游泳……",
+        text: "我到現在還不太會游泳……靠……",
         archetype: "meek",
         retort: "不會游泳喔，那怎麼辦？",
       },
@@ -841,19 +841,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-036-f",
-        text: "我學的是心靈的漂浮，比游泳境界高。",
+        text: "我學的是心靈的漂浮，機掰境界比較高。",
         archetype: "backfire",
         retort: "……（小表弟已經在地板上比划游泳）",
       },
       {
         id: "xiao-biaodi-comparison-036-g",
-        text: "旱鴨子才是陸地生物的最高進化。",
+        text: "旱鴨子是陸地生物最高進化，幹嘛笑我。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，繼續比划）",
       },
       {
         id: "xiao-biaodi-comparison-036-h",
-        text: "不會游泳很丟臉，那你數學呢。",
+        text: "幹，死小孩不會游泳，那你數學呢。",
         archetype: "landmine",
         retort: "嗚嗚——他哭著找媽媽評理",
       },
@@ -867,13 +867,13 @@ export default [
     options: [
       {
         id: "xiao-biaodi-comparison-037-a",
-        text: "房間小沒差，媽媽比較的心眼倒是大。",
+        text: "房間小沒差，靠北，比較的心眼倒是大。",
         archetype: "perfect",
         retort: "……媽媽尷尬轉頭",
       },
       {
         id: "xiao-biaodi-comparison-037-b",
-        text: "你房間現在有多亂，要不要我幫你整理？",
+        text: "笑死，你房間現在有多亂，要我整理？",
         archetype: "deflect",
         retort: "好啊！幫我整理一下！",
       },
@@ -885,7 +885,7 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-037-d",
-        text: "對啊……我房間真的比較小一點……",
+        text: "對啊……靠，我房間真的比較小一點……",
         archetype: "meek",
         retort: "比較小喔，那要怎麼住？",
       },
@@ -897,19 +897,19 @@ export default [
       },
       {
         id: "xiao-biaodi-comparison-037-f",
-        text: "小空間才是極簡生活美學的體現。",
+        text: "小空間才是極簡生活美學，機掰的體現。",
         archetype: "backfire",
         retort: "……（小表弟繼續玩他自己的玩具）",
       },
       {
         id: "xiao-biaodi-comparison-037-g",
-        text: "房間大小跟快樂沒有正相關，懂嗎。",
+        text: "房間大小跟快樂沒關係，幹嘛比較。",
         archetype: "backfire",
         retort: "（小表弟沒聽懂，跑去玩別的）",
       },
       {
         id: "xiao-biaodi-comparison-037-h",
-        text: "房間小干你什麼事，先管好你房間。",
+        text: "幹你娘，小屁孩房間小干你什麼事。",
         archetype: "landmine",
         retort: "嗚嗚——他大哭跑走",
       },
