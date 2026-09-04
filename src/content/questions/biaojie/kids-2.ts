@@ -13,27 +13,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-021-a",
-        text: "老大的畫是不是很有創意？",
+        text: "老大的畫是不是很有創意，笑死？",
         archetype: "deflect",
         retort: "對啊，色彩用得亂中有序（笑）。",
       },
       {
         id: "biaojie-kids-021-b",
-        text: "我最近沒什麼拿得出手的成績……",
+        text: "幹……我最近沒什麼拿得出手的成績……",
         archetype: "meek",
         retort: "沒關係，慢慢累積就好。",
       },
       {
         id: "biaojie-kids-021-c",
-        text: "我的代表作，是沒人問也活得好。",
+        text: "我他媽的代表作，是沒人問也活得好。",
         archetype: "perfect",
-        retort: "……喔，這樣啊（笑）。",
+        retort: "……幹，你這孩子嘴巴很壞（笑容僵）。",
       },
       {
         id: "biaojie-kids-021-d",
-        text: "作品喔，我朋友圈的迷因算嗎。",
+        text: "作品喔，我他媽的朋友圈的迷因算嗎。",
         archetype: "backfire",
-        retort: "……那個應該不算作品吧（笑）。",
+        retort: "……（全桌安靜）幹，你在講三小。",
       },
       {
         id: "biaojie-kids-021-e",
@@ -43,9 +43,9 @@ export default [
       },
       {
         id: "biaojie-kids-021-f",
-        text: "沒人問，你很愛現齁。",
+        text: "沒人問，妳他媽的很愛現齁，歐巴桑。",
         archetype: "landmine",
-        retort: "……（臉僵）我只是分享。",
+        retort: "你他媽的給我滾出去！",
       },
       {
         id: "biaojie-kids-021-g",
@@ -55,9 +55,9 @@ export default [
       },
       {
         id: "biaojie-kids-021-h",
-        text: "我的代表作是準時上下班。",
+        text: "我他媽的代表作是準時上下班。",
         archetype: "backfire",
-        retort: "……這個好像不算特別厲害（笑）。",
+        retort: "……白癡喔，這什麼爛笑話。",
       },
     ],
   },
@@ -69,27 +69,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-022-a",
-        text: "帶兩個出國，行李一定很浩大。",
+        text: "帶兩個出國，行李一定很浩大，笑死。",
         archetype: "deflect",
         retort: "對啊，光行李箱就佔一台車（笑）。",
       },
       {
         id: "biaojie-kids-022-b",
-        text: "我連自己出國都覺得麻煩了……",
+        text: "幹……我連自己出國都覺得麻煩了……",
         archetype: "meek",
         retort: "麻煩歸麻煩，多練習就上手。",
       },
       {
         id: "biaojie-kids-022-c",
-        text: "等我先適應你的凡爾賽。",
+        text: "等我他媽的先適應妳的凡爾賽。",
         archetype: "perfect",
-        retort: "……哪有凡爾賽啦（笑）。",
+        retort: "……他媽的，沒大沒小（臉一沉）。",
       },
       {
         id: "biaojie-kids-022-d",
-        text: "出國喔，我建議帶去夜市就好。",
+        text: "出國喔，我他媽的建議帶去夜市就好。",
         archetype: "backfire",
-        retort: "……夜市應該不算出國吧（笑）。",
+        retort: "……（沒人笑）你很尷尬耶。",
       },
       {
         id: "biaojie-kids-022-e",
@@ -99,9 +99,9 @@ export default [
       },
       {
         id: "biaojie-kids-022-f",
-        text: "你老公呢？該不會又沒空。",
+        text: "妳老公呢？他媽的該不會又沒空？",
         archetype: "landmine",
-        retort: "……（臉一沉）他會來啦。",
+        retort: "去死啦你，講什麼鬼話！",
       },
       {
         id: "biaojie-kids-022-g",
@@ -111,9 +111,9 @@ export default [
       },
       {
         id: "biaojie-kids-022-h",
-        text: "帶小孩出國，聽起來像特訓營。",
+        text: "帶小孩出國，他媽的聽起來像特訓營。",
         archetype: "backfire",
-        retort: "……特訓的是我們大人啦（笑）。",
+        retort: "……（表姊愣住）你有病喔。",
       },
     ],
   },
@@ -125,27 +125,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-023-a",
-        text: "選安全座椅一定做了很多功課。",
+        text: "選安全座椅一定做了很多功課，笑死。",
         archetype: "deflect",
         retort: "對啊，比較了好幾個牌子（笑）。",
       },
       {
         id: "biaojie-kids-023-b",
-        text: "我對安全座椅完全沒研究過……",
+        text: "幹……我對安全座椅完全沒研究過……",
         archetype: "meek",
         retort: "沒研究的話，到時候要惡補。",
       },
       {
         id: "biaojie-kids-023-c",
-        text: "秀座椅，是想讓我誇幾句？",
+        text: "秀座椅，妳他媽的是想讓我誇幾句？",
         archetype: "perfect",
-        retort: "……哪有，隨口說說（笑）。",
+        retort: "（笑容不見）……去你的，很敢講。",
       },
       {
         id: "biaojie-kids-023-d",
-        text: "安全座椅喔，那我先買安全帽。",
+        text: "安全座椅喔，那我他媽的先買安全帽。",
         archetype: "backfire",
-        retort: "……安全帽跟座椅不一樣喔（笑）。",
+        retort: "……笑死，這什麼冷場發言。",
       },
       {
         id: "biaojie-kids-023-e",
@@ -155,9 +155,9 @@ export default [
       },
       {
         id: "biaojie-kids-023-f",
-        text: "後座兩張，你老公去哪了？",
+        text: "後座兩張，妳他媽的老公去哪了，歐巴桑？",
         archetype: "landmine",
-        retort: "……（抱著老二不說話）。",
+        retort: "幹！你才是欠罵的那個！",
       },
       {
         id: "biaojie-kids-023-g",
@@ -167,9 +167,9 @@ export default [
       },
       {
         id: "biaojie-kids-023-h",
-        text: "後座兩張，前座留給我坐嗎。",
+        text: "後座兩張，前座他媽的留給我坐嗎。",
         archetype: "backfire",
-        retort: "……前座是我老公坐的啦（笑）。",
+        retort: "……（乾笑）北七喔你。",
       },
     ],
   },
@@ -181,27 +181,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-024-a",
-        text: "帶兩個孩子出來吃飯真不簡單。",
+        text: "帶兩個孩子出來吃飯真不簡單，笑死。",
         archetype: "deflect",
         retort: "對啊，出門像打仗一樣（笑）。",
       },
       {
         id: "biaojie-kids-024-b",
-        text: "我訂位常常忘記考慮這些細節……",
+        text: "幹……我訂位常常忘記考慮這些細節……",
         archetype: "meek",
         retort: "下次記得多想一下比較好。",
       },
       {
         id: "biaojie-kids-024-c",
-        text: "兩個孩子椅，你何不乾脆包場？",
+        text: "兩個孩子椅，妳他媽的何不乾脆包場？",
         archetype: "perfect",
-        retort: "……哪有那麼誇張（笑）。",
+        retort: "……（氣到講台語）幹恁娘咧。",
       },
       {
         id: "biaojie-kids-024-d",
-        text: "小孩椅喔，那我坐兒童椅陪他們。",
+        text: "小孩椅喔，那我他媽的坐兒童椅陪他們。",
         archetype: "backfire",
-        retort: "……那個應該坐不下你啦（笑）。",
+        retort: "……哭爸，你自己講完不尷尬？",
       },
       {
         id: "biaojie-kids-024-e",
@@ -211,9 +211,9 @@ export default [
       },
       {
         id: "biaojie-kids-024-f",
-        text: "你小孩吵，別人憑什麼忍？",
+        text: "妳小孩他媽的吵，別人憑什麼忍？",
         archetype: "landmine",
-        retort: "……好，我們克制一點。",
+        retort: "（臉色鐵青）明年不用他媽的來了。",
       },
       {
         id: "biaojie-kids-024-g",
@@ -223,9 +223,9 @@ export default [
       },
       {
         id: "biaojie-kids-024-h",
-        text: "麻煩喔，那我們約速食店就好。",
+        text: "麻煩喔，那我他媽的約速食店就好。",
         archetype: "backfire",
-        retort: "……速食店對小孩不太健康喔（笑）。",
+        retort: "……（沒人接話）廢話真多。",
       },
     ],
   },
@@ -237,27 +237,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-025-a",
-        text: "教小孩收納，你一定很有方法。",
+        text: "教小孩收納，妳一定很有方法，笑死。",
         archetype: "deflect",
         retort: "還好啦，慢慢訓練出來的（笑）。",
       },
       {
         id: "biaojie-kids-025-b",
-        text: "我自己房間都收不好了……",
+        text: "幹……我自己房間都收不好了……",
         archetype: "meek",
         retort: "自己都收不好，怎麼教小孩？",
       },
       {
         id: "biaojie-kids-025-c",
-        text: "整齊是你家，亂是我家常態。",
+        text: "整齊是妳家，機掰，亂是我家常態。",
         archetype: "perfect",
-        retort: "……那也是一種風格啦（笑）。",
+        retort: "……你很過分耶，幹（別過臉）。",
       },
       {
         id: "biaojie-kids-025-d",
-        text: "分類喔，那我把衣服分乾淨跟不乾淨。",
+        text: "分類喔，那我他媽的把衣服分乾淨跟不乾淨。",
         archetype: "backfire",
-        retort: "……這個分類方式有點特別（笑）。",
+        retort: "……（表姊翻白眼）你很無聊耶。",
       },
       {
         id: "biaojie-kids-025-e",
@@ -267,9 +267,9 @@ export default [
       },
       {
         id: "biaojie-kids-025-f",
-        text: "曬玩具而已，你很缺讚喔？",
+        text: "曬玩具而已，妳他媽的很缺讚喔，老女人？",
         archetype: "landmine",
-        retort: "……（假笑）好啦不曬了。",
+        retort: "你他媽的閉嘴，別再說了！",
       },
       {
         id: "biaojie-kids-025-g",
@@ -279,9 +279,9 @@ export default [
       },
       {
         id: "biaojie-kids-025-h",
-        text: "玩具整齊，我書桌也整齊，都是灰塵。",
+        text: "玩具整齊，我他媽的書桌也整齊，都是灰塵。",
         archetype: "backfire",
-        retort: "……灰塵不算整齊吧（笑）。",
+        retort: "……靠，這什麼冷笑話啦。",
       },
     ],
   },
@@ -293,27 +293,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-026-a",
-        text: "得獎前一定練習了很久吧？",
+        text: "得獎前一定練習了很久吧，笑死？",
         archetype: "deflect",
         retort: "對啊，天天陪他練，很值得（笑）。",
       },
       {
         id: "biaojie-kids-026-b",
-        text: "我小時候比賽都拿不到名次……",
+        text: "幹……我小時候比賽都拿不到名次……",
         archetype: "meek",
         retort: "拿不到名次也是一種經驗啦。",
       },
       {
         id: "biaojie-kids-026-c",
-        text: "獎狀那麼多，牆要不夠貼了。",
+        text: "獎狀那麼多，機掰，牆要不夠貼了。",
         archetype: "perfect",
-        retort: "……是有點多啦（笑）。",
+        retort: "……機掰，你這張嘴誰教的？",
       },
       {
         id: "biaojie-kids-026-d",
-        text: "得獎喔，我以前得過全勤獎。",
+        text: "得獎喔，我他媽的以前得過全勤獎。",
         archetype: "backfire",
-        retort: "……全勤獎好像不太一樣（笑）。",
+        retort: "……（全桌安靜）幹，你在講三小。",
       },
       {
         id: "biaojie-kids-026-e",
@@ -323,9 +323,9 @@ export default [
       },
       {
         id: "biaojie-kids-026-f",
-        text: "得獎而已，全世界要知道？",
+        text: "得獎而已，他媽的全世界要知道？",
         archetype: "landmine",
-        retort: "……（笑容僵住）是喔。",
+        retort: "機掰，你這什麼態度！",
       },
       {
         id: "biaojie-kids-026-g",
@@ -335,9 +335,9 @@ export default [
       },
       {
         id: "biaojie-kids-026-h",
-        text: "游泳比賽，那我拿手遊排名第一。",
+        text: "游泳比賽，那我他媽的拿手遊排名第一。",
         archetype: "backfire",
-        retort: "……那個應該不算比賽項目（笑）。",
+        retort: "……白癡喔，這什麼爛笑話。",
       },
     ],
   },
@@ -349,27 +349,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-027-a",
-        text: "當班長一定很有責任感吧。",
+        text: "當班長一定很有責任感吧，笑死。",
         archetype: "deflect",
         retort: "對啊，回家還會管弟弟呢（笑）。",
       },
       {
         id: "biaojie-kids-027-b",
-        text: "我以前上學都很邊緣，沒當過幹部……",
+        text: "幹……我以前上學都很邊緣，沒當過幹部……",
         archetype: "meek",
         retort: "邊緣沒關係，長大也是能發展的。",
       },
       {
         id: "biaojie-kids-027-c",
-        text: "班長而已，以後選總統再說。",
+        text: "班長而已，他媽的以後選總統再說。",
         archetype: "perfect",
-        retort: "……哈哈也是啦（笑）。",
+        retort: "（尷尬）……你他媽的很敢說喔。",
       },
       {
         id: "biaojie-kids-027-d",
-        text: "班長喔，那我以前是躲避球隊長。",
+        text: "班長喔，那我他媽的以前是躲避球隊長。",
         archetype: "backfire",
-        retort: "……躲避球隊長不算幹部吧（笑）。",
+        retort: "……（沒人笑）你很尷尬耶。",
       },
       {
         id: "biaojie-kids-027-e",
@@ -379,9 +379,9 @@ export default [
       },
       {
         id: "biaojie-kids-027-f",
-        text: "班長爾爾，你很大聲欸。",
+        text: "班長爾爾，妳他媽的很大聲欸，歐巴桑。",
         archetype: "landmine",
-        retort: "……好，我不講就是了。",
+        retort: "（拍桌）去你的，太過分了！",
       },
       {
         id: "biaojie-kids-027-g",
@@ -391,9 +391,9 @@ export default [
       },
       {
         id: "biaojie-kids-027-h",
-        text: "領導者，那我在家管我家的貓。",
+        text: "領導者，那我他媽的在家管我家的貓。",
         archetype: "backfire",
-        retort: "……貓應該不聽你的管理吧（笑）。",
+        retort: "……（表姊愣住）你有病喔。",
       },
     ],
   },
@@ -405,27 +405,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-028-a",
-        text: "婆婆這麼幫忙，你一定很輕鬆吧。",
+        text: "婆婆這麼幫忙，妳一定很輕鬆吧，笑死。",
         archetype: "deflect",
         retort: "輕鬆很多，我真的很感謝她（笑）。",
       },
       {
         id: "biaojie-kids-028-b",
-        text: "我們可能只能靠安親班了……",
+        text: "幹……我們可能只能靠安親班了……",
         archetype: "meek",
         retort: "安親班也是個辦法，早點找。",
       },
       {
         id: "biaojie-kids-028-c",
-        text: "婆婆顧這麼多，你負責說感謝？",
+        text: "婆婆顧這麼多，妳他媽的負責說感謝？",
         archetype: "perfect",
-        retort: "……我也有分擔啦（笑）。",
+        retort: "……靠北，講話這麼難聽。",
       },
       {
         id: "biaojie-kids-028-d",
-        text: "接送喔，那我讓他自己走路上學。",
+        text: "接送喔，那我他媽的讓他自己走路上學。",
         archetype: "backfire",
-        retort: "……小孩自己走路太危險了啦（笑）。",
+        retort: "……笑死，這什麼冷場發言。",
       },
       {
         id: "biaojie-kids-028-e",
@@ -435,9 +435,9 @@ export default [
       },
       {
         id: "biaojie-kids-028-f",
-        text: "婆婆顧這麼多，你顧幾天？",
+        text: "婆婆顧這麼多，妳他媽的顧幾天？",
         archetype: "landmine",
-        retort: "……（口氣變冷）我有顧啦。",
+        retort: "幹你娘咧，你很沒大沒小！",
       },
       {
         id: "biaojie-kids-028-g",
@@ -447,9 +447,9 @@ export default [
       },
       {
         id: "biaojie-kids-028-h",
-        text: "靠誰，那我養一隻導盲犬接送。",
+        text: "靠誰，那我他媽的養一隻導盲犬接送。",
         archetype: "backfire",
-        retort: "……導盲犬不是這樣用的啦（笑）。",
+        retort: "……（乾笑）北七喔你。",
       },
     ],
   },
@@ -461,27 +461,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-029-a",
-        text: "你們規劃教育基金一定花很多心思。",
+        text: "你們規劃教育基金一定花很多心思，笑死。",
         archetype: "deflect",
         retort: "對啊，跟老公研究了好久（笑）。",
       },
       {
         id: "biaojie-kids-029-b",
-        text: "我們連自己的存款都不太夠……",
+        text: "幹……我們連自己的存款都不太夠……",
         archetype: "meek",
         retort: "自己不夠更要提早規劃才行。",
       },
       {
         id: "biaojie-kids-029-c",
-        text: "存教育基金，先教他別愛現。",
+        text: "存教育基金，他媽的先教他別愛現。",
         archetype: "perfect",
-        retort: "……哈，你這樣說也對（笑）。",
+        retort: "（收起笑）……去死啦你，很欠揍。",
       },
       {
         id: "biaojie-kids-029-d",
-        text: "教育基金喔，那我幫他存零錢筒。",
+        text: "教育基金喔，那我他媽的幫他存零錢筒。",
         archetype: "backfire",
-        retort: "……零錢筒應該存不了多少（笑）。",
+        retort: "……哭爸，你自己講完不尷尬？",
       },
       {
         id: "biaojie-kids-029-e",
@@ -491,9 +491,9 @@ export default [
       },
       {
         id: "biaojie-kids-029-f",
-        text: "存這麼多，是講給誰聽的？",
+        text: "存這麼多，是他媽的講給誰聽的，老女人？",
         archetype: "landmine",
-        retort: "……（有點惱火）就分享一下。",
+        retort: "（大聲）你他媽的講夠了沒！",
       },
       {
         id: "biaojie-kids-029-g",
@@ -503,9 +503,9 @@ export default [
       },
       {
         id: "biaojie-kids-029-h",
-        text: "基金喔，那我推薦他玩股票遊戲。",
+        text: "基金喔，那我他媽的推薦他玩股票遊戲。",
         archetype: "backfire",
-        retort: "……那個是遊戲，不是真的基金（笑）。",
+        retort: "……（沒人接話）廢話真多。",
       },
     ],
   },
@@ -517,27 +517,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-030-a",
-        text: "他發音好清楚，教得真好。",
+        text: "他發音好清楚，教得真好，笑死。",
         archetype: "deflect",
         retort: "對啊，練了好幾個禮拜呢（笑）。",
       },
       {
         id: "biaojie-kids-030-b",
-        text: "我完全不知道小孩學說話的過程……",
+        text: "幹……我完全不知道小孩學說話的過程……",
         archetype: "meek",
         retort: "不知道也沒關係，以後就懂了。",
       },
       {
         id: "biaojie-kids-030-c",
-        text: "他先聞到錢，才叫的表姊吧？",
+        text: "他先聞到錢，機掰，才叫的表姊吧？",
         archetype: "perfect",
-        retort: "……哪有，他單純而已（笑）。",
+        retort: "……幹，你到底是誰教的？",
       },
       {
         id: "biaojie-kids-030-d",
-        text: "叫表姊喔，那我教他叫我老闆。",
+        text: "叫表姊喔，那我他媽的教他叫我老闆。",
         archetype: "backfire",
-        retort: "……老闆這個稱呼有點怪耶（笑）。",
+        retort: "……（表姊翻白眼）你很無聊耶。",
       },
       {
         id: "biaojie-kids-030-e",
@@ -547,9 +547,9 @@ export default [
       },
       {
         id: "biaojie-kids-030-f",
-        text: "教半天，就為了聽這句？",
+        text: "教半天，他媽的就為了聽這句？",
         archetype: "landmine",
-        retort: "……（尷尬）我沒有特別教。",
+        retort: "去死，誰要聽你講這個！",
       },
       {
         id: "biaojie-kids-030-g",
@@ -559,9 +559,9 @@ export default [
       },
       {
         id: "biaojie-kids-030-h",
-        text: "第一個字，我以為會是喊肚子餓。",
+        text: "第一個字，我他媽的以為會是喊肚子餓。",
         archetype: "backfire",
-        retort: "……肚子餓不算會叫人啦（笑）。",
+        retort: "……靠，這什麼冷笑話啦。",
       },
     ],
   },
@@ -573,27 +573,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-031-a",
-        text: "挑玩具你也做了不少功課吧。",
+        text: "挑玩具妳也做了不少功課吧，笑死。",
         archetype: "deflect",
         retort: "對啊，比較了好幾款才決定（笑）。",
       },
       {
         id: "biaojie-kids-031-b",
-        text: "我對這些品牌完全沒概念……",
+        text: "幹……我對這些品牌完全沒概念……",
         archetype: "meek",
         retort: "沒概念沒關係，可以先做功課。",
       },
       {
         id: "biaojie-kids-031-c",
-        text: "進口滑步車，滑走的是荷包。",
+        text: "進口滑步車，機掰，滑走的是荷包。",
         archetype: "perfect",
-        retort: "……哈哈，是滑走了沒錯（笑）。",
+        retort: "……幹，你這孩子嘴巴很壞（笑容僵）。",
       },
       {
         id: "biaojie-kids-031-d",
-        text: "德國進口，那我腳踏車也是歐洲貨。",
+        text: "德國進口，那我他媽的腳踏車也是歐洲貨。",
         archetype: "backfire",
-        retort: "……那個好像跟小孩無關吧（笑）。",
+        retort: "……（全桌安靜）幹，你在講三小。",
       },
       {
         id: "biaojie-kids-031-e",
@@ -603,9 +603,9 @@ export default [
       },
       {
         id: "biaojie-kids-031-f",
-        text: "買那麼貴，你老公知道嗎？",
+        text: "買那麼貴，妳他媽的老公知道嗎，歐巴桑？",
         archetype: "landmine",
-        retort: "……（臉一沉）他當然知道。",
+        retort: "你他媽的給我滾出去！",
       },
       {
         id: "biaojie-kids-031-g",
@@ -615,9 +615,9 @@ export default [
       },
       {
         id: "biaojie-kids-031-h",
-        text: "滑步車，我小時候騎三輪車也很快。",
+        text: "滑步車，我他媽的小時候騎三輪車也很快。",
         archetype: "backfire",
-        retort: "……時代不一樣了啦（笑）。",
+        retort: "……白癡喔，這什麼爛笑話。",
       },
     ],
   },
@@ -635,33 +635,33 @@ export default [
       },
       {
         id: "biaojie-kids-032-b",
-        text: "我還沒想好要送什麼比較好……",
+        text: "幹……我還沒想好要送什麼比較好……",
         archetype: "meek",
         retort: "早點想好，免得到時候手忙腳亂。",
       },
       {
         id: "biaojie-kids-032-c",
-        text: "禮物我隨意，你的排場我隨喜。",
+        text: "禮物我隨意，妳他媽的排場我隨喜。",
         archetype: "perfect",
-        retort: "……哪有要求排場（笑）。",
+        retort: "……他媽的，沒大沒小（臉一沉）。",
       },
       {
         id: "biaojie-kids-032-d",
-        text: "送禮喔，那我包一包乖乖代替。",
+        text: "送禮喔，那我他媽的包一包乖乖代替。",
         archetype: "backfire",
-        retort: "……乖乖是零食，不是禮物啦（笑）。",
+        retort: "……（沒人笑）你很尷尬耶。",
       },
       {
         id: "biaojie-kids-032-e",
-        text: "你們家寶寶的用品都好講究。",
+        text: "你們家寶寶的用品都好講究，笑死。",
         archetype: "deflect",
         retort: "都是精挑細選的啦（笑）。",
       },
       {
         id: "biaojie-kids-032-f",
-        text: "比禮物，你人生只剩這個？",
+        text: "比禮物，妳他媽的人生只剩這個？",
         archetype: "landmine",
-        retort: "……（愣住）不然要聊什麼。",
+        retort: "去死啦你，講什麼鬼話！",
       },
       {
         id: "biaojie-kids-032-g",
@@ -671,9 +671,9 @@ export default [
       },
       {
         id: "biaojie-kids-032-h",
-        text: "滿月禮，那我送他一張股票。",
+        text: "滿月禮，那我他媽的送他一張股票。",
         archetype: "backfire",
-        retort: "……股票他現在應該用不到（笑）。",
+        retort: "……（表姊愣住）你有病喔。",
       },
     ],
   },
@@ -685,27 +685,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-033-a",
-        text: "帶兩個小孩拜拜，一定很費力氣。",
+        text: "帶兩個小孩拜拜，一定很費力氣，笑死。",
         archetype: "deflect",
         retort: "對啊，追得我氣喘吁吁（笑）。",
       },
       {
         id: "biaojie-kids-033-b",
-        text: "我平常比較少拜拜，不太懂習俗……",
+        text: "幹……我平常比較少拜拜，不太懂習俗……",
         archetype: "meek",
         retort: "不懂沒關係，跟著我學就好。",
       },
       {
         id: "biaojie-kids-033-c",
-        text: "求平安符，先求自己少講兩句。",
+        text: "求平安符，他媽的先求自己少講兩句。",
         archetype: "perfect",
-        retort: "……哈哈，我盡量（笑）。",
+        retort: "（笑容不見）……去你的，很敢講。",
       },
       {
         id: "biaojie-kids-033-d",
-        text: "平安符喔，那我隨身帶悠遊卡。",
+        text: "平安符喔，那我他媽的隨身帶悠遊卡。",
         archetype: "backfire",
-        retort: "……悠遊卡沒有保平安功能啦（笑）。",
+        retort: "……笑死，這什麼冷場發言。",
       },
       {
         id: "biaojie-kids-033-e",
@@ -715,9 +715,9 @@ export default [
       },
       {
         id: "biaojie-kids-033-f",
-        text: "求平安符，是想叫人閉嘴？",
+        text: "求平安符，是他媽的想叫人閉嘴，老女人？",
         archetype: "landmine",
-        retort: "……（收起笑容）好，不聊了。",
+        retort: "幹！你才是欠罵的那個！",
       },
       {
         id: "biaojie-kids-033-g",
@@ -727,9 +727,9 @@ export default [
       },
       {
         id: "biaojie-kids-033-h",
-        text: "拜拜，那我在家拜我家沙發就好。",
+        text: "拜拜，那我他媽的在家拜我家沙發就好。",
         archetype: "backfire",
-        retort: "……沙發沒有神明住喔（笑）。",
+        retort: "……（乾笑）北七喔你。",
       },
     ],
   },
@@ -741,27 +741,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-034-a",
-        text: "教他背唐詩，你一定很有耐心。",
+        text: "教他背唐詩，妳一定很有耐心，笑死。",
         archetype: "deflect",
         retort: "還好啦，他自己也很喜歡背（笑）。",
       },
       {
         id: "biaojie-kids-034-b",
-        text: "我小時候背書都背不起來……",
+        text: "幹……我小時候背書都背不起來……",
         archetype: "meek",
         retort: "背不起來沒關係，各有天分。",
       },
       {
         id: "biaojie-kids-034-c",
-        text: "背兩首就好，別背成炫耀大會。",
+        text: "背兩首就好，他媽的別背成炫耀大會。",
         archetype: "perfect",
-        retort: "……哪有，這是才藝表演（笑）。",
+        retort: "……（氣到講台語）幹恁娘咧。",
       },
       {
         id: "biaojie-kids-034-d",
-        text: "唐詩喔，那我來背一段流行歌詞。",
+        text: "唐詩喔，那我他媽的來背一段流行歌詞。",
         archetype: "backfire",
-        retort: "……流行歌詞不算唐詩耶（笑）。",
+        retort: "……哭爸，你自己講完不尷尬？",
       },
       {
         id: "biaojie-kids-034-e",
@@ -771,9 +771,9 @@ export default [
       },
       {
         id: "biaojie-kids-034-f",
-        text: "背這個，是要證明你會教？",
+        text: "背這個，是他媽的要證明妳會教？",
         archetype: "landmine",
-        retort: "……（尷尬）我沒有勉強他。",
+        retort: "（臉色鐵青）明年不用他媽的來了。",
       },
       {
         id: "biaojie-kids-034-g",
@@ -783,9 +783,9 @@ export default [
       },
       {
         id: "biaojie-kids-034-h",
-        text: "二十首，那我背二十個星座運勢。",
+        text: "二十首，那我他媽的背二十個星座運勢。",
         archetype: "backfire",
-        retort: "……那個好像沒什麼關聯（笑）。",
+        retort: "……（沒人接話）廢話真多。",
       },
     ],
   },
@@ -797,27 +797,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-035-a",
-        text: "囤貨這麼有計劃，你真的很細心。",
+        text: "囤貨這麼有計劃，妳真的很細心，笑死。",
         archetype: "deflect",
         retort: "對啊，才不會臨時缺貨（笑）。",
       },
       {
         id: "biaojie-kids-035-b",
-        text: "我對這種日常開銷完全沒概念……",
+        text: "幹……我對這種日常開銷完全沒概念……",
         archetype: "meek",
         retort: "沒概念的話，以後會嚇一跳。",
       },
       {
         id: "biaojie-kids-035-c",
-        text: "囤這麼多，囤不到我的耐心。",
+        text: "囤這麼多，機掰，囤不到我的耐心。",
         archetype: "perfect",
-        retort: "……哈哈，還好我耐心夠（笑）。",
+        retort: "……你很過分耶，幹（別過臉）。",
       },
       {
         id: "biaojie-kids-035-d",
-        text: "整箱囤，那我囤泡麵準備過年。",
+        text: "整箱囤，那我他媽的囤泡麵準備過年。",
         archetype: "backfire",
-        retort: "……泡麵跟尿布不太一樣喔（笑）。",
+        retort: "……（表姊翻白眼）你很無聊耶。",
       },
       {
         id: "biaojie-kids-035-e",
@@ -827,9 +827,9 @@ export default [
       },
       {
         id: "biaojie-kids-035-f",
-        text: "囤這麼多，是錢太多喔？",
+        text: "囤這麼多，妳他媽的是錢太多喔，歐巴桑？",
         archetype: "landmine",
-        retort: "……（有點不爽）省麻煩而已。",
+        retort: "你他媽的閉嘴，別再說了！",
       },
       {
         id: "biaojie-kids-035-g",
@@ -839,9 +839,9 @@ export default [
       },
       {
         id: "biaojie-kids-035-h",
-        text: "濕紙巾，那我拿來當面紙用就好。",
+        text: "濕紙巾，那我他媽的拿來當面紙用就好。",
         archetype: "backfire",
-        retort: "……濕紙巾跟面紙功能不同啦（笑）。",
+        retort: "……靠，這什麼冷笑話啦。",
       },
     ],
   },
@@ -853,27 +853,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-036-a",
-        text: "辦生日趴一定籌備很久吧？",
+        text: "辦生日趴一定籌備很久吧，笑死？",
         archetype: "deflect",
         retort: "對啊，光場地就選了好幾週（笑）。",
       },
       {
         id: "biaojie-kids-036-b",
-        text: "我對辦這種活動完全沒經驗……",
+        text: "幹……我對辦這種活動完全沒經驗……",
         archetype: "meek",
         retort: "沒經驗沒關係，多辦幾次就會了。",
       },
       {
         id: "biaojie-kids-036-c",
-        text: "流水席喔，我隨份子，別嫌少。",
+        text: "流水席喔，機掰，我隨份子，別嫌少。",
         archetype: "perfect",
-        retort: "……哪有要求禮金（笑）。",
+        retort: "……機掰，你這張嘴誰教的？",
       },
       {
         id: "biaojie-kids-036-d",
-        text: "流水席喔，那我在家煮泡麵慶生。",
+        text: "流水席喔，那我他媽的在家煮泡麵慶生。",
         archetype: "backfire",
-        retort: "……泡麵好像有點隨便耶（笑）。",
+        retort: "……（全桌安靜）幹，你在講三小。",
       },
       {
         id: "biaojie-kids-036-e",
@@ -883,9 +883,9 @@ export default [
       },
       {
         id: "biaojie-kids-036-f",
-        text: "辦這麼大，是要炫耀什麼？",
+        text: "辦這麼大，是他媽的要炫耀什麼？",
         archetype: "landmine",
-        retort: "……（臉一沉）是給他做紀念。",
+        retort: "機掰，你這什麼態度！",
       },
       {
         id: "biaojie-kids-036-g",
@@ -895,9 +895,9 @@ export default [
       },
       {
         id: "biaojie-kids-036-h",
-        text: "生日趴，那我去夜市套圈圈慶祝。",
+        text: "生日趴，那我他媽的去夜市套圈圈慶祝。",
         archetype: "backfire",
-        retort: "……套圈圈跟慶生沒什麼關係（笑）。",
+        retort: "……白癡喔，這什麼爛笑話。",
       },
     ],
   },
@@ -909,27 +909,27 @@ export default [
     options: [
       {
         id: "biaojie-kids-037-a",
-        text: "你這麼積極參加，一定很受喜歡。",
+        text: "你這麼積極參加，一定很受喜歡，笑死。",
         archetype: "deflect",
         retort: "還好啦，老師人都很親切（笑）。",
       },
       {
         id: "biaojie-kids-037-b",
-        text: "我對班親會這種場合真的很不熟……",
+        text: "幹……我對班親會這種場合真的很不熟……",
         archetype: "meek",
         retort: "不熟沒關係，之後慢慢習慣。",
       },
       {
         id: "biaojie-kids-037-c",
-        text: "爭取歸爭取，老師看的是成績。",
+        text: "爭取歸爭取，他媽的老師看的是成績。",
         archetype: "perfect",
-        retort: "……哈，我知道啦（笑）。",
+        retort: "（尷尬）……你他媽的很敢說喔。",
       },
       {
         id: "biaojie-kids-037-d",
-        text: "班親會喔，那我去幫忙管秩序好了。",
+        text: "班親會喔，那我他媽的去幫忙管秩序好了。",
         archetype: "backfire",
-        retort: "……那個應該是老師的工作啦（笑）。",
+        retort: "……（沒人笑）你很尷尬耶。",
       },
       {
         id: "biaojie-kids-037-e",
@@ -939,9 +939,9 @@ export default [
       },
       {
         id: "biaojie-kids-037-f",
-        text: "爭取而已，你很會凹欸？",
+        text: "爭取而已，妳他媽的很會凹欸，老女人？",
         archetype: "landmine",
-        retort: "……（不悅）我只是關心。",
+        retort: "（拍桌）去你的，太過分了！",
       },
       {
         id: "biaojie-kids-037-g",
@@ -951,9 +951,9 @@ export default [
       },
       {
         id: "biaojie-kids-037-h",
-        text: "爭取喔，那我幫你寫陳情書。",
+        text: "爭取喔，那我他媽的幫你寫陳情書。",
         archetype: "backfire",
-        retort: "……班親會不需要陳情書啦（笑）。",
+        retort: "……（表姊愣住）你有病喔。",
       },
     ],
   },
