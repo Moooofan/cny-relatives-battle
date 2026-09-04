@@ -117,14 +117,37 @@ export function QuestionEditor({
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [confirmPermanentDelete, setConfirmPermanentDelete] = useState(false);
 
   // Only a brand-new question's id follows the topic (nothing references it
   // yet); an existing question's id is fixed once created. Derived (not
   // stored) so changing the topic before the first save just recomputes it.
   const questionId = useMemo(() => (isCreate ? makeCustomId(topic) : (base as Question).id), [isCreate, topic, base]);
 
+  // Bundled questions: 還原內建 removes the override row, bringing back the
+  // shipped version — only makes sense once there's an override to remove.
   const canRestore = !isCreate && !!entry && !entry.isCustom && (entry.isEdited || entry.isHidden);
+  // Custom (owner-authored) questions have no bundled fallback, so the same
+  // "remove the override row" action instead deletes them for good — offered
+  // whether the custom question is currently visible or hidden.
+  const canPermanentDelete = !isCreate && !!entry && entry.isCustom;
+  const isHiddenCustom = !isCreate && !!entry && entry.isCustom && entry.isHidden;
   const issues = validateForm(text, options);
+
+  function buildPayload(): Question {
+    return {
+      id: questionId,
+      text: text.trim(),
+      topic,
+      ...(bossId !== "generic" ? { bossId: bossId as BossId } : {}),
+      options: options.map((o, i) => ({
+        id: `${questionId}-${letterFor(i)}`,
+        text: o.text.trim(),
+        archetype: o.archetype,
+        retort: o.retort.trim(),
+      })),
+    };
+  }
 
   function updateOption(index: number, patch: Partial<EditableOption>) {
     setOptions((prev) => prev.map((o, i) => (i === index ? { ...o, ...patch } : o)));
@@ -137,19 +160,29 @@ export function QuestionEditor({
     }
     setSaving(true);
     setError(null);
-    const payload: Question = {
-      id: questionId,
-      text: text.trim(),
-      topic,
-      ...(bossId !== "generic" ? { bossId: bossId as BossId } : {}),
-      options: options.map((o, i) => ({
-        id: `${questionId}-${letterFor(i)}`,
-        text: o.text.trim(),
-        archetype: o.archetype,
-        retort: o.retort.trim(),
-      })),
-    };
-    const result = await adminUpsertQuestion(questionId, payload);
+    const result = await adminUpsertQuestion(questionId, buildPayload());
+    if (!result.ok) {
+      setSaving(false);
+      setError(result.error);
+      return;
+    }
+    await useContentStore.getState().refresh(true);
+    setSaving(false);
+    onClose();
+  }
+
+  /** Custom-question-only "un-hide": re-upserts the same data, which sets
+   * `deleted = false` again (see admin_upsert_question in
+   * 20260904000000_question_overrides.sql) without touching the row's
+   * identity the way 還原內建 (adminRestoreQuestion) would. */
+  async function handleUnhide() {
+    if (issues.length > 0) {
+      setError(issues.join("；"));
+      return;
+    }
+    setSaving(true);
+    setError(null);
+    const result = await adminUpsertQuestion(questionId, buildPayload());
     if (!result.ok) {
       setSaving(false);
       setError(result.error);
@@ -319,6 +352,27 @@ export function QuestionEditor({
               </button>
             </div>
           </div>
+        ) : confirmPermanentDelete ? (
+          <div className="flex flex-col gap-2">
+            <p className="text-sm text-text">確定要永久刪除這題自訂題目嗎？此動作無法復原。</p>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                disabled={saving || !enabled}
+                onClick={handleRestore}
+                className={ctaClassName("primary", "flex-1")}
+              >
+                確定永久刪除
+              </button>
+              <button
+                type="button"
+                onClick={() => setConfirmPermanentDelete(false)}
+                className={ctaClassName("ghost", "flex-1")}
+              >
+                取消
+              </button>
+            </div>
+          </div>
         ) : (
           <div className="flex gap-2 flex-wrap">
             <button
@@ -329,25 +383,45 @@ export function QuestionEditor({
             >
               {saving ? "處理中…" : "儲存"}
             </button>
-            {!isCreate && (
+            {!isCreate && entry && (isHiddenCustom ? (
+              <button
+                type="button"
+                disabled={saving || !enabled}
+                onClick={handleUnhide}
+                className={ctaClassName("ghost", "flex-1 min-w-[96px]")}
+              >
+                取消隱藏
+              </button>
+            ) : (
               <button
                 type="button"
                 disabled={saving || !enabled}
                 onClick={() => setConfirmDelete(true)}
                 className={ctaClassName("ghost", "flex-1 min-w-[96px]")}
               >
-                刪除／隱藏
+                {entry.isCustom ? "隱藏" : "刪除／隱藏"}
               </button>
-            )}
-            {canRestore && (
+            ))}
+            {canPermanentDelete ? (
               <button
                 type="button"
                 disabled={saving || !enabled}
-                onClick={handleRestore}
+                onClick={() => setConfirmPermanentDelete(true)}
                 className={ctaClassName("ghost", "flex-1 min-w-[96px]")}
               >
-                還原內建
+                永久刪除
               </button>
+            ) : (
+              canRestore && (
+                <button
+                  type="button"
+                  disabled={saving || !enabled}
+                  onClick={handleRestore}
+                  className={ctaClassName("ghost", "flex-1 min-w-[96px]")}
+                >
+                  還原內建
+                </button>
+              )
             )}
             <button type="button" onClick={onClose} className={ctaClassName("ghost", "flex-1 min-w-[96px]")}>
               取消
