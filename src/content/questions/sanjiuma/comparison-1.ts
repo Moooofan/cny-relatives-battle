@@ -407,9 +407,9 @@ export default [
       },
       {
         id: "sanjiuma-comparison-009-b",
-        text: "靠，我會唱歌啦，舅媽要不要聽聽看？",
+        text: "靠，才藝很俗氣啦，舅媽妳會什麼？",
         archetype: "deflect",
-        retort: "聽？我耳朵還想留著。",
+        retort: "我會什麼關你屁事，讀書啦。",
       },
       {
         id: "sanjiuma-comparison-009-c",
@@ -443,7 +443,7 @@ export default [
       },
       {
         id: "sanjiuma-comparison-009-h",
-        text: "幹，妳朋友的小孩會彈鋼琴，關我屁事，老太婆很閒喔？",
+        text: "幹，表哥五音不全，也敢嫌別人沒才藝？",
         archetype: "landmine",
         retort: "你他媽的講話這麼衝，滾一邊去！",
       },
@@ -911,7 +911,7 @@ export default [
       },
       {
         id: "sanjiuma-comparison-018-b",
-        text: "靠北，我還是專員啦，舅媽要不要幫我升官？",
+        text: "靠北，頭銜而已啦，舅媽要不要幫我升官？",
         archetype: "deflect",
         retort: "升官？我又不是你老闆。",
       },

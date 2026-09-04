@@ -252,11 +252,11 @@ export default [
     topic: "marriage",
     bossId: "neighbor-chen",
     options: [
-      { id: "neighbor-chen-marriage-036-a", text: "幹，值不值得我自己衡量，不用妳計算。", archetype: "perfect", retort: "……她翻著香腸，幹，你這什麼嘴！" },
+      { id: "neighbor-chen-marriage-036-a", text: "幹，值不值得我自己衡量，妳倒是很會幫人算帳。", archetype: "perfect", retort: "……她翻著香腸，幹，語塞裝忙。" },
       { id: "neighbor-chen-marriage-036-b", text: "搬家先別提，笑死，香腸曬得真香。", archetype: "deflect", retort: "對啊，過年就是要曬臘肉。" },
       { id: "neighbor-chen-marriage-036-c", text: "還在考慮，幹……捨不得離開熟悉的地方……", archetype: "meek", retort: "捨不得？那要不要再想清楚？" },
       { id: "neighbor-chen-marriage-036-d", text: "搬家我打算把房間打包空運，靠杯浮誇。", archetype: "backfire", retort: "……（她翻著香腸，沒理我）" },
-      { id: "neighbor-chen-marriage-036-e", text: "幹，老不死，我搬去哪關妳屁事？", archetype: "landmine", retort: "靠北，你欠教訓，沒大沒小！" },
+      { id: "neighbor-chen-marriage-036-e", text: "幹，老不死，我搬去哪，妳等著廣播全社區？", archetype: "landmine", retort: "靠北，你欠教訓，沒大沒小！" },
       { id: "neighbor-chen-marriage-036-f", text: "搬家先保密，靠，臘肉是自己灌的嗎？", archetype: "deflect", retort: "對啊，每年都自己灌。" },
       { id: "neighbor-chen-marriage-036-g", text: "確實有點捨不得，靠……但想為感情努力……", archetype: "meek", retort: "努力？那新工作找好了嗎？" },
       { id: "neighbor-chen-marriage-036-h", text: "搬家後我打算把陽台也搬過去，幹你娘咧離譜。", archetype: "backfire", retort: "（她沒聽懂，繼續翻香腸）" },

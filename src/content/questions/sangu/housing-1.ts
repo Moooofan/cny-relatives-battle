@@ -222,7 +222,7 @@ export default [
     topic: "housing",
     bossId: "sangu",
     options: [
-      { id: "sangu-housing-014-a", text: "是租的，幹，但至少我每年都回來給您看。", archetype: "perfect", retort: "……好，這句聽了讓人心軟，機掰。" },
+      { id: "sangu-housing-014-a", text: "是租的，幹，換問您那間房是嫁妝換的嗎？", archetype: "perfect", retort: "……這句損，機掰，算你狠。" },
       { id: "sangu-housing-014-b", text: "陳太太連我搬家都知道，靠，太神了吧。", archetype: "deflect", retort: "她關心你，別這樣說人家。" },
       { id: "sangu-housing-014-c", text: "笑死，搬新家的紅包，姑姑要不要補一個？", archetype: "deflect", retort: "貧嘴，先說是租的還是買的。" },
       { id: "sangu-housing-014-d", text: "幹……是租的啦，還沒到買房那個階段……", archetype: "meek", retort: "租的？那你要早點朝目標努力。" },

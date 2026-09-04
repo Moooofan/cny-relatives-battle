@@ -103,7 +103,7 @@ export default [
         id: "sanjiuma-housing-023-g",
         text: "靠北，我把投資計畫講得天花亂墜，結果自己都聽不懂。",
         archetype: "backfire",
-        retort: "……（沒人接話）",
+        retort: "……（舅媽愣住，沒說話）",
       },
       {
         id: "sanjiuma-housing-023-h",
@@ -271,7 +271,7 @@ export default [
         id: "sanjiuma-housing-026-g",
         text: "機掰，我算聘金算到自己都嚇死。",
         archetype: "backfire",
-        retort: "……（沒人接話）",
+        retort: "……（舅媽哼一聲，沒理你）",
       },
       {
         id: "sanjiuma-housing-026-h",
@@ -327,7 +327,7 @@ export default [
         id: "sanjiuma-housing-027-g",
         text: "他媽的，我提議都更結果被親戚圍剿。",
         archetype: "backfire",
-        retort: "……（沒人接話）",
+        retort: "……（舅媽沒接話，喝口茶）",
       },
       {
         id: "sanjiuma-housing-027-h",
@@ -495,7 +495,7 @@ export default [
         id: "sanjiuma-housing-030-g",
         text: "他媽的，我把廣告單看成中獎通知，空歡喜一場。",
         archetype: "backfire",
-        retort: "……（沒人接話）",
+        retort: "……（舅媽愣住，沒說話）",
       },
       {
         id: "sanjiuma-housing-030-h",
@@ -663,7 +663,7 @@ export default [
         id: "sanjiuma-housing-033-g",
         text: "幹，我投資的房地產遊戲破產了，別提了。",
         archetype: "backfire",
-        retort: "……（沒人接話）",
+        retort: "……（舅媽哼一聲，沒理你）",
       },
       {
         id: "sanjiuma-housing-033-h",

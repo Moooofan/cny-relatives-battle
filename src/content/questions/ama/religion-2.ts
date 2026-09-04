@@ -147,7 +147,7 @@ export default [
       { id: "ama-religion-030-e", text: "我常常會忘記，靠，自己的地址……", archetype: "meek", retort: "忘記了阿嬤幫你先報一次。" },
       { id: "ama-religion-030-f", text: "這是不是神明版的，去你的自我介紹表。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續帶你唸）" },
       { id: "ama-religion-030-g", text: "報地址是不是要順便，機掰報星座。", archetype: "backfire", retort: "（阿嬤白眼，繼續帶你唸）" },
-      { id: "ama-religion-030-h", text: "他媽的，這種形式太麻煩了，不想報！", archetype: "landmine", retort: "你這樣說，阿嬤會難過。（安靜）" },
+      { id: "ama-religion-030-h", text: "他媽的，這種形式太麻煩了，不想報！", archetype: "landmine", retort: "……阿嬤沒說話，放下筷子。" },
     ],
   },
   {
@@ -163,7 +163,7 @@ export default [
       { id: "ama-religion-031-e", text: "我對這種捐獻方式，靠，不太了解……", archetype: "meek", retort: "不了解沒關係，阿嬤懂。" },
       { id: "ama-religion-031-f", text: "香油錢是不是可以，去你的開發票報稅。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續包錢）" },
       { id: "ama-religion-031-g", text: "添福添壽是不是，機掰訂閱制服務。", archetype: "backfire", retort: "（阿嬤白眼，繼續包錢）" },
-      { id: "ama-religion-031-h", text: "去你的，老太婆不用包這些錢浪費！", archetype: "landmine", retort: "你這樣說，阿嬤會難過。（安靜）" },
+      { id: "ama-religion-031-h", text: "去你的，老太婆不用包這些錢浪費！", archetype: "landmine", retort: "阿嬤愣了愣，低頭扒飯沒接話。" },
     ],
   },
   {
@@ -195,7 +195,7 @@ export default [
       { id: "ama-religion-033-e", text: "我不太知道要跟阿公說什麼，靠……", archetype: "meek", retort: "說說近況，阿公會想聽的。" },
       { id: "ama-religion-033-f", text: "跟阿公說話是不是要，去你的先連線。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續上香）" },
       { id: "ama-religion-033-g", text: "這算不算陰陽兩界的，機掰視訊通話。", archetype: "backfire", retort: "（阿嬤白眼，繼續上香）" },
-      { id: "ama-religion-033-h", text: "機掰，老東西這種事很奇怪不想講！", archetype: "landmine", retort: "你這樣說，阿嬤會難過。（安靜）" },
+      { id: "ama-religion-033-h", text: "機掰，老東西這種事很奇怪不想講！", archetype: "landmine", retort: "……阿嬤嘆口氣，眼眶紅了。" },
     ],
   },
   {
@@ -243,7 +243,7 @@ export default [
       { id: "ama-religion-036-e", text: "我對廟公其實印象，靠，不太深……", archetype: "meek", retort: "印象不深也要記得問聲好。" },
       { id: "ama-religion-036-f", text: "長大是不是代表，去你的可以自己拜了。", archetype: "backfire", retort: "（阿嬤沒聽懂，繼續跟廟公聊）" },
       { id: "ama-religion-036-g", text: "廟公是不是廟裡的，機掰常駐NPC。", archetype: "backfire", retort: "（阿嬤白眼，繼續跟廟公聊）" },
-      { id: "ama-religion-036-h", text: "幹你娘咧，這種寒暄很煩，快走吧！", archetype: "landmine", retort: "你這樣說，阿嬤會難過。（安靜）" },
+      { id: "ama-religion-036-h", text: "幹你娘咧，這種寒暄很煩，快走吧！", archetype: "landmine", retort: "阿嬤沒吭聲，把碗往你那邊推。" },
     ],
   },
 ] satisfies Question[];

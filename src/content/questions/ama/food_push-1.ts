@@ -124,7 +124,7 @@ export default [
     topic: "food_push",
     bossId: "ama",
     options: [
-      { id: "ama-food_push-009-a", text: "靠北，三舅媽的關心哪有阿嬤的雞精濃。", archetype: "perfect", retort: "哎唷，你這嘴真的很毒欸！" },
+      { id: "ama-food_push-009-a", text: "靠北，三舅媽的關心哪有阿嬤的雞精濃。", archetype: "perfect", retort: "哎唷，你這嘴巴甜得像蜜。" },
       { id: "ama-food_push-009-b", text: "靠，阿嬤自己也要補，不要都省給我。", archetype: "deflect", retort: "我身體硬朗，你多喝點。" },
       { id: "ama-food_push-009-c", text: "哭爸，這牌子是不是阿嬤研究很久的？", archetype: "deflect", retort: "當然，貨比三家才買的。" },
       { id: "ama-food_push-009-d", text: "幹……我剛吃過飯，現在喝不下……", archetype: "meek", retort: "喝不下也要喝一點意思一下！" },

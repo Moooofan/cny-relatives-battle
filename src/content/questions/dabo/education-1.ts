@@ -1013,7 +1013,7 @@ export default [
       },
       {
         id: "dabo-education-018-f",
-        text: "你他媽的連博士怎麼寫都不確定，別嫌我，老東西。",
+        text: "你他媽的書沒讀兩年，憑什麼嫌我，老東西。",
         archetype: "landmine",
         retort: "這什麼家教，你他媽的爸媽教的！",
       },
@@ -1139,7 +1139,7 @@ export default [
         id: "dabo-education-020-h",
         text: "我加入的社團宗旨，他媽的是準時吃飯。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
     ],
   },

@@ -180,7 +180,7 @@ export default [
       { id: "sangu-salary_job-011-e", text: "靠……聽起來不錯，但要考慮一下細節……", archetype: "meek", retort: "考慮太久，機會就沒了。" },
       { id: "sangu-salary_job-011-f", text: "薪水少的工作，機掰，姑姑自己去做啊。", archetype: "backfire", retort: "（三姑臉一沉，氣氛僵了）" },
       { id: "sangu-salary_job-011-g", text: "我這種人才，幹，怎麼可能領少的。", archetype: "backfire", retort: "……人才怎麼還在找工作呢。" },
-      { id: "sangu-salary_job-011-h", text: "幹，薪水少還要我去，先問您紅包少不少意思。", archetype: "landmine", retort: "去死，這桌你別坐了！" },
+      { id: "sangu-salary_job-011-h", text: "幹，薪水少還要我去，先問您管媳婦錢管多緊，老太婆。", archetype: "landmine", retort: "去死，這桌你別坐了！" },
     ],
   },
   {

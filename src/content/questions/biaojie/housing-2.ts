@@ -884,9 +884,9 @@ export default [
       },
       {
         id: "biaojie-housing-036-f",
-        text: "機掰，沒人問，妳倒是搶著講，老女人。",
+        text: "坪數第一，房貸是不是也第一，老女人？",
         archetype: "landmine",
-        retort: "才沒有，你他媽的很白目！",
+        retort: "才沒欠很多，你他媽的很白目！",
       },
       {
         id: "biaojie-housing-036-g",

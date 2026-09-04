@@ -305,9 +305,9 @@ export default [
       },
       {
         id: "biaojie-kids-026-c",
-        text: "獎狀那麼多，機掰，牆要不夠貼了。",
+        text: "機掰，獎牌是老大游的，妳負責尖叫？",
         archetype: "perfect",
-        retort: "……機掰，你這張嘴誰教的？",
+        retort: "……我還有陪他練習好嗎（笑容僵住）。",
       },
       {
         id: "biaojie-kids-026-d",
@@ -323,7 +323,7 @@ export default [
       },
       {
         id: "biaojie-kids-026-f",
-        text: "得獎而已，他媽的全世界要知道？",
+        text: "幹，老大想游，還是妳想拿獎狀，老女人？",
         archetype: "landmine",
         retort: "機掰，你這什麼態度！",
       },
@@ -809,9 +809,9 @@ export default [
       },
       {
         id: "biaojie-kids-035-c",
-        text: "囤這麼多，機掰，囤不到我的耐心。",
+        text: "機掰，囤這麼多，是怕缺貨還是退流行？",
         archetype: "perfect",
-        retort: "……你很過分耶，幹（別過臉）。",
+        retort: "……才沒有，這樣比較安心（笑容僵住）。",
       },
       {
         id: "biaojie-kids-035-d",

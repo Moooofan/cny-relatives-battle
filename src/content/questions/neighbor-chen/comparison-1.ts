@@ -141,7 +141,7 @@ export default [
     topic: "comparison",
     bossId: "neighbor-chen",
     options: [
-      { id: "neighbor-chen-comparison-009-a", text: "幹，他當經理是他的事，我過我的日子。", archetype: "perfect", retort: "……她臉有點僵，幹，沒接話。" },
+      { id: "neighbor-chen-comparison-009-a", text: "幹，他經理厲害，是妳比較功力更嚇人。", archetype: "perfect", retort: "……她被將了一軍，幹，笑到岔氣。" },
       { id: "neighbor-chen-comparison-009-b", text: "事業先別提，笑死，晚會表演真精彩。", archetype: "deflect", retort: "對啊，社區今年辦得特別用心。" },
       { id: "neighbor-chen-comparison-009-c", text: "跟他比是差一點，幹……還在努力往上爬……", archetype: "meek", retort: "往上爬？那要努力到什麼程度？" },
       { id: "neighbor-chen-comparison-009-d", text: "我雖然沒當經理，但很會管理自己，靠北猛。", archetype: "backfire", retort: "……（她看著表演，沒理我）" },
@@ -189,7 +189,7 @@ export default [
     topic: "comparison",
     bossId: "neighbor-chen",
     options: [
-      { id: "neighbor-chen-comparison-012-a", text: "我雖然沒常出國，但我很會神遊，他媽的爽。", archetype: "backfire", retort: "……（老闆修著車，沒理我）" },
+      { id: "neighbor-chen-comparison-012-a", text: "我雖然沒常出國，但我很會神遊，他媽的爽。", archetype: "backfire", retort: "……（她修著車，沒理我）" },
       { id: "neighbor-chen-comparison-012-b", text: "跟他比是差很多，幹……我很少有機會出國……", archetype: "meek", retort: "很少？那要不要安排一次旅行？" },
       { id: "neighbor-chen-comparison-012-c", text: "出國先別提，笑死，這機車行生意真好。", archetype: "deflect", retort: "對啊，過年前大家都來保養。" },
       { id: "neighbor-chen-comparison-012-d", text: "機掰，他出國飛的，我的生活也沒停飛。", archetype: "perfect", retort: "呵，機掰，妳這張嘴，隨妳講。" },

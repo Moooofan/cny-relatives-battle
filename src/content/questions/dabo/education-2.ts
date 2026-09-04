@@ -110,7 +110,7 @@ export default [
         id: "dabo-education-022-e",
         text: "機掰，我讀書讀到會背房價數字。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
       {
         id: "dabo-education-022-f",
@@ -142,7 +142,7 @@ export default [
         id: "dabo-education-023-a",
         text: "他媽的，我以前排名都是倒數常勝軍。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-education-023-b",
@@ -272,7 +272,7 @@ export default [
         id: "dabo-education-025-d",
         text: "幹，這學歷不值錢，換錢好了。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-education-025-e",
@@ -340,13 +340,13 @@ export default [
         id: "dabo-education-026-f",
         text: "機掰，我的論文比安眠藥還有效。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-education-026-g",
         text: "去死，冷門好這樣沒人抄我的啦。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
       {
         id: "dabo-education-026-h",
@@ -396,7 +396,7 @@ export default [
         id: "dabo-education-027-f",
         text: "幹，朋友讀博士，我負責慶祝。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-education-027-g",
@@ -458,7 +458,7 @@ export default [
         id: "dabo-education-028-g",
         text: "機掰，半工半讀像半糖去冰我也想試。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-education-028-h",
@@ -490,7 +490,7 @@ export default [
         id: "dabo-education-029-c",
         text: "靠北，教手機而已我收費一小時三百。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-education-029-d",
@@ -564,7 +564,7 @@ export default [
         id: "dabo-education-030-f",
         text: "去死，轉系而已人生本來就亂猜。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒聽懂，繼續滑手機）",
       },
       {
         id: "dabo-education-030-g",
@@ -614,7 +614,7 @@ export default [
         id: "dabo-education-031-e",
         text: "去你的，我耍廢是為了跟時代脫節。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-education-031-f",
@@ -676,13 +676,13 @@ export default [
         id: "dabo-education-032-f",
         text: "去死，重考不如重生投胎比較快。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯愣住，轉頭問你媽）",
       },
       {
         id: "dabo-education-032-g",
         text: "機掰，我當初分數不夠是老師改錯。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
       {
         id: "dabo-education-032-h",
@@ -708,7 +708,7 @@ export default [
         id: "dabo-education-033-b",
         text: "他媽的，這書拿來壓泡麵蓋子最實用。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯搖搖頭，繼續看政論節目）",
       },
       {
         id: "dabo-education-033-c",
@@ -794,7 +794,7 @@ export default [
         id: "dabo-education-034-g",
         text: "去死，我以前對老師最尊敬就是遲到。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-education-034-h",
@@ -844,7 +844,7 @@ export default [
         id: "dabo-education-035-f",
         text: "去你的，考研究所是為了多住宿舍。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
       {
         id: "dabo-education-035-g",
@@ -876,7 +876,7 @@ export default [
         id: "dabo-education-036-b",
         text: "靠北，我年薪不高但快樂指數破表。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-education-036-c",
@@ -900,7 +900,7 @@ export default [
         id: "dabo-education-036-f",
         text: "去死，沒關係我打算轉行去挖礦。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-education-036-g",
@@ -932,7 +932,7 @@ export default [
         id: "dabo-education-037-b",
         text: "幹你娘，我寫的志願是總統還沒實現。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-education-037-c",
@@ -956,7 +956,7 @@ export default [
         id: "dabo-education-037-f",
         text: "去你的，我志願寫嫁豪門還在等機會。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-education-037-g",

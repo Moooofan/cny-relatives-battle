@@ -45,7 +45,7 @@ export default [
         id: "dabo-salary_job-001-c",
         text: "薪水多少是秘密，笑死，跟星座一樣神秘。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-salary_job-001-d",
@@ -89,7 +89,7 @@ export default [
         id: "dabo-salary_job-002-a",
         text: "年終喔，笑死，我打算拿去買樂透翻身。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-salary_job-002-b",
@@ -107,7 +107,7 @@ export default [
         id: "dabo-salary_job-002-d",
         text: "年終發的是全勤獎狀，很有紀念價值。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯愣住，轉頭問你媽）",
       },
       {
         id: "dabo-salary_job-002-e",
@@ -181,7 +181,7 @@ export default [
         id: "dabo-salary_job-003-g",
         text: "換工作太麻煩，笑死，換人生比較快。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-salary_job-003-h",
@@ -213,7 +213,7 @@ export default [
         id: "dabo-salary_job-004-c",
         text: "我加班到半夜，笑死，是捨不得冷氣。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-salary_job-004-d",
@@ -275,7 +275,7 @@ export default [
         id: "dabo-salary_job-005-d",
         text: "接家業好啊，機掰，我打算先收掉生意。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯搖搖頭，繼續看政論節目）",
       },
       {
         id: "dabo-salary_job-005-e",
@@ -293,7 +293,7 @@ export default [
         id: "dabo-salary_job-005-g",
         text: "回家接生意，笑死，我比較想接遙控器。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-salary_job-005-h",
@@ -343,7 +343,7 @@ export default [
         id: "dabo-salary_job-006-f",
         text: "我在辦公室比較帥，笑死，適合被欣賞。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
       {
         id: "dabo-salary_job-006-g",
@@ -355,7 +355,7 @@ export default [
         id: "dabo-salary_job-006-h",
         text: "進辦公室，靠北，是為了蹭公司冷氣電費。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
     ],
   },
@@ -387,7 +387,7 @@ export default [
         id: "dabo-salary_job-007-d",
         text: "裁員沒關係，機掰，我早準備好離職信了。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-salary_job-007-e",
@@ -405,7 +405,7 @@ export default [
         id: "dabo-salary_job-007-g",
         text: "被裁員，笑死，剛好名正言順放假。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-salary_job-007-h",
@@ -455,7 +455,7 @@ export default [
         id: "dabo-salary_job-008-f",
         text: "接案不穩定，笑死，那我改接紅包比較穩。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-salary_job-008-g",
@@ -505,7 +505,7 @@ export default [
         id: "dabo-salary_job-009-e",
         text: "考公務員，笑死，我打算靠關係走後門。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-salary_job-009-f",
@@ -517,7 +517,7 @@ export default [
         id: "dabo-salary_job-009-g",
         text: "鐵飯碗太重，機掰，我拿不動。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-salary_job-009-h",
@@ -555,7 +555,7 @@ export default [
         id: "dabo-salary_job-010-d",
         text: "老闆脾氣差，笑死，但送禮大方扯平。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-salary_job-010-e",
@@ -579,7 +579,7 @@ export default [
         id: "dabo-salary_job-010-h",
         text: "老闆對我很好，機掰，好到常忘記發薪水。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒聽懂，繼續滑手機）",
       },
     ],
   },
@@ -623,7 +623,7 @@ export default [
         id: "dabo-salary_job-011-f",
         text: "換工作比換衣服勤，靠北，算興趣。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-salary_job-011-g",
@@ -679,7 +679,7 @@ export default [
         id: "dabo-salary_job-012-f",
         text: "我副業是收集發票，笑死，也是財富自由。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯愣住，轉頭問你媽）",
       },
       {
         id: "dabo-salary_job-012-g",
@@ -691,7 +691,7 @@ export default [
         id: "dabo-salary_job-012-h",
         text: "我副業是研究躺平，靠北，很有心得。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
     ],
   },
@@ -705,7 +705,7 @@ export default [
         id: "dabo-salary_job-013-a",
         text: "升遷太累，笑死，我升等成資深躺平仔。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯搖搖頭，繼續看政論節目）",
       },
       {
         id: "dabo-salary_job-013-b",
@@ -717,7 +717,7 @@ export default [
         id: "dabo-salary_job-013-c",
         text: "我升遷秘訣是每天請假，機掰，蓄積能量。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-salary_job-013-d",
@@ -773,7 +773,7 @@ export default [
         id: "dabo-salary_job-014-c",
         text: "加班費我都換算成友情價，笑死，算了。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
       {
         id: "dabo-salary_job-014-d",
@@ -803,7 +803,7 @@ export default [
         id: "dabo-salary_job-014-h",
         text: "沒加班費沒關係，機掰，在辦公室學靜坐。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
     ],
   },
@@ -829,7 +829,7 @@ export default [
         id: "dabo-salary_job-015-c",
         text: "我打算漲的是體重，笑死，比較實際。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-salary_job-015-d",
@@ -841,7 +841,7 @@ export default [
         id: "dabo-salary_job-015-e",
         text: "薪水沒漲，靠北，但我的抱怨技能大漲。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-salary_job-015-f",
@@ -897,7 +897,7 @@ export default [
         id: "dabo-salary_job-016-e",
         text: "創業好啊，笑死，我打算賣空氣成本最低。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-salary_job-016-f",
@@ -915,7 +915,7 @@ export default [
         id: "dabo-salary_job-016-h",
         text: "創業太累，靠北，我改行創造睡眠時數。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
     ],
   },
@@ -941,7 +941,7 @@ export default [
         id: "dabo-salary_job-017-c",
         text: "我存的是回憶，笑死，比錢有價值多了。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒聽懂，繼續滑手機）",
       },
       {
         id: "dabo-salary_job-017-d",
@@ -959,7 +959,7 @@ export default [
         id: "dabo-salary_job-017-f",
         text: "我存款餘額，靠北，跟我的自信一樣少。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-salary_job-017-g",
@@ -997,7 +997,7 @@ export default [
         id: "dabo-salary_job-018-c",
         text: "扣薪沒關係，笑死，我請假是休息心靈。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯愣住，轉頭問你媽）",
       },
       {
         id: "dabo-salary_job-018-d",
@@ -1027,7 +1027,7 @@ export default [
         id: "dabo-salary_job-018-h",
         text: "公司扣薪，機掰，那我扣公司的信任度。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
     ],
   },
@@ -1059,7 +1059,7 @@ export default [
         id: "dabo-salary_job-019-d",
         text: "做到死沒關係，笑死，加班費是心靈成長。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-salary_job-019-e",
@@ -1071,7 +1071,7 @@ export default [
         id: "dabo-salary_job-019-f",
         text: "責任制沒關係，靠北，我的責任是準時吃飯。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯搖搖頭，繼續看政論節目）",
       },
       {
         id: "dabo-salary_job-019-g",
@@ -1127,7 +1127,7 @@ export default [
         id: "dabo-salary_job-020-f",
         text: "縮水沒關係，笑死，我年終換算成假期划算。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
       {
         id: "dabo-salary_job-020-g",
@@ -1139,7 +1139,7 @@ export default [
         id: "dabo-salary_job-020-h",
         text: "年終縮水，機掰，那我的胃口就跟著擴張。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
     ],
   },

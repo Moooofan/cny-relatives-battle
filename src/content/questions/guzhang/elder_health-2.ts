@@ -393,7 +393,7 @@ export default [
       },
       {
         id: "guzhang-elder_health-027-h",
-        text: "去死，煮這麼香，煮不出一個真相老東西。",
+        text: "去死，薑黃治百病，怎麼一次都沒好，老東西。",
         archetype: "landmine",
         retort: "他吼一句幹恁娘，轉頭不理你。",
       },

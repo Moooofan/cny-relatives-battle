@@ -295,7 +295,7 @@ export default [
       },
       {
         id: "sanjiuma-comparison-027-b",
-        text: "靠，有考慮啦，舅媽有內線消息嗎？",
+        text: "靠，公職的事先別提，舅媽有內線消息嗎？",
         archetype: "deflect",
         retort: "內線？你當我在考古題班喔。",
       },
@@ -331,7 +331,7 @@ export default [
       },
       {
         id: "sanjiuma-comparison-027-h",
-        text: "幹，妳朋友的小孩考上公職關我屁事，老東西很閒喔？",
+        text: "幹，表哥考不上公職才叫妳丟臉，老東西。",
         archetype: "landmine",
         retort: "幹，你是欠罵是不是！",
       },
@@ -799,7 +799,7 @@ export default [
       },
       {
         id: "sanjiuma-comparison-036-b",
-        text: "靠，我請過幾次假啦，舅媽要不要體諒一下上班族？",
+        text: "靠，這種事不能問啦，舅媽要不要體諒一下上班族？",
         archetype: "deflect",
         retort: "體諒？我上班的時候都全勤。",
       },

@@ -367,9 +367,9 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-008-a",
-        text: "靠杯，存款不多但沒欠人情。",
+        text: "靠杯，比存款是要頒獎狀嗎，舅媽？",
         archetype: "perfect",
-        retort: "靠杯，你是不是欠罵啊。",
+        retort: "頒獎狀？你才欠罵勒！",
       },
       {
         id: "sanjiuma-salary_job-008-b",
@@ -871,7 +871,7 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-017-a",
-        text: "去死啦，接案不用靠誰牽線。",
+        text: "去死啦，接案靠實力，表哥呢？",
         archetype: "perfect",
         retort: "幹，你翅膀硬了是不是。",
       },

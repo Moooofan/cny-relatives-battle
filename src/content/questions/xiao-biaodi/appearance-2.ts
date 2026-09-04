@@ -306,9 +306,9 @@ export default [
     options: [
       {
         id: "xiao-biaodi-appearance-027-a",
-        text: "去死，這條分線留給人生用的，你懂？",
+        text: "去死，是不是你自己也沒睡飽在改考卷？",
         archetype: "perfect",
-        retort: "……他臉一黑，裝沒聽到",
+        retort: "……老師臉一黑，裝沒聽到",
       },
       {
         id: "xiao-biaodi-appearance-027-b",

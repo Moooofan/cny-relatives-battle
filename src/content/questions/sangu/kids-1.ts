@@ -14,7 +14,7 @@ export default [
     topic: "kids",
     bossId: "sangu",
     options: [
-      { id: "sangu-kids-001-a", text: "幹，等對象出現，第一個抱的還有您女兒。", archetype: "perfect", retort: "幹，你這孩子嘴巴怎麼這麼賤。" },
+      { id: "sangu-kids-001-a", text: "幹，先讓您女兒生一個，我來抱如何？", archetype: "perfect", retort: "……欠揍，機掰，算你敢說。" },
       { id: "sangu-kids-001-b", text: "靠北，姑姑想抱孫子還是孫女啊？", archetype: "deflect", retort: "都好，別靠北，快說計畫。" },
       { id: "sangu-kids-001-c", text: "生小孩前，先讓我把您紅包機掰笑納。", archetype: "deflect", retort: "貧嘴，快講正經的時間表。" },
       { id: "sangu-kids-001-d", text: "幹……還沒有計畫，現在真的還沒準備好……", archetype: "meek", retort: "沒準備好？時間可不等你喔。" },
@@ -302,7 +302,7 @@ export default [
     topic: "kids",
     bossId: "sangu",
     options: [
-      { id: "sangu-kids-019-a", text: "不緊張，他媽的我在等一個不被催的時機。", archetype: "perfect", retort: "呵，這句夠淡定，我服氣。" },
+      { id: "sangu-kids-019-a", text: "不緊張，他媽的緊張的是您這催生機。", archetype: "perfect", retort: "……催生機，機掰，這稱號我收下。" },
       { id: "sangu-kids-019-b", text: "靠北，陳太太連我朋友圈都摸得這麼清楚？", archetype: "deflect", retort: "她關心你，別這樣說人家。" },
       { id: "sangu-kids-019-c", text: "她們當媽，機掰我先當個稱職的乾姑姑。", archetype: "deflect", retort: "貧嘴，快說你自己的心情。" },
       { id: "sangu-kids-019-d", text: "幹……看她們發文，心裡難免有點著急……", archetype: "meek", retort: "著急就要行動，別只是滑手機。" },

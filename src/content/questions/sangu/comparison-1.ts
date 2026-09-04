@@ -293,7 +293,7 @@ export default [
       { id: "sangu-comparison-018-e", text: "靠……沒什麼特別的，就是平凡過日子而已……", archetype: "meek", retort: "平凡不是壞事，但也該有點目標。" },
       { id: "sangu-comparison-018-f", text: "我最值得說嘴的，去你的就是我很會說嘴。", archetype: "backfire", retort: "（三姑無語，全桌安靜）" },
       { id: "sangu-comparison-018-g", text: "我的成就都是內在的，機掰看不出來啦。", archetype: "backfire", retort: "……看不出來，那怎麼證明有？" },
-      { id: "sangu-comparison-018-h", text: "說嘴喔，幹，不如比比誰的紅包包得小氣，老太婆。", archetype: "landmine", retort: "機掰，你找死！" },
+      { id: "sangu-comparison-018-h", text: "說嘴喔，幹，不如比比您媳婦被逼走幾次，老太婆。", archetype: "landmine", retort: "機掰，你找死！" },
     ],
   },
   {

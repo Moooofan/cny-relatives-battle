@@ -913,7 +913,7 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-017-h",
-        text: "去你的，插隊沒禮貌，考試插隊過？",
+        text: "去你的，死小孩沒禮貌，考卷簽了沒。",
         archetype: "landmine",
         retort: "阿嬤護著他，碎念瞪你一眼",
       },
@@ -1051,9 +1051,9 @@ export default [
       },
       {
         id: "xiao-biaodi-red_envelope-020-c",
-        text: "笑死，你酒喝夠了沒比較重要吧。",
+        text: "笑死，姑丈你先報明牌，我再考慮投資。",
         archetype: "deflect",
-        retort: "哎唷，這杯我還沒喝完呢。",
+        retort: "哎唷，明牌哪有這麼好報！",
       },
       {
         id: "xiao-biaodi-red_envelope-020-d",

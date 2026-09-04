@@ -474,9 +474,9 @@ export default [
       },
       {
         id: "biaojie-housing-009-c",
-        text: "兩個車位？機掰，一個放妳老公吧。",
+        text: "機掰，兩個車位，停得下妳的虛榮？",
         archetype: "perfect",
-        retort: "……機掰，你這張嘴誰教的？",
+        retort: "……虛榮跟車位有什麼關係（笑容僵住）。",
       },
       {
         id: "biaojie-housing-009-d",
@@ -492,9 +492,9 @@ export default [
       },
       {
         id: "biaojie-housing-009-f",
-        text: "兩個車位，他媽的還不是愛現。",
+        text: "兩個車位，他媽的是不是怕被瞧不起？",
         archetype: "landmine",
-        retort: "機掰，你這什麼態度！",
+        retort: "才沒有，你他媽的很沒禮貌！",
       },
       {
         id: "biaojie-housing-009-g",
@@ -978,9 +978,9 @@ export default [
       },
       {
         id: "biaojie-housing-018-c",
-        text: "書房給老公，他媽的其實給網購吧。",
+        text: "幹，書房是給老公用，還是給妳曬的？",
         archetype: "perfect",
-        retort: "……你很過分耶，幹（別過臉）。",
+        retort: "……曬個書房不行嗎，幹（笑容僵住）。",
       },
       {
         id: "biaojie-housing-018-d",

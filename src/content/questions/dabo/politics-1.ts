@@ -717,7 +717,7 @@ export default [
         id: "dabo-politics-013-c",
         text: "便當漲價，他媽的那我改吃空氣便當。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-politics-013-d",
@@ -841,7 +841,7 @@ export default [
         id: "dabo-politics-015-e",
         text: "我也想罷工，他媽的不過沒人理我。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-politics-015-f",
@@ -1027,7 +1027,7 @@ export default [
         id: "dabo-politics-018-h",
         text: "真假不重要，他媽的好笑就好。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
     ],
   },

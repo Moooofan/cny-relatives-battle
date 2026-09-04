@@ -110,7 +110,7 @@ export default [
     options: [
       { id: "neighbor-chen-comparison-027-a", text: "還在存，幹……我的車還可以再撐一陣子……", archetype: "meek", retort: "再撐？那安全嗎？" },
       { id: "neighbor-chen-comparison-027-b", text: "我的車雖然舊，但很有故事性，靠杯經典。", archetype: "backfire", retort: "……（她讓車經過，沒理我）" },
-      { id: "neighbor-chen-comparison-027-c", text: "去你的，車舊代步就好，錢我花在刀口上。", archetype: "perfect", retort: "……她讓車經過，去你的，臉色僵住！" },
+      { id: "neighbor-chen-comparison-027-c", text: "去你的，車舊代步就好，妳的八卦我也記一堆。", archetype: "perfect", retort: "……她語塞，去你的，尷尬走掉。" },
       { id: "neighbor-chen-comparison-027-d", text: "買車先別提，笑死，您這邊會車技術真好。", archetype: "deflect", retort: "開了幾十年，習慣了。" },
       { id: "neighbor-chen-comparison-027-e", text: "確實還沒存夠，靠……車子將就著開……", archetype: "meek", retort: "將就？那安全上要多注意喔。" },
       { id: "neighbor-chen-comparison-027-f", text: "機掰，老屁股，妳連我開什麼車都算，想搭便車？", archetype: "landmine", retort: "好，你行，幹，明年別叫我開車載你！" },

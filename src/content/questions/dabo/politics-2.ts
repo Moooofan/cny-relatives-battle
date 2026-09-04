@@ -272,7 +272,7 @@ export default [
         id: "dabo-politics-025-d",
         text: "我建議政府颱風天發放珍奶，他媽的。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-politics-025-e",
@@ -366,7 +366,7 @@ export default [
         id: "dabo-politics-027-a",
         text: "我覺得胡牌，機掰，比誰執政重要多了。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-politics-027-b",
@@ -570,7 +570,7 @@ export default [
         id: "dabo-politics-030-g",
         text: "我覺得民調，他媽的跟樂透差不多概念。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-politics-030-h",
@@ -720,7 +720,7 @@ export default [
         id: "dabo-politics-033-d",
         text: "我打算靠中樂透養老，他媽的比較快。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-politics-033-e",
@@ -838,7 +838,7 @@ export default [
         id: "dabo-politics-035-e",
         text: "這種演技，機掰，奧斯卡應該頒給他們。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-politics-035-f",
@@ -900,7 +900,7 @@ export default [
         id: "dabo-politics-036-f",
         text: "遊行太累，他媽的我用意念聲援就好。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒聽懂，繼續滑手機）",
       },
       {
         id: "dabo-politics-036-g",
@@ -956,7 +956,7 @@ export default [
         id: "dabo-politics-037-f",
         text: "我覺得政見，他媽的不如附贈的面紙實用。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
       {
         id: "dabo-politics-037-g",

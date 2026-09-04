@@ -672,7 +672,7 @@ export default [
       },
       {
         id: "guzhang-food_push-032-h",
-        text: "幹，包這麼多顆包不出一句真話，老不死。",
+        text: "幹，包這麼久還信朋友的朋友，老不死。",
         archetype: "landmine",
         retort: "他臉一垮，甩開手罵幹。",
       },

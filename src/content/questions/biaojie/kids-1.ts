@@ -418,9 +418,9 @@ export default [
       },
       {
         id: "biaojie-kids-008-c",
-        text: "沒人問學費，妳他媽的倒先報得真勤。",
+        text: "幹，十萬學費，退費是不是比入學難？",
         archetype: "perfect",
-        retort: "……靠北，講話這麼難聽。",
+        retort: "……這什麼問題啦（笑容僵住）。",
       },
       {
         id: "biaojie-kids-008-d",

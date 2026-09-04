@@ -35,7 +35,7 @@ export default [
         id: "dabo-salary_job-021-b",
         text: "薪水高，笑死，那我改行去對面賣雞排。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-salary_job-021-c",
@@ -53,7 +53,7 @@ export default [
         id: "dabo-salary_job-021-e",
         text: "跳槽而已，靠北，我打算連國籍一起跳。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-salary_job-021-f",
@@ -109,7 +109,7 @@ export default [
         id: "dabo-salary_job-022-e",
         text: "面試，笑死，我打算靠帥氣過關。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-salary_job-022-f",
@@ -121,7 +121,7 @@ export default [
         id: "dabo-salary_job-022-g",
         text: "我準備的自我介紹，靠北，比相聲還長。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-salary_job-022-h",
@@ -141,7 +141,7 @@ export default [
         id: "dabo-salary_job-023-a",
         text: "履歷我用毛筆寫，笑死，比較有誠意。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-salary_job-023-b",
@@ -153,7 +153,7 @@ export default [
         id: "dabo-salary_job-023-c",
         text: "我履歷寫得像小說，靠北，很有戲劇張力。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒聽懂，繼續滑手機）",
       },
       {
         id: "dabo-salary_job-023-d",
@@ -265,13 +265,13 @@ export default [
         id: "dabo-salary_job-025-c",
         text: "退休規劃，笑死，我打算靠中樂透過活。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯愣住，轉頭問你媽）",
       },
       {
         id: "dabo-salary_job-025-d",
         text: "我的退休金計畫，靠北，是嫁豪門很穩。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
       {
         id: "dabo-salary_job-025-e",
@@ -339,13 +339,13 @@ export default [
         id: "dabo-salary_job-026-f",
         text: "辦公室心機，笑死，我都當連續劇追。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-salary_job-026-g",
         text: "心機重沒關係，靠北，我心機更重，扯平。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯搖搖頭，繼續看政論節目）",
       },
       {
         id: "dabo-salary_job-026-h",
@@ -365,7 +365,7 @@ export default [
         id: "dabo-salary_job-027-a",
         text: "我的工作內容保密，笑死，很神秘。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-salary_job-027-b",
@@ -395,7 +395,7 @@ export default [
         id: "dabo-salary_job-027-f",
         text: "我這工作閒到，靠北，可以順便種菜。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
       {
         id: "dabo-salary_job-027-g",
@@ -451,13 +451,13 @@ export default [
         id: "dabo-salary_job-028-f",
         text: "我打算跟阿明拜把，笑死，蹭他的穩定。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-salary_job-028-g",
         text: "穩定沒意思，靠北，我愛刺激的失業人生。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-salary_job-028-h",
@@ -483,13 +483,13 @@ export default [
         id: "dabo-salary_job-029-b",
         text: "我回來顧店，笑死，主要顧著吃店裡的貨。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-salary_job-029-c",
         text: "顧店好啊，靠北，我負責顧著椅子坐。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-salary_job-029-d",
@@ -563,13 +563,13 @@ export default [
         id: "dabo-salary_job-030-f",
         text: "出差累沒關係，笑死，飯店枕頭比家裡好睡。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒聽懂，繼續滑手機）",
       },
       {
         id: "dabo-salary_job-030-g",
         text: "出差我都當免費旅遊，靠北，賺到。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-salary_job-030-h",
@@ -601,7 +601,7 @@ export default [
         id: "dabo-salary_job-031-c",
         text: "剩的錢，笑死，我全部投資在飲料上。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯愣住，轉頭問你媽）",
       },
       {
         id: "dabo-salary_job-031-d",
@@ -613,7 +613,7 @@ export default [
         id: "dabo-salary_job-031-e",
         text: "剩的錢，靠北，夠包一個比你薄的紅包。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯沒理你，自顧自講電視）",
       },
       {
         id: "dabo-salary_job-031-f",
@@ -681,7 +681,7 @@ export default [
         id: "dabo-salary_job-032-g",
         text: "談加薪太緊張，靠北，我都用寫信的。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯哼一聲，喝茶不說話）",
       },
       {
         id: "dabo-salary_job-032-h",
@@ -707,7 +707,7 @@ export default [
         id: "dabo-salary_job-033-b",
         text: "提前退休，笑死，我打算靠信用卡撐著。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯搖搖頭，繼續看政論節目）",
       },
       {
         id: "dabo-salary_job-033-c",
@@ -719,7 +719,7 @@ export default [
         id: "dabo-salary_job-033-d",
         text: "退休後我想開直播，靠北，教人躺平。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯愣了一下，沒接話）",
       },
       {
         id: "dabo-salary_job-033-e",
@@ -769,7 +769,7 @@ export default [
         id: "dabo-salary_job-034-c",
         text: "前景不好沒關係，笑死，我改行當算命的。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯沒接話，轉頭看電視）",
       },
       {
         id: "dabo-salary_job-034-d",
@@ -793,7 +793,7 @@ export default [
         id: "dabo-salary_job-034-g",
         text: "這行業前景，靠北，我用擲筊決定。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯瞪著電視，沒搭理你）",
       },
       {
         id: "dabo-salary_job-034-h",
@@ -837,13 +837,13 @@ export default [
         id: "dabo-salary_job-035-e",
         text: "當然算工作，笑死，不然紅包哪來的？",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯搖搖頭，轉頭滑手機）",
       },
       {
         id: "dabo-salary_job-035-f",
         text: "自由業，靠北，就是自由決定要不要工作。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯皺眉，繼續轉台）",
       },
       {
         id: "dabo-salary_job-035-g",
@@ -875,7 +875,7 @@ export default [
         id: "dabo-salary_job-036-b",
         text: "紅包救星，笑死，我打算拿去投資虛擬貨幣。",
         archetype: "backfire",
-        retort: "……（大伯搖頭，沒接話）",
+        retort: "……（大伯翻白眼，換台去了）",
       },
       {
         id: "dabo-salary_job-036-c",
@@ -899,7 +899,7 @@ export default [
         id: "dabo-salary_job-036-f",
         text: "紅包是我的年終獎金二號，笑死。",
         archetype: "backfire",
-        retort: "……（大伯沒聽懂，繼續問）",
+        retort: "……（大伯瞄你一眼，喝口茶不說話）",
       },
       {
         id: "dabo-salary_job-036-g",

@@ -443,9 +443,9 @@ export default [
       },
       {
         id: "sanjiuma-housing-009-h",
-        text: "幹，市中心車位比妳養的老命還值錢，老太婆。",
+        text: "幹，車位錢是不是舅舅出的，老太婆敢認？",
         archetype: "landmine",
-        retort: "北七喔你，講這什麼幹話！",
+        retort: "你他媽很敢問，滾一邊去！",
       },
     ],
   },
@@ -911,7 +911,7 @@ export default [
       },
       {
         id: "sanjiuma-housing-018-b",
-        text: "靠北，大概兩趴多啦，舅媽妳消息比較靈通吧？",
+        text: "靠北，利率的事，舅媽妳消息比較靈通吧？",
         archetype: "deflect",
         retort: "靈通？我哪懂那些數字。",
       },
@@ -1055,7 +1055,7 @@ export default [
         id: "sanjiuma-housing-020-g",
         text: "他媽的，我單身太久，都忘記怎麼跟人講話了。",
         archetype: "backfire",
-        retort: "……（沒人接話）",
+        retort: "……（舅媽沒接話，喝口茶）",
       },
       {
         id: "sanjiuma-housing-020-h",

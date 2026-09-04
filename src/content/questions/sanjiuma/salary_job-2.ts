@@ -251,7 +251,7 @@ export default [
     options: [
       {
         id: "sanjiuma-salary_job-026-a",
-        text: "幹，颱風假照發才叫正常公司。",
+        text: "幹，照發是佛心，還是怕表哥去哭訴？",
         archetype: "perfect",
         retort: "他媽的沒大沒小，欠罵是不是。",
       },
