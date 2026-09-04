@@ -13,8 +13,8 @@ export default {
   },
   emoji: "🤱",
   lines: {
-    intro: "好久不見～我們家老二會叫人了，你呢？最近怎樣？",
-    defeated: "講不過你耶，來，抱一下小的，他很喜歡你。",
-    victory: "沒關係啦，每個人的時區不一樣（笑）。",
+    intro: "幹，我們家老二會叫人了，你呢？",
+    defeated: "講不過你，幹，抱一下小的啦。",
+    victory: "笑死，每個人的時區不一樣啦，靠北。",
   },
 } satisfies Boss;

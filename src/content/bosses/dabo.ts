@@ -10,8 +10,8 @@ export default {
   order: 4,
   emoji: "👨‍🦳",
   lines: {
-    intro: "你們年輕人喔，讀那麼多書，出社會還不是……來，坐。",
-    defeated: "……嗯，有點道理。轉台轉台，看春晚。",
-    victory: "我就說，書讀那麼多，講話還是沒重點。",
+    intro: "你們年輕人喔，幹，就是欠電視教訓。",
+    defeated: "……幹，算你厲害，轉台，看春晚。",
+    victory: "去你的，讀書讀那麼多還不是沒路用。",
   },
 } satisfies Boss;

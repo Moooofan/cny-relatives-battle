@@ -10,8 +10,8 @@ export default {
   order: 2,
   emoji: "👩‍🦱",
   lines: {
-    intro: "哎唷回來啦！我上禮拜才跟你媽聊到你的事喔～",
-    defeated: "好啦好啦，你們年輕人有自己的想法，我去隔壁看看。",
-    victory: "我就說嘛，這孩子跟他媽講的一模一樣。",
+    intro: "哎唷，幹，回來啦？糗事我都聽說了！",
+    defeated: "好啦好啦，幹，你這張嘴真的賤。",
+    victory: "靠北，我就說吧，你跟你媽一個樣！",
   },
 } satisfies Boss;

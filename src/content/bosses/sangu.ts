@@ -14,8 +14,8 @@ export default {
   },
   emoji: "💃",
   lines: {
-    intro: "聽說今天大家都被你嗆回去？來，三姑陪你聊聊。",
-    defeated: "……好，你贏了。明年換你坐我這個位子。",
-    victory: "乖，來，紅包拿去。明年三姑再問你一次。",
+    intro: "幹，聽說大家都被你嗆爆？來聊聊。",
+    defeated: "……幹，你贏了，明年換你坐這位子。",
+    victory: "乖，紅包拿去，他媽的明年再問你。",
   },
 } satisfies Boss;

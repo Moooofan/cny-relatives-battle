@@ -13,8 +13,8 @@ export default {
   },
   emoji: "🧒",
   lines: {
-    intro: "你就是那個媽媽說『三十歲了還怎樣怎樣』的表哥／表姊嗎？",
-    defeated: "我要去玩 Switch 了，你們大人好無聊。",
-    victory: "媽媽——他被我問到不講話了——",
+    intro: "幹，你就是那個廢物表哥／表姊喔？",
+    defeated: "幹，你很兇耶，我不玩了啦。",
+    victory: "笑死，媽媽——他被我電到不敢講話——",
   },
 } satisfies Boss;

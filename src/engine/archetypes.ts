@@ -32,7 +32,7 @@ export const ARCHETYPE_TABLE: Record<Archetype, ArchetypeStats> = {
     combo: "inc",
     healsBoss: false,
     label: "神回覆",
-    hint: "機智又不失禮，話題直接收掉。",
+    hint: "機智又髒，一句幹話讓話題秒收。",
   },
   deflect: {
     dealt: 12,
@@ -40,7 +40,7 @@ export const ARCHETYPE_TABLE: Record<Archetype, ArchetypeStats> = {
     combo: "hold",
     healsBoss: false,
     label: "四兩撥千斤",
-    hint: "笑著帶過，沒人受傷，但也沒真的贏。",
+    hint: "笑著帶過，嘴賤但沒真的贏。",
   },
   meek: {
     dealt: 4,
@@ -48,7 +48,7 @@ export const ARCHETYPE_TABLE: Record<Archetype, ArchetypeStats> = {
     combo: "reset",
     healsBoss: false,
     label: "乖乖回答",
-    hint: "誠實沒有錯，只是給了追問的空間。",
+    hint: "老實回答，還碎念了一句幹話。",
   },
   backfire: {
     dealt: 0,
@@ -56,7 +56,7 @@ export const ARCHETYPE_TABLE: Record<Archetype, ArchetypeStats> = {
     combo: "reset",
     healsBoss: false,
     label: "反擊失敗",
-    hint: "想耍嘴皮結果冷場，全桌沉默三秒。",
+    hint: "耍嘴皮耍過頭，全桌尷尬到爆。",
   },
   landmine: {
     dealt: 35,
@@ -64,7 +64,7 @@ export const ARCHETYPE_TABLE: Record<Archetype, ArchetypeStats> = {
     combo: "reset",
     healsBoss: false,
     label: "踩雷",
-    hint: "戳到痛處，場面炸了：對方大傷，你也不好過。",
+    hint: "戳到痛處，幹話全開，雙方都掛彩。",
   },
 };
 

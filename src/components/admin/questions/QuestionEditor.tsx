@@ -66,25 +66,21 @@ function ToneCheatSheet() {
         onClick={() => setOpen((v) => !v)}
         className="w-full flex items-center justify-between px-3 py-2 text-sm text-gold"
       >
-        酸度規範小抄（docs/TONE_V2.md）
+        酸度規範小抄（docs/TONE_V3.md — 髒話全開）
         {open ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
       </button>
       {open && (
         <div className="px-3 pb-3 flex flex-col gap-2 text-xs text-text-muted leading-relaxed">
           <p>
-            <span className="text-arch-perfect">神回覆</span>：Lv.3–4，機智反問／精準數字／點破動機，讀完會讓人想截圖。
+            密度：<span className="text-arch-landmine">踩雷</span> 100% 重髒＋≥40% 罵年紀；
+            <span className="text-arch-perfect">神回覆</span> ≥70% 髒；
+            <span className="text-arch-backfire">反擊失敗</span> ≥60% 髒；
+            四兩撥千斤 ≥40% 輕髒；乖乖回答 ≥40% 低聲碎念髒話。
           </p>
-          <p>
-            <span className="text-arch-landmine">踩雷</span>：Lv.4–5，真的難聽，直接戳對方痛處（她的小孩／婚姻／薪水／年紀），可以叫她閉嘴。
-          </p>
-          <p>
-            <span className="text-arch-backfire">反擊失敗</span>：想酸但酸失敗——梗太老、講錯對象、自己先尷尬。
-          </p>
-          <p>回嗆也要跟著變：神回覆後對方吃癟、踩雷後對方真的被打到、反擊失敗後冷場。</p>
-          <p>
-            放行：靠北／白目／北七／閉嘴／關你屁事／你兒子呢；仍禁止：生殖器詞、種族／性向／身障／真實疾病、家暴、外遇、指名真實政治人物。
-          </p>
-          <p>字數上限：題目 ≤32、選項與回嗆各 ≤30。同一關主同一句梗全池最多出現 4 次。</p>
+          <p>放行且多用：幹／幹你娘／他媽的／去你的／去死／機掰／老東西／死老頭／老太婆……</p>
+          <p>仍禁止（唯一底線）：種族／性向／身障、真實疾病當笑話、性描寫、真實政治人物、家暴外遇當梗。</p>
+          <p>阿嬤例外：對阿嬤的神回覆／四兩撥千斤／乖乖回答不罵阿嬤本人（髒話只能指向別人）；踩雷／反擊失敗可以對阿嬤兇；阿嬤回嗆永遠不罵髒話。</p>
+          <p>字數上限：題目 ≤32、選項與回嗆各 ≤30。同一句髒話組合全池最多出現 12 次。</p>
         </div>
       )}
     </div>

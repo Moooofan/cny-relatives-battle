@@ -10,8 +10,8 @@ export default {
   order: 5,
   emoji: "🧓",
   lines: {
-    intro: "你有沒有看我傳的那篇？那個真的有效，我朋友的朋友試過。",
-    defeated: "好，你講的那個我回去查一下……用哪個 app 查？",
-    victory: "不聽老人言，來，這杯喝掉，再跟你講一次。",
+    intro: "幹，我傳的養生文你到底看了沒？",
+    defeated: "幹，算你狠，我回去查一下用哪個app。",
+    victory: "他媽的，不聽老人言，這杯給我乾了。",
   },
 } satisfies Boss;
