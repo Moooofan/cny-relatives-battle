@@ -40,7 +40,7 @@ export default [
       { id: "generic-politics-002-e", text: "說實話，我平常也沒有很認真看新聞……", archetype: "meek", retort: "不看新聞怎麼跟得上時事？" },
       { id: "generic-politics-002-f", text: "我看的都是迷因，比較有娛樂性。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-politics-002-g", text: "我的資訊來源是隔壁鄰居轉述的。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-politics-002-h", text: "誰帶風向不用你認證，你先查證再轉發。", archetype: "landmine", retort: "沒大沒小，長輩面前這樣講話！" },
+      { id: "generic-politics-002-h", text: "誰帶風向不用你認證，你先查證再轉發。", archetype: "landmine", retort: "長輩面前這樣講話，欠教訓！" },
     ],
   },
   {

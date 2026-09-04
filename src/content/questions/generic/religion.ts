@@ -55,7 +55,7 @@ export default [
       { id: "generic-religion-003-e", text: "說實話，我對這個不太在意……", archetype: "meek", retort: "不在意也要稍微留意一下。" },
       { id: "generic-religion-003-f", text: "我打算戴滿身的平安符防護。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-religion-003-g", text: "我覺得穿紅內褲就萬事都好了。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-religion-003-h", text: "沖不沖煞是我的事，你嘴巴比較沖。", archetype: "landmine", retort: "現在的年輕人真的沒大沒小！" },
+      { id: "generic-religion-003-h", text: "沖不沖煞是我的事，你嘴巴比較沖。", archetype: "landmine", retort: "現在的年輕人講話真衝，欠教！" },
     ],
   },
   {

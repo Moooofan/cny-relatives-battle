@@ -55,7 +55,7 @@ export default [
       { id: "generic-marriage-003-e", text: "最近比較沒心力認識人……", archetype: "meek", retort: "沒心力也要撥時間啊。" },
       { id: "generic-marriage-003-f", text: "我自己找的比較新鮮啦，哈哈。", archetype: "backfire", retort: "（群組沒人回覆）" },
       { id: "generic-marriage-003-g", text: "緣分到了自然就會出現啦。", archetype: "backfire", retort: "（訊息已讀不回）" },
-      { id: "generic-marriage-003-h", text: "交不交朋友是我的事，你比婚友社還勤。", archetype: "landmine", retort: "現在的年輕人真的沒大沒小！" },
+      { id: "generic-marriage-003-h", text: "交不交朋友是我的事，你比婚友社還勤。", archetype: "landmine", retort: "現在的年輕人講話真的很衝！" },
     ],
   },
   {

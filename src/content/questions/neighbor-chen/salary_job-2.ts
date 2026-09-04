@@ -79,7 +79,7 @@ export default [
       { id: "neighbor-chen-salary_job-025-b", text: "保險的事先別提，信箱又塞滿廣告。", archetype: "deflect", retort: "對啊，天天都是傳單。" },
       { id: "neighbor-chen-salary_job-025-c", text: "只有最低保障，其他要自己補……", archetype: "meek", retort: "自己補？那負擔不會很重嗎？" },
       { id: "neighbor-chen-salary_job-025-d", text: "我的保障是自己的信心，夠用啦。", archetype: "backfire", retort: "……（她翻著信件，沒理我）" },
-      { id: "neighbor-chen-salary_job-025-e", text: "妳連我勞健保都要查，是要幫我報稅？", archetype: "landmine", retort: "你問這幹嘛，沒大沒小！" },
+      { id: "neighbor-chen-salary_job-025-e", text: "妳連我勞健保都要查，是要幫我報稅？", archetype: "landmine", retort: "你問這幹嘛，講話這麼直！" },
       { id: "neighbor-chen-salary_job-025-f", text: "保險的事先聊，這信是您的帳單嗎？", archetype: "deflect", retort: "對啊，管理費繳費單。" },
       { id: "neighbor-chen-salary_job-025-g", text: "保障普通，還在考慮買保險……", archetype: "meek", retort: "考慮？那要快點決定喔。" },
       { id: "neighbor-chen-salary_job-025-h", text: "我信奉佛系保障，隨緣就好啦。", archetype: "backfire", retort: "（她沒聽懂，拿信轉身走）" },

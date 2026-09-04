@@ -25,7 +25,7 @@ export default [
       { id: "generic-kids-001-e", text: "我們也想，但還在準備中……", archetype: "meek", retort: "準備太久，年紀會等不了人。" },
       { id: "generic-kids-001-f", text: "等我先養一隻貓練習當爸媽。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-kids-001-g", text: "我在等機器人保母上市再生。", archetype: "backfire", retort: "（大家一臉問號）" },
-      { id: "generic-kids-001-h", text: "生不生是我子宮的事，不是你的業績。", archetype: "landmine", retort: "你這什麼態度，沒大沒小！" },
+      { id: "generic-kids-001-h", text: "生不生是我子宮的事，不是你的業績。", archetype: "landmine", retort: "你這什麼態度，欠人管教！" },
     ],
   },
   {
@@ -70,7 +70,7 @@ export default [
       { id: "generic-kids-004-e", text: "會怕自己顧不好，壓力很大……", archetype: "meek", retort: "誰不是邊做邊學的。" },
       { id: "generic-kids-004-f", text: "我把福氣都省下來買股票了。", archetype: "backfire", retort: "（沒人聽懂在講什麼）" },
       { id: "generic-kids-004-g", text: "我覺得養寵物福氣也很夠了啦。", archetype: "backfire", retort: "（場面尷尬）" },
-      { id: "generic-kids-004-h", text: "福氣是我們自己定義，不用你們來教。", archetype: "landmine", retort: "你敢這樣講長輩，沒大沒小！" },
+      { id: "generic-kids-004-h", text: "福氣是我們自己定義，不用你們來教。", archetype: "landmine", retort: "你敢這樣講長輩，是欠罵嗎！" },
     ],
   },
   {

@@ -308,7 +308,7 @@ export default [
       { id: "sangu-salary_job-019-e", text: "常常加班，家裡的事都顧不太到……", archetype: "meek", retort: "顧不到，時間久了大家會擔心。" },
       { id: "sangu-salary_job-019-f", text: "加班是因為我不可取代，沒辦法。", archetype: "backfire", retort: "（三姑挑眉，沒人跟著點頭）" },
       { id: "sangu-salary_job-019-g", text: "忙才有價值，閒著才讓人擔心啦。", archetype: "backfire", retort: "……忙成這樣，家裡更擔心你。" },
-      { id: "sangu-salary_job-019-h", text: "沒空回家？總比您這年就今天想起我強。", archetype: "landmine", retort: "（笑容不見）明年不用來了。" },
+      { id: "sangu-salary_job-019-h", text: "沒空回家？總比您這年就今天想起我強。", archetype: "landmine", retort: "（臉一沉）你這種嘴，明年別來。" },
     ],
   },
   {

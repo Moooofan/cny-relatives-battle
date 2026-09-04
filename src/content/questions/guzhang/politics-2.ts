@@ -58,7 +58,7 @@ export default [
         id: "guzhang-politics-021-h",
         text: "退休閒閒才有空去湊這種熱鬧。",
         archetype: "landmine",
-        retort: "他氣到講台語，說你很白目。",
+        retort: "他氣到講台語，罵你不知輕重。",
       },
     ],
   },

@@ -40,7 +40,7 @@ export default [
       { id: "generic-salary_job-002-e", text: "還沒發，可能要等年後了……", archetype: "meek", retort: "拖那麼晚，公司是不是有問題？" },
       { id: "generic-salary_job-002-f", text: "我把年終拿去買樂透了，賭一把。", archetype: "backfire", retort: "（沒人接話，場面安靜）" },
       { id: "generic-salary_job-002-g", text: "年終我都直接捐給信用卡了。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-salary_job-002-h", text: "領多少是我的事，你查得比國稅局還兇。", archetype: "landmine", retort: "沒大沒小，長輩面前這樣講話！" },
+      { id: "generic-salary_job-002-h", text: "領多少是我的事，你查得比國稅局還兇。", archetype: "landmine", retort: "長輩面前敢這樣講，是不想要紅包？" },
     ],
   },
   {

@@ -25,7 +25,7 @@ export default [
       { id: "generic-red_envelope-001-e", text: "說實話，今年手頭比較緊……", archetype: "meek", retort: "緊一點也要包個吉利數字。" },
       { id: "generic-red_envelope-001-f", text: "我打算用愛心代替金額，比較有創意。", archetype: "backfire", retort: "（沒人覺得好笑）" },
       { id: "generic-red_envelope-001-g", text: "我準備包一張手寫祝福卡加一元硬幣。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-red_envelope-001-h", text: "包多少是我的事，你算得比會計還細。", archetype: "landmine", retort: "你這什麼態度，沒大沒小！" },
+      { id: "generic-red_envelope-001-h", text: "包多少是我的事，你算得比會計還細。", archetype: "landmine", retort: "你這什麼態度，欠人說教！" },
     ],
   },
   {
@@ -70,7 +70,7 @@ export default [
       { id: "generic-red_envelope-004-e", text: "說實話，這是我自己賺的，有點不想繳……", archetype: "meek", retort: "不想繳也要體諒爸媽的用心。" },
       { id: "generic-red_envelope-004-f", text: "我打算把紅包投資變成傳家寶。", archetype: "backfire", retort: "（沒人接話，場面尷尬）" },
       { id: "generic-red_envelope-004-g", text: "我把紅包放銀行當作定存做紀念。", archetype: "backfire", retort: "（大家笑不出來）" },
-      { id: "generic-red_envelope-004-h", text: "繳不繳是我家的事，不用你來過問。", archetype: "landmine", retort: "你敢這樣講長輩，沒大沒小！" },
+      { id: "generic-red_envelope-004-h", text: "繳不繳是我家的事，不用你來過問。", archetype: "landmine", retort: "你敢這樣講長輩，是想被唸嗎！" },
     ],
   },
   {
